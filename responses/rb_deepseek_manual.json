@@ -1,0 +1,93 @@
+
+{
+  "RB-A-01": {
+    "text": "Mening plastik kartam ishlamayapti, uni bloklab qoying.",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "card_block"
+  },
+  "RB-A-02": {
+    "text": "Hozir hisobimda qancha mablag bor, korsating.",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "balance_inquiry"
+  },
+  "RB-A-03": {
+    "text": "Dostimga ikki yuz ming som otkazmoqchiman.",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "transfer"
+  },
+  "RB-A-04": {
+    "text": "Ipoteka krediti boyicha malumot va foiz stavkasini aytib bering.",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "loan_inquiry"
+  },
+  "RB-A-05": {
+    "text": "Bugun dollar va evro kursi qancha somdan?",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "exchange_rate"
+  },
+  "RB-T-01": {
+    "text": "Mening plastki kartam ishlmayapti, uni bloklb qo'ying.",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "card_block"
+  },
+  "RB-T-02": {
+    "text": "Hozir hisobiimda qancah mablag' bor, ko'rstaing.",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "balance_inquiry"
+  },
+  "RB-T-03": {
+    "text": "Do'stimga ikki yuz ming so'm o'takazmoqchiimn.",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "transfer"
+  },
+  "RB-T-04": {
+    "text": "Ipteka krediti bo'yicha ma'lumt va foiz svatkasini aytib bering.",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "loan_inquiry"
+  },
+  "RB-T-05": {
+    "text": "Bugun dollr va evro kuursi qancha so'mdna?",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "exchange_rate"
+  },
+  "RB-C-01": {
+    "text": "Mening картам ishlamayapti, uni bloklab qo'ying.",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "card_block"
+  },
+  "RB-C-02": {
+    "text": "Hozir hisobimda qancha баланс bor, ko'rsating.",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "balance_inquiry"
+  },
+  "RB-C-03": {
+    "text": "Do'stimga ikki yuz ming so'm перевод qilmoqchiman.",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "transfer"
+  },
+  "RB-C-04": {
+    "text": "Ipoteka кредит bo'yicha ma'lumot va процент stavkasini aytib bering.",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "loan_inquiry"
+  },
+  "RB-C-05": {
+    "text": "Bugun dollar va евро курс qancha so'mdan?",
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": "exchange_rate"
+  }
+}

@@ -1,0 +1,182 @@
+════════════════════════════════════════════════════════════
+  ULAB — CL MODULE (Classification) — Ручное тестирование
+════════════════════════════════════════════════════════════
+
+МОДЕЛИ ДЛЯ ТЕСТИРОВАНИЯ:
+  1. Gemini 2.5 Pro   → gemini.google.com      → файл: cl_gemini_manual.json
+  2. DeepSeek V3      → chat.deepseek.com      → файл: cl_deepseek_manual.json
+  3. Mistral Large 2  → chat.mistral.ai         → файл: cl_mistral_manual.json
+  4. YandexGPT Pro    → ya.ru/ai/gpt            → файл: cl_yandexgpt_manual.json
+  5. Grok 3           → grok.com               → файл: cl_grok3_manual.json
+
+  ℹ Claude Sonnet 4.6 — уже протестирован через API (результаты есть)
+  ℹ Grok 2           — уже протестирован через API (результаты есть)
+
+════════════════════════════════════════════════════════════
+  ИНСТРУКЦИЯ
+════════════════════════════════════════════════════════════
+
+Для каждой модели:
+  1. Откройте сайт модели
+  2. Начните НОВЫЙ чат
+  3. Скопируйте промпт из раздела ниже (вместе с текстом и вариантами)
+  4. Вставьте в чат → получите ответ → скопируйте ответ (одно слово)
+  5. Вставьте ответ в JSON-файл модели (поле "response")
+  6. Переходите к следующему вопросу
+
+ВАЖНО:
+  ✓ Каждый вопрос задавайте в ОДНОМ чате (не нужно создавать новый)
+  ✓ Ответ модели должен быть ОДНИМ словом из предложенных вариантов
+  ✓ Если модель дала развёрнутый ответ — возьмите только нужное слово
+  ✓ Вопросы задавайте по порядку: сначала все CL-S, потом CL-I, потом CL-R
+
+════════════════════════════════════════════════════════════
+  ПРОМПТЫ ДЛЯ КОПИРОВАНИЯ
+════════════════════════════════════════════════════════════
+
+──────────────────────────────────────────────────
+SENTIMENT (Определение тональности) — 8 вопросов
+Варианты ответа: positive / negative / neutral
+──────────────────────────────────────────────────
+
+[CL-S-01]
+Matn: "Bankingiz xizmati dahshat! Hech kim yordam bermadi, vaqtimni bekor o'tkazdim."
+Ushbu matnning tonini aniqlang. Faqat bitta so'z yozing: positive / negative / neutral
+
+[CL-S-02]
+Matn: "Onlayn banking ilovasi juda qulay, hammasi oddiy va tushunarli. Har kuni ishlataman."
+Ushbu matnning tonini aniqlang. Faqat bitta so'z yozing: positive / negative / neutral
+
+[CL-S-03]
+Matn: "Dollar kursi bugun qancha ekanligini bilmoqchiman."
+Ushbu matnning tonini aniqlang. Faqat bitta so'z yozing: positive / negative / neutral
+
+[CL-S-04]
+Matn: "Karta bir hafta bo'ldi chiqmayapti. Bu bankdan boshqa joyga o'taman!"
+Ushbu matnning tonini aniqlang. Faqat bitta so'z yozing: positive / negative / neutral
+
+[CL-S-05]
+Matn: "Menejerlar juda muloyim va professional. Rahmat, shunaqa xizmat bo'lsa yaxshi."
+Ushbu matnning tonini aniqlang. Faqat bitta so'z yozing: positive / negative / neutral
+
+[CL-S-06]
+Matn: "Hisobimda qancha mablag' qolganini bilmoqchiman."
+Ushbu matnning tonini aniqlang. Faqat bitta so'z yozing: positive / negative / neutral
+
+[CL-S-07]
+Matn: "Ikki soat navbatda turdim, kassir hali ham chiqmadi. Bu nima degani?!"
+Ushbu matnning tonini aniqlang. Faqat bitta so'z yozing: positive / negative / neutral
+
+[CL-S-08]
+Matn: "Kredit berishdi, hujjatlar tez ko'rib chiqildi. Juda mamnunman!"
+Ushbu matnning tonini aniqlang. Faqat bitta so'z yozing: positive / negative / neutral
+
+
+──────────────────────────────────────────────────
+INTENT (Определение намерения) — 8 вопросов
+Варианты ответа: card_block / balance_inquiry / transfer / loan_inquiry /
+                 account_opening / exchange_rate / complaint / document_request
+──────────────────────────────────────────────────
+
+[CL-I-01]
+Matn: "Kartamni yo'qotib qo'ydim, iltimos bloklab qo'ying."
+Mijozning maqsadini aniqlang. Faqat bitta so'z yozing:
+card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request
+
+[CL-I-02]
+Matn: "Hisobimda hozir qancha pul borligini bilmoqchiman."
+Mijozning maqsadini aniqlang. Faqat bitta so'z yozing:
+card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request
+
+[CL-I-03]
+Matn: "Do'stimga 500 ming so'm o'tkazmoqchiman, qanday qilaman?"
+Mijozning maqsadini aniqlang. Faqat bitta so'z yozing:
+card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request
+
+[CL-I-04]
+Matn: "Ipoteka krediti olish uchun qanday hujjatlar kerak?"
+Mijozning maqsadini aniqlang. Faqat bitta so'z yozing:
+card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request
+
+[CL-I-05]
+Matn: "Yangi joriy hisob raqam ochmoqchiman, nimadan boshlayman?"
+Mijozning maqsadini aniqlang. Faqat bitta so'z yozing:
+card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request
+
+[CL-I-06]
+Matn: "Bugun evro va dollar kursi qancha?"
+Mijozning maqsadini aniqlang. Faqat bitta so'z yozing:
+card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request
+
+[CL-I-07]
+Matn: "Sizning xizmatingizdan juda norozi edim, rasmiy shikoyat qoldirmoqchiman."
+Mijozning maqsadini aniqlang. Faqat bitta so'z yozing:
+card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request
+
+[CL-I-08]
+Matn: "Oxirgi 3 oylik bank hisobidan rasmiy ko'chirma kerak."
+Mijozning maqsadini aniqlang. Faqat bitta so'z yozing:
+card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request
+
+
+──────────────────────────────────────────────────
+REGISTER (Определение стиля речи) — 4 вопроса
+Варианты ответа: formal / informal / slang
+──────────────────────────────────────────────────
+
+[CL-R-01]
+Matn: "Bro, plastikni qayta chiqarish qancha turadi, bilasanmi?"
+Ushbu matnning uslubini aniqlang. Faqat bitta so'z yozing: formal / informal / slang
+
+[CL-R-02]
+Matn: "Plastik kartani qayta rasmiylashtirish tartibi va tegishli to'lov miqdori haqida ma'lumot bering."
+Ushbu matnning uslubini aniqlang. Faqat bitta so'z yozing: formal / informal / slang
+
+[CL-R-03]
+Matn: "Yangi karta olsam bo'ladimi, eskisi eskirib qoldi shekilli."
+Ushbu matnning uslubini aniqlang. Faqat bitta so'z yozing: formal / informal / slang
+
+[CL-R-04]
+Matn: "Bro, pul o'tkazmasini qanday qilaman? Gruzit qilib yubor menga."
+Ushbu matnning uslubini aniqlang. Faqat bitta so'z yozing: formal / informal / slang
+
+
+════════════════════════════════════════════════════════════
+  ГДЕ ЗАПОЛНЯТЬ ОТВЕТЫ
+════════════════════════════════════════════════════════════
+
+Откройте нужный JSON-файл и заполните поле "response" для каждого вопроса.
+
+Пример (файл cl_gemini_manual.json):
+
+  "CL-S-01": {
+    "text": "Bankingiz xizmati dahshat! ...",
+    "choices": ["positive", "negative", "neutral"],
+    "hint": "Faqat bitta javob: positive / negative / neutral",
+    "response": "negative"    ← ВСТАВЬТЕ ОТВЕТ МОДЕЛИ СЮДА
+  },
+
+════════════════════════════════════════════════════════════
+  КАК ИМПОРТИРОВАТЬ ПОСЛЕ ЗАПОЛНЕНИЯ
+════════════════════════════════════════════════════════════
+
+  python3 import_manual.py --model gemini    --module cl
+  python3 import_manual.py --model deepseek  --module cl
+  python3 import_manual.py --model mistral   --module cl
+  python3 import_manual.py --model yandexgpt --module cl
+  python3 import_manual.py --model grok3     --module cl
+
+════════════════════════════════════════════════════════════
+  ПРАВИЛЬНЫЕ ОТВЕТЫ (для проверки)
+════════════════════════════════════════════════════════════
+
+  CL-S-01: negative    CL-I-01: card_block        CL-R-01: slang
+  CL-S-02: positive    CL-I-02: balance_inquiry   CL-R-02: formal
+  CL-S-03: neutral     CL-I-03: transfer          CL-R-03: informal
+  CL-S-04: negative    CL-I-04: loan_inquiry      CL-R-04: slang
+  CL-S-05: positive    CL-I-05: account_opening
+  CL-S-06: neutral     CL-I-06: exchange_rate
+  CL-S-07: negative    CL-I-07: complaint
+  CL-S-08: positive    CL-I-08: document_request
+
+════════════════════════════════════════════════════════════

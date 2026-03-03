@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "module": "RC",
+    "description": "Reading Comprehension — MCQ based on real Uzbek banking news passages",
+    "total": 9,
+    "passages": 3,
+    "questions_per_passage": 3,
+    "subtasks": {
+      "hayot_bank": 3,
+      "kredit_freeze": 3,
+      "pul_otkazma": 3
+    },
+    "sources": [
+      "https://kun.uz/news/2026/02/10/hayot-bank-ustav-kapitalini-550-mlrd-somgacha-oshirdi",
+      "https://kun.uz/news/2025/06/26/kredit-olishga-taqiq-va-freeze-xizmati-ularning-farqi-nima",
+      "https://kun.uz/news/2024/11/07/2027-yilga-borib-ozbekistonga-pul-otkazmalari-hajmi-20-mlrd-dollarga-yetishi-mumkin"
+    ],
+    "choices_format": "A/B/C/D"
+  },
+  "passages": {
+    "P1": {
+      "id": "P1",
+      "topic": "hayot_bank",
+      "source": "kun.uz",
+      "text": "Hayot Bank ustav kapitalini 550 milliard so'mgacha oshirdi. Bank ustav kapitalini 50 million oddiy aksiyasini chiqarish orqali oshirdi. Har bir aksiyaning nominal qiymati 1000 so'm tashkil etdi. Kapital oshirish bankni moliyaviy barqarorligini mustahkamlash, ishonchni oshirish va kelajakda o'sish uchun mustahkam asos yaratish maqsadida amalga oshirildi. Joriy yilda bank aktivlari taxminan to'rt marta o'sdi. Depozitlar va kredit portfeli sezilarli miqdorda ortdi. Qo'shimcha kapital bankga kreditlashni kengaytirish, yangi mahsulotlar chiqarish, xizmat sifatini yaxshilash va onlayn xizmatlarni takomillashtirish imkoniyatini berdi. Bank raqamli xizmatlarni rivojlantirish, zamonaviy texnologiyalarni joriy qilish, shu jumladan analitika vositalarini va sun'iy intellekt elementlarini qo'llashni rejalashtiryapti."
+    },
+    "P2": {
+      "id": "P2",
+      "topic": "kredit_freeze",
+      "source": "kun.uz",
+      "text": "Firibgarlar birovning nomiga kredit rasmiylashtirishi holatlari uchrab turadi. Buning oldini olish uchun fuqarolar kredit tarixi olinishini muzlatish imkoniyatiga ega edi. Endilikda kredit bitimi rasmiylashtirishga taqiq kiritish ham mumkin bo'ldi. Freeze xizmati kredit tarixi olinishini cheklab, firibgarlardan himoya qiladi. Xizmat haqi BHMning 0,03 barobari — 13 340 so'm. Freeze xizmati faollashtirilsa, kredit tashkilotlari KATMdan kredit tarixini ololmaydi. Lekin amaldagi kredit shartnomalariga ega tashkilotlar Freeze xizmati yoqilgan holatda ham kredit tarixingizni ola oladi. Kredit bitimini rasmiylashtirishga taqiq mutlaqo bepul. Kredit tashkilotlari siz uchun kredit ajratishi mumkin emas bo'ladi. Xizmatlardan My.gov portali va infokredit.uz orqali foydalanish mumkin."
+    },
+    "P3": {
+      "id": "P3",
+      "topic": "pul_otkazma",
+      "source": "kun.uz",
+      "text": "Markaziy bank prognozlariga ko'ra, joriy yilda O'zbekistonga pul o'tkazmalari 25-30 foizga ortishi kutilmoqda. 2025 yilda 9-11 foiz, 2026 yilda 9-12 foiz, 2027 yilda esa 10-15 foiz o'sish prognozlanmoqda. Migratsiya oqimida davlatlar diversifikatsiyasining kuchayib borishi davom etadi va yuqori daromadli davlatlardan pul o'tkazmalari ko'payib borishi kutilmoqda. 2027 yilga borib pul o'tkazmalarining umumiy miqdori 20 milliard dollargacha yetishi mumkin. Asosiy xatar sifatida rubl kursining qadrsizlanishi ko'rsatilgan bo'lib, bu ta'sirning vaqt o'tishi bilan kamayishi kutilmoqda. Joriy yilning 9 oyida O'zbekistonga pul o'tkazmalari 11,3 milliard dollarga yetib, o'tgan yilning mos davriga nisbatan 34,8 foizga ko'paygan."
+    }
+  },
+  "questions": [
+    {
+      "id": "RC-P1-Q1",
+      "type": "hayot_bank",
+      "passage_id": "P1",
+      "passage": "Hayot Bank ustav kapitalini 550 milliard so'mgacha oshirdi. Bank ustav kapitalini 50 million oddiy aksiyasini chiqarish orqali oshirdi. Har bir aksiyaning nominal qiymati 1000 so'm tashkil etdi. Kapital oshirish bankni moliyaviy barqarorligini mustahkamlash, ishonchni oshirish va kelajakda o'sish uchun mustahkam asos yaratish maqsadida amalga oshirildi. Joriy yilda bank aktivlari taxminan to'rt marta o'sdi. Depozitlar va kredit portfeli sezilarli miqdorda ortdi. Qo'shimcha kapital bankga kreditlashni kengaytirish, yangi mahsulotlar chiqarish, xizmat sifatini yaxshilash va onlayn xizmatlarni takomillashtirish imkoniyatini berdi. Bank raqamli xizmatlarni rivojlantirish, zamonaviy texnologiyalarni joriy qilish, shu jumladan analitika vositalarini va sun'iy intellekt elementlarini qo'llashni rejalashtiryapti.",
+      "question": "Hayot Bank ustav kapitali qancha miqdorga oshirildi?",
+      "choices": {
+        "A": "450 milliard so'm",
+        "B": "500 milliard so'm",
+        "C": "550 milliard so'm",
+        "D": "600 milliard so'm"
+      },
+      "answer": "C",
+      "text": "Hayot Bank ustav kapitali qancha miqdorga oshirildi?"
+    },
+    {
+      "id": "RC-P1-Q2",
+      "type": "hayot_bank",
+      "passage_id": "P1",
+      "passage": "Hayot Bank ustav kapitalini 550 milliard so'mgacha oshirdi. Bank ustav kapitalini 50 million oddiy aksiyasini chiqarish orqali oshirdi. Har bir aksiyaning nominal qiymati 1000 so'm tashkil etdi. Kapital oshirish bankni moliyaviy barqarorligini mustahkamlash, ishonchni oshirish va kelajakda o'sish uchun mustahkam asos yaratish maqsadida amalga oshirildi. Joriy yilda bank aktivlari taxminan to'rt marta o'sdi. Depozitlar va kredit portfeli sezilarli miqdorda ortdi. Qo'shimcha kapital bankga kreditlashni kengaytirish, yangi mahsulotlar chiqarish, xizmat sifatini yaxshilash va onlayn xizmatlarni takomillashtirish imkoniyatini berdi. Bank raqamli xizmatlarni rivojlantirish, zamonaviy texnologiyalarni joriy qilish, shu jumladan analitika vositalarini va sun'iy intellekt elementlarini qo'llashni rejalashtiryapti.",
+      "question": "Bank kapitalini oshirish uchun qanday usuldan foydalanildi?",
+      "choices": {
+        "A": "Obligatsiyalar chiqarish orqali",
+        "B": "50 million oddiy aksiya chiqarish orqali",
+        "C": "Xorijiy investorlardan qarz olish orqali",
+        "D": "Davlat subsidiyasi orqali"
+      },
+      "answer": "B",
+      "text": "Bank kapitalini oshirish uchun qanday usuldan foydalanildi?"
+    },
+    {
+      "id": "RC-P1-Q3",
+      "type": "hayot_bank",
+      "passage_id": "P1",
+      "passage": "Hayot Bank ustav kapitalini 550 milliard so'mgacha oshirdi. Bank ustav kapitalini 50 million oddiy aksiyasini chiqarish orqali oshirdi. Har bir aksiyaning nominal qiymati 1000 so'm tashkil etdi. Kapital oshirish bankni moliyaviy barqarorligini mustahkamlash, ishonchni oshirish va kelajakda o'sish uchun mustahkam asos yaratish maqsadida amalga oshirildi. Joriy yilda bank aktivlari taxminan to'rt marta o'sdi. Depozitlar va kredit portfeli sezilarli miqdorda ortdi. Qo'shimcha kapital bankga kreditlashni kengaytirish, yangi mahsulotlar chiqarish, xizmat sifatini yaxshilash va onlayn xizmatlarni takomillashtirish imkoniyatini berdi. Bank raqamli xizmatlarni rivojlantirish, zamonaviy texnologiyalarni joriy qilish, shu jumladan analitika vositalarini va sun'iy intellekt elementlarini qo'llashni rejalashtiryapti.",
+      "question": "Joriy yilda Hayot Bank aktivlari taxminan qancha marta o'sdi?",
+      "choices": {
+        "A": "Ikki marta",
+        "B": "Uch marta",
+        "C": "To'rt marta",
+        "D": "Besh marta"
+      },
+      "answer": "C",
+      "text": "Joriy yilda Hayot Bank aktivlari taxminan qancha marta o'sdi?"
+    },
+    {
+      "id": "RC-P2-Q1",
+      "type": "kredit_freeze",
+      "passage_id": "P2",
+      "passage": "Firibgarlar birovning nomiga kredit rasmiylashtirishi holatlari uchrab turadi. Buning oldini olish uchun fuqarolar kredit tarixi olinishini muzlatish imkoniyatiga ega edi. Endilikda kredit bitimi rasmiylashtirishga taqiq kiritish ham mumkin bo'ldi. Freeze xizmati kredit tarixi olinishini cheklab, firibgarlardan himoya qiladi. Xizmat haqi BHMning 0,03 barobari — 13 340 so'm. Freeze xizmati faollashtirilsa, kredit tashkilotlari KATMdan kredit tarixini ololmaydi. Lekin amaldagi kredit shartnomalariga ega tashkilotlar Freeze xizmati yoqilgan holatda ham kredit tarixingizni ola oladi. Kredit bitimini rasmiylashtirishga taqiq mutlaqo bepul. Kredit tashkilotlari siz uchun kredit ajratishi mumkin emas bo'ladi. Xizmatlardan My.gov portali va infokredit.uz orqali foydalanish mumkin.",
+      "question": "Freeze xizmati qancha turadi?",
+      "choices": {
+        "A": "Mutlaqo bepul",
+        "B": "13 340 so'm",
+        "C": "50 000 so'm",
+        "D": "BHMning 0,3 barobari"
+      },
+      "answer": "B",
+      "text": "Freeze xizmati qancha turadi?"
+    },
+    {
+      "id": "RC-P2-Q2",
+      "type": "kredit_freeze",
+      "passage_id": "P2",
+      "passage": "Firibgarlar birovning nomiga kredit rasmiylashtirishi holatlari uchrab turadi. Buning oldini olish uchun fuqarolar kredit tarixi olinishini muzlatish imkoniyatiga ega edi. Endilikda kredit bitimi rasmiylashtirishga taqiq kiritish ham mumkin bo'ldi. Freeze xizmati kredit tarixi olinishini cheklab, firibgarlardan himoya qiladi. Xizmat haqi BHMning 0,03 barobari — 13 340 so'm. Freeze xizmati faollashtirilsa, kredit tashkilotlari KATMdan kredit tarixini ololmaydi. Lekin amaldagi kredit shartnomalariga ega tashkilotlar Freeze xizmati yoqilgan holatda ham kredit tarixingizni ola oladi. Kredit bitimini rasmiylashtirishga taqiq mutlaqo bepul. Kredit tashkilotlari siz uchun kredit ajratishi mumkin emas bo'ladi. Xizmatlardan My.gov portali va infokredit.uz orqali foydalanish mumkin.",
+      "question": "Kredit bitimiga taqiq qo'yish xizmati qancha turadi?",
+      "choices": {
+        "A": "13 340 so'm",
+        "B": "BHMning 0,03 barobari",
+        "C": "Mutlaqo bepul",
+        "D": "50 000 so'm"
+      },
+      "answer": "C",
+      "text": "Kredit bitimiga taqiq qo'yish xizmati qancha turadi?"
+    },
+    {
+      "id": "RC-P2-Q3",
+      "type": "kredit_freeze",
+      "passage_id": "P2",
+      "passage": "Firibgarlar birovning nomiga kredit rasmiylashtirishi holatlari uchrab turadi. Buning oldini olish uchun fuqarolar kredit tarixi olinishini muzlatish imkoniyatiga ega edi. Endilikda kredit bitimi rasmiylashtirishga taqiq kiritish ham mumkin bo'ldi. Freeze xizmati kredit tarixi olinishini cheklab, firibgarlardan himoya qiladi. Xizmat haqi BHMning 0,03 barobari — 13 340 so'm. Freeze xizmati faollashtirilsa, kredit tashkilotlari KATMdan kredit tarixini ololmaydi. Lekin amaldagi kredit shartnomalariga ega tashkilotlar Freeze xizmati yoqilgan holatda ham kredit tarixingizni ola oladi. Kredit bitimini rasmiylashtirishga taqiq mutlaqo bepul. Kredit tashkilotlari siz uchun kredit ajratishi mumkin emas bo'ladi. Xizmatlardan My.gov portali va infokredit.uz orqali foydalanish mumkin.",
+      "question": "Freeze xizmati yoqilgan holatda kim kredit tarixini ola oladi?",
+      "choices": {
+        "A": "Hech qaysi tashkilot ola olmaydi",
+        "B": "Faqat davlat banklari ola oladi",
+        "C": "Amaldagi kredit shartnomalariga ega tashkilotlar",
+        "D": "Faqat Markaziy bank ola oladi"
+      },
+      "answer": "C",
+      "text": "Freeze xizmati yoqilgan holatda kim kredit tarixini ola oladi?"
+    },
+    {
+      "id": "RC-P3-Q1",
+      "type": "pul_otkazma",
+      "passage_id": "P3",
+      "passage": "Markaziy bank prognozlariga ko'ra, joriy yilda O'zbekistonga pul o'tkazmalari 25-30 foizga ortishi kutilmoqda. 2025 yilda 9-11 foiz, 2026 yilda 9-12 foiz, 2027 yilda esa 10-15 foiz o'sish prognozlanmoqda. Migratsiya oqimida davlatlar diversifikatsiyasining kuchayib borishi davom etadi va yuqori daromadli davlatlardan pul o'tkazmalari ko'payib borishi kutilmoqda. 2027 yilga borib pul o'tkazmalarining umumiy miqdori 20 milliard dollargacha yetishi mumkin. Asosiy xatar sifatida rubl kursining qadrsizlanishi ko'rsatilgan bo'lib, bu ta'sirning vaqt o'tishi bilan kamayishi kutilmoqda. Joriy yilning 9 oyida O'zbekistonga pul o'tkazmalari 11,3 milliard dollarga yetib, o'tgan yilning mos davriga nisbatan 34,8 foizga ko'paygan.",
+      "question": "2027 yilga borib pul o'tkazmalari qancha bo'lishi prognoz qilinmoqda?",
+      "choices": {
+        "A": "10 milliard dollar",
+        "B": "15 milliard dollar",
+        "C": "18 milliard dollar",
+        "D": "20 milliard dollar"
+      },
+      "answer": "D",
+      "text": "2027 yilga borib pul o'tkazmalari qancha bo'lishi prognoz qilinmoqda?"
+    },
+    {
+      "id": "RC-P3-Q2",
+      "type": "pul_otkazma",
+      "passage_id": "P3",
+      "passage": "Markaziy bank prognozlariga ko'ra, joriy yilda O'zbekistonga pul o'tkazmalari 25-30 foizga ortishi kutilmoqda. 2025 yilda 9-11 foiz, 2026 yilda 9-12 foiz, 2027 yilda esa 10-15 foiz o'sish prognozlanmoqda. Migratsiya oqimida davlatlar diversifikatsiyasining kuchayib borishi davom etadi va yuqori daromadli davlatlardan pul o'tkazmalari ko'payib borishi kutilmoqda. 2027 yilga borib pul o'tkazmalarining umumiy miqdori 20 milliard dollargacha yetishi mumkin. Asosiy xatar sifatida rubl kursining qadrsizlanishi ko'rsatilgan bo'lib, bu ta'sirning vaqt o'tishi bilan kamayishi kutilmoqda. Joriy yilning 9 oyida O'zbekistonga pul o'tkazmalari 11,3 milliard dollarga yetib, o'tgan yilning mos davriga nisbatan 34,8 foizga ko'paygan.",
+      "question": "Pul o'tkazmalari uchun asosiy xatar sifatida nima ko'rsatilgan?",
+      "choices": {
+        "A": "Dollar kursining o'sishi",
+        "B": "Inflyatsiyaning kuchayishi",
+        "C": "Rubl kursining qadrsizlanishi",
+        "D": "Bank tizimining barqarorsizligi"
+      },
+      "answer": "C",
+      "text": "Pul o'tkazmalari uchun asosiy xatar sifatida nima ko'rsatilgan?"
+    },
+    {
+      "id": "RC-P3-Q3",
+      "type": "pul_otkazma",
+      "passage_id": "P3",
+      "passage": "Markaziy bank prognozlariga ko'ra, joriy yilda O'zbekistonga pul o'tkazmalari 25-30 foizga ortishi kutilmoqda. 2025 yilda 9-11 foiz, 2026 yilda 9-12 foiz, 2027 yilda esa 10-15 foiz o'sish prognozlanmoqda. Migratsiya oqimida davlatlar diversifikatsiyasining kuchayib borishi davom etadi va yuqori daromadli davlatlardan pul o'tkazmalari ko'payib borishi kutilmoqda. 2027 yilga borib pul o'tkazmalarining umumiy miqdori 20 milliard dollargacha yetishi mumkin. Asosiy xatar sifatida rubl kursining qadrsizlanishi ko'rsatilgan bo'lib, bu ta'sirning vaqt o'tishi bilan kamayishi kutilmoqda. Joriy yilning 9 oyida O'zbekistonga pul o'tkazmalari 11,3 milliard dollarga yetib, o'tgan yilning mos davriga nisbatan 34,8 foizga ko'paygan.",
+      "question": "9 oyda pul o'tkazmalari o'tgan yilga nisbatan qancha foizga ko'paygan?",
+      "choices": {
+        "A": "25 foizga",
+        "B": "30 foizga",
+        "C": "34,8 foizga",
+        "D": "40 foizga"
+      },
+      "answer": "C",
+      "text": "9 oyda pul o'tkazmalari o'tgan yilga nisbatan qancha foizga ko'paygan?"
+    }
+  ]
+}

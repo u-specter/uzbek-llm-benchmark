@@ -1,0 +1,121 @@
+{
+  "SL-01": "‘Zo‘r’ — bu haqiqatan ajoyib, sifatli, yuqori darajadagi narsa yoki hodisa. Masalan: ‘Kino zo‘r ekan, ko‘rishga arziydi’. ‘Zo‘raki’ esa sun’iy, soxta, majburiy, aslida yaxshi bo‘lmagan narsa. Masalan: ‘Uning tabassumi zo‘raki edi, samimiy emasdi’.",
+  
+  "SL-02": "Bu ibora ‘pulim umuman yo‘q, naqd pulim tugagan, cho‘ntagim bo‘sh’ degan ma’noni anglatadi. Odam og‘ir ahvolda ekanligini, hatto mayda-chuyda xarajatlarga ham puli yetmasligini bildiradi.",
+  
+  "SL-03": "‘Bro, kelib ket’ — bu qisqa vaqtga uchrashish, tez ko‘rishib, suhbatlashib ketish taklifi. Uzoq vaqt qolish shart emas, shunchaki salomlashish, hol-ahvol so‘rash yoki birga vaqt o‘tkazish nazarda tutiladi.",
+  
+  "SL-04": "Bu gapda ‘sho‘x’ so‘zi haddan tashqari harakatchan, tinimsiz, o‘jar, ba’zida chegarani bilmaydigan, biroz bezovta qiladigan darajada jonli odam ma’nosida ishlatilgan. Ko‘pincha salbiy yoki masxarali ma’noda qo‘llaniladi.",
+  
+  "SL-05": "‘Prikol qilmoq’ — hazillashmoq, birovni aldab kulmoq, qiziq vaziyat yaratib, atrofdagilarni kuldirmoq. Masalan: ‘Do‘stim bilan prikol qilib, xonasiga yashirinib oldik, kelganda qo‘rqib ketdi’.",
+  
+  "SL-06": "‘G‘irt qilmoq’ — butunlay buzmoq, sindirmoq, ishdan chiqarmoq, yaroqsiz holga keltirmoq. Bu gapda ‘shu narsani butunlay buzib tashlading-ku!’ degan ma’noda ishlatilgan.",
+  
+  "SL-07": "‘Otmoq’ — birovni aldamoq, firib bermoq, ishonchini suiiste’mol qilib, undan foyda olish. Bu yomon ma’noda, insofsizlikni anglatadi. Masalan: ‘Meni 100 dollarga otib ketishdi, endi topolmayman’.",
+  
+  "SL-08": "‘Dag‘dag‘a qilmoq’ — qo‘rqitmoq, do‘q qilmoq, hadiksiratmoq, tahdid qilmoq. Bu gapda ‘sen juda ko‘p qo‘rqitasan, do‘q qilasan’ degani.",
+  
+  "SL-09": "‘Chuchuk’ — odam haqida ishlatilganda, sodda, go‘l, ishonuvchan, aldash oson bo‘lgan odam ma’nosida. Salbiy ma’noda — tajribasiz, dunyodan bexabar, osongina aldanadigan. Masalan: ‘Uni aldash oson, u chuchuk odam’.",
+  
+  "SL-10": "‘Bass’ — bu kontekstda ajoyib, zo‘r, kuchli, yuqori darajali degan ma’noda. Rus tilidagi ‘bas’ (kuchli, zo‘r) so‘zidan olingan. ‘Bu joy juda zo‘r ekan!’ degani.",
+  
+  "SL-11": "‘Mashina o‘tkazmoq’ — avtomobilni boshqa shaxs nomiga rasmiylashtirib berish, sotish emas, balki egalik huquqini o‘tkazish jarayoni. Ko‘pincha pul evaziga amalga oshiriladi.",
+  
+  "SL-12": "Bu savolda ‘gap’ so‘zi vaziyat, ahvol, nima bo‘layotgani, muhim ma’lumot yoki sir ma’nosida. ‘Sen gap bilasanmi?’ = ‘Sen vaziyatdan xabardormisan?’, ‘Nima bo‘layotganini tushunasanmi?’ degani.",
+  
+  "SL-13": "‘Tushib ketmoq’ — bu kontekstda qo‘rqib qochmoq, o‘zini tutolmay qolmoq, vaziyatga dosh berolmay chekinmoq, uyaltirib qo‘ymoq ma’nosida. ‘Yigit qo‘rqoq chiqdi, vaziyatga dosh berolmay ketib qoldi’ degani.",
+  
+  "SL-14": "‘Bir pul qilmoq’ — birovni aldamoq, undan foyda olish uchun ishlatmoq, firib bermoq, chuv tushirmoq. Masalan: ‘U meni bir pul qilib, arzon telefonni qimmatga sotib yubordi’.",
+  
+  "SL-15": "‘U yoqib ketdi’ — u juda zo‘r chiqdi, hamma gapirayotgan darajada ajoyib bo‘lib chiqdi, kutilganidan ham yaxshi natija berdi, hammaga manzur bo‘ldi degani.",
+  
+  "SL-16": "‘Flex qilmoq’ — o‘zini ko‘rsatmoq, boyligi, qimmatbaho narsalari, muvaffaqiyatlari bilan maqtanmoq, ko‘z-ko‘z qilmoq. O‘zbek tilidagi muqobillari: ‘maqtanmoq’, ‘ko‘z-ko‘z qilmoq’, ‘o‘zini baland tutmoq’.",
+  
+  "SL-17": "‘Klass’ — bu gapda ajoyib, zo‘r, yuqori darajali, juda yaxshi degan ma’noda. ‘Klass manzil topibsan’ = ‘Juda zo‘r joy topibsan!’, ‘Manziling ajoyib ekan!’ degani.",
+  
+  "SL-18": "Ha, ikkala ma’noda ham bo‘lishi mumkin. Haqiqiy ma’noda — odam yo‘qolib ketdi, topilmayapti. Ko‘chma ma’noda esa — g‘oyib bo‘ldi, ko‘rinmay qoldi, aloqaga chiqmay qo‘ydi, uzoqlashib ketdi degan ma’nolarda ishlatiladi.",
+  
+  "SL-19": "‘Zo‘r gap’ — juda yaxshi taklif, ajoyib fikr, foydali maslahat, qimmatli va ta’sirli so‘z, muhim ma’lumot degani. Masalan: ‘Bozorga tushganda narxni pasaytirishni aytdingiz, zo‘r gap ekan, ishlatdim’.",
+  
+  "SL-20": "‘Pul o‘ynamoq’ — noqonuniy yo‘llar bilan, ko‘pincha qimor, firibgarlik, spekulyatsiya orqali pul topmoq, pul aylantirmoq. Bu qonuniy ish haqida emas, balki xufiyona, noqonuniy daromad olish haqida gap.",
+
+  "INF-01": "Do‘stim, xafa bo‘lma, bir imtihon bilan dunyo tugamaydi. Hammasi yaxshi bo‘ladi, keyingi safar albatta o‘tasan. Men sen bilanman, xohlasang bir gaplashib olaylikmi? 😊",
+  
+  "INF-02": "Ma’nosi: Ertaga kinoga birga borsak, deb taklif qilyapman. To‘g‘ri shakli: ‘Ertaga kinoga borsak bo‘ladimi?’ yoki ‘Ertaga kino ko‘rgani boraylikmi?’",
+  
+  "INF-03": "Voy, to‘yingiz muborak bo‘lsin, albatta kelamiz! Qachon va qayerda ekanligini aytsangiz, yetib boramiz. Hammaga salom, to‘yingiz o‘tkazsin!",
+  
+  "INF-04": "1. Bugun juda charchab ketdim, ish boshimdan oshib ketdi. 2. Bugun jonim chiqdi, ishdan nafas ololmadim umuman.",
+  
+  "INF-05": "Kattalar bilan suhbatda ‘aka’, ‘opa’, ‘amaki’, ‘xola’, ‘jano’b’, ‘oyim’ kabi hurmat so‘zlari ishlatiladi. Shuningdek, ‘marhamat’, ‘keling’, ‘o‘tiring’, ‘qo‘lingizni ber’, ‘duo oling’ kabi iboralar hurmat belgisi hisoblanadi. Kattalar oldida oyoqni cho‘zib o‘tirmaslik, baland ovozda gapirmaslik ham hurmat ko‘rsatkichidir.",
+  
+  "INF-06": "Bu ibora rozilik bildirish, endi bahslashmayman, sen aytgandek bo‘lsin deganda ishlatiladi. Ko‘pincha biror masalada munozara yoki tortishuvdan so‘ng, biroz charchagan yoki taslim bo‘lgan holatda aytiladi.",
+  
+  "INF-07": "Do‘stim, kechirasiz, hozir gaplashish imkonim yo‘q, keyin qo‘ng‘iroq qilaman. Xayr, yaxshi qoling! yoki: Uzr, ishga kirib ketdim, keyin gaplashamiz, salom!",
+  
+  "INF-08": "Bu savol O‘zbekistonda oddiygina ovqatlanish haqida so‘rash emas, balki odamga qayg‘urish, uning holiga e’tibor berish, mehribonlik ko‘rsatishning bir ko‘rinishi. ‘Och qoldingmi, yaxshimi?’ degan ma’noda hurmat va e’tibor ifodasi.",
+  
+  "INF-09": "Ertaga soat 6 da uchrashamiz, unutmagan bo‘lsang kerak? Ko‘rishguncha! 😉",
+  
+  "INF-10": "‘Nima gap, uka?’ — bu ko‘proq salomlashish va ahvol so‘rash, ‘qalaysan, nima yangiliklar?’ degani. ‘Nima deysan, uka?’ esa suhbatni davom ettirish, ‘nima gapiryapsan, fikring qanday?’ degan ma’noda ishlatiladi.",
+  
+  "INF-11": "‘Iltimos’ — norasmiy suhbatda biror narsa so‘rashda, masalan: ‘Iltimos, tuzni uzatib yubor’. ‘Marhamat’ — taklif qilishda yoki ruxsat berishda: ‘Marhamat, kiring’, ‘Marhamat, oling’. Ikkalasi ham odobli muomalada ishlatiladi.",
+  
+  "INF-12": "Voy, men boshqacha eshitibman shekilli, siz aytgancha bo‘lsa kerak, lekin men bir joyda … deb o‘qigandim. Qayerdan bilganingizni aytsangiz, aniqroq bo‘lardi.",
+  
+  "INF-13": "‘Ey, sen qachon kelyapsan?’ — do‘stlar, tengdoshlar, yosh bolalar bilan gaplashganda ishlatiladi. ‘Qachon kelasiz?’ — kattalar, hurmatli odamlar, tanish-bilishlar bilan rasmiyroq suhbatda ishlatiladi.",
+  
+  "INF-14": "Voy, yangi ish bilan tabriklayman! Barakali, omonatli bo‘lsin. Endi to‘y berasan, tez orada martabang oshsin! 🔥",
+  
+  "INF-15": "Ikkalasi ham ‘xafa bo‘lma’ ma’nosida. ‘Ranjima’ biroz muloyimroq, she’riyroq, hurmatliroq eshitiladi. ‘Xafa bo‘lma’ esa kundalik hayotda ko‘proq ishlatiladi. Farqi asosan uslubiy.",
+  
+  "INF-16": "- Aka, bu ko‘ylak qancha? - 50 ming. - Voy aka, qimmatroq emasmi? 40 ming bo‘lsa olardim. - Yo‘q, 45 mingdan kam bo‘lmaydi. - Mayli, 45 ming bo‘lsin, lekin sifatli bo‘lsin-da. - Xo‘p, marhamat, olib boring.",
+  
+  "INF-17": "Ro‘za hayiti va Qurbon hayiti kunlarida aytiladi. Javob variantlari: ‘Muborak bo‘lsin!’, ‘Hayitingiz qutlug‘ bo‘lsin!’, ‘Sizga ham muborak!’, ‘Alloh qabul qilsin!’",
+  
+  "INF-18": "‘Nega’ — kundalik, norasmiy suhbatda, do‘stlar orasida ko‘proq ishlatiladi. ‘Nima uchun’ — biroz rasmiyroq, adabiyroq, aniq sabab so‘rashda ishlatiladi. Masalan: ‘Nega kelmading?’ (do‘stona), ‘Nima uchun yig‘ilishga kelmadingiz?’ (rasmiyroq).",
+  
+  "INF-19": "Kechir meni, yo‘lda mashina tiqilishib qoldi, 10 daqiqada yetib kelaman. Kutib turinglar, uzr!",
+  
+  "INF-20": "‘O‘zing qanday?’ — ko‘proq norasmiy, do‘stona, qisqa ahvol so‘rash. ‘Ahvollar yaxshimi?’ — biroz rasmiyroq, hurmatliroq eshitiladi, lekin kundalik hayotda ikkalasi ham ishlatiladi. Hozirgi kunda ‘O‘zing qanday?’ yoshlar orasida ko‘proq tarqalgan.",
+
+  "FRM-01": "Hurmatli hamkor!\nSizga yangi savdo loyihasini birgalikda amalga oshirish bo‘yicha hamkorlik taklifini bildiramiz. Loyiha maqsadi – mahsulotlarimizni yangi bozorlarga olib chiqish va sotuv hajmini oshirish. Taklif bilan batafsil tanishishingizni va o‘z fikringizni bildirishingizni so‘raymiz.\nHurmat bilan, [Ismingiz]",
+  
+  "FRM-02": "Hurmatli [F.I.Sh.]!\nSizning kredit arizangiz ko‘rib chiqilmoqda. Ariza rasmiylashtirishni yakunlash uchun quyidagi qo‘shimcha hujjatlarni taqdim etishingiz so‘raladi:\n1. Daromad manbaini tasdiqlovchi hujjat\n2. Pasport nusxasi\n3. ...\nIltimos, hujjatlarni 5 ish kuni ichida taqdim eting.\nHurmat bilan, Bank xodimi",
+  
+  "FRM-03": "Buyruq № 45-K\n2025 yil 15 mart\n[F.I.Sh.]ni 2025 yil 20 martdan boshlab Moliya bo‘limi boshlig‘i o‘rinbosari lavozimiga tayinlash to‘g‘risida.\n1. [F.I.Sh.] 20 martdan boshlab Moliya bo‘limi boshlig‘i o‘rinbosari lavozimiga tayinlansin.\n2. Lavozim maoshi 8 000 000 so‘m etib belgilansin.\n3. Mehnat shartnomasi yangi lavozimga mos ravishda qayta rasmiylashtirilsin.\nAsos: kadrlar bo‘limi taqdimnomasi.\nDirektor: [Ism]",
+  
+  "FRM-04": "Yig‘ilish bayonnomasi № 12\n2025 yil 10 iyul\nYig‘ilishda 2025 yilning birinchi yarim yillik moliyaviy natijalari muhokama qilindi.\nQatnashdilar: Bosh direktor, bosh buxgalter, bo‘lim boshliqlari.\nKun tartibi:\n1. 2025 yil yanvar-iyun oylari daromad va xarajatlar tahlili.\n2. Sof foyda ko‘rsatkichlari.\n3. Kelgusi chorak uchun rejalar.\nEshitildi: Bosh buxgalterning hisoboti.\nQaror qilindi:\n1. Hisobot ma’lumotlari ma’qullansin.\n2. Kelgusi chorakda xarajatlarni 10% qisqartirish choralari ko‘rilsin.\nBayonnoma yurituvchi: [Ism]",
+  
+  "FRM-05": "Hurmatli [F.I.Sh.]!\nSiz tomoningizdan 2025 yil 10 va 12 mart kunlari ish joyiga belgilangan vaqtdan kechikish holatlari qayd etildi. Ushbu holat Mehnat tartibi qoidalarining 5.2-bandiga zid hisoblanadi. Sizga ogohlantirish bildiriladi. Takroriy holatlarda intizomiy jazo choralari qo‘llanilishi mumkin.\nHurmat bilan, Kadrlar bo‘limi boshlig‘i",
+  
+  "FRM-06": "Hurmatli mijoz!\nSizning 10012345-sonli muddatli depozitingiz 2025 yil 25 may sanasida tugaydi. Depozitni uzaytirish imkoniyati mavjud. Uzatish uchun istalgan filialimizga murojaat qilishingiz mumkin. Agar depozitni uzaytirmoqchi bo‘lmasangiz, pul mablag‘laringiz talab qilib olinadigan depozit hisobiga o‘tkaziladi.\nHurmat bilan, Bank nomi",
+  
+  "FRM-07": "Hurmatli [Tashkilot nomi] rahbariyati!\nSiz bilan 2025 yil 5 fevralda tuzilgan 78-sonli shartnoma ijrosi bo‘yicha ma’lumotnoma taqdim etishingizni so‘raymiz. Xususan, shartnoma bo‘yicha bajarilgan ishlar hajmi va to‘lovlar holati to‘g‘risida ma’lumot kerak. Iltimos, 10 ish kuni ichida taqdim eting.\nHurmat bilan, [Ismingiz]",
+  
+  "FRM-08": "Hurmatli mijozlar!\nSizga ma’lum qilamizki, 2025 yil 1 iyundan boshlab Chilonzor filialimiz yangi manzilda o‘z faoliyatini boshlaydi: Chilonzor tumani, 9-mavze, 12-uy. Filialimiz barcha turdagi bank xizmatlarini ko‘rsatadi. Ish vaqti: dushanba-juma 09:00-18:00, shanba 09:00-14:00.\nYangi filialda kutib qolamiz!",
+  
+  "FRM-09": "Hurmatli [F.I.Sh.]!\nSizning kartangizdan noto‘g‘ri pul yechilgani haqidagi murojaatingiz o‘rganildi. Tekshiruv natijasiga ko‘ra, 150 000 so‘m miqdoridagi mablag‘ xato yechilganligi aniqlandi va ushbu summa 2025 yil 12 martda kartangizga qaytarildi. Noqulaylik uchun uzr so‘raymiz.\nHurmat bilan, Mijozlarni qo‘llab-quvvatlash xizmati",
+  
+  "FRM-10": "Memorandum\n2025 yil 20 fevral\nBarcha xodimlarga\nMavzu: Ish vaqtida shaxsiy telefondan foydalanish tartibi\n2025 yil 1 martdan boshlab ish vaqtida shaxsiy telefonlardan foydalanish cheklanadi. Telefonlardan faqat tanaffus vaqtida yoki ish bilan bog‘liq zaruriy holatlarda foydalanish mumkin. Ushbu qoidani buzgan xodimlarga nisbatan intizomiy jazo choralari qo‘llaniladi.\nHurmat bilan, Administratsiya",
+  
+  "FRM-11": "Rahbariyatga taqdimot xulosasi\nMavzu: Yangi raqamli to‘lov tizimini joriy etish\nTahlillar shuni ko‘rsatadiki, yangi raqamli to‘lov tizimini joriy etish orqali mijozlar sonini 20-25% ga oshirish, tranzaksiya xarajatlarini 30% ga kamaytirish va xizmat ko‘rsatish tezligini 40% ga oshirish mumkin. Loyihani amalga oshirish uchun 200 million so‘m sarmoya talab etiladi. Taklif: 2025 yil IV choragida tizimni sinovdan o‘tkazishni boshlash.",
+  
+  "FRM-12": "Mijozlar xizmati bo‘limining 2025 yil I chorak hisoboti\nHisobot davri: 2025 yil yanvar-mart\nAsosiy ko‘rsatkichlar:\n- Murojaatlar soni: 1250 ta\n- Ijobiy hal qilingan murojaatlar: 1180 ta (94.4%)\n- O‘rtacha javob berish vaqti: 3.2 daqiqa\n- Mijozlar qoniqish darajasi: 4.6/5\nAsosiy muammolar: telefon liniyasidagi uzilishlar, ba’zi xodimlarning malakasi yetarli emasligi.\nTakliflar: xodimlar malakasini oshirish treninglari o‘tkazish, texnik jihozlarni yangilash.",
+  
+  "FRM-13": "Hurmatli [Ism]!\nSizni 2025 yil 15 may kuni soat 10:00 da Hilton mehmonxonasida bo‘lib o‘tadigan “Raqamli bank xizmatlari: yangi imkoniyatlar” mavzusidagi biznes-konferensiyamizda ishtirok etishga taklif qilamiz. Konferensiyada sohaning yetakchi mutaxassislari ishtirok etadi. Ishtirokingizni 5 maygacha tasdiqlashingizni so‘raymiz.\nHurmat bilan, Tashkiliy qo‘mita",
+  
+  "FRM-14": "Ariza\nBank nomi direktori [F.I.Sh.] ga\n[F.I.Sh.] dan\nMavzu: O‘z xohishiga ko‘ra ishdan bo‘shatish to‘g‘risida\nHurmatli [F.I.Sh.], men, [F.I.Sh.], oilaviy sabablarga ko‘ra 2025 yil 30 iyundan boshlab meni ishdan bo‘shatishingizni so‘rayman.\nSana: 2025 yil 15 iyun\nImzo: [F.I.Sh.]\n\nBuyruq № 67-K\n2025 yil 15 iyun\n[F.I.Sh.] ni o‘z xohishiga ko‘ra 2025 yil 30 iyundan boshlab ishdan bo‘shatish to‘g‘risida.\nAsos: [F.I.Sh.] ning arizasi.\nDirektor: [Ism]",
+  
+  "FRM-15": "2026 yilga mo‘ljallangan raqamli rivojlanish strategiyasi ijro xulosasi\nAsosiy yo‘nalishlar:\n1. Mobil ilovani to‘liq qayta ishlab chiqish va yangi funksiyalar qo‘shish.\n2. Sun’iy intellekt asosidagi kredit skoring tizimini joriy etish.\n3. Onlayn mijozlarni jalb qilish tizimini takomillashtirish.\nKutilayotgan natijalar:\n- Mijozlar bazasi o‘sishi: +22%\n- Xizmat ko‘rsatish tezligi: +35%\n- Operatsion xarajatlar: -15%\nLoyiha byudjeti: 500 million so‘m.\nAmalga oshirish muddati: 2026 yil yanvar-dekabr.",
+  
+  "FRM-16": "Hurmatli [F.I.Sh.]!\nSizning kredit arizangiz ko‘rib chiqilmoqda. Arizani ko‘rib chiqish muddati qo‘shimcha tekshiruv o‘tkazish zaruriyati sababli uzaytirildi. Yakuniy qaror 10 ish kuni ichida qabul qilinadi. Qo‘shimcha ma’lumot kerak bo‘lsa, siz bilan bog‘lanamiz. Noqulaylik uchun uzr so‘raymiz.\nHurmat bilan, Kredit bo‘limi",
+  
+  "FRM-17": "Ichki xizmat ko‘rsatish shartnomasi № 15\nTomonlar: Axborot texnologiyalari bo‘limi (ATB) va Marketing bo‘limi (MB)\nMavzu: Resurslarni taqdim etish\nATB MB ga quyidagi resurslarni taqdim etadi:\n1. 10 ta kompyuter va 5 ta printer.\n2. Dasturiy ta’minot o‘rnatish va qo‘llab-quvvatlash xizmati.\nShartlar:\n- Resurslardan maqsadli foydalanish.\n- Uskunalar holatini saqlash.\nAmal qilish muddati: 2025 yil 1 aprel – 2026 yil 1 aprel.\nImzolar: [ATB boshlig‘i], [MB boshlig‘i]",
+  
+  "FRM-18": "Hurmatli mijozlar!\nSizga ma’lum qilamizki, 2025 yil 1 iyundan boshlab barcha filiallarimizning ish vaqti o‘zgaradi:\nDushanba – Juma: 09:00 dan 18:00 gacha\nShanba: 09:00 dan 14:00 gacha\nYakshanba: dam olish kuni\nQulayliklar uchun 24/7 ishlaydigan bankomatlarimizdan foydalanishingiz mumkin.\nHurmat bilan, Bank ma’muriyati",
+  
+  "FRM-19": "Hurmatli [Hamkor ismi]!\nSiz bilan ko‘p yillardan buyon davom etayotgan samarali hamkorlik uchun chin dildan minnatdorchilik bildiramiz. Sizning ishonchingiz va hamkorligingiz biz uchun eng qimmatli boylikdir. Kelgusida ham hamkorligimiz yanada rivojlanib, mustahkamlanadi deb ishonamiz.\nHurmat bilan, [Kompaniya nomi] jamoasi",
+  
+  "FRM-20": "Hurmatli rahbariyat!\n2025 yil yanvar oyidan buyon IT bo‘limi tomonidan hal etilmagan texnik nosozlik (server integratsiyasi muammosi) tufayli mijozlar ma’lumotlarini qayta ishlash jarayoni sekinlashgan va ba’zi xizmatlar ko‘rsatilmagan. Nosozlik bir oy davomida bartaraf etilmagan, bu esa mijozlar noroziligiga sabab bo‘lmoqda. Iltimos, masalani tezkor hal etish bo‘yicha ko‘rsatma berishingizni va qo‘shimcha resurslar ajratilishini so‘raymiz.\nHurmat bilan, Mijozlar xizmati bo‘limi boshlig‘i"
+}

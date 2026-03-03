@@ -1,0 +1,21 @@
+# Secrets
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Raw benchmark data (generated — results.js already compiled for frontend)
+results_raw.json
+
+# Human eval spreadsheets
+data/*.xlsx
+
+# IDE
+.vscode/
+.idea/

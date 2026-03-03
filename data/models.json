@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "last_updated": "2026-02-27",
+    "selection_criteria": "Top-ranked models by global benchmarks (LMSYS Chatbot Arena, HF Open LLM Leaderboard), multilingual capability, and Uzbek language coverage"
+  },
+  "commercial_models": [
+    {
+      "rank": 1,
+      "id": "gpt-4o",
+      "name": "GPT-4o",
+      "provider": "OpenAI",
+      "platform_url": "https://platform.openai.com",
+      "api_endpoint": "https://api.openai.com/v1/chat/completions",
+      "model_id": "gpt-4o",
+      "api_key_env": "OPENAI_API_KEY",
+      "known_for": "Broad multilingual capability, top LMSYS rankings, real-time reasoning",
+      "uzbek_support": "Supported (Latin & Cyrillic script)",
+      "pricing_tier": "Enterprise",
+      "context_window": 128000,
+      "color": "#10a37f"
+    },
+    {
+      "rank": 2,
+      "id": "gemini-pro",
+      "name": "Gemini 2.0 Flash",
+      "provider": "Google DeepMind",
+      "platform_url": "https://ai.google.dev",
+      "api_endpoint": "https://generativelanguage.googleapis.com/v1beta/models",
+      "model_id": "gemini-2.0-flash",
+      "api_key_env": "GEMINI_API_KEY",
+      "known_for": "Multimodal reasoning, strong multilingual coverage including Central Asian languages",
+      "uzbek_support": "Supported",
+      "pricing_tier": "Enterprise",
+      "context_window": 1000000,
+      "color": "#4285F4"
+    },
+    {
+      "rank": 3,
+      "id": "claude-sonnet",
+      "name": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "platform_url": "https://claude.ai",
+      "api_endpoint": "https://api.anthropic.com/v1/messages",
+      "model_id": "claude-sonnet-4-6",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "known_for": "High accuracy, low hallucination rate, strong reasoning and instruction following",
+      "uzbek_support": "Supported",
+      "pricing_tier": "Enterprise",
+      "context_window": 200000,
+      "color": "#cc785c"
+    },
+    {
+      "rank": 4,
+      "id": "grok-2",
+      "name": "Grok 2",
+      "provider": "xAI",
+      "platform_url": "https://x.ai",
+      "api_endpoint": "https://api.x.ai/v1/chat/completions",
+      "model_id": "grok-2",
+      "api_key_env": "XAI_API_KEY",
+      "known_for": "Real-time web access, competitive with GPT-4 on reasoning benchmarks",
+      "uzbek_support": "Supported",
+      "pricing_tier": "Enterprise",
+      "context_window": 131072,
+      "color": "#1d9bf0"
+    }
+  ],
+  "opensource_models": [
+    {
+      "rank": 1,
+      "id": "qwen3-235b",
+      "name": "Qwen3-235B-A22B",
+      "provider": "Alibaba Cloud",
+      "platform": "Hugging Face / Ollama",
+      "model_id": "Qwen/Qwen3-235B-A22B-Instruct",
+      "license": "Apache 2.0",
+      "known_for": "100+ language support, SOTA multilingual benchmarks, best open-source for Uzbek",
+      "uzbek_support": "Strong (explicitly listed as supported language)",
+      "params": "235B (MoE, activates 22B)",
+      "color": "#FF6B35"
+    },
+    {
+      "rank": 2,
+      "id": "deepseek-v3",
+      "name": "DeepSeek-V3",
+      "provider": "DeepSeek AI",
+      "platform": "Hugging Face / DeepSeek API",
+      "model_id": "deepseek-ai/DeepSeek-V3",
+      "license": "MIT",
+      "known_for": "Top open-source reasoning, competitive with GPT-4o on benchmarks, strong CJK and multilingual",
+      "uzbek_support": "Partial (limited specific coverage)",
+      "params": "671B (MoE, activates 37B)",
+      "color": "#8B5CF6"
+    },
+    {
+      "rank": 3,
+      "id": "llama-4-maverick",
+      "name": "Llama 4 Maverick",
+      "provider": "Meta AI",
+      "platform": "Meta / Hugging Face",
+      "model_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "license": "Llama 4 Community License",
+      "known_for": "Strong multilingual via MMLU, open ecosystem, wide community support",
+      "uzbek_support": "Supported (Uzbek in training data)",
+      "params": "17B active (128 experts MoE)",
+      "color": "#0668E1"
+    },
+    {
+      "rank": 4,
+      "id": "mixtral-8x22b",
+      "name": "Mixtral 8x22B",
+      "provider": "Mistral AI",
+      "platform": "Mistral API / Hugging Face",
+      "model_id": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+      "license": "Apache 2.0",
+      "known_for": "Efficient MoE architecture, strong multilingual capabilities, Apache 2.0 for commercial use",
+      "uzbek_support": "Partial",
+      "params": "141B (MoE, activates 39B)",
+      "color": "#EF4444"
+    }
+  ]
+}

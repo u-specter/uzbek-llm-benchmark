@@ -1,0 +1,242 @@
+{
+  "RB-A-01": {
+    "text": "Mening plastik kartam ishlamayapti, uni bloklab qoying.",
+    "noise_type": "apostrophe_drop",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  },
+  "RB-A-02": {
+    "text": "Hozir hisobimda qancha mablag bor, korsating.",
+    "noise_type": "apostrophe_drop",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  },
+  "RB-A-03": {
+    "text": "Dostimga ikki yuz ming som otkazmoqchiman.",
+    "noise_type": "apostrophe_drop",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  },
+  "RB-A-04": {
+    "text": "Ipoteka krediti boyicha malumot va foiz stavkasini aytib bering.",
+    "noise_type": "apostrophe_drop",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  },
+  "RB-A-05": {
+    "text": "Bugun dollar va evro kursi qancha somdan?",
+    "noise_type": "apostrophe_drop",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  },
+  "RB-T-01": {
+    "text": "Mening plastki kartam ishlmayapti, uni bloklb qo'ying.",
+    "noise_type": "typo",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  },
+  "RB-T-02": {
+    "text": "Hozir hisobiimda qancah mablag' bor, ko'rstaing.",
+    "noise_type": "typo",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  },
+  "RB-T-03": {
+    "text": "Do'stimga ikki yuz ming so'm o'takazmoqchiimn.",
+    "noise_type": "typo",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  },
+  "RB-T-04": {
+    "text": "Ipteka krediti bo'yicha ma'lumt va foiz svatkasini aytib bering.",
+    "noise_type": "typo",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  },
+  "RB-T-05": {
+    "text": "Bugun dollr va evro kuursi qancha so'mdna?",
+    "noise_type": "typo",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  },
+  "RB-C-01": {
+    "text": "Mening картам ishlamayapti, uni bloklab qo'ying.",
+    "noise_type": "cyrillic_mix",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  },
+  "RB-C-02": {
+    "text": "Hozir hisobimda qancha баланс bor, ko'rsating.",
+    "noise_type": "cyrillic_mix",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  },
+  "RB-C-03": {
+    "text": "Do'stimga ikki yuz ming so'm перевод qilmoqchiman.",
+    "noise_type": "cyrillic_mix",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  },
+  "RB-C-04": {
+    "text": "Ipoteka кредит bo'yicha ma'lumot va процент stavkasini aytib bering.",
+    "noise_type": "cyrillic_mix",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  },
+  "RB-C-05": {
+    "text": "Bugun dollar va евро курс qancha so'mdan?",
+    "noise_type": "cyrillic_mix",
+    "choices": [
+      "card_block",
+      "balance_inquiry",
+      "transfer",
+      "loan_inquiry",
+      "account_opening",
+      "exchange_rate",
+      "complaint",
+      "document_request"
+    ],
+    "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+    "response": ""
+  }
+}

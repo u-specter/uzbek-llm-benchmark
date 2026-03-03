@@ -1,0 +1,48 @@
+{
+    "RB-A-01": {
+      "response": "card_block"
+    },
+    "RB-A-02": {
+      "response": "balance_inquiry"
+    },
+    "RB-A-03": {
+      "response": "transfer"
+    },
+    "RB-A-04": {
+      "response": "loan_inquiry"
+    },
+    "RB-A-05": {
+      "response": "exchange_rate"
+    },
+    "RB-T-01": {
+      "response": "card_block"
+    },
+    "RB-T-02": {
+      "response": "balance_inquiry"
+    },
+    "RB-T-03": {
+      "response": "transfer"
+    },
+    "RB-T-04": {
+      "response": "loan_inquiry"
+    },
+    "RB-T-05": {
+      "response": "exchange_rate"
+    },
+    "RB-C-01": {
+      "response": "card_block"
+    },
+    "RB-C-02": {
+      "response": "balance_inquiry"
+    },
+    "RB-C-03": {
+      "response": "transfer"
+    },
+    "RB-C-04": {
+      "response": "loan_inquiry"
+    },
+    "RB-C-05": {
+      "response": "exchange_rate"
+    }
+  }
+  

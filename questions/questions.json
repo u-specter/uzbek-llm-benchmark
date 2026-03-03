@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "project": "ULAB — Uzbek Language AI Benchmark",
+    "version": "2.0",
+    "created": "2026-02-27",
+    "registers": ["slang", "informal", "formal_business"],
+    "total": 60
+  },
+  "questions": [
+
+    { "id": "SL-01", "register": "slang", "difficulty": "basic",
+      "text": "Do'stim, 'zo'r' va 'zo'raki' so'zlarining farqi nima? Misol bilan tushuntir." },
+
+    { "id": "SL-02", "register": "slang", "difficulty": "basic",
+      "text": "Ko'cha tilida 'aka, pul yo'q, qo'lim quruq' — bu nima degani? O'z so'zlaring bilan ayt." },
+
+    { "id": "SL-03", "register": "slang", "difficulty": "basic",
+      "text": "Toshkent yoshlari 'bro, kelib ket' deyishganda nima nazarda tutiladi?" },
+
+    { "id": "SL-04", "register": "slang", "difficulty": "basic",
+      "text": "'U yigit juda sho'x' — bu gapda 'sho'x' so'zi qanday ma'noda ishlatilgan?" },
+
+    { "id": "SL-05", "register": "slang", "difficulty": "intermediate",
+      "text": "Ko'cha tilida 'prikol qilmoq' nima degani? Misol keltir." },
+
+    { "id": "SL-06", "register": "slang", "difficulty": "intermediate",
+      "text": "'Bro, shu narsani gʻirt qilding-ku!' — 'gʻirt qilmoq' bu gapda nima ma'no anglatadi?" },
+
+    { "id": "SL-07", "register": "slang", "difficulty": "intermediate",
+      "text": "Yoshlar orasida 'shu odamni otmoq' iborasini qanday tushunasiz? Yaxshimi, yomonmi?" },
+
+    { "id": "SL-08", "register": "slang", "difficulty": "intermediate",
+      "text": "'Aka, sen juda dag'dag'a qilasan' — bu birikmani tushuntiring." },
+
+    { "id": "SL-09", "register": "slang", "difficulty": "intermediate",
+      "text": "Ko'cha tilida 'chuchuk' so'zi odam haqida ishlatilganda qanday ma'no beradi?" },
+
+    { "id": "SL-10", "register": "slang", "difficulty": "intermediate",
+      "text": "'Voy, bu joy juda bass ekan!' — 'bass' so'zini bu kontekstda qanday tarjima qilasiz?" },
+
+    { "id": "SL-11", "register": "slang", "difficulty": "advanced",
+      "text": "Toshkent yoshlari 'mashina o'tkazmoq' deyishganda nimani nazarda tutishadi?" },
+
+    { "id": "SL-12", "register": "slang", "difficulty": "intermediate",
+      "text": "'Aka, sen gap bilasanmi?' — bu savolda 'gap' so'zi qanday ma'noda?" },
+
+    { "id": "SL-13", "register": "slang", "difficulty": "advanced",
+      "text": "'Yigit qo'rqoq chiqdi, tushib ketdi' — 'tushib ketmoq' bu kontekstda nima degani?" },
+
+    { "id": "SL-14", "register": "slang", "difficulty": "intermediate",
+      "text": "'Bir pul qilmoq' iborasini ko'cha tilida tushuntiring va misol keltiring." },
+
+    { "id": "SL-15", "register": "slang", "difficulty": "basic",
+      "text": "'U yoqib ketdi deyishyapti' — nima bo'ldi? Tushuntir." },
+
+    { "id": "SL-16", "register": "slang", "difficulty": "intermediate",
+      "text": "Yoshlar orasida 'flex qilmoq' so'zi qanday ishlatiladi? O'zbek tilidagi muqobili bormi?" },
+
+    { "id": "SL-17", "register": "slang", "difficulty": "basic",
+      "text": "'Bro, klass manzil topibsan!' — bu gapda 'klass' so'zi qanday ma'noda?" },
+
+    { "id": "SL-18", "register": "slang", "difficulty": "advanced",
+      "text": "Ko'cha tilida 'yo'qolib ketdi' deyishganda, bu haqiqiy ma'noda yoki ko'chma ma'noda bo'lishi mumkinmi?" },
+
+    { "id": "SL-19", "register": "slang", "difficulty": "basic",
+      "text": "'Aka, bu narsa juda zo'r gap ekan' — 'zo'r gap' nima degani?" },
+
+    { "id": "SL-20", "register": "slang", "difficulty": "advanced",
+      "text": "Ko'cha tilida 'pul o'ynamoq' iborasini tushuntiring. Bu qonuniy ish haqida gapmi?" },
+
+
+    { "id": "INF-01", "register": "informal", "difficulty": "basic",
+      "text": "Do'stingga xat yoz: u imtihondan o'tolmadi va xafa. Unga tasalli ber. Norasmiy uslubda." },
+
+    { "id": "INF-02", "register": "informal", "difficulty": "intermediate",
+      "text": "'Ertaga kino ko'rgani borsakmidi?' — bu gapning ma'nosini tushuntir va to'g'ri shaklini yoz." },
+
+    { "id": "INF-03", "register": "informal", "difficulty": "basic",
+      "text": "Qo'shning: 'Ukam to'yini qilyapmiz, kelasizmi?' dedi. Iltifotli va norasmiy uslubda javob ber." },
+
+    { "id": "INF-04", "register": "informal", "difficulty": "intermediate",
+      "text": "'Men bugun juda toliqib ketdim, ishlar ko'p edi.' — bu gapni ikki xil norasmiy usulda ayt." },
+
+    { "id": "INF-05", "register": "informal", "difficulty": "intermediate",
+      "text": "O'zbek oilasida kattalar bilan suhbatda qanday hurmat ko'rsatkichlari ishlatiladi? Misollar kel." },
+
+    { "id": "INF-06", "register": "informal", "difficulty": "basic",
+      "text": "'Xo'p, bo'pti, aytganing bo'lsin' — bu ibora qachon va qanday holatda ishlatiladi?" },
+
+    { "id": "INF-07", "register": "informal", "difficulty": "basic",
+      "text": "Telefon orqali do'stingizni kutilmaganda to'xtatishingiz kerak bo'lsa, qanday xayrlashasiz?" },
+
+    { "id": "INF-08", "register": "informal", "difficulty": "intermediate",
+      "text": "'Ovqat yeb qo'ydingizmi?' — O'zbekistonda bu savol nima uchun hurmat ifodasi sifatida ishlatiladi?" },
+
+    { "id": "INF-09", "register": "informal", "difficulty": "basic",
+      "text": "Do'stingga ertangi uchrashuvni eslatish uchun qisqa xabar yoz. Norasmiy, lekin tushunarli." },
+
+    { "id": "INF-10", "register": "informal", "difficulty": "intermediate",
+      "text": "'Nima gap, uka?' va 'Nima deysan, uka?' — bu ikki ibora o'rtasida qanday farq bor?" },
+
+    { "id": "INF-11", "register": "informal", "difficulty": "basic",
+      "text": "O'zbekcha 'iltimos' va 'marhamat' so'zlarini norasmiy suhbatda qachon ishlatish to'g'ri keladi?" },
+
+    { "id": "INF-12", "register": "informal", "difficulty": "advanced",
+      "text": "Kimdir senga noto'g'ri ma'lumot berdi. Uni xafa qilmasdan norasmiy uslubda qanday tuzatasan?" },
+
+    { "id": "INF-13", "register": "informal", "difficulty": "basic",
+      "text": "'Ey, sen qachon kelyapsan?' va 'Qachon kelasiz?' — qaysi biri qachon ishlatiladi?" },
+
+    { "id": "INF-14", "register": "informal", "difficulty": "basic",
+      "text": "Do'stingiz yangi ish topdi. Tabrik xabarini norasmiy, samimiy uslubda yoz." },
+
+    { "id": "INF-15", "register": "informal", "difficulty": "intermediate",
+      "text": "O'zbek tilida 'xafa bo'lma' va 'ranjima' so'zlari o'rtasida farq bormi? Tushuntir." },
+
+    { "id": "INF-16", "register": "informal", "difficulty": "advanced",
+      "text": "Bozorda savdogar bilan narxni pasaytirish uchun qanday gaplashasiz? Muloqot namunasini yoz." },
+
+    { "id": "INF-17", "register": "informal", "difficulty": "basic",
+      "text": "'Hayit muborak!' — qachon va qanday holatlarda aytiladi? Javob variantlarini yoz." },
+
+    { "id": "INF-18", "register": "informal", "difficulty": "intermediate",
+      "text": "O'zbek tilida 'nega' va 'nima uchun' so'rash o'rtasida qanday uslub farqi bor?" },
+
+    { "id": "INF-19", "register": "informal", "difficulty": "basic",
+      "text": "Uchrashuv vaqtida kechikding. Norasmiy uslubda kechirim so'ra va sababini tushuntir." },
+
+    { "id": "INF-20", "register": "informal", "difficulty": "basic",
+      "text": "'Oʻzing qanday?' va 'Ahvollar yaxshimi?' — bu ikki ibora o'rtasida farq bormi? Qaysi biri ko'proq ishlatiladi?" },
+
+
+    { "id": "FRM-01", "register": "formal_business", "difficulty": "intermediate",
+      "text": "Hamkor kompaniyaga rasmiy hamkorlik taklifi xati yozing. Mavzu: birgalikda yangi savdo loyihasini boshlash." },
+
+    { "id": "FRM-02", "register": "formal_business", "difficulty": "intermediate",
+      "text": "Mijozga rasmiy xat yozing: uning kredit arizasi ko'rib chiqilmoqda va qo'shimcha hujjatlar kerak." },
+
+    { "id": "FRM-03", "register": "formal_business", "difficulty": "intermediate",
+      "text": "Xodimni yangi lavozimga — bo'lim boshlig'i o'rinbosari lavozimiga tayinlash bo'yicha rasmiy buyruq yozing." },
+
+    { "id": "FRM-04", "register": "formal_business", "difficulty": "advanced",
+      "text": "Yig'ilish bayonnomasini rasmiy uslubda yozing. Mavzu: 2025 yil birinchi yarim yillik moliyaviy natijalari." },
+
+    { "id": "FRM-05", "register": "formal_business", "difficulty": "intermediate",
+      "text": "Xodimga rasmiy ogohlantiruv xati yozing: u ikki marta ish joyiga kechikkan." },
+
+    { "id": "FRM-06", "register": "formal_business", "difficulty": "intermediate",
+      "text": "Mijozga rasmiy xat yozing: uning muddatli depoziti tugayapti va uni uzaytirish mumkin." },
+
+    { "id": "FRM-07", "register": "formal_business", "difficulty": "basic",
+      "text": "Boshqa tashkilotdan ma'lumotnoma so'rash uchun rasmiy so'rov xati yozing." },
+
+    { "id": "FRM-08", "register": "formal_business", "difficulty": "intermediate",
+      "text": "Yangi bank filiali ochilishi haqida mijozlarga rasmiy e'lon-xabar yozing." },
+
+    { "id": "FRM-09", "register": "formal_business", "difficulty": "advanced",
+      "text": "Mijoz shikoyat xati yozgan: kartasidan noto'g'ri pul yechilgan. Unga rasmiy javob xati yozing." },
+
+    { "id": "FRM-10", "register": "formal_business", "difficulty": "intermediate",
+      "text": "Xodimlarga yangi ichki tartib haqida rasmiy memorandum yozing: ish vaqtida shaxsiy telefondan foydalanish cheklangan." },
+
+    { "id": "FRM-11", "register": "formal_business", "difficulty": "advanced",
+      "text": "Rahbariyatga yangi raqamli to'lov tizimi joriy etish bo'yicha taklif-taqdimot xulosasini rasmiy yozing." },
+
+    { "id": "FRM-12", "register": "formal_business", "difficulty": "advanced",
+      "text": "Choraklik faoliyat hisobotini rasmiy uslubda yozing. Bo'lim: Mijozlar xizmati. Davr: 2025 yil I chorak." },
+
+    { "id": "FRM-13", "register": "formal_business", "difficulty": "basic",
+      "text": "Biznes-konferensiyaga sherik kompaniya vakili uchun rasmiy taklif xati yozing." },
+
+    { "id": "FRM-14", "register": "formal_business", "difficulty": "intermediate",
+      "text": "Xodimning o'z xohishiga ko'ra ishdan bo'shatilishini rasmiylashtiradigan xat va buyruq namunasini yozing." },
+
+    { "id": "FRM-15", "register": "formal_business", "difficulty": "advanced",
+      "text": "Rahbariyat uchun yillik strategik reja bo'yicha ijro xulosasi (executive summary) yozing. Mavzu: 2026 yil raqamli rivojlanish yo'nalishi." },
+
+    { "id": "FRM-16", "register": "formal_business", "difficulty": "intermediate",
+      "text": "Mijozga rasmiy xat yozing: kredit arizasi ko'rib chiqilishi kechikayapti, sababi — qo'shimcha tekshiruv zarur." },
+
+    { "id": "FRM-17", "register": "formal_business", "difficulty": "basic",
+      "text": "Ikki bo'lim o'rtasida resurslarni bo'lishish bo'yicha ichki bitim (xizmat ko'rsatish shartnomasi) namunasini rasmiy yozing." },
+
+    { "id": "FRM-18", "register": "formal_business", "difficulty": "basic",
+      "text": "Bank xizmat ish vaqtlari o'zgarishi haqida mijozlarga rasmiy e'lon yozing." },
+
+    { "id": "FRM-19", "register": "formal_business", "difficulty": "basic",
+      "text": "Uzoq muddatli hamkorlik uchun asosiy mijozga rasmiy minnatdorchilik xati yozing." },
+
+    { "id": "FRM-20", "register": "formal_business", "difficulty": "intermediate",
+      "text": "Yuqori rahbariyatga muammoni eskalatsiya qilish xatini yozing: bir oy davomida hal etilmagan texnik nosozlik." }
+
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "module": "CL",
+    "description": "Classification tasks: sentiment, intent, register detection",
+    "total": 20,
+    "subtasks": {
+      "sentiment": 8,
+      "intent": 8,
+      "register": 4
+    }
+  },
+  "questions": [
+    {
+      "id": "CL-S-01",
+      "type": "sentiment",
+      "text": "Bankingiz xizmati dahshat! Hech kim yordam bermadi, vaqtimni bekor o'tkazdim.",
+      "choices": ["positive", "negative", "neutral"],
+      "answer": "negative"
+    },
+    {
+      "id": "CL-S-02",
+      "type": "sentiment",
+      "text": "Onlayn banking ilovasi juda qulay, hammasi oddiy va tushunarli. Har kuni ishlataman.",
+      "choices": ["positive", "negative", "neutral"],
+      "answer": "positive"
+    },
+    {
+      "id": "CL-S-03",
+      "type": "sentiment",
+      "text": "Dollar kursi bugun qancha ekanligini bilmoqchiman.",
+      "choices": ["positive", "negative", "neutral"],
+      "answer": "neutral"
+    },
+    {
+      "id": "CL-S-04",
+      "type": "sentiment",
+      "text": "Karta bir hafta bo'ldi chiqmayapti. Bu bankdan boshqa joyga o'taman!",
+      "choices": ["positive", "negative", "neutral"],
+      "answer": "negative"
+    },
+    {
+      "id": "CL-S-05",
+      "type": "sentiment",
+      "text": "Menejerlar juda muloyim va professional. Rahmat, shunaqa xizmat bo'lsa yaxshi.",
+      "choices": ["positive", "negative", "neutral"],
+      "answer": "positive"
+    },
+    {
+      "id": "CL-S-06",
+      "type": "sentiment",
+      "text": "Hisobimda qancha mablag' qolganini bilmoqchiman.",
+      "choices": ["positive", "negative", "neutral"],
+      "answer": "neutral"
+    },
+    {
+      "id": "CL-S-07",
+      "type": "sentiment",
+      "text": "Ikki soat navbatda turdim, kassir hali ham chiqmadi. Bu nima degani?!",
+      "choices": ["positive", "negative", "neutral"],
+      "answer": "negative"
+    },
+    {
+      "id": "CL-S-08",
+      "type": "sentiment",
+      "text": "Kredit berishdi, hujjatlar tez ko'rib chiqildi. Juda mamnunman!",
+      "choices": ["positive", "negative", "neutral"],
+      "answer": "positive"
+    },
+
+    {
+      "id": "CL-I-01",
+      "type": "intent",
+      "text": "Kartamni yo'qotib qo'ydim, iltimos bloklab qo'ying.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "card_block"
+    },
+    {
+      "id": "CL-I-02",
+      "type": "intent",
+      "text": "Hisobimda hozir qancha pul borligini bilmoqchiman.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "balance_inquiry"
+    },
+    {
+      "id": "CL-I-03",
+      "type": "intent",
+      "text": "Do'stimga 500 ming so'm o'tkazmoqchiman, qanday qilaman?",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "transfer"
+    },
+    {
+      "id": "CL-I-04",
+      "type": "intent",
+      "text": "Ipoteka krediti olish uchun qanday hujjatlar kerak?",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "loan_inquiry"
+    },
+    {
+      "id": "CL-I-05",
+      "type": "intent",
+      "text": "Yangi joriy hisob raqam ochmoqchiman, nimadan boshlayman?",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "account_opening"
+    },
+    {
+      "id": "CL-I-06",
+      "type": "intent",
+      "text": "Bugun evro va dollar kursi qancha?",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "exchange_rate"
+    },
+    {
+      "id": "CL-I-07",
+      "type": "intent",
+      "text": "Sizning xizmatingizdan juda norozi edim, rasmiy shikoyat qoldirmoqchiman.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "complaint"
+    },
+    {
+      "id": "CL-I-08",
+      "type": "intent",
+      "text": "Oxirgi 3 oylik bank hisobidan rasmiy ko'chirma kerak.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "document_request"
+    },
+
+    {
+      "id": "CL-R-01",
+      "type": "register",
+      "text": "Bro, plastikni qayta chiqarish qancha turadi, bilasanmi?",
+      "choices": ["formal", "informal", "slang"],
+      "answer": "slang"
+    },
+    {
+      "id": "CL-R-02",
+      "type": "register",
+      "text": "Plastik kartani qayta rasmiylashtirish tartibi va tegishli to'lov miqdori haqida ma'lumot bering.",
+      "choices": ["formal", "informal", "slang"],
+      "answer": "formal"
+    },
+    {
+      "id": "CL-R-03",
+      "type": "register",
+      "text": "Yangi karta olsam bo'ladimi, eskisi eskirib qoldi shekilli.",
+      "choices": ["formal", "informal", "slang"],
+      "answer": "informal"
+    },
+    {
+      "id": "CL-R-04",
+      "type": "register",
+      "text": "Bro, pul o'tkazmasini qanday qilaman? Gruzit qilib yubor menga.",
+      "choices": ["formal", "informal", "slang"],
+      "answer": "slang"
+    }
+  ]
+}

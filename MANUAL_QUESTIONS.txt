@@ -1,0 +1,200 @@
+═══════════════════════════════════════════════════════════════
+ULAB — Savollar (60 ta) — Barcha modellar uchun
+Muhim: Har bir savolni YANGI SUHBATDA bering!
+═══════════════════════════════════════════════════════════════
+
+───────────────────────────────────────────────────────────────
+БЛОК 1: SLENG (Ko'cha uslubi)
+───────────────────────────────────────────────────────────────
+
+SL-01:
+Do'stim, 'zo'r' va 'zo'raki' so'zlarining farqi nima? Misol bilan tushuntir.
+
+SL-02:
+Ko'cha tilida 'aka, pul yo'q, qo'lim quruq' — bu nima degani? O'z so'zlaring bilan ayt.
+
+SL-03:
+Toshkent yoshlari 'bro, kelib ket' deyishganda nima nazarda tutiladi?
+
+SL-04:
+'U yigit juda sho'x' — bu gapda 'sho'x' so'zi qanday ma'noda ishlatilgan?
+
+SL-05:
+Ko'cha tilida 'prikol qilmoq' nima degani? Misol keltir.
+
+SL-06:
+'Bro, shu narsani gʻirt qilding-ku!' — 'gʻirt qilmoq' bu gapda nima ma'no anglatadi?
+
+SL-07:
+Yoshlar orasida 'shu odamni otmoq' iborasini qanday tushunasiz? Yaxshimi, yomonmi?
+
+SL-08:
+'Aka, sen juda dag'dag'a qilasan' — bu birikmani tushuntiring.
+
+SL-09:
+Ko'cha tilida 'chuchuk' so'zi odam haqida ishlatilganda qanday ma'no beradi?
+
+SL-10:
+'Voy, bu joy juda bass ekan!' — 'bass' so'zini bu kontekstda qanday tarjima qilasiz?
+
+SL-11:
+Toshkent yoshlari 'mashina o'tkazmoq' deyishganda nimani nazarda tutishadi?
+
+SL-12:
+'Aka, sen gap bilasanmi?' — bu savolda 'gap' so'zi qanday ma'noda?
+
+SL-13:
+'Yigit qo'rqoq chiqdi, tushib ketdi' — 'tushib ketmoq' bu kontekstda nima degani?
+
+SL-14:
+'Bir pul qilmoq' iborasini ko'cha tilida tushuntiring va misol keltiring.
+
+SL-15:
+'U yoqib ketdi deyishyapti' — nima bo'ldi? Tushuntir.
+
+SL-16:
+Yoshlar orasida 'flex qilmoq' so'zi qanday ishlatiladi? O'zbek tilidagi muqobili bormi?
+
+SL-17:
+'Bro, klass manzil topibsan!' — bu gapda 'klass' so'zi qanday ma'noda?
+
+SL-18:
+Ko'cha tilida 'yo'qolib ketdi' deyishganda, bu haqiqiy ma'noda yoki ko'chma ma'noda bo'lishi mumkinmi?
+
+SL-19:
+'Aka, bu narsa juda zo'r gap ekan' — 'zo'r gap' nima degani?
+
+SL-20:
+Ko'cha tilida 'pul o'ynamoq' iborasini tushuntiring. Bu qonuniy ish haqida gapmi?
+
+───────────────────────────────────────────────────────────────
+БЛОК 2: NORASMIY (Kundalik uslub)
+───────────────────────────────────────────────────────────────
+
+INF-01:
+Do'stingga xat yoz: u imtihondan o'tolmadi va xafa. Unga tasalli ber. Norasmiy uslubda.
+
+INF-02:
+'Ertaga kino ko'rgani borsakmidi?' — bu gapning ma'nosini tushuntir va to'g'ri shaklini yoz.
+
+INF-03:
+Qo'shning: 'Ukam to'yini qilyapmiz, kelasizmi?' dedi. Iltifotli va norasmiy uslubda javob ber.
+
+INF-04:
+'Men bugun juda toliqib ketdim, ishlar ko'p edi.' — bu gapni ikki xil norasmiy usulda ayt.
+
+INF-05:
+O'zbek oilasida kattalar bilan suhbatda qanday hurmat ko'rsatkichlari ishlatiladi? Misollar kel.
+
+INF-06:
+'Xo'p, bo'pti, aytganing bo'lsin' — bu ibora qachon va qanday holatda ishlatiladi?
+
+INF-07:
+Telefon orqali do'stingizni kutilmaganda to'xtatishingiz kerak bo'lsa, qanday xayrlashasiz?
+
+INF-08:
+'Ovqat yeb qo'ydingizmi?' — O'zbekistonda bu savol nima uchun hurmat ifodasi sifatida ishlatiladi?
+
+INF-09:
+Do'stingga ertangi uchrashuvni eslatish uchun qisqa xabar yoz. Norasmiy, lekin tushunarli.
+
+INF-10:
+'Nima gap, uka?' va 'Nima deysan, uka?' — bu ikki ibora o'rtasida qanday farq bor?
+
+INF-11:
+O'zbekcha 'iltimos' va 'marhamat' so'zlarini norasmiy suhbatda qachon ishlatish to'g'ri keladi?
+
+INF-12:
+Kimdir senga noto'g'ri ma'lumot berdi. Uni xafa qilmasdan norasmiy uslubda qanday tuzatasan?
+
+INF-13:
+'Ey, sen qachon kelyapsan?' va 'Qachon kelasiz?' — qaysi biri qachon ishlatiladi?
+
+INF-14:
+Do'stingiz yangi ish topdi. Tabrik xabarini norasmiy, samimiy uslubda yoz.
+
+INF-15:
+O'zbek tilida 'xafa bo'lma' va 'ranjima' so'zlari o'rtasida farq bormi? Tushuntir.
+
+INF-16:
+Bozorda savdogar bilan narxni pasaytirish uchun qanday gaplashasiz? Muloqot namunasini yoz.
+
+INF-17:
+'Hayit muborak!' — qachon va qanday holatlarda aytiladi? Javob variantlarini yoz.
+
+INF-18:
+O'zbek tilida 'nega' va 'nima uchun' so'rash o'rtasida qanday uslub farqi bor?
+
+INF-19:
+Uchrashuv vaqtida kechikding. Norasmiy uslubda kechirim so'ra va sababini tushuntir.
+
+INF-20:
+'Oʻzing qanday?' va 'Ahvollar yaxshimi?' — bu ikki ibora o'rtasida farq bormi? Qaysi biri ko'proq ishlatiladi?
+
+───────────────────────────────────────────────────────────────
+БЛОК 3: RASMIY/BIZNES (Bank uslubi)
+───────────────────────────────────────────────────────────────
+
+FRM-01:
+Hamkor kompaniyaga rasmiy hamkorlik taklifi xati yozing. Mavzu: birgalikda yangi savdo loyihasini boshlash.
+
+FRM-02:
+Mijozga rasmiy xat yozing: uning kredit arizasi ko'rib chiqilmoqda va qo'shimcha hujjatlar kerak.
+
+FRM-03:
+Xodimni yangi lavozimga — bo'lim boshlig'i o'rinbosari lavozimiga tayinlash bo'yicha rasmiy buyruq yozing.
+
+FRM-04:
+Yig'ilish bayonnomasini rasmiy uslubda yozing. Mavzu: 2025 yil birinchi yarim yillik moliyaviy natijalari.
+
+FRM-05:
+Xodimga rasmiy ogohlantiruv xati yozing: u ikki marta ish joyiga kechikkan.
+
+FRM-06:
+Mijozga rasmiy xat yozing: uning muddatli depoziti tugayapti va uni uzaytirish mumkin.
+
+FRM-07:
+Boshqa tashkilotdan ma'lumotnoma so'rash uchun rasmiy so'rov xati yozing.
+
+FRM-08:
+Yangi bank filiali ochilishi haqida mijozlarga rasmiy e'lon-xabar yozing.
+
+FRM-09:
+Mijoz shikoyat xati yozgan: kartasidan noto'g'ri pul yechilgan. Unga rasmiy javob xati yozing.
+
+FRM-10:
+Xodimlarga yangi ichki tartib haqida rasmiy memorandum yozing: ish vaqtida shaxsiy telefondan foydalanish cheklangan.
+
+FRM-11:
+Rahbariyatga yangi raqamli to'lov tizimi joriy etish bo'yicha taklif-taqdimot xulosasini rasmiy yozing.
+
+FRM-12:
+Choraklik faoliyat hisobotini rasmiy uslubda yozing. Bo'lim: Mijozlar xizmati. Davr: 2025 yil I chorak.
+
+FRM-13:
+Biznes-konferensiyaga sherik kompaniya vakili uchun rasmiy taklif xati yozing.
+
+FRM-14:
+Xodimning o'z xohishiga ko'ra ishdan bo'shatilishini rasmiylashtiradigan xat va buyruq namunasini yozing.
+
+FRM-15:
+Rahbariyat uchun yillik strategik reja bo'yicha ijro xulosasi (executive summary) yozing. Mavzu: 2026 yil raqamli rivojlanish yo'nalishi.
+
+FRM-16:
+Mijozga rasmiy xat yozing: kredit arizasi ko'rib chiqilishi kechikayapti, sababi — qo'shimcha tekshiruv zarur.
+
+FRM-17:
+Ikki bo'lim o'rtasida resurslarni bo'lishish bo'yicha ichki bitim (xizmat ko'rsatish shartnomasi) namunasini rasmiy yozing.
+
+FRM-18:
+Bank xizmat ish vaqtlari o'zgarishi haqida mijozlarga rasmiy e'lon yozing.
+
+FRM-19:
+Uzoq muddatli hamkorlik uchun asosiy mijozga rasmiy minnatdorchilik xati yozing.
+
+FRM-20:
+Yuqori rahbariyatga muammoni eskalatsiya qilish xatini yozing: bir oy davomida hal etilmagan texnik nosozlik.
+
+═══════════════════════════════════════════════════════════════
+TUGADI — Jami 60 ta savol
+═══════════════════════════════════════════════════════════════

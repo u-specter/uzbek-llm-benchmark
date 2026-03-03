@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "module": "FK",
+    "description": "Fact-checking — model confirms or denies statements about Uzbekistan and banking",
+    "total": 10,
+    "subtasks": {
+      "country": 3,
+      "currency": 3,
+      "banking": 4
+    },
+    "choices": ["noto'g'ri", "to'g'ri"],
+    "note": "choices ordered noto'g'ri first to avoid substring collision during parsing (to'g'ri is substring of noto'g'ri)"
+  },
+  "questions": [
+    {
+      "id": "FK-C-01",
+      "type": "country",
+      "text": "O'zbekiston Respublikasining poytaxti Toshkent shahridir.",
+      "choices": ["noto'g'ri", "to'g'ri"],
+      "answer": "to'g'ri"
+    },
+    {
+      "id": "FK-C-02",
+      "type": "country",
+      "text": "O'zbekiston 1991-yilda mustaqil davlatga aylandi.",
+      "choices": ["noto'g'ri", "to'g'ri"],
+      "answer": "to'g'ri"
+    },
+    {
+      "id": "FK-C-03",
+      "type": "country",
+      "text": "O'zbekistonning milliy valyutasi tenge hisoblanadi.",
+      "choices": ["noto'g'ri", "to'g'ri"],
+      "answer": "noto'g'ri"
+    },
+    {
+      "id": "FK-U-01",
+      "type": "currency",
+      "text": "UZS — O'zbekiston so'mining xalqaro valyuta kodi.",
+      "choices": ["noto'g'ri", "to'g'ri"],
+      "answer": "to'g'ri"
+    },
+    {
+      "id": "FK-U-02",
+      "type": "currency",
+      "text": "Dollar O'zbekistonda qonuniy to'lov vositasi hisoblanadi.",
+      "choices": ["noto'g'ri", "to'g'ri"],
+      "answer": "noto'g'ri"
+    },
+    {
+      "id": "FK-U-03",
+      "type": "currency",
+      "text": "UAH — O'zbekiston so'mining xalqaro valyuta kodi.",
+      "choices": ["noto'g'ri", "to'g'ri"],
+      "answer": "noto'g'ri"
+    },
+    {
+      "id": "FK-B-01",
+      "type": "banking",
+      "text": "Depozit — bankka mablag' joylashtirish va foiz olishning bir usuli.",
+      "choices": ["noto'g'ri", "to'g'ri"],
+      "answer": "to'g'ri"
+    },
+    {
+      "id": "FK-B-02",
+      "type": "banking",
+      "text": "O'zbekiston Markaziy banki pul-kredit siyosatini tartibga soladi.",
+      "choices": ["noto'g'ri", "to'g'ri"],
+      "answer": "to'g'ri"
+    },
+    {
+      "id": "FK-B-03",
+      "type": "banking",
+      "text": "Kredit — bankdan bepul olinadigan xizmat.",
+      "choices": ["noto'g'ri", "to'g'ri"],
+      "answer": "noto'g'ri"
+    },
+    {
+      "id": "FK-B-04",
+      "type": "banking",
+      "text": "O'zbekiston Markaziy banki Samarqandda joylashgan.",
+      "choices": ["noto'g'ri", "to'g'ri"],
+      "answer": "noto'g'ri"
+    }
+  ]
+}

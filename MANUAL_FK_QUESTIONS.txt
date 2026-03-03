@@ -1,0 +1,138 @@
+════════════════════════════════════════════════════════════
+  ULAB — FK MODULE (Fact-checking) — Ручное тестирование
+════════════════════════════════════════════════════════════
+
+МОДЕЛИ ДЛЯ ТЕСТИРОВАНИЯ:
+  1. Gemini 2.5 Pro   → gemini.google.com      → файл: fk_gemini_manual.json
+  2. DeepSeek V3      → chat.deepseek.com      → файл: fk_deepseek_manual.json
+  3. Mistral Large 2  → chat.mistral.ai         → файл: fk_mistral_manual.json
+  4. YandexGPT Pro    → ya.ru/ai/gpt            → файл: fk_yandexgpt_manual.json
+  5. Grok 3           → grok.com               → файл: fk_grok3_manual.json
+
+  ℹ Claude Sonnet 4.6 — тестируется через API автоматически
+  ℹ Grok 2           — тестируется через API автоматически
+
+════════════════════════════════════════════════════════════
+  ЗАДАЧА МОДУЛЯ
+════════════════════════════════════════════════════════════
+
+Проверяем: галлюцинирует ли модель, или правильно оценивает факты?
+Модель должна ответить: to'g'ri (верно) или noto'g'ri (неверно).
+
+3 категории:
+  • country  — факты об Узбекистане (столица, независимость, валюта)
+  • currency — валютные факты (код валюты, платёжные средства)
+  • banking  — банковские термины и факты о Марказий банке
+
+════════════════════════════════════════════════════════════
+  ИНСТРУКЦИЯ
+════════════════════════════════════════════════════════════
+
+  1. Откройте сайт модели
+  2. Начните ОДИН чат (все 10 вопросов в одном чате — OK)
+  3. Скопируйте промпт → вставьте → скопируйте ответ
+  4. Вставьте в JSON-файл в поле "response"
+
+ВАЖНО:
+  ✓ Ответ — только "to'g'ri" или "noto'g'ri"
+  ✓ Если модель пишет развёрнуто — берите только нужное слово
+  ✓ Порядок: FK-C → FK-U → FK-B
+
+════════════════════════════════════════════════════════════
+  ПРОМПТЫ ДЛЯ КОПИРОВАНИЯ
+════════════════════════════════════════════════════════════
+
+──────────────────────────────────────────────────
+COUNTRY (факты об Узбекистане) — 3 вопроса
+──────────────────────────────────────────────────
+
+[FK-C-01]
+Bayonot: "O'zbekiston Respublikasining poytaxti Toshkent shahridir."
+Ushbu bayonot to'g'rimi yoki noto'g'rimi? Faqat bitta javob yozing: to'g'ri / noto'g'ri
+
+[FK-C-02]
+Bayonot: "O'zbekiston 1991-yilda mustaqil davlatga aylandi."
+Ushbu bayonot to'g'rimi yoki noto'g'rimi? Faqat bitta javob yozing: to'g'ri / noto'g'ri
+
+[FK-C-03]
+Bayonot: "O'zbekistonning milliy valyutasi tenge hisoblanadi."
+Ushbu bayonot to'g'rimi yoki noto'g'rimi? Faqat bitta javob yozing: to'g'ri / noto'g'ri
+
+
+──────────────────────────────────────────────────
+CURRENCY (валютные факты) — 3 вопроса
+──────────────────────────────────────────────────
+
+[FK-U-01]
+Bayonot: "UZS — O'zbekiston so'mining xalqaro valyuta kodi."
+Ushbu bayonot to'g'rimi yoki noto'g'rimi? Faqat bitta javob yozing: to'g'ri / noto'g'ri
+
+[FK-U-02]
+Bayonot: "Dollar O'zbekistonda qonuniy to'lov vositasi hisoblanadi."
+Ushbu bayonot to'g'rimi yoki noto'g'rimi? Faqat bitta javob yozing: to'g'ri / noto'g'ri
+
+[FK-U-03]
+Bayonot: "UAH — O'zbekiston so'mining xalqaro valyuta kodi."
+Ushbu bayonot to'g'rimi yoki noto'g'rimi? Faqat bitta javob yozing: to'g'ri / noto'g'ri
+
+
+──────────────────────────────────────────────────
+BANKING (банковские факты) — 4 вопроса
+──────────────────────────────────────────────────
+
+[FK-B-01]
+Bayonot: "Depozit — bankka mablag' joylashtirish va foiz olishning bir usuli."
+Ushbu bayonot to'g'rimi yoki noto'g'rimi? Faqat bitta javob yozing: to'g'ri / noto'g'ri
+
+[FK-B-02]
+Bayonot: "O'zbekiston Markaziy banki pul-kredit siyosatini tartibga soladi."
+Ushbu bayonot to'g'rimi yoki noto'g'rimi? Faqat bitta javob yozing: to'g'ri / noto'g'ri
+
+[FK-B-03]
+Bayonot: "Kredit — bankdan bepul olinadigan xizmat."
+Ushbu bayonot to'g'rimi yoki noto'g'rimi? Faqat bitta javob yozing: to'g'ri / noto'g'ri
+
+[FK-B-04]
+Bayonot: "O'zbekiston Markaziy banki Samarqandda joylashgan."
+Ushbu bayonot to'g'rimi yoki noto'g'rimi? Faqat bitta javob yozing: to'g'ri / noto'g'ri
+
+
+════════════════════════════════════════════════════════════
+  ГДЕ ЗАПОЛНЯТЬ ОТВЕТЫ
+════════════════════════════════════════════════════════════
+
+Создайте шаблон:
+  python3 create_template.py --model gemini    --module fk
+  python3 create_template.py --model deepseek  --module fk
+  python3 create_template.py --model mistral   --module fk
+  python3 create_template.py --model yandexgpt --module fk
+  python3 create_template.py --model grok3     --module fk
+
+Откройте нужный JSON-файл в responses/ и заполните поле "response".
+
+════════════════════════════════════════════════════════════
+  КАК ИМПОРТИРОВАТЬ ПОСЛЕ ЗАПОЛНЕНИЯ
+════════════════════════════════════════════════════════════
+
+  python3 import_manual.py --model gemini    --module fk
+  python3 import_manual.py --model deepseek  --module fk
+  python3 import_manual.py --model mistral   --module fk
+  python3 import_manual.py --model yandexgpt --module fk
+  python3 import_manual.py --model grok3     --module fk
+
+════════════════════════════════════════════════════════════
+  ПРАВИЛЬНЫЕ ОТВЕТЫ (для проверки)
+════════════════════════════════════════════════════════════
+
+  FK-C-01: to'g'ri      ← Toshkent is the capital
+  FK-C-02: to'g'ri      ← Independence in 1991
+  FK-C-03: noto'g'ri    ← tenge is Kazakhstan's currency, not Uzbekistan's
+  FK-U-01: to'g'ri      ← UZS is correct ISO code
+  FK-U-02: noto'g'ri    ← Dollar is NOT legal tender (so'm is)
+  FK-U-03: noto'g'ri    ← UAH is Ukraine's hryvnia, not Uzbekistan's
+  FK-B-01: to'g'ri      ← Deposit definition is correct
+  FK-B-02: to'g'ri      ← Central bank does regulate monetary policy
+  FK-B-03: noto'g'ri    ← Kredit is NOT free (has interest)
+  FK-B-04: noto'g'ri    ← Central bank is in Tashkent, not Samarkand
+
+════════════════════════════════════════════════════════════

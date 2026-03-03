@@ -1,0 +1,63 @@
+{
+    "CL-S-01": {
+      "response": "negative"
+    },
+    "CL-S-02": {
+      "response": "positive"
+    },
+    "CL-S-03": {
+      "response": "neutral"
+    },
+    "CL-S-04": {
+      "response": "negative"
+    },
+    "CL-S-05": {
+      "response": "positive"
+    },
+    "CL-S-06": {
+      "response": "neutral"
+    },
+    "CL-S-07": {
+      "response": "negative"
+    },
+    "CL-S-08": {
+      "response": "positive"
+    },
+    "CL-I-01": {
+      "response": "card_block"
+    },
+    "CL-I-02": {
+      "response": "balance_inquiry"
+    },
+    "CL-I-03": {
+      "response": "transfer"
+    },
+    "CL-I-04": {
+      "response": "loan_inquiry"
+    },
+    "CL-I-05": {
+      "response": "account_opening"
+    },
+    "CL-I-06": {
+      "response": "exchange_rate"
+    },
+    "CL-I-07": {
+      "response": "complaint"
+    },
+    "CL-I-08": {
+      "response": "document_request"
+    },
+    "CL-R-01": {
+      "response": "slang"
+    },
+    "CL-R-02": {
+      "response": "formal"
+    },
+    "CL-R-03": {
+      "response": "informal"
+    },
+    "CL-R-04": {
+      "response": "slang"
+    }
+  }
+  

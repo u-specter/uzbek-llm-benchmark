@@ -1,0 +1,17 @@
+{
+    "RB-A-01": "card_block",
+    "RB-A-02": "balance_inquiry",
+    "RB-A-03": "transfer",
+    "RB-A-04": "loan_inquiry",
+    "RB-A-05": "exchange_rate",
+    "RB-T-01": "card_block",
+    "RB-T-02": "balance_inquiry",
+    "RB-T-03": "transfer",
+    "RB-T-04": "loan_inquiry",
+    "RB-T-05": "exchange_rate",
+    "RB-C-01": "card_block",
+    "RB-C-02": "balance_inquiry",
+    "RB-C-03": "transfer",
+    "RB-C-04": "loan_inquiry",
+    "RB-C-05": "exchange_rate"
+  }

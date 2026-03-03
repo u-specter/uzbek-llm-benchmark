@@ -1,0 +1,105 @@
+{
+  "rubric_version": "1.0.0",
+  "title": "Uzbek Language AI Benchmark Scoring Rubric",
+  "scoring_dimensions": [
+    {
+      "id": "D1",
+      "name": "Linguistic Accuracy",
+      "name_uz": "Til to'g'riligi",
+      "weight": 0.25,
+      "max_score": 25,
+      "description": "Grammatical correctness, proper Uzbek morphology, sentence structure",
+      "scoring_guide": {
+        "20-25": "Flawless Uzbek grammar, correct verb conjugation, proper case endings, no code-switching errors",
+        "14-19": "Minor grammatical errors that do not impede understanding; occasional incorrect morpheme",
+        "8-13": "Noticeable grammatical issues; some sentences are structurally incorrect",
+        "1-7": "Significant grammar errors; response is partially comprehensible",
+        "0": "Incoherent text, responded in wrong language, or refused to respond"
+      }
+    },
+    {
+      "id": "D2",
+      "name": "Register Compliance",
+      "name_uz": "Uslub muvofiqligi",
+      "weight": 0.25,
+      "max_score": 25,
+      "description": "Appropriate use of slang/informal/formal register as required by the question",
+      "scoring_guide": {
+        "20-25": "Perfect register match; vocabulary, tone, and sentence style fully align with target register",
+        "14-19": "Mostly correct register with minor mixing (e.g., one formal phrase in informal context)",
+        "8-13": "Register is partially correct; noticeable mixing of styles",
+        "1-7": "Wrong register used; model defaulted to its standard output style",
+        "0": "Complete register failure or irrelevant response"
+      }
+    },
+    {
+      "id": "D3",
+      "name": "Cultural & Pragmatic Competence",
+      "name_uz": "Madaniy va pragmatik kompetensiya",
+      "weight": 0.20,
+      "max_score": 20,
+      "description": "Understanding of Uzbek cultural context, idiomatic expressions, pragmatic norms",
+      "scoring_guide": {
+        "17-20": "Demonstrates deep cultural understanding; idioms used correctly; pragmatically appropriate",
+        "12-16": "Good cultural awareness with minor pragmatic gaps",
+        "7-11": "Limited cultural depth; some idioms misunderstood or misused",
+        "1-6": "Poor cultural competence; significant pragmatic errors",
+        "0": "No cultural awareness demonstrated"
+      }
+    },
+    {
+      "id": "D4",
+      "name": "Semantic Accuracy",
+      "name_uz": "Mazmun aniqligi",
+      "weight": 0.20,
+      "max_score": 20,
+      "description": "Correctness of meaning, factual accuracy of the response content",
+      "scoring_guide": {
+        "17-20": "Completely accurate answer addressing all aspects of the question",
+        "12-16": "Mostly accurate with minor omissions or imprecisions",
+        "7-11": "Partially correct; some key information missing or wrong",
+        "1-6": "Mostly incorrect or misleading answer",
+        "0": "Completely wrong or no meaningful answer"
+      }
+    },
+    {
+      "id": "D5",
+      "name": "Script & Orthography",
+      "name_uz": "Yozuv va orfografiya",
+      "weight": 0.10,
+      "max_score": 10,
+      "description": "Correct use of Uzbek Latin script, proper apostrophe usage (ʻ, ʼ), correct spelling",
+      "scoring_guide": {
+        "9-10": "Perfect orthography; correct use of special characters (oʻ, gʻ); consistent script",
+        "6-8": "Minor spelling errors or inconsistent special character usage",
+        "3-5": "Noticeable orthographic errors; mixed scripts",
+        "1-2": "Systematic spelling errors; incorrect script usage",
+        "0": "Wrong script (Cyrillic where Latin expected or vice versa) or unintelligible"
+      }
+    }
+  ],
+  "total_max_score": 100,
+  "scoring_method": "Human + Automated hybrid evaluation",
+  "evaluation_process": {
+    "step1": "Automated pre-screening: script detection, language detection, length check",
+    "step2": "LLM-as-Judge: Claude Opus evaluates responses using this rubric (blind evaluation)",
+    "step3": "Human expert review: Native Uzbek speaker validates top/bottom 20% of scored responses",
+    "step4": "Consensus scoring: average of LLM-judge and human reviewer scores"
+  },
+  "aggregate_metrics": {
+    "overall_score": "Weighted average across all 60 questions (max 100)",
+    "register_scores": {
+      "slang_score": "Average across SL-01 to SL-20 (max 100)",
+      "informal_score": "Average across INF-01 to INF-20 (max 100)",
+      "formal_banking_score": "Average across FRM-01 to FRM-20 (max 100)"
+    },
+    "dimension_scores": "Average score per dimension across all questions",
+    "tier_classification": {
+      "S": "90-100 — Production Ready for Banking Use",
+      "A": "75-89 — Ready with Minor Supervision",
+      "B": "60-74 — Usable for Non-Critical Tasks",
+      "C": "45-59 — Requires Significant Improvement",
+      "D": "0-44 — Not Recommended"
+    }
+  }
+}

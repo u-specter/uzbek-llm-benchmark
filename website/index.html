@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ULAB — Тестирование AI на узбекском языке</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class="hdr-brand">
+      <div class="logo">🇺🇿 AI</div>
+      <div class="logo-text">
+        <strong>Тестирование AI на узбекском языке</strong>
+        <span id="benchDate">Загрузка...</span>
+      </div>
+    </div>
+
+    <nav class="hdr-nav">
+      <button class="nav-tab active" data-view="rating">
+        🏆 Рейтинг
+      </button>
+      <button class="nav-tab" data-view="tasks">
+        📊 Задания
+      </button>
+      <button class="nav-tab" data-view="formal_business">
+        🏦 Официальный стиль <span class="nav-cnt" id="cnt-formal">20</span>
+      </button>
+      <button class="nav-tab" data-view="informal">
+        💬 Повседневный <span class="nav-cnt" id="cnt-informal">20</span>
+      </button>
+      <button class="nav-tab" data-view="slang">
+        🗣 Разговорный <span class="nav-cnt" id="cnt-slang">20</span>
+      </button>
+      <button class="nav-tab" data-view="all">
+        📋 Все вопросы <span class="nav-cnt" id="cnt-all">60</span>
+      </button>
+    </nav>
+
+    <div class="hdr-meta">
+      <span class="status-dot"></span>
+      <span id="statusText">Загрузка...</span>
+    </div>
+  </header>
+
+  <!-- НЕТ ДАННЫХ -->
+  <div id="noDataBanner" class="no-data-banner" style="display:none">
+    <div class="no-data-inner">
+      <div class="no-data-icon">⚠️</div>
+      <h2>Данные не найдены</h2>
+      <p>Для отображения результатов запустите бенчмарк:</p>
+      <code>pip install -r requirements.txt</code>
+      <code>python run_benchmark.py</code>
+      <code>python score_responses.py</code>
+      <p style="color:#aaa;font-size:13px;margin-top:12px">После этого обновите страницу.</p>
+    </div>
+  </div>
+
+  <!-- ПРИЛОЖЕНИЕ -->
+  <div id="app" style="display:none">
+
+    <!-- ── СТРАНИЦА РЕЙТИНГА ── -->
+    <div id="ratingView">
+      <div class="page-container">
+
+        <!-- Информационная плашка -->
+        <div class="info-banner">
+          <div class="info-banner-icon">ℹ️</div>
+          <div class="info-banner-text">
+            <strong>Показатели качества ответов AI-моделей на узбекском языке</strong>
+            Здесь представлены оценки <strong id="modelCount">14</strong> AI-моделей на
+            <strong>60 вопросах</strong> на узбекском языке в трёх стилях: официальный деловой,
+            повседневный и разговорный. Чем выше балл — тем лучше модель справляется с узбекским языком.
+          </div>
+        </div>
+
+        <!-- Победитель + топ-3 -->
+        <div id="heroSection"></div>
+
+        <!-- Полный рейтинг -->
+        <div class="section">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Итоговый рейтинг всех моделей</h2>
+              <p class="section-desc">Отсортировано по среднему баллу (0–100). Нажмите на модель для подробной карточки.</p>
+            </div>
+            <button class="modules-toggle-btn" id="modulesToggleBtn" onclick="toggleModuleColumns()">
+              + Показать модули
+            </button>
+          </div>
+          <div class="lb-filter-tabs">
+            <button class="lb-tab active" data-filter="all">Все модели</button>
+            <button class="lb-tab" data-filter="commercial">🏢 Коммерческие</button>
+            <button class="lb-tab" data-filter="opensource">⚡ Open-Source</button>
+          </div>
+          <div class="table-wrap">
+            <table class="lb-table" id="lbTable"></table>
+          </div>
+        </div>
+
+        <!-- Ключевые выводы -->
+        <div class="section">
+          <div class="section-header">
+            <h2 class="section-title">Ключевые выводы</h2>
+            <p class="section-desc">Автоматически сформированы на основе результатов тестирования.</p>
+          </div>
+          <div class="insights-grid" id="insightsGrid"></div>
+        </div>
+
+        <!-- Методология -->
+        <div class="methodology-block">
+          <div class="methodology-title">📐 Как оцениваются ответы?</div>
+          <div class="methodology-grid">
+            <div class="meth-item">
+              <div class="meth-icon">🎯</div>
+              <div>
+                <div class="meth-name">Точность ответа</div>
+                <div class="meth-desc">Насколько ответ правильно и полно отвечает на заданный вопрос</div>
+              </div>
+            </div>
+            <div class="meth-item">
+              <div class="meth-icon">📝</div>
+              <div>
+                <div class="meth-name">Качество языка</div>
+                <div class="meth-desc">Грамматика, орфография и правильность узбекского языка</div>
+              </div>
+            </div>
+            <div class="meth-item">
+              <div class="meth-icon">🎭</div>
+              <div>
+                <div class="meth-name">Соответствие стилю</div>
+                <div class="meth-desc">Насколько стиль ответа соответствует требуемому регистру (деловой / повседневный / разговорный)</div>
+              </div>
+            </div>
+            <div class="meth-item">
+              <div class="meth-icon">💡</div>
+              <div>
+                <div class="meth-name">Естественность речи</div>
+                <div class="meth-desc">Звучит ли ответ как живой человек, а не машинный перевод</div>
+              </div>
+            </div>
+          </div>
+          <p class="meth-note">Каждый критерий оценивается по шкале 1–5. Итоговый балл — взвешенная сумма, нормированная к шкале 0–100. Оценку выставляет GPT-4o в роли эксперта по узбекскому языку.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── СТРАНИЦА ЗАДАНИЙ ── -->
+    <div id="tasksView" style="display:none">
+      <div class="page-container">
+        <div class="tasks-page-header">
+          <h2 class="section-title">Дополнительные модули тестирования</h2>
+          <p class="section-desc">Специализированные тесты на узбекском языке для банкинга: классификация, устойчивость к шуму, проверка фактов, понимание текста.</p>
+        </div>
+        <div id="tasksGrid" class="tasks-grid"></div>
+      </div>
+    </div>
+
+    <!-- ── СТРАНИЦА ВОПРОСОВ ── -->
+    <div id="questionsView" style="display:none">
+      <div class="questions-layout">
+
+        <!-- Левая панель: список вопросов -->
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <div class="sidebar-title" id="sidebarTitle">Все вопросы</div>
+            <div class="sidebar-search">
+              <input id="searchInput" type="text" placeholder="Поиск по тексту вопроса..." />
+            </div>
+          </div>
+          <div class="q-list" id="questionList"></div>
+        </aside>
+
+        <!-- Правая панель: ответы -->
+        <main class="content" id="contentArea">
+          <div class="empty-state">
+            <div class="empty-icon">←</div>
+            <p>Выберите вопрос из списка слева, чтобы увидеть ответы всех AI-моделей</p>
+          </div>
+        </main>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── КАРТОЧКА МОДЕЛИ (DRAWER) ── -->
+  <div id="modelDrawerOverlay" class="drawer-overlay" style="display:none" onclick="closeModelDrawer()"></div>
+  <div id="modelDrawer" class="model-drawer" style="display:none">
+    <button class="drawer-close" onclick="closeModelDrawer()">✕</button>
+    <div id="drawerContent" class="drawer-content"></div>
+  </div>
+
+  <!-- Всплывающая подсказка -->
+  <div id="tooltip" class="tooltip" style="display:none"></div>
+
+  <script src="js/results.js" onerror="window.BENCHMARK_RESULTS=null"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

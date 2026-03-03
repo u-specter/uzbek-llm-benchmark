@@ -1,0 +1,63 @@
+{
+    "FK-C-01": {
+      "text": "O'zbekiston Respublikasining poytaxti Toshkent shahridir.",
+      "choices": ["to'g'ri", "noto'g'ri"],
+      "hint": "Faqat bitta javob yozing: to'g'ri / noto'g'ri",
+      "response": "to'g'ri"
+    },
+    "FK-C-02": {
+      "text": "O'zbekiston 1991-yilda mustaqil davlatga aylandi.",
+      "choices": ["to'g'ri", "noto'g'ri"],
+      "hint": "Faqat bitta javob yozing: to'g'ri / noto'g'ri",
+      "response": "to'g'ri"
+    },
+    "FK-C-03": {
+      "text": "O'zbekistonning milliy valyutasi tenge hisoblanadi.",
+      "choices": ["to'g'ri", "noto'g'ri"],
+      "hint": "Faqat bitta javob yozing: to'g'ri / noto'g'ri",
+      "response": "noto'g'ri"
+    },
+    "FK-U-01": {
+      "text": "UZS — O'zbekiston so'mining xalqaro valyuta kodi.",
+      "choices": ["to'g'ri", "noto'g'ri"],
+      "hint": "Faqat bitta javob yozing: to'g'ri / noto'g'ri",
+      "response": "to'g'ri"
+    },
+    "FK-U-02": {
+      "text": "Dollar O'zbekistonda qonuniy to'lov vositasi hisoblanadi.",
+      "choices": ["to'g'ri", "noto'g'ri"],
+      "hint": "Faqat bitta javob yozing: to'g'ri / noto'g'ri",
+      "response": "noto'g'ri"
+    },
+    "FK-U-03": {
+      "text": "UAH — O'zbekiston so'mining xalqaro valyuta kodi.",
+      "choices": ["to'g'ri", "noto'g'ri"],
+      "hint": "Faqat bitta javob yozing: to'g'ri / noto'g'ri",
+      "response": "noto'g'ri"
+    },
+    "FK-B-01": {
+      "text": "Depozit — bankka mablag' joylashtirish va foiz olishning bir usuli.",
+      "choices": ["to'g'ri", "noto'g'ri"],
+      "hint": "Faqat bitta javob yozing: to'g'ri / noto'g'ri",
+      "response": "to'g'ri"
+    },
+    "FK-B-02": {
+      "text": "O'zbekiston Markaziy banki pul-kredit siyosatini tartibga soladi.",
+      "choices": ["to'g'ri", "noto'g'ri"],
+      "hint": "Faqat bitta javob yozing: to'g'ri / noto'g'ri",
+      "response": "to'g'ri"
+    },
+    "FK-B-03": {
+      "text": "Kredit — bankdan bepul olinadigan xizmat.",
+      "choices": ["to'g'ri", "noto'g'ri"],
+      "hint": "Faqat bitta javob yozing: to'g'ri / noto'g'ri",
+      "response": "noto'g'ri"
+    },
+    "FK-B-04": {
+      "text": "O'zbekiston Markaziy banki Samarqandda joylashgan.",
+      "choices": ["to'g'ri", "noto'g'ri"],
+      "hint": "Faqat bitta javob yozing: to'g'ri / noto'g'ri",
+      "response": "noto'g'ri"
+    }
+  }
+  

@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "module": "RB",
+    "description": "Robustness — intent detection on noisy Uzbek banking text",
+    "total": 15,
+    "noise_types": {
+      "apostrophe_drop": 5,
+      "typo": 5,
+      "cyrillic_mix": 5
+    },
+    "base_intents": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "exchange_rate"],
+    "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+    "note": "Each base scenario has 3 noisy variants. Models must identify intent despite noise."
+  },
+  "questions": [
+    {
+      "id": "RB-A-01",
+      "type": "apostrophe_drop",
+      "base_intent": "card_block",
+      "clean_text": "Mening plastik kartam ishlamayapti, uni bloklab qo'ying.",
+      "text": "Mening plastik kartam ishlamayapti, uni bloklab qoying.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "card_block"
+    },
+    {
+      "id": "RB-A-02",
+      "type": "apostrophe_drop",
+      "base_intent": "balance_inquiry",
+      "clean_text": "Hozir hisobimda qancha mablag' bor, ko'rsating.",
+      "text": "Hozir hisobimda qancha mablag bor, korsating.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "balance_inquiry"
+    },
+    {
+      "id": "RB-A-03",
+      "type": "apostrophe_drop",
+      "base_intent": "transfer",
+      "clean_text": "Do'stimga ikki yuz ming so'm o'tkazmoqchiman.",
+      "text": "Dostimga ikki yuz ming som otkazmoqchiman.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "transfer"
+    },
+    {
+      "id": "RB-A-04",
+      "type": "apostrophe_drop",
+      "base_intent": "loan_inquiry",
+      "clean_text": "Ipoteka krediti bo'yicha ma'lumot va foiz stavkasini aytib bering.",
+      "text": "Ipoteka krediti boyicha malumot va foiz stavkasini aytib bering.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "loan_inquiry"
+    },
+    {
+      "id": "RB-A-05",
+      "type": "apostrophe_drop",
+      "base_intent": "exchange_rate",
+      "clean_text": "Bugun dollar va evro kursi qancha so'mdan?",
+      "text": "Bugun dollar va evro kursi qancha somdan?",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "exchange_rate"
+    },
+    {
+      "id": "RB-T-01",
+      "type": "typo",
+      "base_intent": "card_block",
+      "clean_text": "Mening plastik kartam ishlamayapti, uni bloklab qo'ying.",
+      "text": "Mening plastki kartam ishlmayapti, uni bloklb qo'ying.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "card_block"
+    },
+    {
+      "id": "RB-T-02",
+      "type": "typo",
+      "base_intent": "balance_inquiry",
+      "clean_text": "Hozir hisobimda qancha mablag' bor, ko'rsating.",
+      "text": "Hozir hisobiimda qancah mablag' bor, ko'rstaing.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "balance_inquiry"
+    },
+    {
+      "id": "RB-T-03",
+      "type": "typo",
+      "base_intent": "transfer",
+      "clean_text": "Do'stimga ikki yuz ming so'm o'tkazmoqchiman.",
+      "text": "Do'stimga ikki yuz ming so'm o'takazmoqchiimn.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "transfer"
+    },
+    {
+      "id": "RB-T-04",
+      "type": "typo",
+      "base_intent": "loan_inquiry",
+      "clean_text": "Ipoteka krediti bo'yicha ma'lumot va foiz stavkasini aytib bering.",
+      "text": "Ipteka krediti bo'yicha ma'lumt va foiz svatkasini aytib bering.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "loan_inquiry"
+    },
+    {
+      "id": "RB-T-05",
+      "type": "typo",
+      "base_intent": "exchange_rate",
+      "clean_text": "Bugun dollar va evro kursi qancha so'mdan?",
+      "text": "Bugun dollr va evro kuursi qancha so'mdna?",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "exchange_rate"
+    },
+    {
+      "id": "RB-C-01",
+      "type": "cyrillic_mix",
+      "base_intent": "card_block",
+      "clean_text": "Mening plastik kartam ishlamayapti, uni bloklab qo'ying.",
+      "text": "Mening картам ishlamayapti, uni bloklab qo'ying.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "card_block"
+    },
+    {
+      "id": "RB-C-02",
+      "type": "cyrillic_mix",
+      "base_intent": "balance_inquiry",
+      "clean_text": "Hozir hisobimda qancha mablag' bor, ko'rsating.",
+      "text": "Hozir hisobimda qancha баланс bor, ko'rsating.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "balance_inquiry"
+    },
+    {
+      "id": "RB-C-03",
+      "type": "cyrillic_mix",
+      "base_intent": "transfer",
+      "clean_text": "Do'stimga ikki yuz ming so'm o'tkazmoqchiman.",
+      "text": "Do'stimga ikki yuz ming so'm перевод qilmoqchiman.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "transfer"
+    },
+    {
+      "id": "RB-C-04",
+      "type": "cyrillic_mix",
+      "base_intent": "loan_inquiry",
+      "clean_text": "Ipoteka krediti bo'yicha ma'lumot va foiz stavkasini aytib bering.",
+      "text": "Ipoteka кредит bo'yicha ma'lumot va процент stavkasini aytib bering.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "loan_inquiry"
+    },
+    {
+      "id": "RB-C-05",
+      "type": "cyrillic_mix",
+      "base_intent": "exchange_rate",
+      "clean_text": "Bugun dollar va evro kursi qancha so'mdan?",
+      "text": "Bugun dollar va евро курс qancha so'mdan?",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "answer": "exchange_rate"
+    }
+  ]
+}

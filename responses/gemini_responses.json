@@ -1,0 +1,124 @@
+{
+  "_instruction": "Paste Gemini 3 Flash responses here. Key = question ID, Value = exact response text.",
+  "_source": "Gemini 3 Flash — responses to ULAB 60 questions",
+
+  "SL-01": "‘Zo‘r’ — biror narsaning juda yaxshi, a’lo darajada ekanligini bildiradi. Misol: ‘Bugun zo‘r dam oldik.’\n‘Zo‘raki’ — samimiy bo‘lmagan, majburlab qilingan yoki yasama holat. Misol: ‘Uning zo‘raki kulishi hammani shubhalantirdi.’",
+  
+  "SL-02": "‘Aka, pul yo‘q, qo‘lim quruq’ — bu hozirgi vaqtda moddiy imkoniyat nolga teng ekanligini, yonida umuman naqd pul qolmaganini bildiradi.",
+  
+  "SL-03": "‘Bro, kelib ket’ — ‘Do‘stim, bir ko‘rishaylik’ yoki ‘Vaqting bo‘lsa, yonimga bir o‘tib ket, gap bor’ degan ma’noda ishlatiladi.",
+  
+  "SL-04": "‘Sho‘x’ — bu gapda yigitning juda harakatchan, tinib-tinchimas yoki biroz to‘polonchi ekanligi nazarda tutilgan.",
+  
+  "SL-05": "‘Prikol qilmoq’ — hazillashish, ustidan kulish yoki kimgadir nisbatan qiziqarli o‘yin ko‘rsatish. Misol: ‘U meni rosa prikol qildi, oxiri o‘zim ham kulib yubordim.’",
+  
+  "SL-06": "‘G‘irt qilmoq’ — bu yerda biror ishni mutlaqo noto‘g‘ri qilish, rasvosini chiqarish yoki tamomila buzib qo‘yish ma’nosida keladi.",
+  
+  "SL-07": "‘Odamni otmoq’ — ko‘cha tilida bu salbiy ma’noda: birovni sotish, tashlab ketish yoki va’dasida turmaslikni bildiradi. Bu yomon odat sanaladi.",
+  
+  "SL-08": "‘Dag‘dag‘a qilmoq’ — kimgadir do‘q-pūpisa qilish, o‘zini kuchli ko‘rsatib qo‘rqitishga urinish.",
+  
+  "SL-09": "‘Chuchuk’ — agar odamga nisbatan ishlatilsa, u juda sodda, laqma yoki hamma narsaga ishonuvchan ekanligini bildiradi.",
+  
+  "SL-10": "‘Bass’ — bu kontekstda ruscha ‘бас’ so‘zidan olingan bo‘lib, ‘past darajali’, ‘sifatsiz’ yoki ‘zerikarli’ degan ma’noni berishi mumkin.",
+  
+  "SL-11": "‘Mashina o‘tkazmoq’ — mashinani boshqa bir kishining nomiga rasmiylashtirish yoki egalik huquqini topshirishni anglatadi.",
+  
+  "SL-12": "‘Gap’ — bu yerda ‘vaziyatdan xabardorlik’ yoki ‘muomala madaniyati’ ma’nosida. ‘Gap bilasanmi?’ ya’ni ‘Tushunchang bormi?’ degani.",
+  
+  "SL-13": "‘Tushib ketmoq’ — bu vaziyatda kutilmaganda qo‘rqib qolish, orqaga chekinish yoki o‘zini yo‘qotib qo‘yish ma’nosini beradi.",
+  
+  "SL-14": "‘Bir pul qilmoq’ — kimnidir sharmanda qilish, obro‘sini to‘kish yoki qadrini yer bilan bitta qilish. Misol: ‘Shu ishi bilan o‘zini bir pul qildi.’",
+  
+  "SL-15": "‘U yoqib ketdi’ — bu yerda u kishi (yoki narsa) juda ma’qul keldi, hammaning e’tiborini tortdi yoki kutilganidan a’lo chiqdi degani.",
+  
+  "SL-16": "‘Flex qilmoq’ — boyligi, yutuqlari yoki kiyimlari bilan maqtanish. O‘zbekcha muqobili: ‘kerilmoq’, ‘manmanlik qilmoq’.",
+  
+  "SL-17": "‘Klass’ — juda yaxshi, ajoyib yoki qulay degan ma’noda. ‘Klass manzil’ — juda zo‘r joy.",
+  
+  "SL-18": "‘Yo‘qolib ketdi’ — ko‘pincha ko‘chma ma’noda: uzoq vaqt aloqaga chiqmay qo‘ygan yoki ko‘rinmay qolgan odamga nisbatan ishlatiladi.",
+  
+  "SL-19": "‘Zo‘r gap’ — ma’qul keladigan taklif, ajoyib yangilik yoki haqiqat bo‘lgan gap.",
+  
+  "SL-20": "‘Pul o‘ynamoq’ — asosan qimor yoki tavakkalga asoslangan noqonuniy pul aylanishi. Bu odatda qonuniy ish emas.",
+
+  "INF-01": "Do‘stim, siqilma, imtihon shunchaki bitta sinov-da. Hali hammasi oldinda, keyingi safar albatta uddalaysan. Men sen bilanman! 💪",
+  
+  "INF-02": "Ma’nosi: Birgalikda kino ko‘rish taklifi. To‘g‘ri shakli: ‘Ertaga kinoga borsak bo‘ladimi?’ yoki ‘Ertaga kinoga boraylikmi?’",
+  
+  "INF-03": "Vay, tabriklayman aka! Juda xursandman. Albatta boramiz, ukamiz baxtli bo‘lsin! Manzilni yuboring, nasib qilsa o‘sha yerda ko‘rishamiz.",
+  
+  "INF-04": "1. ‘Bugun rosa charchadim, ishlar boshimdan oshib ketdi.’\n2. ‘Ish ko‘pligidan tinkam quridi, juda holdan toydim.’",
+  
+  "INF-05": "‘Siz’ deb murojaat qilish, gapni ‘labbay’ deb boshlash, ‘duo qiling’ deb ruxsat so‘rash va gap qaytarmaslik kabi hurmat ko‘rsatkichlari ishlatiladi.",
+  
+  "INF-06": "Bu ibora odatda bahsga chek qo‘yish, qarshisidagining fikriga noiloj bo‘lsa ham rozi bo‘lish yoki suhbatni yakunlashda ishlatiladi.",
+  
+  "INF-07": "‘Uzr do‘stim, hozir bandroqman, keyinroq gaplashsak bo‘ladimi? Mayli, yaxshi qol!’",
+  
+  "INF-08": "Bu savol shunchaki qorin to‘qligini bilish emas, balki kishiga nisbatan g‘amxo‘rlik, mehmondo‘stlik va samimiy hurmatni ifodalaydi.",
+  
+  "INF-09": "Ertaga ko‘rishamiz-a? Esingdan chiqmasin, soat 10 larda kutaman, kechikma! 😉",
+  
+  "INF-10": "‘Nima gap, uka?’ — umumiy ahvol va yangiliklarni so‘rash.\n‘Nima deysan, uka?’ — biror taklifga munosabat yoki fikrini bilish uchun so‘raladi.",
+  
+  "INF-11": "‘Iltimos’ — biror narsani so‘raganda. ‘Marhamat’ — biror narsani taklif qilganda yoki ruxsat berganda ishlatiladi.",
+  
+  "INF-12": "‘Meningcha, bu yerda biroz adashgan ko‘rinasiz, aslida boshqacha edi shekilli? Yana bir tekshirib ko‘rmaymizmi?’",
+  
+  "INF-13": "‘Sen qachon kelyapsan?’ — yaqin do‘st va tengdoshlarga. ‘Qachon kelasiz?’ — yoshi kattalarga va hurmat yuzasidan notanishlarga.",
+  
+  "INF-14": "Yangi ish muborak bo‘lsin! Rosa yarashibdi, omadingni bersin, bundan ham yuqori cho‘qqilarga chiqishingga ishonaman! 🚀",
+  
+  "INF-15": "Farqi juda kam. ‘Xafa bo‘lma’ kundalik nutqda ko‘p. ‘Ranjima’ esa biroz yumshoqroq va muloyimroq, ko‘proq ko‘ngilni ko‘tarish uchun ishlatiladi.",
+  
+  "INF-16": "‘Aka, buni ozgina tushirib bering, baraka toping. Doimiy mijoz bo‘laman, oxirgi narxi qancha bo‘ladi?’",
+  
+  "INF-17": "Ramazon va Qurbon hayiti kunlarida aytiladi. Javoblar: ‘Sizga ham muborak bo‘lsin!’, ‘Rahmat, birga bo‘lsin!’, ‘Umringiz ziyoda bo‘lsin!’",
+  
+  "INF-18": "‘Nega’ — oddiy, tezkor savol. ‘Nima uchun’ — biroz vazminroq va sababni chuqurroq tushunishga harakat qilinganda ishlatiladi.",
+  
+  "INF-19": "Uzr do‘stim, yo‘lda qolib ketdim, probalar daxshat ekan. Biroz kutib tur, 5 daqiqada yetib boraman, xafa bo‘lma.",
+  
+  "INF-20": "Farqi deyarli yo‘q. ‘O‘zing qanday?’ yaqinroq, ‘Ahvollar yaxshimi?’ umumiyroq. Hozirda birinchisi yoshlar orasida juda ommabop.",
+
+  "FRM-01": "Hurmatli hamkorlar!\nSizlarga yangi savdo loyihasini birgalikda amalga oshirish bo‘yicha o‘zaro manfaatli hamkorlik taklifini taqdim etamiz. Ushbu loyiha bozor ulushimizni kengaytirishga xizmat qiladi.",
+  
+  "FRM-02": "Hurmatli mijoz, Sizning kredit arizangiz ko‘rib chiqilmoqda. Qaror qabul qilish jarayonini yakunlash uchun ilovada ko‘rsatilgan qo‘shimcha hujjatlarni taqdim etishingizni so‘raymiz.",
+  
+  "FRM-03": "Buyruq №__\n[Sana]\n[Xodim ismi] [Sana]dan boshlab ‘Bo‘lim boshlig‘i o‘rinbosari’ lavozimiga tayinlansin. Mehnat shartnomasiga tegishli o‘zgartirishlar kiritilsin.",
+  
+  "FRM-04": "Yig‘ilish bayonnomasi\nMavzu: 2025-yil I yarim yillik moliyaviy natijalari.\nKun tartibi: Hisobotlarni tasdiqlash va kelgusi rejalar. Qaror: Ko‘rsatkichlar qoniqarli deb topilsin.",
+  
+  "FRM-05": "Hurmatli xodim, Sizning ish joyiga kechikish holatlaringiz yuzasidan ogohlantirish xati yuborilmoqda. Ichki mehnat tartib-qoidalariga qat’iy rioya qilishingiz talab etiladi.",
+  
+  "FRM-06": "Hurmatli mijoz! Sizning muddatli depozitingiz muddati tugamoqda. Uni imtiyozli shartlarda uzaytirish yoki foiz stavkalarini qayta ko‘rib chiqish uchun bankimizga murojaat qilishingizni so‘raymiz.",
+  
+  "FRM-07": "Hurmatli [Tashkilot nomi] rahbariyati, Sizlardan quyidagi masalalar yuzasidan tegishli ma’lumotnomani taqdim etishingizni so‘rab murojaat qilamiz. Oldindan rahmat.",
+  
+  "FRM-08": "E’lon: Hurmatli mijozlar, yangi bank filialimiz [Sana] kuni [Manzil]da o‘z faoliyatini boshlashini mamnuniyat bilan ma’lum qilamiz.",
+  
+  "FRM-09": "Hurmatli mijoz, Sizning kartangizdan mablag‘ yechilishi bilan bog‘liq shikoyatingiz o‘rganildi. Texnik xatolik bartaraf etilib, mablag‘lar to‘liq qaytarildi.",
+  
+  "FRM-10": "Memorandum: Barcha xodimlarga shuni ma’lum qilamizki, ish unumdorligini oshirish maqsadida ish vaqtida shaxsiy telefondan foydalanish qat’iyan cheklanadi.",
+  
+  "FRM-11": "Taqdimot xulosasi: Yangi raqamli to‘lov tizimini joriy etish orqali operatsion xarajatlarni 15% ga kamaytirish va mijozlar xizmat ko‘rsatish tezligini oshirish kutilmoqda.",
+  
+  "FRM-12": "Choraklik hisobot (2025 yil I chorak): Mijozlar xizmati bo‘limi tomonidan rejalashtirilgan ko‘rsatkichlar 105% ga bajarildi. Xizmat sifati monitoringi ijobiy natija ko‘rsatdi.",
+  
+  "FRM-13": "Hurmatli hamkor, Sizni yaqinlashib kelayotgan biznes-konferensiyamizda ishtirok etishga taklif etamiz. Sizning tajribangiz tadbir nufuzini oshirishiga ishonamiz.",
+  
+  "FRM-14": "Xodimning o‘z xohishi bilan ishdan bo‘shashi to‘g‘risidagi ariza va unga asosan chiqarilgan buyruq namunalari ilova qilinadi (MK 155-modda asosi).",
+  
+  "FRM-15": "Executive Summary 2026: Kelgusi yilda raqamli transformatsiyani yakunlash va mijozlar bazasini AI texnologiyalari yordamida kengaytirish asosiy strategik yo‘nalish etib belgilanadi.",
+  
+  "FRM-16": "Hurmatli mijoz, Sizning kredit arizangizni ko‘rib chiqish qo‘shimcha tekshiruv zarurligi sababli biroz kechikmoqda. Buning uchun uzr so‘raymiz.",
+  
+  "FRM-17": "Ichki bitim: [A bo‘limi] va [B bo‘limi] o‘rtasida kadrlar va texnik resurslarni o‘zaro taqsimlash va qo‘llab-quvvatlash bo‘yicha xizmat ko‘rsatish kelishuvi.",
+  
+  "FRM-18": "E’lon: Bankimizning ish vaqtlari [Sana]dan boshlab o‘zgaradi. Dushanba-Juma: 09:00-18:00. Shanba: 09:00-13:00.",
+  
+  "FRM-19": "Hurmatli mijoz, uzoq muddatli va samarali hamkorligingiz uchun Sizga chuqur minnatdorchilik bildiramiz. Sizning ishonchingiz biz uchun muhim.",
+  
+  "FRM-20": "Eskalatsiya xati: Hurmatli rahbariyat, bir oy davomida hal etilmagan texnik nosozlik ish jarayoniga jiddiy zarar yetkazmoqda. Masalani zudlik bilan hal etishingizni so‘raymiz."
+}

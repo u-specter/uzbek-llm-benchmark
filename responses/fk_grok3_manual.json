@@ -1,0 +1,62 @@
+{
+  "FK-C-01": {
+    "text": "O'zbekiston Respublikasining poytaxti Toshkent shahridir.",
+    "type": "country",
+    "hint": "Faqat bitta javob: to'g'ri / noto'g'ri",
+    "response": ""
+  },
+  "FK-C-02": {
+    "text": "O'zbekiston 1991-yilda mustaqil davlatga aylandi.",
+    "type": "country",
+    "hint": "Faqat bitta javob: to'g'ri / noto'g'ri",
+    "response": ""
+  },
+  "FK-C-03": {
+    "text": "O'zbekistonning milliy valyutasi tenge hisoblanadi.",
+    "type": "country",
+    "hint": "Faqat bitta javob: to'g'ri / noto'g'ri",
+    "response": ""
+  },
+  "FK-U-01": {
+    "text": "UZS — O'zbekiston so'mining xalqaro valyuta kodi.",
+    "type": "currency",
+    "hint": "Faqat bitta javob: to'g'ri / noto'g'ri",
+    "response": ""
+  },
+  "FK-U-02": {
+    "text": "Dollar O'zbekistonda qonuniy to'lov vositasi hisoblanadi.",
+    "type": "currency",
+    "hint": "Faqat bitta javob: to'g'ri / noto'g'ri",
+    "response": ""
+  },
+  "FK-U-03": {
+    "text": "UAH — O'zbekiston so'mining xalqaro valyuta kodi.",
+    "type": "currency",
+    "hint": "Faqat bitta javob: to'g'ri / noto'g'ri",
+    "response": ""
+  },
+  "FK-B-01": {
+    "text": "Depozit — bankka mablag' joylashtirish va foiz olishning bir usuli.",
+    "type": "banking",
+    "hint": "Faqat bitta javob: to'g'ri / noto'g'ri",
+    "response": ""
+  },
+  "FK-B-02": {
+    "text": "O'zbekiston Markaziy banki pul-kredit siyosatini tartibga soladi.",
+    "type": "banking",
+    "hint": "Faqat bitta javob: to'g'ri / noto'g'ri",
+    "response": ""
+  },
+  "FK-B-03": {
+    "text": "Kredit — bankdan bepul olinadigan xizmat.",
+    "type": "banking",
+    "hint": "Faqat bitta javob: to'g'ri / noto'g'ri",
+    "response": ""
+  },
+  "FK-B-04": {
+    "text": "O'zbekiston Markaziy banki Samarqandda joylashgan.",
+    "type": "banking",
+    "hint": "Faqat bitta javob: to'g'ri / noto'g'ri",
+    "response": ""
+  }
+}

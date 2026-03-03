@@ -1,0 +1,122 @@
+{
+    "CL-S-01": {
+      "text": "Bankingiz xizmati dahshat! Hech kim yordam bermadi, vaqtimni bekor o'tkazdim.",
+      "choices": ["positive", "negative", "neutral"],
+      "hint": "Faqat bitta javob: positive / negative / neutral",
+      "response": "negative"
+    },
+    "CL-S-02": {
+      "text": "Onlayn banking ilovasi juda qulay, hammasi oddiy va tushunarli. Har kuni ishlataman.",
+      "choices": ["positive", "negative", "neutral"],
+      "hint": "Faqat bitta javob: positive / negative / neutral",
+      "response": "positive"
+    },
+    "CL-S-03": {
+      "text": "Dollar kursi bugun qancha ekanligini bilmoqchiman.",
+      "choices": ["positive", "negative", "neutral"],
+      "hint": "Faqat bitta javob: positive / negative / neutral",
+      "response": "neutral"
+    },
+    "CL-S-04": {
+      "text": "Karta bir hafta bo'ldi chiqmayapti. Bu bankdan boshqa joyga o'taman!",
+      "choices": ["positive", "negative", "neutral"],
+      "hint": "Faqat bitta javob: positive / negative / neutral",
+      "response": "negative"
+    },
+    "CL-S-05": {
+      "text": "Menejerlar juda muloyim va professional. Rahmat, shunaqa xizmat bo'lsa yaxshi.",
+      "choices": ["positive", "negative", "neutral"],
+      "hint": "Faqat bitta javob: positive / negative / neutral",
+      "response": "positive"
+    },
+    "CL-S-06": {
+      "text": "Hisobimda qancha mablag' qolganini bilmoqchiman.",
+      "choices": ["positive", "negative", "neutral"],
+      "hint": "Faqat bitta javob: positive / negative / neutral",
+      "response": "neutral"
+    },
+    "CL-S-07": {
+      "text": "Ikki soat navbatda turdim, kassir hali ham chiqmadi. Bu nima degani?!",
+      "choices": ["positive", "negative", "neutral"],
+      "hint": "Faqat bitta javob: positive / negative / neutral",
+      "response": "negative"
+    },
+    "CL-S-08": {
+      "text": "Kredit berishdi, hujjatlar tez ko'rib chiqildi. Juda mamnunman!",
+      "choices": ["positive", "negative", "neutral"],
+      "hint": "Faqat bitta javob: positive / negative / neutral",
+      "response": "positive"
+    },
+    "CL-I-01": {
+      "text": "Kartamni yo'qotib qo'ydim, iltimos bloklab qo'ying.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+      "response": "card_block"
+    },
+    "CL-I-02": {
+      "text": "Hisobimda hozir qancha pul borligini bilmoqchiman.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+      "response": "balance_inquiry"
+    },
+    "CL-I-03": {
+      "text": "Do'stimga 500 ming so'm o'tkazmoqchiman, qanday qilaman?",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+      "response": "transfer"
+    },
+    "CL-I-04": {
+      "text": "Ipoteka krediti olish uchun qanday hujjatlar kerak?",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+      "response": "loan_inquiry"
+    },
+    "CL-I-05": {
+      "text": "Yangi joriy hisob raqam ochmoqchiman, nimadan boshlayman?",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+      "response": "account_opening"
+    },
+    "CL-I-06": {
+      "text": "Bugun evro va dollar kursi qancha?",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+      "response": "exchange_rate"
+    },
+    "CL-I-07": {
+      "text": "Sizning xizmatingizdan juda norozi edim, rasmiy shikoyat qoldirmoqchiman.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+      "response": "complaint"
+    },
+    "CL-I-08": {
+      "text": "Oxirgi 3 oylik bank hisobidan rasmiy ko'chirma kerak.",
+      "choices": ["card_block", "balance_inquiry", "transfer", "loan_inquiry", "account_opening", "exchange_rate", "complaint", "document_request"],
+      "hint": "Faqat bitta javob: card_block / balance_inquiry / transfer / loan_inquiry / account_opening / exchange_rate / complaint / document_request",
+      "response": "document_request"
+    },
+    "CL-R-01": {
+      "text": "Bro, plastikni qayta chiqarish qancha turadi, bilasanmi?",
+      "choices": ["formal", "informal", "slang"],
+      "hint": "Faqat bitta javob: formal / informal / slang",
+      "response": "slang"
+    },
+    "CL-R-02": {
+      "text": "Plastik kartani qayta rasmiylashtirish tartibi va tegishli to'lov miqdori haqida ma'lumot bering.",
+      "choices": ["formal", "informal", "slang"],
+      "hint": "Faqat bitta javob: formal / informal / slang",
+      "response": "formal"
+    },
+    "CL-R-03": {
+      "text": "Yangi karta olsam bo'ladimi, eskisi eskirib qoldi shekilli.",
+      "choices": ["formal", "informal", "slang"],
+      "hint": "Faqat bitta javob: formal / informal / slang",
+      "response": "informal"
+    },
+    "CL-R-04": {
+      "text": "Bro, pul o'tkazmasini qanday qilaman? Gruzit qilib yubor menga.",
+      "choices": ["formal", "informal", "slang"],
+      "hint": "Faqat bitta javob: formal / informal / slang",
+      "response": "slang"
+    }
+  }

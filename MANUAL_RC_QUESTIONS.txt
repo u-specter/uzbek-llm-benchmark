@@ -1,0 +1,251 @@
+════════════════════════════════════════════════════════════
+  ULAB — RC MODULE (Reading Comprehension) — Ручное тестирование
+════════════════════════════════════════════════════════════
+
+МОДЕЛИ ДЛЯ ТЕСТИРОВАНИЯ:
+  1. Gemini 2.5 Pro   → gemini.google.com      → файл: rc_gemini_manual.json
+  2. DeepSeek V3      → chat.deepseek.com      → файл: rc_deepseek_manual.json
+  3. Mistral Large 2  → chat.mistral.ai         → файл: rc_mistral_manual.json
+  4. YandexGPT Pro    → ya.ru/ai/gpt            → файл: rc_yandexgpt_manual.json
+  5. Grok 3           → grok.com               → файл: rc_grok3_manual.json
+
+  ℹ Claude Sonnet 4.6 — тестируется через API автоматически
+  ℹ Grok 2           — тестируется через API автоматически
+
+════════════════════════════════════════════════════════════
+  ЗАДАЧА МОДУЛЯ
+════════════════════════════════════════════════════════════
+
+Проверяем: понимает ли модель узбекский текст?
+Модель читает отрывок из реальных новостей kun.uz и отвечает
+на вопрос по тексту: A, B, C или D.
+
+3 отрывка:
+  • P1 — hayot_bank   (Hayot Bank капитал оширилди)
+  • P2 — kredit_freeze (Freeze xizmati va kredit taqiqi)
+  • P3 — pul_otkazma  (Пул ўтказмалари прогнози)
+
+════════════════════════════════════════════════════════════
+  ИНСТРУКЦИЯ
+════════════════════════════════════════════════════════════
+
+  1. Откройте сайт модели
+  2. Начните ОДИН чат (все 9 вопросов в одном чате — OK)
+  3. Скопируйте промпт → вставьте → скопируйте ответ
+  4. Вставьте в JSON-файл в поле "response"
+
+ВАЖНО:
+  ✓ Ответ — только одна буква: A, B, C или D
+  ✓ Если модель пишет развёрнуто — берите только нужную букву
+  ✓ Порядок: RC-P1 → RC-P2 → RC-P3
+
+════════════════════════════════════════════════════════════
+  ПРОМПТЫ ДЛЯ КОПИРОВАНИЯ
+════════════════════════════════════════════════════════════
+
+──────────────────────────────────────────────────
+PASSAGE 1: Hayot Bank (hayot_bank) — 3 вопроса
+──────────────────────────────────────────────────
+
+[RC-P1-Q1]
+Quyidagi matnni o'qing va savolga javob bering.
+
+Matn:
+Hayot Bank ustav kapitalini 550 milliard so'mgacha oshirdi. Bank ustav kapitalini 50 million oddiy aksiyasini chiqarish orqali oshirdi. Har bir aksiyaning nominal qiymati 1000 so'm tashkil etdi. Kapital oshirish bankni moliyaviy barqarorligini mustahkamlash, ishonchni oshirish va kelajakda o'sish uchun mustahkam asos yaratish maqsadida amalga oshirildi. Joriy yilda bank aktivlari taxminan to'rt marta o'sdi. Depozitlar va kredit portfeli sezilarli miqdorda ortdi. Qo'shimcha kapital bankga kreditlashni kengaytirish, yangi mahsulotlar chiqarish, xizmat sifatini yaxshilash va onlayn xizmatlarni takomillashtirish imkoniyatini berdi. Bank raqamli xizmatlarni rivojlantirish, zamonaviy texnologiyalarni joriy qilish, shu jumladan analitika vositalarini va sun'iy intellekt elementlarini qo'llashni rejalashtiryapti.
+
+Savol: Hayot Bank ustav kapitali qancha miqdorga oshirildi?
+
+Javob variantlari:
+A) 450 milliard so'm
+B) 500 milliard so'm
+C) 550 milliard so'm
+D) 600 milliard so'm
+
+Faqat bitta harf yozing: A, B, C yoki D.
+Boshqa hech narsa yozmang.
+
+[RC-P1-Q2]
+Quyidagi matnni o'qing va savolga javob bering.
+
+Matn:
+Hayot Bank ustav kapitalini 550 milliard so'mgacha oshirdi. Bank ustav kapitalini 50 million oddiy aksiyasini chiqarish orqali oshirdi. Har bir aksiyaning nominal qiymati 1000 so'm tashkil etdi. Kapital oshirish bankni moliyaviy barqarorligini mustahkamlash, ishonchni oshirish va kelajakda o'sish uchun mustahkam asos yaratish maqsadida amalga oshirildi. Joriy yilda bank aktivlari taxminan to'rt marta o'sdi. Depozitlar va kredit portfeli sezilarli miqdorda ortdi. Qo'shimcha kapital bankga kreditlashni kengaytirish, yangi mahsulotlar chiqarish, xizmat sifatini yaxshilash va onlayn xizmatlarni takomillashtirish imkoniyatini berdi. Bank raqamli xizmatlarni rivojlantirish, zamonaviy texnologiyalarni joriy qilish, shu jumladan analitika vositalarini va sun'iy intellekt elementlarini qo'llashni rejalashtiryapti.
+
+Savol: Bank kapitalini oshirish uchun qanday usuldan foydalanildi?
+
+Javob variantlari:
+A) Obligatsiyalar chiqarish orqali
+B) 50 million oddiy aksiya chiqarish orqali
+C) Xorijiy investorlardan qarz olish orqali
+D) Davlat subsidiyasi orqali
+
+Faqat bitta harf yozing: A, B, C yoki D.
+Boshqa hech narsa yozmang.
+
+[RC-P1-Q3]
+Quyidagi matnni o'qing va savolga javob bering.
+
+Matn:
+Hayot Bank ustav kapitalini 550 milliard so'mgacha oshirdi. Bank ustav kapitalini 50 million oddiy aksiyasini chiqarish orqali oshirdi. Har bir aksiyaning nominal qiymati 1000 so'm tashkil etdi. Kapital oshirish bankni moliyaviy barqarorligini mustahkamlash, ishonchni oshirish va kelajakda o'sish uchun mustahkam asos yaratish maqsadida amalga oshirildi. Joriy yilda bank aktivlari taxminan to'rt marta o'sdi. Depozitlar va kredit portfeli sezilarli miqdorda ortdi. Qo'shimcha kapital bankga kreditlashni kengaytirish, yangi mahsulotlar chiqarish, xizmat sifatini yaxshilash va onlayn xizmatlarni takomillashtirish imkoniyatini berdi. Bank raqamli xizmatlarni rivojlantirish, zamonaviy texnologiyalarni joriy qilish, shu jumladan analitika vositalarini va sun'iy intellekt elementlarini qo'llashni rejalashtiryapti.
+
+Savol: Joriy yilda Hayot Bank aktivlari taxminan qancha marta o'sdi?
+
+Javob variantlari:
+A) Ikki marta
+B) Uch marta
+C) To'rt marta
+D) Besh marta
+
+Faqat bitta harf yozing: A, B, C yoki D.
+Boshqa hech narsa yozmang.
+
+
+──────────────────────────────────────────────────
+PASSAGE 2: Kredit Freeze (kredit_freeze) — 3 вопроса
+──────────────────────────────────────────────────
+
+[RC-P2-Q1]
+Quyidagi matnni o'qing va savolga javob bering.
+
+Matn:
+Firibgarlar birovning nomiga kredit rasmiylashtirishi holatlari uchrab turadi. Buning oldini olish uchun fuqarolar kredit tarixi olinishini muzlatish imkoniyatiga ega edi. Endilikda kredit bitimi rasmiylashtirishga taqiq kiritish ham mumkin bo'ldi. Freeze xizmati kredit tarixi olinishini cheklab, firibgarlardan himoya qiladi. Xizmat haqi BHMning 0,03 barobari — 13 340 so'm. Freeze xizmati faollashtirilsa, kredit tashkilotlari KATMdan kredit tarixini ololmaydi. Lekin amaldagi kredit shartnomalariga ega tashkilotlar Freeze xizmati yoqilgan holatda ham kredit tarixingizni ola oladi. Kredit bitimini rasmiylashtirishga taqiq mutlaqo bepul. Kredit tashkilotlari siz uchun kredit ajratishi mumkin emas bo'ladi. Xizmatlardan My.gov portali va infokredit.uz orqali foydalanish mumkin.
+
+Savol: Freeze xizmati qancha turadi?
+
+Javob variantlari:
+A) Mutlaqo bepul
+B) 13 340 so'm
+C) 50 000 so'm
+D) BHMning 0,3 barobari
+
+Faqat bitta harf yozing: A, B, C yoki D.
+Boshqa hech narsa yozmang.
+
+[RC-P2-Q2]
+Quyidagi matnni o'qing va savolga javob bering.
+
+Matn:
+Firibgarlar birovning nomiga kredit rasmiylashtirishi holatlari uchrab turadi. Buning oldini olish uchun fuqarolar kredit tarixi olinishini muzlatish imkoniyatiga ega edi. Endilikda kredit bitimi rasmiylashtirishga taqiq kiritish ham mumkin bo'ldi. Freeze xizmati kredit tarixi olinishini cheklab, firibgarlardan himoya qiladi. Xizmat haqi BHMning 0,03 barobari — 13 340 so'm. Freeze xizmati faollashtirilsa, kredit tashkilotlari KATMdan kredit tarixini ololmaydi. Lekin amaldagi kredit shartnomalariga ega tashkilotlar Freeze xizmati yoqilgan holatda ham kredit tarixingizni ola oladi. Kredit bitimini rasmiylashtirishga taqiq mutlaqo bepul. Kredit tashkilotlari siz uchun kredit ajratishi mumkin emas bo'ladi. Xizmatlardan My.gov portali va infokredit.uz orqali foydalanish mumkin.
+
+Savol: Kredit bitimiga taqiq qo'yish xizmati qancha turadi?
+
+Javob variantlari:
+A) 13 340 so'm
+B) BHMning 0,03 barobari
+C) Mutlaqo bepul
+D) 50 000 so'm
+
+Faqat bitta harf yozing: A, B, C yoki D.
+Boshqa hech narsa yozmang.
+
+[RC-P2-Q3]
+Quyidagi matnni o'qing va savolga javob bering.
+
+Matn:
+Firibgarlar birovning nomiga kredit rasmiylashtirishi holatlari uchrab turadi. Buning oldini olish uchun fuqarolar kredit tarixi olinishini muzlatish imkoniyatiga ega edi. Endilikda kredit bitimi rasmiylashtirishga taqiq kiritish ham mumkin bo'ldi. Freeze xizmati kredit tarixi olinishini cheklab, firibgarlardan himoya qiladi. Xizmat haqi BHMning 0,03 barobari — 13 340 so'm. Freeze xizmati faollashtirilsa, kredit tashkilotlari KATMdan kredit tarixini ololmaydi. Lekin amaldagi kredit shartnomalariga ega tashkilotlar Freeze xizmati yoqilgan holatda ham kredit tarixingizni ola oladi. Kredit bitimini rasmiylashtirishga taqiq mutlaqo bepul. Kredit tashkilotlari siz uchun kredit ajratishi mumkin emas bo'ladi. Xizmatlardan My.gov portali va infokredit.uz orqali foydalanish mumkin.
+
+Savol: Freeze xizmati yoqilgan holatda kim kredit tarixini ola oladi?
+
+Javob variantlari:
+A) Hech qaysi tashkilot ola olmaydi
+B) Faqat davlat banklari ola oladi
+C) Amaldagi kredit shartnomalariga ega tashkilotlar
+D) Faqat Markaziy bank ola oladi
+
+Faqat bitta harf yozing: A, B, C yoki D.
+Boshqa hech narsa yozmang.
+
+
+──────────────────────────────────────────────────
+PASSAGE 3: Pul o'tkazmalari (pul_otkazma) — 3 вопроса
+──────────────────────────────────────────────────
+
+[RC-P3-Q1]
+Quyidagi matnni o'qing va savolga javob bering.
+
+Matn:
+Markaziy bank prognozlariga ko'ra, joriy yilda O'zbekistonga pul o'tkazmalari 25-30 foizga ortishi kutilmoqda. 2025 yilda 9-11 foiz, 2026 yilda 9-12 foiz, 2027 yilda esa 10-15 foiz o'sish prognozlanmoqda. Migratsiya oqimida davlatlar diversifikatsiyasining kuchayib borishi davom etadi va yuqori daromadli davlatlardan pul o'tkazmalari ko'payib borishi kutilmoqda. 2027 yilga borib pul o'tkazmalarining umumiy miqdori 20 milliard dollargacha yetishi mumkin. Asosiy xatar sifatida rubl kursining qadrsizlanishi ko'rsatilgan bo'lib, bu ta'sirning vaqt o'tishi bilan kamayishi kutilmoqda. Joriy yilning 9 oyida O'zbekistonga pul o'tkazmalari 11,3 milliard dollarga yetib, o'tgan yilning mos davriga nisbatan 34,8 foizga ko'paygan.
+
+Savol: 2027 yilga borib pul o'tkazmalari qancha bo'lishi prognoz qilinmoqda?
+
+Javob variantlari:
+A) 10 milliard dollar
+B) 15 milliard dollar
+C) 18 milliard dollar
+D) 20 milliard dollar
+
+Faqat bitta harf yozing: A, B, C yoki D.
+Boshqa hech narsa yozmang.
+
+[RC-P3-Q2]
+Quyidagi matnni o'qing va savolga javob bering.
+
+Matn:
+Markaziy bank prognozlariga ko'ra, joriy yilda O'zbekistonga pul o'tkazmalari 25-30 foizga ortishi kutilmoqda. 2025 yilda 9-11 foiz, 2026 yilda 9-12 foiz, 2027 yilda esa 10-15 foiz o'sish prognozlanmoqda. Migratsiya oqimida davlatlar diversifikatsiyasining kuchayib borishi davom etadi va yuqori daromadli davlatlardan pul o'tkazmalari ko'payib borishi kutilmoqda. 2027 yilga borib pul o'tkazmalarining umumiy miqdori 20 milliard dollargacha yetishi mumkin. Asosiy xatar sifatida rubl kursining qadrsizlanishi ko'rsatilgan bo'lib, bu ta'sirning vaqt o'tishi bilan kamayishi kutilmoqda. Joriy yilning 9 oyida O'zbekistonga pul o'tkazmalari 11,3 milliard dollarga yetib, o'tgan yilning mos davriga nisbatan 34,8 foizga ko'paygan.
+
+Savol: Pul o'tkazmalari uchun asosiy xatar sifatida nima ko'rsatilgan?
+
+Javob variantlari:
+A) Dollar kursining o'sishi
+B) Inflyatsiyaning kuchayishi
+C) Rubl kursining qadrsizlanishi
+D) Bank tizimining barqarorsizligi
+
+Faqat bitta harf yozing: A, B, C yoki D.
+Boshqa hech narsa yozmang.
+
+[RC-P3-Q3]
+Quyidagi matnni o'qing va savolga javob bering.
+
+Matn:
+Markaziy bank prognozlariga ko'ra, joriy yilda O'zbekistonga pul o'tkazmalari 25-30 foizga ortishi kutilmoqda. 2025 yilda 9-11 foiz, 2026 yilda 9-12 foiz, 2027 yilda esa 10-15 foiz o'sish prognozlanmoqda. Migratsiya oqimida davlatlar diversifikatsiyasining kuchayib borishi davom etadi va yuqori daromadli davlatlardan pul o'tkazmalari ko'payib borishi kutilmoqda. 2027 yilga borib pul o'tkazmalarining umumiy miqdori 20 milliard dollargacha yetishi mumkin. Asosiy xatar sifatida rubl kursining qadrsizlanishi ko'rsatilgan bo'lib, bu ta'sirning vaqt o'tishi bilan kamayishi kutilmoqda. Joriy yilning 9 oyida O'zbekistonga pul o'tkazmalari 11,3 milliard dollarga yetib, o'tgan yilning mos davriga nisbatan 34,8 foizga ko'paygan.
+
+Savol: 9 oyda pul o'tkazmalari o'tgan yilga nisbatan qancha foizga ko'paygan?
+
+Javob variantlari:
+A) 25 foizga
+B) 30 foizga
+C) 34,8 foizga
+D) 40 foizga
+
+Faqat bitta harf yozing: A, B, C yoki D.
+Boshqa hech narsa yozmang.
+
+
+════════════════════════════════════════════════════════════
+  ГДЕ ЗАПОЛНЯТЬ ОТВЕТЫ
+════════════════════════════════════════════════════════════
+
+Создайте шаблон:
+  python3 create_template.py --model gemini    --module rc
+  python3 create_template.py --model deepseek  --module rc
+  python3 create_template.py --model mistral   --module rc
+  python3 create_template.py --model yandexgpt --module rc
+  python3 create_template.py --model grok3     --module rc
+
+Откройте нужный JSON-файл в responses/ и заполните поле "response".
+
+════════════════════════════════════════════════════════════
+  КАК ИМПОРТИРОВАТЬ ПОСЛЕ ЗАПОЛНЕНИЯ
+════════════════════════════════════════════════════════════
+
+  python3 import_manual.py --model gemini    --module rc
+  python3 import_manual.py --model deepseek  --module rc
+  python3 import_manual.py --model mistral   --module rc
+  python3 import_manual.py --model yandexgpt --module rc
+  python3 import_manual.py --model grok3     --module rc
+
+════════════════════════════════════════════════════════════
+  ПРАВИЛЬНЫЕ ОТВЕТЫ (для проверки)
+════════════════════════════════════════════════════════════
+
+  RC-P1-Q1: C  ← 550 milliard so'm
+  RC-P1-Q2: B  ← 50 million oddiy aksiya chiqarish orqali
+  RC-P1-Q3: C  ← To'rt marta
+  RC-P2-Q1: B  ← 13 340 so'm (Freeze xizmati haqi)
+  RC-P2-Q2: C  ← Mutlaqo bepul (kredit taqiqi)
+  RC-P2-Q3: C  ← Amaldagi kredit shartnomalariga ega tashkilotlar
+  RC-P3-Q1: D  ← 20 milliard dollar
+  RC-P3-Q2: C  ← Rubl kursining qadrsizlanishi
+  RC-P3-Q3: C  ← 34,8 foizga
+
+════════════════════════════════════════════════════════════
