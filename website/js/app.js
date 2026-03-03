@@ -37,13 +37,17 @@ const MODEL_FALLBACK = {
 
 // ── Состояние ──────────────────────────────────────────────────
 const state = {
-  activeView:     'rating',
-  activeRegister: 'all',
-  selectedId:     null,
-  search:         '',
-  showModules:    false,
-  lbRanked:       [],
-  appData:        null,
+  activeView:       'rating',
+  activeRegister:   'all',
+  selectedId:       null,
+  search:           '',
+  showModules:      false,
+  lbRanked:         [],
+  appData:          null,
+  compareMode:      false,
+  compareSelected:  new Set(),
+  contestedOnly:    false,
+  usecaseFilter:    'all',
 };
 
 // ── Инициализация ──────────────────────────────────────────────
@@ -68,6 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const scored = data.scored_at ? ` · Оценено: ${data.scored_at}` : '';
   document.getElementById('statusText').textContent =
     `${data.questions.length} вопросов · ${modelCount} моделей${scored}`;
+
+  // REQ-7: Print date footer
+  const printDateEl = document.getElementById('printDate');
+  if (printDateEl) printDateEl.textContent = data.scored_at || data.benchmark_date || new Date().toISOString().slice(0, 10);
 
   // Счётчики вкладок
   const q = data.questions;
@@ -101,15 +109,22 @@ function setupNavigation(data) {
 
       } else if (view === 'tasks') {
         state.activeView = 'tasks';
+        // REQ-2: reset use-case filter when entering tasks tab
+        state.usecaseFilter = 'all';
         document.getElementById('tasksView').style.display = 'block';
         renderTasksView(data);
 
       } else {
-        state.activeView    = 'questions';
+        state.activeView     = 'questions';
         state.activeRegister = view;
-        state.selectedId    = null;
-        state.search        = '';
+        state.selectedId     = null;
+        state.search         = '';
+        state.contestedOnly  = false;
+        state.compareMode    = false;
+        state.compareSelected.clear();
         document.getElementById('searchInput').value = '';
+        const toggleEl = document.getElementById('contestedToggle');
+        if (toggleEl) toggleEl.checked = false;
         document.getElementById('questionsView').style.display = 'flex';
 
         const titles = {
@@ -146,6 +161,28 @@ function getModelMeta(modelId, data) {
       || { name: modelId, provider: '—', color: '#888', type: 'unknown' };
 }
 
+// ─── REQ-6: Проверка флага устойчивости к шуму ────────────────
+function hasRobustnessWarning(modelId, data) {
+  const rbLb   = (data || state.appData || {}).rb_leaderboard || {};
+  const coreLb = (data || state.appData || {}).leaderboard    || {};
+  const rbEntry = rbLb[modelId];
+  if (!rbEntry || rbEntry.overall == null) return false;
+  const overall = coreLb[modelId]?.overall;
+  if (overall == null) return false;
+  return (overall - rbEntry.overall) > 15;
+}
+
+function robustnessWarningIcon(modelId, data) {
+  if (!hasRobustnessWarning(modelId, data)) return '';
+  const rbLb   = (data || state.appData || {}).rb_leaderboard || {};
+  const coreLb = (data || state.appData || {}).leaderboard    || {};
+  const rb      = Math.round(rbLb[modelId].overall);
+  const overall = Math.round(coreLb[modelId].overall);
+  const meta    = getModelMeta(modelId, data || state.appData || {});
+  const tip     = `${escHtml(meta.name)} значительно хуже справляется с зашумлёнными текстами (RB: ${rb} vs Общий: ${overall}). Не рекомендуется для неструктурированных каналов.`;
+  return ` <span class="rb-warn-icon" data-tooltip="${tip}" title="${tip}">⚠️</span>`;
+}
+
 // ═══════════════════════════════════════════════════════════════
 // СТРАНИЦА РЕЙТИНГА
 // ═══════════════════════════════════════════════════════════════
@@ -160,10 +197,47 @@ function renderRatingView(data) {
 
   state.lbRanked = ranked;
 
+  renderExecSummary(ranked, data);
   renderHero(ranked);
   renderLeaderboardTable(ranked, data);
   renderInsights(data);
   setupLbFilter(ranked, data);
+}
+
+// ── REQ-1: Executive Summary Card ─────────────────────────────
+function renderExecSummary(ranked, data) {
+  const el = document.getElementById('execSummary');
+  if (!el || !ranked.length) return;
+
+  const top   = ranked[0];
+  const second = ranked[1];
+  const gap   = second ? (top.overall - second.overall) : null;
+
+  const fkLb = (data || {}).fk_leaderboard || {};
+  const fkRanked = Object.entries(fkLb)
+    .filter(([, s]) => s.overall != null)
+    .sort((a, b) => b[1].overall - a[1].overall);
+  const formalRanked = Object.entries(data.leaderboard || {})
+    .filter(([, s]) => s.formal_business != null)
+    .sort((a, b) => b[1].formal_business - a[1].formal_business);
+
+  const recModelId = formalRanked.length ? formalRanked[0][0] : top.id;
+  const recName    = getModelMeta(recModelId, data).name;
+
+  const modelCount  = Object.keys(data.models || {}).length;
+  const moduleCount = [data.cl_leaderboard, data.rb_leaderboard, data.fk_leaderboard, data.rc_leaderboard]
+    .filter(Boolean).length + 1;
+  const qCount = (data.questions || []).length;
+
+  el.innerHTML = `
+    <div class="exec-winner">
+      <span class="exec-winner-label">Победитель</span>
+      <span class="exec-winner-name">${escHtml(top.meta.name)}</span>
+      <span class="exec-winner-score">${Math.round(top.overall)}</span>
+    </div>
+    ${gap != null ? `<div class="exec-gap">+${gap.toFixed(1)} впереди</div>` : ''}
+    <div class="exec-rec">Рекомендуется: ${escHtml(recName)} — наивысший балл в официальном стиле и проверке фактов</div>
+    <div class="exec-conf">На основе ${qCount} вопросов · ${moduleCount} модулей · ${modelCount} моделей</div>`;
 }
 
 function setupLbFilter(ranked, data) {
@@ -246,14 +320,17 @@ function heroBar(label, val) {
 
 // ── Таблица рейтинга с модульными колонками ────────────────────
 function renderLeaderboardTable(ranked, data) {
-  const d = data || state.appData || {};
+  const d    = data || state.appData || {};
   const clLb = d.cl_leaderboard || {};
   const rbLb = d.rb_leaderboard || {};
   const fkLb = d.fk_leaderboard || {};
   const rcLb = d.rc_leaderboard || {};
 
-  const show = state.showModules;
+  const show   = state.showModules;
   const medals = ['🥇', '🥈', '🥉'];
+
+  // REQ-4: delta is vs the #1 model in the current filtered list
+  const topScore = ranked.length ? ranked[0].overall : null;
 
   const rows = ranked.map((m, i) => {
     const bg = i === 0 ? 'rgba(245,158,11,0.05)'
@@ -263,17 +340,32 @@ function renderLeaderboardTable(ranked, data) {
       ? `<span class="rank-medal">${medals[i]}</span>`
       : `<span class="rank-num">#${i + 1}</span>`;
 
+    // REQ-6: Robustness warning icon
+    const warnIcon = robustnessWarningIcon(m.id, d);
+
     // Модульные баллы
     const cl = clLb[m.id]?.overall;
     const rb = rbLb[m.id]?.overall;
     const fk = fkLb[m.id]?.overall;
     const rc = rcLb[m.id]?.overall;
 
+    // REQ-4: delta column
+    const deltaCell = deltaVsTop(m.overall, topScore);
+
+    // REQ-5: stacked register bar
+    const stackedBar = regStackedBarCell(m.formal_business, m.informal, m.slang);
+
     const modCols = show ? `
       ${modCell(cl)}
       ${modCell(rb)}
       ${modCell(fk)}
       ${modCell(rc)}` : '';
+
+    // REQ-5: individual reg columns shown only when modules are expanded (plus stacked bar always)
+    const indivRegCols = show ? `
+      ${regBarCell(m.formal_business)}
+      ${regBarCell(m.informal)}
+      ${regBarCell(m.slang)}` : '';
 
     return `
       <tr${bg ? ` style="background:${bg}"` : ''}>
@@ -282,7 +374,7 @@ function renderLeaderboardTable(ranked, data) {
           <div class="model-cell model-cell-clickable" onclick="openModelDrawer('${m.id}', window.BENCHMARK_RESULTS)" title="Подробная карточка модели">
             <div class="model-dot" style="background:${m.meta.color}"></div>
             <div>
-              <div class="model-name">${escHtml(m.meta.name)}</div>
+              <div class="model-name">${escHtml(m.meta.name)}${warnIcon}</div>
               <div class="model-sub">
                 ${escHtml(m.meta.provider || '')}
                 <span class="type-badge type-${m.meta.type}">
@@ -296,9 +388,9 @@ function renderLeaderboardTable(ranked, data) {
         <td class="td-overall">
           <span class="overall-score ${scoreClass(m.overall)}">${Math.round(m.overall)}</span>
         </td>
-        ${regBarCell(m.formal_business)}
-        ${regBarCell(m.informal)}
-        ${regBarCell(m.slang)}
+        ${deltaCell}
+        ${stackedBar}
+        ${indivRegCols}
         ${modCols}
       </tr>`;
   }).join('');
@@ -309,19 +401,56 @@ function renderLeaderboardTable(ranked, data) {
     <th class="th-mod" title="Fact-check">FK</th>
     <th class="th-mod" title="Reading Comprehension">RC</th>` : '';
 
+  const indivRegHeaders = show ? `
+    <th>Официальный стиль</th>
+    <th>Повседневный стиль</th>
+    <th>Разговорный стиль</th>` : '';
+
   document.getElementById('lbTable').innerHTML = `
     <thead>
       <tr>
         <th class="th-rank">#</th>
         <th>Модель</th>
         <th class="th-center">Итоговый балл</th>
-        <th>Официальный стиль</th>
-        <th>Повседневный стиль</th>
-        <th>Разговорный стиль</th>
+        <th class="th-center th-delta">vs #1</th>
+        <th class="th-center">Стили</th>
+        ${indivRegHeaders}
         ${modHeaders}
       </tr>
     </thead>
     <tbody>${rows}</tbody>`;
+}
+
+// REQ-4: delta cell
+function deltaVsTop(score, topScore) {
+  if (topScore == null || score == null) {
+    return `<td class="td-delta"><span class="delta-none">—</span></td>`;
+  }
+  const delta = score - topScore;
+  if (Math.abs(delta) < 0.05) {
+    return `<td class="td-delta"><span class="delta-none">—</span></td>`;
+  }
+  const formatted = delta.toFixed(1);
+  return `<td class="td-delta"><span class="delta-neg">${formatted}</span></td>`;
+}
+
+// REQ-5: stacked register bar cell
+function regStackedBarCell(formal, informal, slang) {
+  if (formal == null && informal == null && slang == null) {
+    return `<td class="td-reg-bar"><span class="na-text">Нет данных</span></td>`;
+  }
+  const f = Math.max(0, Math.min(100, formal  || 0));
+  const i = Math.max(0, Math.min(100, informal || 0));
+  const s = Math.max(0, Math.min(100, slang    || 0));
+  const tip = `Офиц: ${Math.round(formal ?? 0)} · Повседн: ${Math.round(informal ?? 0)} · Разгов: ${Math.round(slang ?? 0)}`;
+  return `
+    <td class="td-reg-bar">
+      <div class="reg-stacked-bar" data-tooltip="${escHtml(tip)}" title="${escHtml(tip)}">
+        <div class="reg-stacked-seg seg-formal"  style="width:${f * 1.2}px" title="Офиц: ${Math.round(f)}"></div>
+        <div class="reg-stacked-seg seg-informal" style="width:${i * 1.2}px" title="Повседн: ${Math.round(i)}"></div>
+        <div class="reg-stacked-seg seg-slang"   style="width:${s * 1.2}px" title="Разгов: ${Math.round(s)}"></div>
+      </div>
+    </td>`;
 }
 
 function modCell(val) {
@@ -350,7 +479,6 @@ function toggleModuleColumns() {
   btn.textContent = state.showModules ? '− Скрыть модули' : '+ Показать модули';
   btn.classList.toggle('active', state.showModules);
 
-  // Перерендеривать с текущим фильтром
   const activeFilter = document.querySelector('.lb-tab.active')?.dataset.filter || 'all';
   let filtered = state.lbRanked;
   if (activeFilter === 'commercial') filtered = state.lbRanked.filter(m => m.meta.type === 'commercial');
@@ -408,7 +536,6 @@ function renderInsights(data) {
     type: 'info',
   });
 
-  // Инсайт о модулях
   if (data.fk_leaderboard) {
     const fkEntries = Object.entries(data.fk_leaderboard).filter(([, s]) => s.overall != null);
     if (fkEntries.length) {
@@ -476,92 +603,138 @@ const TASK_MODULES = [
   },
 ];
 
-const MODULE_TOP_N = 5;  // сколько строк показывать в каждой карточке
+const MODULE_TOP_N = 5;
 
-function renderTasksView(data) {
+// REQ-2: Use-Case filter configuration
+const USECASE_OPTIONS = [
+  { key: 'all',            label: 'Все модули',       highlight: [] },
+  { key: 'client_service', label: 'Клиентский сервис', highlight: ['cl', 'rb'] },
+  { key: 'risk',           label: 'Риски',             highlight: ['fk'] },
+  { key: 'compliance',     label: 'Комплаенс',         highlight: ['fk', 'rc'] },
+  { key: 'digital',        label: 'Цифровые каналы',   highlight: ['rb'] },
+];
+
+function renderUsecaseFilter(data) {
+  const container = document.getElementById('usecaseFilter');
+  if (!container) return;
+
+  container.innerHTML = USECASE_OPTIONS.map(opt => `
+    <button class="usecase-pill ${state.usecaseFilter === opt.key ? 'active' : ''}"
+            onclick="applyUsecaseFilter('${opt.key}')">
+      ${escHtml(opt.label)}
+    </button>`).join('');
+}
+
+function applyUsecaseFilter(key) {
+  state.usecaseFilter = key;
+  renderUsecaseFilter(state.appData);
+  reorderTaskCards(state.appData);
+}
+
+function reorderTaskCards(data) {
+  const opt = USECASE_OPTIONS.find(o => o.key === state.usecaseFilter) || USECASE_OPTIONS[0];
+  const highlighted = opt.highlight;
+
+  const ordered = [
+    ...TASK_MODULES.filter(m => highlighted.includes(m.key)),
+    ...TASK_MODULES.filter(m => !highlighted.includes(m.key)),
+  ];
+
   const grid = document.getElementById('tasksGrid');
-  if (grid.dataset.rendered === '1') return;  // уже отрисовано
-  grid.dataset.rendered = '1';
+  grid.innerHTML = ordered.map(mod => buildModuleCard(mod, data, highlighted.includes(mod.key))).join('');
+}
 
-  grid.innerHTML = TASK_MODULES.map(mod => {
-    const lb = data[mod.lbKey];
-    if (!lb) return `
-      <div class="module-card">
-        <div class="module-card-header">
-          <div class="module-card-icon">${mod.icon}</div>
-          <div>
-            <div class="module-card-title">${mod.title}</div>
-            <div class="module-card-desc">${mod.desc}</div>
-          </div>
+function buildModuleCard(mod, data, isHighlighted) {
+  const lb = data[mod.lbKey];
+  if (!lb) return `
+    <div class="module-card${isHighlighted ? ' module-card-highlighted' : ''}">
+      <div class="module-card-header">
+        <div class="module-card-icon">${mod.icon}</div>
+        <div>
+          <div class="module-card-title">${mod.title}</div>
+          <div class="module-card-desc">${mod.desc}</div>
         </div>
-        <p class="no-data-msg">Данные не найдены — запустите run_benchmark_${mod.key}.py</p>
-      </div>`;
+      </div>
+      <p class="no-data-msg">Данные не найдены — запустите run_benchmark_${mod.key}.py</p>
+    </div>`;
 
-    const ranked = Object.entries(lb)
-      .filter(([, s]) => s.overall != null)
-      .sort((a, b) => (b[1].overall || 0) - (a[1].overall || 0));
+  const ranked = Object.entries(lb)
+    .filter(([, s]) => s.overall != null)
+    .sort((a, b) => (b[1].overall || 0) - (a[1].overall || 0));
 
-    const medals = ['🥇','🥈','🥉'];
-    const topN   = ranked.slice(0, MODULE_TOP_N);
+  const medals  = ['🥇','🥈','🥉'];
+  const topN    = ranked.slice(0, MODULE_TOP_N);
 
-    const rows = topN.map(([modelId, s], i) => {
-      const meta = getModelMeta(modelId, data);
-      const subCells = mod.subtypes.map(st => {
-        const v = s[st.key];
-        return v != null
-          ? `<td class="td-mod-sub ${scoreClass(v)}">${Math.round(v)}</td>`
-          : `<td class="td-mod-sub na-text">—</td>`;
-      }).join('');
-
-      return `
-        <tr>
-          <td class="td-rank">${i < 3 ? medals[i] : `<span class="rank-num">#${i+1}</span>`}</td>
-          <td class="td-model">
-            <div class="model-cell model-cell-clickable" onclick="openModelDrawer('${modelId}', window.BENCHMARK_RESULTS)" title="Карточка модели">
-              <div class="model-dot" style="background:${meta.color}"></div>
-              <div class="model-name" style="font-size:13px">${escHtml(meta.name)}</div>
-            </div>
-          </td>
-          <td class="td-overall">
-            <span class="overall-score ${scoreClass(s.overall)}">${Math.round(s.overall)}</span>
-          </td>
-          ${subCells}
-        </tr>`;
+  const rows = topN.map(([modelId, s], i) => {
+    const meta = getModelMeta(modelId, data);
+    const subCells = mod.subtypes.map(st => {
+      const v = s[st.key];
+      return v != null
+        ? `<td class="td-mod-sub ${scoreClass(v)}">${Math.round(v)}</td>`
+        : `<td class="td-mod-sub na-text">—</td>`;
     }).join('');
 
-    const thSubs = mod.subtypes.map(st => `<th class="th-sub">${st.label}</th>`).join('');
-    const allPerfect = ranked.filter(([,s]) => s.overall >= 100).length;
-    const avgScore = Math.round(avgArr(ranked.map(([,s]) => s.overall)));
-    const remaining = ranked.length - MODULE_TOP_N;
-
     return `
-      <div class="module-card">
-        <div class="module-card-header">
-          <div class="module-card-icon">${mod.icon}</div>
-          <div>
-            <div class="module-card-title">${mod.title}</div>
-            <div class="module-card-desc">${mod.desc}</div>
+      <tr>
+        <td class="td-rank">${i < 3 ? medals[i] : `<span class="rank-num">#${i+1}</span>`}</td>
+        <td class="td-model">
+          <div class="model-cell model-cell-clickable" onclick="openModelDrawer('${modelId}', window.BENCHMARK_RESULTS)" title="Карточка модели">
+            <div class="model-dot" style="background:${meta.color}"></div>
+            <div class="model-name" style="font-size:13px">${escHtml(meta.name)}</div>
           </div>
-          <div class="module-card-stats">
-            <div class="module-stat"><span class="module-stat-val">${ranked.length}</span><span class="module-stat-lbl">моделей</span></div>
-            <div class="module-stat"><span class="module-stat-val ${scoreClass(avgScore)}">${avgScore}</span><span class="module-stat-lbl">ср. балл</span></div>
-            ${allPerfect > 0 ? `<div class="module-stat"><span class="module-stat-val score-green">${allPerfect}</span><span class="module-stat-lbl">× 100%</span></div>` : ''}
-          </div>
-        </div>
-        <div class="table-wrap">
-          <table class="lb-table module-lb-table">
-            <thead><tr>
-              <th class="th-rank">#</th>
-              <th>Модель</th>
-              <th class="th-center">Итог</th>
-              ${thSubs}
-            </tr></thead>
-            <tbody>${rows}</tbody>
-          </table>
-        </div>
-        ${remaining > 0 ? `<div class="module-card-more">+ ещё ${remaining} моделей — нажмите [+ Показать модули] в рейтинге</div>` : ''}
-      </div>`;
+        </td>
+        <td class="td-overall">
+          <span class="overall-score ${scoreClass(s.overall)}">${Math.round(s.overall)}</span>
+        </td>
+        ${subCells}
+      </tr>`;
   }).join('');
+
+  const thSubs    = mod.subtypes.map(st => `<th class="th-sub">${st.label}</th>`).join('');
+  const allPerfect = ranked.filter(([,s]) => s.overall >= 100).length;
+  const avgScore  = Math.round(avgArr(ranked.map(([,s]) => s.overall)));
+  const remaining = ranked.length - MODULE_TOP_N;
+
+  // REQ-2: highlight banner with best model for this module
+  const highlightBanner = isHighlighted && ranked.length ? (() => {
+    const [topId] = ranked[0];
+    const topMeta = getModelMeta(topId, data);
+    return `<div class="module-highlight-banner">Лучшее для этого отдела: ${escHtml(topMeta.name)}</div>`;
+  })() : '';
+
+  return `
+    <div class="module-card${isHighlighted ? ' module-card-highlighted' : ''}">
+      ${highlightBanner}
+      <div class="module-card-header">
+        <div class="module-card-icon">${mod.icon}</div>
+        <div>
+          <div class="module-card-title">${mod.title}</div>
+          <div class="module-card-desc">${mod.desc}</div>
+        </div>
+        <div class="module-card-stats">
+          <div class="module-stat"><span class="module-stat-val">${ranked.length}</span><span class="module-stat-lbl">моделей</span></div>
+          <div class="module-stat"><span class="module-stat-val ${scoreClass(avgScore)}">${avgScore}</span><span class="module-stat-lbl">ср. балл</span></div>
+          ${allPerfect > 0 ? `<div class="module-stat"><span class="module-stat-val score-green">${allPerfect}</span><span class="module-stat-lbl">× 100%</span></div>` : ''}
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="lb-table module-lb-table">
+          <thead><tr>
+            <th class="th-rank">#</th>
+            <th>Модель</th>
+            <th class="th-center">Итог</th>
+            ${thSubs}
+          </tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+      ${remaining > 0 ? `<div class="module-card-more">+ ещё ${remaining} моделей — нажмите [+ Показать модули] в рейтинге</div>` : ''}
+    </div>`;
+}
+
+function renderTasksView(data) {
+  renderUsecaseFilter(data);
+  reorderTaskCards(data);
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -591,7 +764,6 @@ function openModelDrawer(modelId, data) {
     core.overall         ?? null,
   ];
 
-  // Строки баллов
   const scoreRows = [
     { label: 'Общий балл (60 вопросов)', val: core.overall },
     { label: 'Официальный стиль',        val: core.formal_business },
@@ -603,11 +775,14 @@ function openModelDrawer(modelId, data) {
     { label: 'Понимание текста (RC)',    val: rc.overall },
   ].filter(r => r.val != null);
 
+  // REQ-6: warning in drawer header
+  const warnIcon = robustnessWarningIcon(modelId, data);
+
   document.getElementById('drawerContent').innerHTML = `
     <div class="drawer-model-header" style="border-left:4px solid ${meta.color}">
       <div class="drawer-model-dot" style="background:${meta.color}"></div>
       <div>
-        <div class="drawer-model-name">${escHtml(meta.name)}</div>
+        <div class="drawer-model-name">${escHtml(meta.name)}${warnIcon}</div>
         <div class="drawer-model-sub">
           ${escHtml(meta.provider || '')}
           <span class="type-badge type-${meta.type}" style="margin-left:6px">
@@ -637,7 +812,6 @@ function openModelDrawer(modelId, data) {
   document.getElementById('modelDrawer').style.display        = 'flex';
   document.body.style.overflow = 'hidden';
 
-  // Chart.js рисуем после DOM
   requestAnimationFrame(() => drawRadar(radarLabels, radarValues, meta.color));
 }
 
@@ -648,7 +822,6 @@ function closeModelDrawer() {
   if (window._radarChart) { window._radarChart.destroy(); window._radarChart = null; }
 }
 
-// Закрыть по Escape
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeModelDrawer();
 });
@@ -714,7 +887,14 @@ function hexToRgba(hex, alpha) {
 // СТРАНИЦА ВОПРОСОВ
 // ═══════════════════════════════════════════════════════════════
 
-function renderQuestionList(data) {
+// REQ-8: contested toggle handler
+function onContestedToggle() {
+  const el = document.getElementById('contestedToggle');
+  state.contestedOnly = el ? el.checked : false;
+  renderQuestionList(state.appData);
+}
+
+function getFilteredQuestions(data) {
   let questions = data.questions;
   const reg = state.activeRegister;
 
@@ -723,6 +903,41 @@ function renderQuestionList(data) {
     q.text.toLowerCase().includes(state.search) ||
     q.id.toLowerCase().includes(state.search)
   );
+
+  // REQ-8: contested filter — spread (max - min score across models) > 30
+  if (state.contestedOnly) {
+    questions = questions.filter(q => {
+      const scores = Object.values(q.responses || {})
+        .map(r => r.scores?.total)
+        .filter(t => t != null);
+      if (scores.length < 2) return false;
+      return (Math.max(...scores) - Math.min(...scores)) > 30;
+    });
+  }
+
+  return questions;
+}
+
+function renderQuestionList(data) {
+  const questions = getFilteredQuestions(data);
+  const totalBeforeContested = (() => {
+    let base = data.questions;
+    const reg = state.activeRegister;
+    if (reg !== 'all') base = base.filter(q => q.register === reg);
+    if (state.search)  base = base.filter(q =>
+      q.text.toLowerCase().includes(state.search) ||
+      q.id.toLowerCase().includes(state.search)
+    );
+    return base.length;
+  })();
+
+  // REQ-8: update count label
+  const countEl = document.getElementById('qListCount');
+  if (countEl) {
+    countEl.textContent = state.contestedOnly
+      ? `Показано: ${questions.length} из ${totalBeforeContested}`
+      : `Показано: ${questions.length} из ${totalBeforeContested}`;
+  }
 
   const list = document.getElementById('questionList');
   if (!questions.length) {
@@ -750,6 +965,9 @@ function renderQuestionList(data) {
 
 function selectQuestion(qId, data) {
   state.selectedId = qId;
+  state.compareMode     = false;
+  state.compareSelected.clear();
+
   document.querySelectorAll('.q-item').forEach(el =>
     el.classList.toggle('active', el.dataset.id === qId)
   );
@@ -757,7 +975,7 @@ function selectQuestion(qId, data) {
   const q = data.questions.find(x => x.id === qId);
   if (!q) return;
 
-  const models = data.models || {};
+  const models  = data.models || {};
   const content = document.getElementById('contentArea');
 
   const sorted = Object.entries(q.responses || {}).sort(([, aR], [, bR]) => {
@@ -785,11 +1003,16 @@ function selectQuestion(qId, data) {
         </div>
       </div>
 
-      <div class="resp-section-label">Ответы AI-моделей — сортировка от лучшего к худшему</div>
-      <div class="responses-grid">
-        ${sorted.map(([modelId, resp]) => renderRespCard(modelId, resp, models, maxScore, minScore)).join('')}
+      <div class="resp-toolbar">
+        <div class="resp-section-label">Ответы AI-моделей — сортировка от лучшего к худшему</div>
+        <button class="compare-toggle-btn" id="compareToggleBtn" onclick="toggleCompareMode()">
+          Сравнить
+        </button>
       </div>
+      <div id="respArea"></div>
     </div>`;
+
+  renderResponses(sorted, models, maxScore, minScore);
 
   content.querySelectorAll('.expand-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -800,7 +1023,110 @@ function selectQuestion(qId, data) {
   });
 }
 
-function renderRespCard(modelId, resp, modelsMeta, maxScore, minScore) {
+// ── REQ-3: Compare mode ────────────────────────────────────────
+function toggleCompareMode() {
+  state.compareMode = !state.compareMode;
+  state.compareSelected.clear();
+
+  const btn = document.getElementById('compareToggleBtn');
+  if (btn) btn.classList.toggle('active', state.compareMode);
+
+  const data = state.appData;
+  const q    = data.questions.find(x => x.id === state.selectedId);
+  if (!q) return;
+
+  const models = data.models || {};
+  const sorted = Object.entries(q.responses || {}).sort(([, aR], [, bR]) => {
+    const a = aR.scores?.total ?? -1;
+    const b = bR.scores?.total ?? -1;
+    return b - a;
+  });
+  const allScores = sorted.map(([, r]) => r.scores?.total).filter(t => t != null);
+  const maxScore  = allScores.length ? Math.max(...allScores) : null;
+  const minScore  = allScores.length ? Math.min(...allScores) : null;
+
+  renderResponses(sorted, models, maxScore, minScore);
+}
+
+function onCompareCheck(modelId) {
+  if (state.compareSelected.has(modelId)) {
+    state.compareSelected.delete(modelId);
+  } else {
+    if (state.compareSelected.size >= 3) return;
+    state.compareSelected.add(modelId);
+  }
+
+  const data = state.appData;
+  const q    = data.questions.find(x => x.id === state.selectedId);
+  if (!q) return;
+
+  const models = data.models || {};
+  const sorted = Object.entries(q.responses || {}).sort(([, aR], [, bR]) => {
+    const a = aR.scores?.total ?? -1;
+    const b = bR.scores?.total ?? -1;
+    return b - a;
+  });
+  const allScores = sorted.map(([, r]) => r.scores?.total).filter(t => t != null);
+  const maxScore  = allScores.length ? Math.max(...allScores) : null;
+  const minScore  = allScores.length ? Math.min(...allScores) : null;
+
+  renderResponses(sorted, models, maxScore, minScore);
+}
+
+function renderResponses(sorted, models, maxScore, minScore) {
+  const area = document.getElementById('respArea');
+  if (!area) return;
+
+  if (!state.compareMode) {
+    area.className = '';
+    area.innerHTML = `
+      <div class="responses-grid">
+        ${sorted.map(([modelId, resp]) => renderRespCard(modelId, resp, models, maxScore, minScore, false)).join('')}
+      </div>`;
+  } else {
+    const selected   = sorted.filter(([id]) => state.compareSelected.has(id));
+    const unselected = sorted.filter(([id]) => !state.compareSelected.has(id));
+    const colCount   = Math.max(2, Math.min(3, selected.length || 2));
+
+    const selectedHtml = selected.length > 0
+      ? `<div class="compare-grid compare-grid-${colCount}">
+           ${selected.map(([modelId, resp]) => renderRespCard(modelId, resp, models, maxScore, minScore, true)).join('')}
+         </div>`
+      : '<div class="compare-hint">Выберите до 3 моделей для сравнения (установите флажок)</div>';
+
+    const hiddenHtml = unselected.length > 0 ? `
+      <div class="compare-divider">
+        <span>Остальные модели (${unselected.length} скрыто)</span>
+        <button class="compare-show-rest-btn" onclick="toggleRestModels(this)">Показать</button>
+      </div>
+      <div class="compare-rest" style="display:none">
+        <div class="responses-grid">
+          ${unselected.map(([modelId, resp]) => renderRespCard(modelId, resp, models, maxScore, minScore, true)).join('')}
+        </div>
+      </div>` : '';
+
+    area.innerHTML = selectedHtml + hiddenHtml;
+  }
+
+  // Re-attach expand button listeners
+  area.querySelectorAll('.expand-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const textEl = btn.previousElementSibling;
+      const expanded = textEl.classList.toggle('expanded');
+      btn.textContent = expanded ? '▲ Свернуть' : '▼ Читать полностью';
+    });
+  });
+}
+
+function toggleRestModels(btn) {
+  const restEl = btn.closest('.compare-divider').nextElementSibling;
+  if (!restEl) return;
+  const isHidden = restEl.style.display === 'none';
+  restEl.style.display = isHidden ? 'block' : 'none';
+  btn.textContent = isHidden ? 'Скрыть' : 'Показать';
+}
+
+function renderRespCard(modelId, resp, modelsMeta, maxScore, minScore, compareMode) {
   const meta   = modelsMeta[modelId] || getModelMeta(modelId, state.appData || {});
   const scores = resp.scores;
   const total  = scores?.total;
@@ -810,6 +1136,14 @@ function renderRespCard(modelId, resp, modelsMeta, maxScore, minScore) {
     if (total === maxScore) cardClass += ' resp-card-best';
     else if (total === minScore) cardClass += ' resp-card-worst';
   }
+
+  // REQ-3: checkbox for compare mode
+  const checkboxHtml = compareMode ? (() => {
+    const isChecked  = state.compareSelected.has(modelId);
+    const isDisabled = !isChecked && state.compareSelected.size >= 3;
+    return `<input type="checkbox" class="compare-check" ${isChecked ? 'checked' : ''} ${isDisabled ? 'disabled' : ''}
+              onchange="onCompareCheck('${modelId}')" title="Выбрать для сравнения" />`;
+  })() : '';
 
   const scoreBadge = total != null ? `
     <div class="resp-score-box">
@@ -856,6 +1190,7 @@ function renderRespCard(modelId, resp, modelsMeta, maxScore, minScore) {
       <div class="resp-header">
         <div class="resp-header-row">
           <div class="resp-model-info">
+            ${checkboxHtml}
             <div class="resp-model-dot" style="background:${meta.color}"></div>
             <div>
               <div class="resp-model-name">${escHtml(meta.name)}</div>

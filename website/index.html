@@ -65,6 +65,14 @@
     <div id="ratingView">
       <div class="page-container">
 
+        <!-- REQ-1: Executive Summary Card -->
+        <div id="execSummaryWrap" class="exec-summary-wrap">
+          <div id="execSummary" class="exec-summary"></div>
+          <button class="exec-export-btn" onclick="window.print()" title="Экспорт сводки в PDF">
+            🖨 Экспорт сводки
+          </button>
+        </div>
+
         <!-- Информационная плашка -->
         <div class="info-banner">
           <div class="info-banner-icon">ℹ️</div>
@@ -155,6 +163,8 @@
           <h2 class="section-title">Дополнительные модули тестирования</h2>
           <p class="section-desc">Специализированные тесты на узбекском языке для банкинга: классификация, устойчивость к шуму, проверка фактов, понимание текста.</p>
         </div>
+        <!-- REQ-2: Use-Case Filter pills -->
+        <div class="usecase-filter" id="usecaseFilter"></div>
         <div id="tasksGrid" class="tasks-grid"></div>
       </div>
     </div>
@@ -169,6 +179,14 @@
             <div class="sidebar-title" id="sidebarTitle">Все вопросы</div>
             <div class="sidebar-search">
               <input id="searchInput" type="text" placeholder="Поиск по тексту вопроса..." />
+            </div>
+            <!-- REQ-8: Contested toggle -->
+            <div class="contested-filter">
+              <label class="contested-label">
+                <input type="checkbox" id="contestedToggle" onchange="onContestedToggle()" />
+                Только спорные вопросы
+              </label>
+              <span id="qListCount" class="q-list-count">Показано: 60 из 60</span>
             </div>
           </div>
           <div class="q-list" id="questionList"></div>
@@ -196,6 +214,11 @@
 
   <!-- Всплывающая подсказка -->
   <div id="tooltip" class="tooltip" style="display:none"></div>
+
+  <!-- REQ-7: Print footer -->
+  <div class="print-footer">
+    ULAB Benchmark &middot; uzbek-llm-benchmark &middot; <span id="printDate"></span>
+  </div>
 
   <script src="js/results.js" onerror="window.BENCHMARK_RESULTS=null"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
