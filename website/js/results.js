@@ -1,4 +1,4 @@
-// Auto-generated 2026-03-03 14:06
+// Auto-generated 2026-03-04 10:03
 window.BENCHMARK_RESULTS = {
   "benchmark_date": "2026-02-27 14:52",
   "total_questions": 60,
@@ -19644,37 +19644,7 @@ window.BENCHMARK_RESULTS = {
     }
   ],
   "rc_leaderboard": {
-    "kimi-k2": {
-      "overall": 100.0,
-      "hayot_bank": 100.0,
-      "kredit_freeze": 100.0,
-      "pul_otkazma": 100.0
-    },
     "deepseek-v3": {
-      "overall": 100.0,
-      "hayot_bank": 100.0,
-      "kredit_freeze": 100.0,
-      "pul_otkazma": 100.0
-    },
-    "gpt-oss-120b": {
-      "overall": 100.0,
-      "hayot_bank": 100.0,
-      "kredit_freeze": 100.0,
-      "pul_otkazma": 100.0
-    },
-    "gpt-4o": {
-      "overall": 100.0,
-      "hayot_bank": 100.0,
-      "kredit_freeze": 100.0,
-      "pul_otkazma": 100.0
-    },
-    "claude-sonnet": {
-      "overall": 100.0,
-      "hayot_bank": 100.0,
-      "kredit_freeze": 100.0,
-      "pul_otkazma": 100.0
-    },
-    "qwen3-32b": {
       "overall": 100.0,
       "hayot_bank": 100.0,
       "kredit_freeze": 100.0,
@@ -19686,31 +19656,13 @@ window.BENCHMARK_RESULTS = {
       "kredit_freeze": 100.0,
       "pul_otkazma": 100.0
     },
-    "llama4-scout": {
-      "overall": 88.9,
-      "hayot_bank": 66.7,
-      "kredit_freeze": 100.0,
-      "pul_otkazma": 100.0
-    },
-    "grok-3": {
+    "claude-sonnet": {
       "overall": 100.0,
       "hayot_bank": 100.0,
       "kredit_freeze": 100.0,
       "pul_otkazma": 100.0
     },
-    "gemini-pro": {
-      "overall": 100.0,
-      "hayot_bank": 100.0,
-      "kredit_freeze": 100.0,
-      "pul_otkazma": 100.0
-    },
-    "llama4-maverick": {
-      "overall": 88.9,
-      "hayot_bank": 100.0,
-      "kredit_freeze": 66.7,
-      "pul_otkazma": 100.0
-    },
-    "llama-70b": {
+    "kimi-k2": {
       "overall": 100.0,
       "hayot_bank": 100.0,
       "kredit_freeze": 100.0,
@@ -19722,17 +19674,65 @@ window.BENCHMARK_RESULTS = {
       "kredit_freeze": 66.7,
       "pul_otkazma": 66.7
     },
-    "gemini-flash": {
-      "overall": 0.0,
-      "hayot_bank": 0.0,
-      "kredit_freeze": 0.0,
-      "pul_otkazma": 0.0
-    },
     "mistral-large": {
       "overall": 100.0,
       "hayot_bank": 100.0,
       "kredit_freeze": 100.0,
       "pul_otkazma": 100.0
+    },
+    "gpt-4o": {
+      "overall": 100.0,
+      "hayot_bank": 100.0,
+      "kredit_freeze": 100.0,
+      "pul_otkazma": 100.0
+    },
+    "llama-70b": {
+      "overall": 100.0,
+      "hayot_bank": 100.0,
+      "kredit_freeze": 100.0,
+      "pul_otkazma": 100.0
+    },
+    "gpt-oss-120b": {
+      "overall": 100.0,
+      "hayot_bank": 100.0,
+      "kredit_freeze": 100.0,
+      "pul_otkazma": 100.0
+    },
+    "gemini-pro": {
+      "overall": 100.0,
+      "hayot_bank": 100.0,
+      "kredit_freeze": 100.0,
+      "pul_otkazma": 100.0
+    },
+    "qwen3-32b": {
+      "overall": 100.0,
+      "hayot_bank": 100.0,
+      "kredit_freeze": 100.0,
+      "pul_otkazma": 100.0
+    },
+    "llama4-scout": {
+      "overall": 88.9,
+      "hayot_bank": 66.7,
+      "kredit_freeze": 100.0,
+      "pul_otkazma": 100.0
+    },
+    "llama4-maverick": {
+      "overall": 88.9,
+      "hayot_bank": 100.0,
+      "kredit_freeze": 66.7,
+      "pul_otkazma": 100.0
+    },
+    "grok-3": {
+      "overall": 100.0,
+      "hayot_bank": 100.0,
+      "kredit_freeze": 100.0,
+      "pul_otkazma": 100.0
+    },
+    "gemini-flash": {
+      "overall": 0.0,
+      "hayot_bank": 0.0,
+      "kredit_freeze": 0.0,
+      "pul_otkazma": 0.0
     }
   }
 };

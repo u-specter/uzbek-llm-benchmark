@@ -26,13 +26,15 @@ const DIM_INFO = {
 const MODEL_FALLBACK = {
   'gemini-flash': { name: 'Gemini 2.0 Flash', provider: 'Google', color: '#4285F4', type: 'commercial' },
   'grok-3':       { name: 'Grok 3',           provider: 'xAI',    color: '#1d9bf0', type: 'commercial' },
-  'grok-2':       { name: 'Grok 2',           provider: 'xAI',    color: '#1d9bf0', type: 'commercial' },
 };
+
+// grok-2 data is subsumed under grok-3 display (same vendor; hide older if newer present)
+const MODEL_SUPERSEDED_BY = { 'grok-2': 'grok-3' };
 
 // ── Состояние ──────────────────────────────────────────────────
 const state = {
   activeView:   'rating',
-  activeModule: 'rb',           // for modules view: 'rb' | 'fk' | 'rc'
+
   qaSub:        'all',
   clSub:        'all',
   rbSub:        'all',
@@ -93,7 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
   renderRatingView();
   renderQAView();
   renderCLView();
-  renderModulesView();
+  renderRBView();
+  renderFKView();
+  renderRCView();
+  renderDeptsView();
 });
 
 function setTextIfExists(id, text) {
@@ -105,19 +110,24 @@ function setTextIfExists(id, text) {
 // НАВИГАЦИЯ
 // ═══════════════════════════════════════════════════════════════
 
+const VIEW_MAP = {
+  rating: 'ratingView',
+  qa:     'qaView',
+  cl:     'clView',
+  rb:     'rbView',
+  fk:     'fkView',
+  rc:     'rcView',
+  depts:  'deptsView',
+  about:  'aboutView',
+};
+
+// Views that use simple block layout (not two-panel flex)
+const BLOCK_VIEWS = new Set(['rating', 'about']);
+
 function setupNavigation() {
   document.querySelectorAll('.nav-tab').forEach(btn => {
     btn.addEventListener('click', () => {
-      const view = btn.dataset.view;
-      switchView(view);
-    });
-  });
-
-  // Modules secondary tabs
-  document.querySelectorAll('.sec-tab').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const mod = btn.dataset.mod;
-      switchModule(mod);
+      switchView(btn.dataset.view);
     });
   });
 }
@@ -127,45 +137,17 @@ function switchView(view) {
   const tab = document.querySelector(`.nav-tab[data-view="${view}"]`);
   if (tab) tab.classList.add('active');
 
-  const views = ['ratingView', 'qaView', 'clView', 'modulesView', 'aboutView'];
-  views.forEach(id => {
+  Object.values(VIEW_MAP).forEach(id => {
     const el = document.getElementById(id);
     if (el) el.style.display = 'none';
   });
 
-  const viewMap = {
-    rating:  'ratingView',
-    qa:      'qaView',
-    cl:      'clView',
-    modules: 'modulesView',
-    about:   'aboutView',
-  };
-
   state.activeView = view;
-  const targetId = viewMap[view];
+  const targetId = VIEW_MAP[view];
   if (targetId) {
     const el = document.getElementById(targetId);
-    if (el) el.style.display = view === 'rating' || view === 'about' ? 'block' : 'flex';
+    if (el) el.style.display = BLOCK_VIEWS.has(view) ? 'block' : 'flex';
   }
-
-  // modules view needs flex on the subview too
-  if (view === 'modules') {
-    const modEl = document.getElementById('modulesView');
-    if (modEl) modEl.style.display = 'flex';
-  }
-}
-
-function switchModule(mod) {
-  document.querySelectorAll('.sec-tab').forEach(b => b.classList.remove('active'));
-  const tab = document.querySelector(`.sec-tab[data-mod="${mod}"]`);
-  if (tab) tab.classList.add('active');
-
-  ['rb', 'fk', 'rc'].forEach(m => {
-    const el = document.getElementById(`${m}SubView`);
-    if (el) el.style.display = m === mod ? 'flex' : 'none';
-  });
-
-  state.activeModule = mod;
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -255,7 +237,7 @@ function renderRatingView() {
   if (!data) return;
 
   // Build all-model ranked list with itogovy scores
-  const allModels = new Set([
+  const allModelsRaw = new Set([
     ...Object.keys(data.models || {}),
     ...Object.keys(data.leaderboard || {}),
     ...Object.keys(data.cl_leaderboard || {}),
@@ -263,6 +245,12 @@ function renderRatingView() {
     ...Object.keys(data.fk_leaderboard || {}),
     ...Object.keys(data.rc_leaderboard || {}),
   ]);
+
+  // Remove models that are superseded by a newer version of the same model
+  const allModels = new Set([...allModelsRaw].filter(id => {
+    const newerId = MODEL_SUPERSEDED_BY[id];
+    return !(newerId && allModelsRaw.has(newerId));
+  }));
 
   const ranked = [];
   allModels.forEach(id => {
@@ -315,14 +303,14 @@ function renderStatTiles(ranked, data) {
 }
 
 const LB_COLS = [
-  { key: 'rank',    label: '#',           sortable: false },
-  { key: 'model',   label: 'Модель',      sortable: false },
-  { key: 'overall', label: 'Итоговый %',  sortable: true  },
-  { key: 'qa',      label: 'Q&A',         sortable: true  },
-  { key: 'cl',      label: 'CL',          sortable: true  },
-  { key: 'rb',      label: 'RB',          sortable: true  },
-  { key: 'fk',      label: 'FK',          sortable: true  },
-  { key: 'rc',      label: 'RC',          sortable: true  },
+  { key: 'rank',    label: '#',                sortable: false },
+  { key: 'model',   label: 'Модель',           sortable: false },
+  { key: 'overall', label: 'Итого',            sortable: true  },
+  { key: 'qa',      label: '💬 Генерация',     sortable: true  },
+  { key: 'cl',      label: '🏷 Классиф.',      sortable: true  },
+  { key: 'rb',      label: '🔤 Устойчивость',  sortable: true  },
+  { key: 'fk',      label: '✅ Факты',         sortable: true  },
+  { key: 'rc',      label: '📖 Понимание',     sortable: true  },
 ];
 
 function renderLeaderboardTable(ranked) {
@@ -825,9 +813,9 @@ function renderCLView() {
 
   const clSubOptions = [
     { key: 'all',       label: 'Все' },
-    { key: 'sentiment', label: 'sentiment' },
-    { key: 'intent',    label: 'intent' },
-    { key: 'register',  label: 'register' },
+    { key: 'sentiment', label: 'Тональность' },
+    { key: 'intent',    label: 'Намерение' },
+    { key: 'register',  label: 'Стиль речи' },
   ];
 
   buildSubFilterChips('clSubFilter', clSubOptions, state.clSub, (key) => {
@@ -870,18 +858,12 @@ function selectCLQuestion(qId) {
   );
   const q = (state.appData.cl_questions || []).find(x => x.id === qId);
   if (!q) return;
-  renderBinaryDetail('clContent', q, 'CL');
+  renderBinaryDetail('clContent', q, 'Классификация');
 }
 
 // ═══════════════════════════════════════════════════════════════
-// MODULES VIEW (RB / FK / RC)
+// RB / FK / RC PAGES
 // ═══════════════════════════════════════════════════════════════
-
-function renderModulesView() {
-  renderRBView();
-  renderFKView();
-  renderRCView();
-}
 
 // ── RB ──
 function renderRBView() {
@@ -890,9 +872,9 @@ function renderRBView() {
 
   const rbSubOptions = [
     { key: 'all',             label: 'Все' },
-    { key: 'apostrophe_drop', label: 'apostrophe_drop' },
-    { key: 'typo',            label: 'typo' },
-    { key: 'cyrillic_mix',    label: 'cyrillic_mix' },
+    { key: 'apostrophe_drop', label: 'Пропущен апостроф' },
+    { key: 'typo',            label: 'Опечатки' },
+    { key: 'cyrillic_mix',    label: 'Кириллица в латинском' },
   ];
 
   buildSubFilterChips('rbSubFilter', rbSubOptions, state.rbSub, (key) => {
@@ -935,7 +917,7 @@ function selectRBQuestion(qId) {
   );
   const q = (state.appData.rb_questions || []).find(x => x.id === qId);
   if (!q) return;
-  renderBinaryDetail('rbContent', q, 'RB');
+  renderBinaryDetail('rbContent', q, 'Устойчивость к шуму');
 }
 
 // ── FK ──
@@ -945,9 +927,9 @@ function renderFKView() {
 
   const fkSubOptions = [
     { key: 'all',      label: 'Все' },
-    { key: 'country',  label: 'country' },
-    { key: 'currency', label: 'currency' },
-    { key: 'banking',  label: 'banking' },
+    { key: 'country',  label: 'О стране' },
+    { key: 'currency', label: 'О валюте' },
+    { key: 'banking',  label: 'О банках' },
   ];
 
   buildSubFilterChips('fkSubFilter', fkSubOptions, state.fkSub, (key) => {
@@ -990,7 +972,7 @@ function selectFKQuestion(qId) {
   );
   const q = (state.appData.fk_questions || []).find(x => x.id === qId);
   if (!q) return;
-  renderBinaryDetail('fkContent', q, 'FK');
+  renderBinaryDetail('fkContent', q, 'Проверка фактов');
 }
 
 // ── RC ──
@@ -999,10 +981,9 @@ function renderRCView() {
   if (!data || !data.rc_questions) return;
 
   const rcSubOptions = [
-    { key: 'all',          label: 'Все' },
-    { key: 'hayot_bank',   label: 'hayot_bank' },
-    { key: 'kredit_freeze', label: 'kredit_freeze' },
-    { key: 'pul_otkazma',  label: 'pul_otkazma' },
+    { key: 'all',           label: 'Все' },
+    { key: 'kredit_freeze', label: 'Заморозка кредитов' },
+    { key: 'pul_otkazma',   label: 'Денежные переводы' },
   ];
 
   buildSubFilterChips('rcSubFilter', rcSubOptions, state.rcSub, (key) => {
@@ -1022,7 +1003,7 @@ function renderRCView() {
 
 function getFilteredRCQuestions() {
   const data = state.appData;
-  let qs = data.rc_questions || [];
+  let qs = (data.rc_questions || []).filter(q => q.type !== 'hayot_bank');
   if (state.rcSub !== 'all') qs = qs.filter(q => q.type === state.rcSub);
   if (state.search) {
     qs = qs.filter(q =>
@@ -1075,6 +1056,9 @@ function selectRCQuestion(qId) {
 // BINARY LIST RENDERER (shared for CL / RB)
 // ═══════════════════════════════════════════════════════════════
 
+// Map module → global select function name (used in inline onclick)
+const BINARY_SELECT_FN = { cl: 'selectCLQuestion', rb: 'selectRBQuestion', fk: 'selectFKQuestion' };
+
 function renderBinaryList(listId, qs, module, selectedId, onSelect) {
   const list = document.getElementById(listId);
   if (!list) return;
@@ -1084,6 +1068,8 @@ function renderBinaryList(listId, qs, module, selectedId, onSelect) {
     return;
   }
 
+  const selectFn = BINARY_SELECT_FN[module] || 'selectRBQuestion';
+
   list.innerHTML = qs.map(q => {
     const responses = q.responses || {};
     const total   = Object.keys(responses).length;
@@ -1091,7 +1077,7 @@ function renderBinaryList(listId, qs, module, selectedId, onSelect) {
 
     return `
       <div class="q-item ${q.id === selectedId ? 'active' : ''}" data-id="${q.id}"
-           onclick="${module === 'cl' ? 'selectCLQuestion' : 'selectRBQuestion'}('${q.id}')">
+           onclick="${selectFn}('${q.id}')">
         <div class="q-item-top">
           <span class="q-item-num">${q.id}</span>
           <span class="q-item-reg badge-formal_business">${q.type || module}</span>
@@ -1171,17 +1157,19 @@ function renderRCDetail(q) {
   const correct   = Object.values(responses).filter(r => r.correct).length;
 
   // Answer choices A/B/C/D
-  const choiceLetters = ['A', 'B', 'C', 'D'];
-  const choices = q.choices || [];
+  // q.choices may be an object {A: "...", B: "..."} or an array
   const correctAnswer = q.answer || '';
+  const rawChoices = q.choices || {};
+  const choiceEntries = Array.isArray(rawChoices)
+    ? rawChoices.map((text, i) => [['A','B','C','D'][i] || String(i+1), text])
+    : Object.entries(rawChoices);
 
-  const choicesHtml = choices.map((choice, idx) => {
-    const letter = choiceLetters[idx] || String(idx + 1);
-    const isCorrect = letter === correctAnswer || choice === correctAnswer;
+  const choicesHtml = choiceEntries.map(([letter, text]) => {
+    const isCorrect = letter === correctAnswer;
     return `
       <div class="choice-item ${isCorrect ? 'choice-correct' : ''}">
         <span class="choice-letter">${letter}.</span>
-        <span class="choice-text">${escHtml(choice)}</span>
+        <span class="choice-text">${escHtml(text)}</span>
         ${isCorrect ? '<span class="choice-mark">← Правильный ✓</span>' : ''}
       </div>`;
   }).join('');
@@ -1256,5 +1244,263 @@ function resetContent(contentId) {
     <div class="empty-state">
       <div class="empty-icon">←</div>
       <p>Выберите вопрос из списка слева</p>
+    </div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// ДЕПАРТАМЕНТЫ — РЕКОМЕНДАЦИИ МОДЕЛЕЙ
+// ═══════════════════════════════════════════════════════════════
+
+// Каждый департамент: id, icon, name, desc, weights по суб-метрикам, strengths
+const DEPARTMENTS = [
+  {
+    id: 'callcenter',
+    icon: '📞',
+    name: 'Колл-центр',
+    desc: 'Операторы отвечают на звонки и чаты клиентов. ИИ должен понимать неформальные сообщения, распознавать намерение клиента и справляться с опечатками в тексте.',
+    weights: [
+      { label: '💬 Неформальный стиль (Q&A)',   source: 'qa_informal',     w: 0.30 },
+      { label: '💬 Разговорный стиль (Q&A)',    source: 'qa_slang',        w: 0.15 },
+      { label: '🏷 Классификация намерений',    source: 'cl_overall',      w: 0.35 },
+      { label: '🔤 Устойчивость к опечаткам',  source: 'rb_overall',      w: 0.20 },
+    ],
+  },
+  {
+    id: 'legal',
+    icon: '⚖️',
+    name: 'Юридический отдел',
+    desc: 'Юристы составляют договоры, официальные письма и проверяют правовые документы. ИИ должен писать грамотно в официальном стиле, точно знать факты и понимать сложные тексты.',
+    weights: [
+      { label: '💼 Официальный стиль (Q&A)',    source: 'qa_formal',       w: 0.40 },
+      { label: '✅ Точность фактов',            source: 'fk_overall',      w: 0.35 },
+      { label: '📖 Понимание документов',       source: 'rc_overall',      w: 0.25 },
+    ],
+  },
+  {
+    id: 'risk',
+    icon: '🛡️',
+    name: 'Управление рисками',
+    desc: 'Риск-аналитики оценивают угрозы и составляют заключения. ИИ должен проверять факты, понимать аналитические отчёты и формулировать чёткие выводы.',
+    weights: [
+      { label: '✅ Точность фактов',            source: 'fk_overall',      w: 0.40 },
+      { label: '📖 Понимание документов',       source: 'rc_overall',      w: 0.35 },
+      { label: '💼 Официальный стиль (Q&A)',    source: 'qa_formal',       w: 0.25 },
+    ],
+  },
+  {
+    id: 'credit',
+    icon: '💳',
+    name: 'Кредитный отдел',
+    desc: 'Кредитные аналитики работают с банковскими документами, оценивают заявки и составляют официальные заключения. Ключевые навыки — анализ текстов и официальная переписка.',
+    weights: [
+      { label: '📖 Понимание документов',       source: 'rc_overall',      w: 0.40 },
+      { label: '💼 Официальный стиль (Q&A)',    source: 'qa_formal',       w: 0.35 },
+      { label: '✅ Точность фактов',            source: 'fk_overall',      w: 0.25 },
+    ],
+  },
+  {
+    id: 'marketing',
+    icon: '📢',
+    name: 'Маркетинг',
+    desc: 'Маркетологи пишут контент для соцсетей, рекламные тексты и общаются с молодой аудиторией. ИИ должен хорошо владеть разговорным языком и понимать настроение аудитории.',
+    weights: [
+      { label: '💬 Повседневный стиль (Q&A)',   source: 'qa_informal',     w: 0.35 },
+      { label: '💬 Разговорный стиль (Q&A)',    source: 'qa_slang',        w: 0.35 },
+      { label: '🏷 Классификация тональности', source: 'cl_sentiment',    w: 0.30 },
+    ],
+  },
+  {
+    id: 'hr',
+    icon: '👥',
+    name: 'HR / Кадровый отдел',
+    desc: 'HR работает с сотрудниками на всех уровнях — от неформального общения до официальных приказов. ИИ должен одинаково хорошо писать и официально, и по-человечески.',
+    weights: [
+      { label: '💬 Повседневный стиль (Q&A)',   source: 'qa_informal',     w: 0.40 },
+      { label: '🏷 Классификация намерений',    source: 'cl_overall',      w: 0.35 },
+      { label: '💼 Официальный стиль (Q&A)',    source: 'qa_formal',       w: 0.25 },
+    ],
+  },
+  {
+    id: 'compliance',
+    icon: '📋',
+    name: 'Комплаенс',
+    desc: 'Комплаенс-офицеры следят за соблюдением нормативов и проверяют документы на соответствие. ИИ должен знать законы и факты, понимать регуляторные тексты.',
+    weights: [
+      { label: '✅ Точность фактов',            source: 'fk_overall',      w: 0.45 },
+      { label: '💼 Официальный стиль (Q&A)',    source: 'qa_formal',       w: 0.30 },
+      { label: '📖 Понимание документов',       source: 'rc_overall',      w: 0.25 },
+    ],
+  },
+  {
+    id: 'digital',
+    icon: '💻',
+    name: 'IT / Цифровые услуги',
+    desc: 'IT-специалисты и поддержка цифровых каналов. ИИ должен классифицировать технические обращения, понимать нестандартные сообщения и быть универсальным помощником.',
+    weights: [
+      { label: '🏷 Классификация обращений',    source: 'cl_overall',      w: 0.35 },
+      { label: '🔤 Устойчивость к опечаткам',  source: 'rb_overall',      w: 0.30 },
+      { label: '💬 Повседневный стиль (Q&A)',   source: 'qa_informal',     w: 0.35 },
+    ],
+  },
+];
+
+// Извлечь числовое значение источника из данных модели
+function getDeptSourceScore(modelId, source, data) {
+  const lb   = (data.leaderboard      || {})[modelId] || {};
+  const cl   = (data.cl_leaderboard   || {})[modelId] || {};
+  const rb   = (data.rb_leaderboard   || {})[modelId] || {};
+  const fk   = (data.fk_leaderboard   || {})[modelId] || {};
+  const rc   = (data.rc_leaderboard   || {})[modelId] || {};
+
+  switch (source) {
+    case 'qa_informal':  return lb.informal        ?? null;
+    case 'qa_slang':     return lb.slang           ?? null;
+    case 'qa_formal':    return lb.formal_business ?? null;
+    case 'qa_overall':   return lb.overall         ?? null;
+    case 'cl_overall':   return cl.overall         ?? null;
+    case 'cl_sentiment': return cl.sentiment       ?? null;
+    case 'rb_overall':   return rb.overall         ?? null;
+    case 'fk_overall':   return fk.overall         ?? null;
+    case 'rc_overall':   return rc.overall         ?? null;
+    default:             return null;
+  }
+}
+
+// Рассчитать взвешенный балл департамента для модели
+function computeDeptScore(modelId, dept, data) {
+  let totalWeight = 0;
+  let totalScore  = 0;
+  for (const { source, w } of dept.weights) {
+    const val = getDeptSourceScore(modelId, source, data);
+    if (val != null) {
+      totalScore  += val * w;
+      totalWeight += w;
+    }
+  }
+  if (totalWeight < 0.3) return null; // недостаточно данных
+  return totalScore / totalWeight;
+}
+
+// ── Рендер боковой панели со списком департаментов ──
+function renderDeptsView() {
+  const list = document.getElementById('deptList');
+  if (!list) return;
+
+  list.innerHTML = DEPARTMENTS.map(dept => `
+    <div class="q-item dept-item" data-id="${dept.id}" onclick="selectDepartment('${dept.id}')">
+      <div class="dept-item-icon">${dept.icon}</div>
+      <div class="dept-item-body">
+        <div class="dept-item-name">${dept.name}</div>
+        <div class="dept-item-hint">${dept.weights.map(w => w.label.split(' ')[0]).join(' · ')}</div>
+      </div>
+    </div>`).join('');
+}
+
+// ── Выбрать департамент ──
+function selectDepartment(deptId) {
+  const data = state.appData;
+  if (!data) return;
+
+  const dept = DEPARTMENTS.find(d => d.id === deptId);
+  if (!dept) return;
+
+  document.querySelectorAll('#deptList .dept-item').forEach(el =>
+    el.classList.toggle('active', el.dataset.id === deptId)
+  );
+
+  // Собрать все модели и рассчитать баллы
+  const allModels = new Set([
+    ...Object.keys(data.models || {}),
+    ...Object.keys(data.leaderboard || {}),
+    ...Object.keys(data.cl_leaderboard || {}),
+    ...Object.keys(data.rb_leaderboard || {}),
+    ...Object.keys(data.fk_leaderboard || {}),
+    ...Object.keys(data.rc_leaderboard || {}),
+  ]);
+
+  // Убрать устаревшие модели (grok-2 → grok-3)
+  const filteredModels = [...allModels].filter(id => {
+    const newerId = MODEL_SUPERSEDED_BY[id];
+    return !(newerId && allModels.has(newerId));
+  });
+
+  const ranked = filteredModels
+    .map(id => ({ id, score: computeDeptScore(id, dept, data), meta: getModelMeta(id, data) }))
+    .filter(m => m.score != null)
+    .sort((a, b) => b.score - a.score);
+
+  const content = document.getElementById('deptContent');
+  if (!content) return;
+
+  const medals = ['🥇', '🥈', '🥉'];
+
+  const rows = ranked.map((m, i) => {
+    const medal = i < 3 ? medals[i] : `#${i + 1}`;
+    const scores = dept.weights.map(({ label, source }) => {
+      const val = getDeptSourceScore(m.id, source, data);
+      return val != null
+        ? `<div class="dept-sub-score">
+             <span class="dept-sub-label">${label}</span>
+             <div class="dept-sub-bar-wrap">
+               <div class="dept-sub-bar" style="width:${Math.min(val,100)}%;background:${m.meta.color}"></div>
+             </div>
+             <span class="dept-sub-val ${scoreClass(val)}">${Math.round(val)}</span>
+           </div>`
+        : `<div class="dept-sub-score">
+             <span class="dept-sub-label">${label}</span>
+             <span class="dept-sub-na">нет данных</span>
+           </div>`;
+    }).join('');
+
+    return `
+      <div class="dept-model-card ${i === 0 ? 'dept-card-top' : ''}">
+        <div class="dept-card-header">
+          <div class="dept-card-rank">${medal}</div>
+          <div class="dept-card-info" onclick="openModelDrawer('${m.id}')" style="cursor:pointer">
+            <div class="dept-card-dot" style="background:${m.meta.color}"></div>
+            <div>
+              <div class="dept-card-name">${escHtml(m.meta.name)}</div>
+              <div class="dept-card-provider">
+                ${escHtml(m.meta.provider)}
+                <span class="type-badge type-${m.meta.type}">
+                  ${m.meta.type === 'commercial' ? 'Коммерческая' : 'Open-Source'}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="dept-card-score-box">
+            <div class="dept-card-score ${scoreClass(m.score)}">${Math.round(m.score)}</div>
+            <div class="dept-card-score-label">Балл</div>
+          </div>
+        </div>
+        <div class="dept-card-breakdown">${scores}</div>
+      </div>`;
+  }).join('');
+
+  content.innerHTML = `
+    <div class="dept-detail">
+      <div class="dept-detail-header">
+        <div class="dept-header-icon">${dept.icon}</div>
+        <div>
+          <h2 class="dept-header-name">${dept.name}</h2>
+          <p class="dept-header-desc">${dept.desc}</p>
+        </div>
+      </div>
+
+      <div class="dept-criteria">
+        <div class="dept-criteria-title">Критерии подбора:</div>
+        <div class="dept-criteria-chips">
+          ${dept.weights.map(w => `
+            <div class="dept-criteria-chip">
+              <span class="dept-criteria-label">${w.label}</span>
+              <span class="dept-criteria-weight">${Math.round(w.w * 100)}%</span>
+            </div>`).join('')}
+        </div>
+      </div>
+
+      <div class="dept-models-title">
+        Рейтинг AI-моделей для «${dept.name}» · ${ranked.length} моделей
+      </div>
+      <div class="dept-models-list">${rows}</div>
     </div>`;
 }

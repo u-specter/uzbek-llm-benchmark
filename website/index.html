@@ -20,9 +20,12 @@
 
     <nav class="hdr-nav">
       <button class="nav-tab active" data-view="rating">🏆 Рейтинг</button>
-      <button class="nav-tab" data-view="qa">💬 Q&amp;A</button>
-      <button class="nav-tab" data-view="cl">🏷 CL</button>
-      <button class="nav-tab" data-view="modules">📦 RB · FK · RC</button>
+      <button class="nav-tab" data-view="qa">💬 Генерация ответов</button>
+      <button class="nav-tab" data-view="cl">🏷 Классификация</button>
+      <button class="nav-tab" data-view="rb">🔤 Устойчивость</button>
+      <button class="nav-tab" data-view="fk">✅ Факты</button>
+      <button class="nav-tab" data-view="rc">📖 Понимание текста</button>
+      <button class="nav-tab" data-view="depts">🏦 По департаментам</button>
       <button class="nav-tab" data-view="about">ℹ О тесте</button>
     </nav>
 
@@ -80,7 +83,8 @@
     <div id="qaView" class="view-page two-panel-view" style="display:none">
       <aside class="sidebar">
         <div class="sidebar-header">
-          <div class="sidebar-title">Вопрос и ответ · <span id="qaTotalCount">60</span> вопросов</div>
+          <div class="sidebar-title">Генерация ответов · <span id="qaTotalCount">60</span> вопросов</div>
+          <div class="sidebar-desc">Модели отвечают на банковские вопросы в трёх стилях речи. Оценивает GPT-4o по 4 критериям.</div>
           <div class="sub-filter-chips" id="qaSubFilter"></div>
           <div class="sidebar-search">
             <input id="qaSearchInput" type="text" placeholder="Поиск по тексту..." />
@@ -100,7 +104,13 @@
     <div id="clView" class="view-page two-panel-view" style="display:none">
       <aside class="sidebar">
         <div class="sidebar-header">
-          <div class="sidebar-title">Классификация текста · <span id="clTotalCount">20</span> вопросов</div>
+          <div class="sidebar-title">Классификация · <span id="clTotalCount">20</span> вопросов</div>
+          <div class="sidebar-desc">Определяет ли модель тональность, намерение и стиль речи клиента банка?</div>
+          <div class="sidebar-glossary">
+            <div class="gloss-item"><span class="gloss-tag">Тональность</span> — клиент доволен, недоволен или нейтрален? (позитив / негатив / нейтраль)</div>
+            <div class="gloss-item"><span class="gloss-tag">Намерение</span> — зачем написал клиент? (жалоба, вопрос, просьба, благодарность…)</div>
+            <div class="gloss-item"><span class="gloss-tag">Стиль речи</span> — как написано: официально, по-простому или разговорно?</div>
+          </div>
           <div class="sub-filter-chips" id="clSubFilter"></div>
           <div class="sidebar-search">
             <input id="clSearchInput" type="text" placeholder="Поиск по тексту..." />
@@ -116,64 +126,75 @@
       </main>
     </div>
 
-    <!-- ── МОДУЛИ RB/FK/RC ── -->
-    <div id="modulesView" class="view-page" style="display:none">
-      <div class="secondary-tabs" id="modulesSecTabs">
-        <button class="sec-tab active" data-mod="rb">RB — Устойчивость к шуму</button>
-        <button class="sec-tab" data-mod="fk">FK — Проверка фактов</button>
-        <button class="sec-tab" data-mod="rc">RC — Понимание текста</button>
-      </div>
-
-      <!-- RB sub-view -->
-      <div id="rbSubView" class="two-panel-view mod-subview">
-        <aside class="sidebar">
-          <div class="sidebar-header">
-            <div class="sidebar-title">Устойчивость к шуму · <span id="rbTotalCount">15</span> вопросов</div>
-            <div class="sub-filter-chips" id="rbSubFilter"></div>
-            <div class="sidebar-search">
-              <input id="rbSearchInput" type="text" placeholder="Поиск по тексту..." />
-            </div>
+    <!-- ── RB — Устойчивость к опечаткам и шуму ── -->
+    <div id="rbView" class="view-page two-panel-view" style="display:none">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-title">Устойчивость к шуму · <span id="rbTotalCount">15</span> вопросов</div>
+          <div class="sidebar-desc">Понимает ли модель смысл при опечатках, кириллице и пропущенных апострофах?</div>
+          <div class="sub-filter-chips" id="rbSubFilter"></div>
+          <div class="sidebar-search">
+            <input id="rbSearchInput" type="text" placeholder="Поиск по тексту..." />
           </div>
-          <div class="q-list" id="rbList"></div>
-        </aside>
-        <main class="content" id="rbContent">
-          <div class="empty-state"><div class="empty-icon">←</div><p>Выберите вопрос из списка слева</p></div>
-        </main>
-      </div>
+        </div>
+        <div class="q-list" id="rbList"></div>
+      </aside>
+      <main class="content" id="rbContent">
+        <div class="empty-state"><div class="empty-icon">←</div><p>Выберите вопрос из списка слева</p></div>
+      </main>
+    </div>
 
-      <!-- FK sub-view -->
-      <div id="fkSubView" class="two-panel-view mod-subview" style="display:none">
-        <aside class="sidebar">
-          <div class="sidebar-header">
-            <div class="sidebar-title">Проверка фактов · <span id="fkTotalCount">10</span> вопросов</div>
-            <div class="sub-filter-chips" id="fkSubFilter"></div>
-            <div class="sidebar-search">
-              <input id="fkSearchInput" type="text" placeholder="Поиск по тексту..." />
-            </div>
+    <!-- ── FK — Проверка фактов ── -->
+    <div id="fkView" class="view-page two-panel-view" style="display:none">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-title">Проверка фактов · <span id="fkTotalCount">10</span> вопросов</div>
+          <div class="sidebar-desc">Знает ли модель реальные факты об Узбекистане, валюте и банковской системе?</div>
+          <div class="sub-filter-chips" id="fkSubFilter"></div>
+          <div class="sidebar-search">
+            <input id="fkSearchInput" type="text" placeholder="Поиск по тексту..." />
           </div>
-          <div class="q-list" id="fkList"></div>
-        </aside>
-        <main class="content" id="fkContent">
-          <div class="empty-state"><div class="empty-icon">←</div><p>Выберите вопрос из списка слева</p></div>
-        </main>
-      </div>
+        </div>
+        <div class="q-list" id="fkList"></div>
+      </aside>
+      <main class="content" id="fkContent">
+        <div class="empty-state"><div class="empty-icon">←</div><p>Выберите вопрос из списка слева</p></div>
+      </main>
+    </div>
 
-      <!-- RC sub-view -->
-      <div id="rcSubView" class="two-panel-view mod-subview" style="display:none">
-        <aside class="sidebar">
-          <div class="sidebar-header">
-            <div class="sidebar-title">Понимание текста · <span id="rcTotalCount">9</span> вопросов</div>
-            <div class="sub-filter-chips" id="rcSubFilter"></div>
-            <div class="sidebar-search">
-              <input id="rcSearchInput" type="text" placeholder="Поиск по тексту..." />
-            </div>
+    <!-- ── RC — Понимание текста ── -->
+    <div id="rcView" class="view-page two-panel-view" style="display:none">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-title">Понимание текста · <span id="rcTotalCount">9</span> вопросов</div>
+          <div class="sidebar-desc">Отвечает ли модель на вопросы по реальным банковским текстам с kun.uz?</div>
+          <div class="sub-filter-chips" id="rcSubFilter"></div>
+          <div class="sidebar-search">
+            <input id="rcSearchInput" type="text" placeholder="Поиск по тексту..." />
           </div>
-          <div class="q-list" id="rcList"></div>
-        </aside>
-        <main class="content" id="rcContent">
-          <div class="empty-state"><div class="empty-icon">←</div><p>Выберите вопрос из списка слева</p></div>
-        </main>
-      </div>
+        </div>
+        <div class="q-list" id="rcList"></div>
+      </aside>
+      <main class="content" id="rcContent">
+        <div class="empty-state"><div class="empty-icon">←</div><p>Выберите вопрос из списка слева</p></div>
+      </main>
+    </div>
+
+    <!-- ── РЕКОМЕНДАЦИИ ПО ДЕПАРТАМЕНТАМ ── -->
+    <div id="deptsView" class="view-page two-panel-view" style="display:none">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-title">Выберите департамент</div>
+          <div class="sidebar-desc">Какой отдел банка будет использовать ИИ? Система подберёт лучшие модели.</div>
+        </div>
+        <div class="q-list" id="deptList"></div>
+      </aside>
+      <main class="content" id="deptContent">
+        <div class="empty-state">
+          <div class="empty-icon">🏦</div>
+          <p>Выберите департамент из списка слева, чтобы увидеть подходящие AI-модели</p>
+        </div>
+      </main>
     </div>
 
     <!-- ── О ТЕСТЕ ── -->
@@ -212,34 +233,34 @@ CL/RB/FK/RC: % правильных ответов (0–100)</pre>
             </thead>
             <tbody>
               <tr>
-                <td><strong>Q&amp;A</strong></td>
+                <td><strong>💬 Генерация ответов</strong></td>
                 <td>60</td>
-                <td>Свободная генерация ответов в трёх стилях: официальный, повседневный, разговорный</td>
-                <td>GPT-4o по 4 критериям (D1–D4)</td>
+                <td>Модель отвечает на банковские вопросы в 3 стилях речи: официальный, повседневный, разговорный</td>
+                <td>GPT-4o-судья оценивает по 4 критериям: точность, язык, стиль, естественность</td>
               </tr>
               <tr>
-                <td><strong>CL</strong></td>
+                <td><strong>🏷 Классификация</strong></td>
                 <td>20</td>
-                <td>Классификация тональности, намерения и регистра речи клиента банка</td>
-                <td>Автоматически (правильно/неправильно)</td>
+                <td>Модель определяет тональность, намерение и стиль речи в сообщении клиента банка</td>
+                <td>Автоматически: правильно / неправильно</td>
               </tr>
               <tr>
-                <td><strong>RB</strong></td>
+                <td><strong>🔤 Устойчивость к шуму</strong></td>
                 <td>15</td>
-                <td>Распознавание намерения при зашумлённом тексте (опечатки, кириллица, апострофы)</td>
-                <td>Автоматически</td>
+                <td>Понимает ли модель смысл при опечатках, кириллице в латинском тексте, пропущенных апострофах</td>
+                <td>Автоматически: правильно / неправильно</td>
               </tr>
               <tr>
-                <td><strong>FK</strong></td>
+                <td><strong>✅ Проверка фактов</strong></td>
                 <td>10</td>
-                <td>Проверка фактов об Узбекистане, валюте и банковской системе</td>
-                <td>Автоматически</td>
+                <td>Знает ли модель реальные факты об Узбекистане, национальной валюте и банковской системе</td>
+                <td>Автоматически: to'g'ri (верно) / noto'g'ri (неверно)</td>
               </tr>
               <tr>
-                <td><strong>RC</strong></td>
+                <td><strong>📖 Понимание текста</strong></td>
                 <td>9</td>
-                <td>Понимание реальных банковских текстов с kun.uz (множественный выбор)</td>
-                <td>Автоматически</td>
+                <td>Отвечает ли модель на вопросы по реальным банковским новостям с kun.uz (выбор из A/B/C/D)</td>
+                <td>Автоматически: правильно / неправильно</td>
               </tr>
             </tbody>
           </table>
