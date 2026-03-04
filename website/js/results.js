@@ -1,4 +1,4 @@
-// Auto-generated 2026-03-04 10:03
+// Auto-generated 2026-03-04 15:54
 window.BENCHMARK_RESULTS = {
   "benchmark_date": "2026-02-27 14:52",
   "total_questions": 60,
@@ -19733,6 +19733,5864 @@ window.BENCHMARK_RESULTS = {
       "hayot_bank": 0.0,
       "kredit_freeze": 0.0,
       "pul_otkazma": 0.0
+    }
+  },
+  "lq_questions": [
+    {
+      "id": "LQ-01",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Soliq organlarining elektron davlat xizmatlari portali bilan qanday bog‘lansa bo‘ladi?",
+      "reference_answer": "Kontaktlar va havolalar:\nSayt: my.soliq.uz\nE-mail: my@soliq.uz\nTelefon: (71) 202-32-82 yoki 1198",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Soliq organlarining elektron davlat xizmatlari portali bilan bog‘lanish uchun my.soliq.uz veb-saytiga kirishingiz mumkin.",
+          "latency_ms": 2311,
+          "tokens": 114,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Soliq organlari bilan elektron portal orqali bog'lanish\n\nSoliq organlarining elektron xizmatlari uchun quyidagi rasmiy platformalardan foydalanishingiz mumkin:\n\n### Asosiy portallar:\n- **my.soliq.uz** — Soliq to'lovchilarning shaxsiy kabineti\n- **cabinet.soliq.uz** — Yuridik shaxslar uchun elektron kabinet\n- **taxes.uz** — Davlat soliq qo'mitasining rasmiy sayti\n\n### Bog'lanish usullari:\n1. **Online murojaat** — my.soliq.uz orqali elektron ariza yuborish\n2. **Call-markaz** — **1198** raqamiga qo'ng'iroq qilish\n3. **Telegram-bot** — @SoliqBot orqali murojaat\n4. **Elektron pochta** — info@soliq.uz\n\n### Kirish uchun kerakli ma'lumotlar:\n- STIR (Soliq to'lovchining identifikatsiya raqami)\n- ERI (Elektron raqamli imzo) yoki **One ID** orqali autentifikatsiya\n\n> 📌 Barcha soliq xizmatlaridan foydalanish uchun **my.soliq.uz** portali tavsiya etiladi.",
+          "latency_ms": 9750,
+          "tokens": 465,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 11.55759026s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Soliq organlarining elektron davlat xizmatlari portali bilan bog'lanish uchun \"my.gov.uz\" saytiga kirish va shaxsiy kabinet orqali foydalanish mumkin.",
+          "latency_ms": 696,
+          "tokens": 178,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "Soliq organlarining elektron davlat xizmatlari portali (egov.uz)ga tizimga kirish uchun quyidagilarni bajaring:  \n1. **Ro'yxatdan o'ting**: Shaxsiy ma'lumotlaringiz (FIO, passport ma'lumotlari, telefon raqami) bilan tizimga ro'yxatdan o'ting.  \n2. **Tasdiqlash**: Telefon yoki e-mail orqali ro'yxatdan o'tgan ma'lumotlaringizni tasdiqlang.  \n3. **Kirish**: Login va parol yordamida tizimga kirish.  \n4. **Xizmatlardan foydalanish**: \"Soliq xizmatlari\" bo'limini topib, kerakli xizmatlardan foydalaning (masalan, soliq hisobotlarini yuborish, so'rovlarni tekshirish).  \n\nEhtimoliy kerak bo'lgan qo'shimcha so'rovlarga javob topish uchun tizimning \"Savol-javob\" yoki \"Yordam\" bo'limlaridan foydalaning.",
+          "latency_ms": 2446,
+          "tokens": 730,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Soliq organlarining elektron davlat xizmatlari (EDS) portaliga quyidagicha bog‘lanish mumkin:\n\n1. **Ro‘yxatdan o‘tish** – portalga kirish sahifasida “Ro‘yxatdan o‘tish” tugmasini bosib, shaxsiy ma’lumotlaringizni (INN, pasport ma’lumotlari, telefon raqami) kiriting.  \n2. **Elektron imzo (e‑IMZO) o‘rnatish** – davlat xizmatlari uchun elektron imzo talab qilinadi. “e‑IMZO” dasturini rasmiy saytdan yuklab olib, o‘zingizga tegishli sertifikatni (yuridik shaxs yoki jismoniy shaxs) o‘rnatishingiz kerak.  \n3. **Kirish (login) qilish** – ro‘yxatdan o‘tgandan so‘ng, foydalanuvchi nomi (INN yoki elektron pochta) va parol bilan portalga kiring.  \n4. **Xizmatlar bo‘limini tanlash** – “Solik xizmatlari” yoki “Moliya‑soliq” bo‘limiga o‘ting. Bu yerda deklaratsiyalar topshirish, soliq to‘lovlari, hisobotlar, arizalar va boshqa xizmatlarni bajarish mumkin.  \n5. **Elektron imzo bilan tasdiqlash** – har qanday hujjatni (deklaratsiya, ariza) yuborishdan oldin, “e‑IMZO” yordamida imzolab tasdiqlang.  \n6. **Xabar va bildirishnomalarni kuzatish** – portal ichidagi “Xabarlar” bo‘limida soliq organlari tomonidan yuborilgan bildirishnomalar va javoblarni ko‘rib chiqing.  \n\n**Qisqa tavsiyalar**  \n- Internetga barqaror ulanish va brauzer (Chrome, Firefox) yangilangan bo‘lishi kerak.  \n- “e‑IMZO” sertifikatining amal qilish muddatini tekshirib turing; muddati tugagan bo‘lsa, yangilashni kechiktirmang.  \n- Muammolar yuzaga kelsa, portalning “Texnik yordam” bo‘limiga murojaat qiling yoki soliq organlari call‑centeriga qo‘ng‘iring.",
+          "latency_ms": 1539,
+          "tokens": 713,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Soliq organlarining elektron davlat xizmatlari portali bilan bog‘lanish uchun quyidagi manzillardan foydalanishingiz mumkin: Yagona interaktiv davlat xizmatlari portali (my.gov.uz), Soliq qo'mitasining rasmiy veb-sayti (soliq.uz) hamda ijtimoiy tarmoqlardagi rasmiy sahifalari orqali murojaat qilishingiz mumkin.",
+          "latency_ms": 705,
+          "tokens": 173,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Soliq organlarining elektron davlat xizmatlari portaliga www.solik.uz rasmiy sayti orqali bog‘lanishingiz mumkin.",
+          "latency_ms": 412,
+          "tokens": 113,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Soliq organlarining elektron davlat xizmatlari portaliga my.soliq.uz orqali kiring.",
+          "latency_ms": 3380,
+          "tokens": 139,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ готов помочь вам с вопросами и задачами в области организации и работы с информацией на сайте Электронного государства Узбекистана. Пожалуйста, предоставьте мне более подробный вопрос или задание, и я с радостью предоставлю вам английское ответ. Если вам нужна информация на русском языке, пожалуйста, уточните это в вопросе.",
+          "latency_ms": 563,
+          "tokens": 335,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-02",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Elektron soliq hisobotlari qanday topshiriladi?",
+      "reference_answer": "Soliq organlarining elektron tizimi orqali shaxsiy kabinetdan yuboriladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Elektron soliq hisobotlarini topshirish uchun Soliq qo'mitasining rasmiy veb-saytida ro'yxatdan o'tib, shaxsiy kabinet orqali tegishli shakllarni to'ldirib, elektron raqamli imzo (ERI) bilan tasdiqlab yuborish kerak.",
+          "latency_ms": 2114,
+          "tokens": 140,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "claude-sonnet": {
+          "response": "## Elektron Soliq Hisobotlarini Topshirish Tartibi\n\nElektron soliq hisobotlari quyidagi yo'llar bilan topshiriladi:\n\n### 1. **my.soliq.uz portali orqali**\n- [my.soliq.uz](https://my.soliq.uz) saytiga kiring\n- Shaxsiy kabinetga **ERI (elektron raqamli imzo)** yoki **One-ID** orqali kiring\n- Tegishli hisobot turini tanlang va to'ldiring\n- Elektron imzo bilan tasdiqlang va yuboring\n\n### 2. **Kerakli hujjatlar:**\n- Elektron raqamli imzo (ERI) — soliq organlarida yoki **e-imzo.uz** orqali olinadi\n- Soliq to'lovchining **STIR** raqami\n- Tegishli davr uchun hisobot ma'lumotlari\n\n### 3. **Asosiy hisobot turlari va muddatlari:**\n| Hisobot | Muddat |\n|--------|--------|\n| QQS hisoboti | Har oyning 20-sanasigacha |\n| Foyda solig'i | Har chorakda 20-sanagacha |\n| Yagona soliq | Har chorakda 20-sanagacha |\n\n### 4. **Yordam uchun:**\n- **Qo'ng'iroq markazi:** 1198\n- Yaqin soliq inspeksiyasiga murojaat qiling",
+          "latency_ms": 12741,
+          "tokens": 508,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 59.345320415s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '59s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Elektron soliq hisobotlari \"E-Soliq\" portal orqali topshiriladi.",
+          "latency_ms": 528,
+          "tokens": 139,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Elektron soliq hisobotlarini topshirish uchun \"www.nalog.gov.uz\" saytiga ro'yxatdan o'ting, kerakli shakllarni to'ldiring va tizim orqali yuboring. Hisobotlarni muddatida topshirish kerak, aks holda jazolar yuzaga keladi. Elektron imzoni yoki sertifikatni foydalanish talab etiladi.",
+          "latency_ms": 1431,
+          "tokens": 462,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gpt-oss-120b": {
+          "response": "Elektron soliq hisobotlarini topshirish quyidagi bosqichlarda amalga oshiriladi:\n\n1. **Elektron kabinetga kirish** – Soliq organining rasmiy veb‑sayti (masalan, «mytax.uz», «e‑tax.uz») yoki Davlat xizmatlari portaliga (my.gov.uz) ro‘yxatdan o‘tib, shaxsiy elektron kabinetga kirish.\n\n2. **Raqamli imzo (elektron imzo) tayyorlash** – Hisobotni tasdiqlash uchun sertifikatli raqamli imzo (E‑IMZO) yoki mobil imzo (M‑IMZO) kerak. Imzo o‘rnatilgan kompyuter yoki mobil qurilmadan foydalaning.\n\n3. **Hisobotni tayyorlash** – Soliq deklaratsiyasi (masalan, QQS, daromad solig‘i, foyda solig‘i) ni Soliq organi tomonidan taqdim etilgan onlayn shaklda to‘ldiring yoki elektron jadval (Excel/CSV) formatida tayyorlab, tizimga yuklang.\n\n4. **Ma’lumotlarni tekshirish** – Tizim avtomatik ravishda ma’lumotlarni tekshiradi; xatoliklar bo‘lsa, ularni tuzatib, qayta yuklang.\n\n5. **Imzolash va yuborish** – Tayyor hisobotni raqamli imzo bilan imzolab, “Yuborish” (Submit) tugmasini bosing. Tizim tasdiqlash raqamini (kvitansiya) va yuborilgan vaqtni ko‘rsatadi.\n\n6. **Tasdiqlashni saqlash** – Qabul qilingan kvitansiyani PDF yoki XML formatida yuklab oling va arxivlang. Bu hujjat keyinchalik tekshiruv yoki auditda talab qilinishi mumkin.\n\n**Eslatma:** Hisobot topshirish muddati soliq turiga qarab farq qiladi (masalan, QQS – har oy oxirida, daromad solig‘i – yillik deklaratsiya 1-martgacha). Muddati o‘tganda kechiktirilgan topshirish uchun jarima qo‘llanilishi mumkin.",
+          "latency_ms": 1855,
+          "tokens": 669,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Elektron soliq hisobotlari soliq organlari tomonidan taqdim etilgan maxsus portal yoki elektron xizmatlar orqali onlayn tarzda topshiriladi. Shuningdek, maxsus dasturiy ta'minot yordamida hisobotlarni tayyorlash va yuborish mumkin.",
+          "latency_ms": 852,
+          "tokens": 133,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-scout": {
+          "response": "Elektron soliq hisobotlari soliq to‘lovchilar tomonidan “Soliq” dasturiy ta’minoti yoki “My tax” mobil ilovasi orqali Internet tarmog‘iga ulangan holda topshiriladi.",
+          "latency_ms": 433,
+          "tokens": 124,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Hisobot.uz saytiga kiring, kirish tugmasini bosing, elektron kalit orqali tizimga kiring, kerakli shaklni tanlab to‘ldiring va yubor tugmasini bosing.",
+          "latency_ms": 3112,
+          "tokens": 153,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шуман, як мені знати, Україна має багатьох варіантів для податкового оплату електронних банківських записів. Виберіть одного з цих варіантів, які відповідають вашому статусу та потребам.\n\n1. Податкова оплата через банк: Якщо ви власник банкового счета, вам можна оплатити електронні банківські записи через банк. Ви можете звернутися до банку, якого ви власник, та запитати про податкову оплату електронних банківських записів. Банк звернеться до Державного бюро податків (ДБП) для податкової оплати.\n\n2. Податкова оплата через банковський каса: Якщо ви власник банкового каса, ви можете оплатити електронні банківські записи через банкову касу. Банковська каса звернеться до ДБП для податкової оплати.\n\n3. Податкова оплата через банковський каса від ДБП: Якщо ви не можете використовувати банкову касу чи банкову касу від банку, ви можете запитувати податкову оплату електронних банківських записів через банкову касу ДБП (Досіджаючий банкові касів). Ви можете звернутися до ДБП та запитувати податкову оплату електронних банківських записів.\n\nВиберіть відповідний варіант для вас, але важливо знати, що відповідно до вашого статусу та місцевості, вам можна використовувати одну з цих методів для податкової оплати електронних банківських записів. Виберіть спосіб, який більш зовнішнього вашого банку та місця, де ваш банк має місцевий офіс. Виберіть одну з цих методів для податкової оплати електронних банківських записів.\n\nЯкщо ви не знаєте, який",
+          "latency_ms": 1308,
+          "tokens": 1120,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-03",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Jismoniy shaxs daromad solig‘ining asosiy stavkasi qanday?",
+      "reference_answer": "Asosiy stavkalar qonun bilan belgilanadi; daromad turiga ko‘ra farqlanishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Jismoniy shaxs daromad solig‘ining asosiy stavkasi 12% ni tashkil etadi.",
+          "latency_ms": 1443,
+          "tokens": 106,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "O'zbekistonda jismoniy shaxslar daromad solig'ining asosiy stavkasi **12%** etib belgilangan.",
+          "latency_ms": 2765,
+          "tokens": 142,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 36.083918833s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Jismoniy shaxs daromad solig‘ining asosiy stavkasi 12% ni tashkil etadi.",
+          "latency_ms": 1120,
+          "tokens": 150,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Jismoniy shaxslar daromad solig'ining asosiy stavkasi 12%.",
+          "latency_ms": 1260,
+          "tokens": 304,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Jismoniy shaxs daromad solig‘ining asosiy stavkasi — 12 %.",
+          "latency_ms": 1006,
+          "tokens": 262,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Jismoniy shaxs daromad solig'ining asosiy stavkasi 12%.",
+          "latency_ms": 875,
+          "tokens": 103,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "12%",
+          "latency_ms": 721,
+          "tokens": 85,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "12%",
+          "latency_ms": 1682,
+          "tokens": 109,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шахсандан ассосий ставкаси бурштагингизга баштан болган маршрутларниң бирликликларининг элементсини билан автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга автоматик эффект берунга ав",
+          "latency_ms": 1592,
+          "tokens": 1126,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-04",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "O‘zimning hovlimda qulupunay etishtiraman. Etishtirilgan hosilni mahallamdagi qo‘chada sotsam, men qancha va qanday soliq to‘layman?",
+      "reference_answer": "Soliq kodeksining 378-moddasiga asosan, uy xo‘jaligida dehqonchilik mahsulotlarini tabiiy va qayta ishlangan holda sotishdan olinadigan daromadlar bo‘yicha imtiyoz berilgan bo‘lib, bunda mazkur daromadlardan jismoniy shaxslardan olinadigan daromad solig‘i undirilmaydi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Siz o'zingiz etishtirgan qulupnayni mahallada sotish uchun daromad solig'i to'lashingiz kerak bo'ladi. Buning uchun avvalo yakka tartibdagi tadbirkor sifatida ro'yxatdan o'tishingiz lozim. Soliq miqdori va to'lov tartibi hududingizdagi soliq organlari tomonidan belgilanadi, shuning uchun aniq ma'lumot olish uchun mahalliy soliq idorasiga murojaat qiling.",
+          "latency_ms": 3017,
+          "tokens": 214,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "claude-sonnet": {
+          "response": "## Qulupnay Sotishdan Soliq\n\n**Yaxshi xabar:** O'zbekiston qonunchiligiga ko'ra, **jismoniy shaxslar o'z shaxsiy tomorqa (hovli) yerida yetishtirgan qishloq xo'jaligi mahsulotlarini sotishdan **soliq to'lamaydi**.\n\n### Asosiy shartlar:\n- Mahsulot **o'z yerida** (shaxsiy tomorqada) yetishtirilgan bo'lishi kerak\n- Sotiladigan joy **ochiq bozor yoki ko'cha** bo'lishi mumkin\n- Bu faoliyat **tadbirkorlik** sifatida qaralmasligi kerak (ya'ni industrial miqyosda emas)\n\n### Hujjat:\n**Soliq kodeksining 369-moddasi** va **\"Dehqon xo'jaligi to'g'risida\"gi qonun** asosida tomorqa yeridan olingan mahsulot sotuvidan daromad solig'i undirilmaydi.\n\n### Diqqat:\nAgar siz **katta hajmda** va **doimiy tijorat maqsadida** sotsangiz — soliq organlari buni tadbirkorlik deb hisoblashi mumkin. Bu holda **yakka tartibdagi tadbirkor** sifatida ro'yxatdan o'tish tavsiya etiladi.\n\n**Xulosa:** Oddiy hovli hosilingizni mahallada sotsangiz — **soliq yo'q** ✅",
+          "latency_ms": 15727,
+          "tokens": 549,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 30.952053884s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Sizning hovlizda yetishtirilgan qulupnay hosilini mahalladagi qo'chada sotish uchun O'zbekiston Respublikasining Soliq kodeksiga muvofiq, daromad solig'ini to'lashingiz kerak. Soliq miqdori sotilgan mahsulotning umumiy qiymatining 5% ni tashkil etadi. Shuningdek, siz mahalliy hokimiyat organlaridan tegishli guvohnoma yoki litsenziya olishingiz ham lozim.",
+          "latency_ms": 1301,
+          "tokens": 290,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "Agar yillik daromad 30 mln so'mdan o'tmasa, 5% soliq to'lanadi. 30 mln so'mdan o'tsa, 15% soliq to'lanadi. Daromadni ro'yxatga o'tkazish va soliq organiga murojaat qilish kerak.",
+          "latency_ms": 1491,
+          "tokens": 538,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "**Qulupunay (qovun) sotishdan kelib chiqadigan soliq majburiyatlari**\n\n| Soliq turi | Kimga to‘lanadi | Qachon to‘lanadi | Miqdori (oddiy shartlar) |\n|------------|----------------|------------------|--------------------------|\n| **Daromad solig‘i (yoki “yagona soliq”)** | Agar siz **xususiy tadbirkor (IP)** sifatida ro‘yxatdan o‘tsangiz. | Yillik daromad deklaratsiyasi bilan, 1‑martga qadar. | • **Umumiy tizim** – daromad (daromad‑chiqim)dan 12 %.<br>• **Yagona soliq** (agar yillik daromad 30 mln so‘m gacha bo‘lsa) – daromadning 4 % (VAT to‘lovchisi bo‘lmasangiz). |\n| **QQS (Qo‘shilgan qiymat solig‘i)** | Faqat **QQS to‘lovchisi** bo‘lsangiz (yillik aylanma 150 mln so‘m > bo‘lsa). | Har oy yoki chorakda, QQS deklaratsiyasi bilan. | **To‘lanmaydi** – kichik hajmdagi savdo (yillik aylanma 150 mln so‘mdan kam) QQS to‘lovchisi bo‘lish shart emas. |\n| **Qishloq xo‘jaligi yer solig‘i** | Yer egasi (siz) – yillik to‘lov. | Har yili 1‑yanvarga qadar. | Yerning baholangan qiymati bo‘yicha 0,1 %‑0,5 % (hujjatda ko‘rsatilgan). Bu soliq hosil sotishdan mustaqil ravishda to‘lanadi. |\n| **Boshqa soliq (masalan, ijtimoiy sug‘urta, pensiya)** | Agar siz **xususiy tadbirkor** bo‘lsangiz, ijtimoiy sug‘urta (15 %) va pensiya (10 %) ham to‘lanadi. | Yillik deklaratsiya bilan. | Daromadga nisbatan hisoblanadi. |\n\n### Qanday qilib amalda bajarish kerak?\n\n1. **Tadbirkorlikni ro‘yxatdan o‘tkazing** (agar yillik savdo hajmi 5 mln so‘m > bo‘lsa yoki doimiy savdo qilmoqchi bo‘lsangiz).  \n2. **Soliq turini tanlang** – umumiy tizim (12 % daromad solig‘i) yoki yagonalik (4 % daromad).",
+          "latency_ms": 2521,
+          "tokens": 1194,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "Siz o'z uyingizda qulupnay yetishtirib, uni sotganingiz uchun yagona yer solig'i va qat'iy belgilangan miqdordagi soliq to'laysiz. Yagona yer solig'ini to'lashdan ozod etilgan fuqarolar qat'iy belgilangan miqdordagi soliqni to'laydi. Qat'iy belgilangan miqdordagi soliq har yili qayta ko'rib chiqiladi va O'zbekiston Respublikasi Prezidentining qaroriga muvofiq belgilanadi. 2023-yilda ushbu soliq 300 ming so'mni tashkil etadi. Siz sotgan mahsulotdan tushgan daromadingizdan hech qanday daromad solig'i yoki boshqa soliq ushlab qolinmaydi.",
+          "latency_ms": 1064,
+          "tokens": 286,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-scout": {
+          "response": "Dehqonchilik mahsulotlari, jumladan, qulupnay etishtirishdan olingan daromadga soliq solish tartibi O‘zbekiston Respublikasining Soliq kodeksida belgilab berilgan.\n\nAgar siz jismoniy shaxs bo‘lsangiz va dehqonchilik faoliyatidan daromad olsangiz, u holda siz quyidagi soliqlarni to‘lashingiz kerak:\n\n- **Soliq turi:** Jismoniy shaxslar daromad solig‘i.\n\n- **Soliq stavkasi:** 2023 yil holatiga ko‘ra, O‘zbekistonda jismoniy shaxslar daromad solig‘i stavkasi 12%.\n\n- **Hisoblash tartibi:** Soliq summasi = (Etishtirilgan mahsulotdan olingan daromad - 50% chegirma) * 0.12\n\n  **Izoh:** \n  - 50% chegirma kichik biznes subyektlari, mikrofirmalar va dehqon xo‘jaliklari uchun qo‘llaniladi. \n\nMasalan, agar siz 10 million so‘mga qulupnay sotsangiz, soliq summasi quyidagicha bo‘ladi:\n \n(10,000,000 - 50%) * 0.12 = 600,000 so‘m.\n\nShuningdek, mahalliy soliqlar va yig‘imlar ham mavjud bo‘lishi mumkin. \n\nAniq ma’lumot olish uchun, soliq bo‘limiga murojaat qilishingiz yoki soliq maslahatchisidan konsultatsiya olishingiz tavsiya etiladi.",
+          "latency_ms": 1176,
+          "tokens": 467,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "kimi-k2": {
+          "response": "Shaxsiy hovlingizda etishtirilgan qulupnayni mahalla ko‘chada sotishda:\n\n- **Soliq vaqtinchalik ozod**. O‘zbekiston Respublikasi bozorlarda jismoniy shaxslar tomonidan etishtirilgan mahsulotlarni chevarasiga (qurbaqa yoki qulupnay) sotishi soliq organlari tomonidan nazorat qilinmasligi mumkin va bunday sotish uchun soliq to‘lanmaydi.  \n- Ammo **siz 30 million so‘mdan ortiq daromad oldingiz** yoki **tadbirkor sifatida ro‘yxatdan o‘tdingizda**, ushbu shartlar amal qilmaydi.\n\nKunning oxirigacha sotilgan hajimga qarab soliq organlariga xabar berishingiz va ro‘yxatdan o‘tishingiz maslahat beriladi.",
+          "latency_ms": 2316,
+          "tokens": 359,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОЗ: Дорогой господин, я понимаю, что ваше удовольствие от своего дома и своих уголков важно для вас. Однако, я не могу влиять на ваше состояние физического здоровья или предложить медицинские рекомендации.\n\nЕсли вы чувствуете себя неудовлетворительно или имеете вопросы о здоровье, я рекомендую обратиться к вашему медицинскому доктору или специалисту. Они смогут оценить ваше состояние и предложить соответствующие рекомендации или медицинские услуги.\n\nЕсли ваши вопросы связаны с жизненными вопросами или требованиями к своему дому или окружающей среде, я могу помочь вам советуя вам воткинские рекомендации или предложения. Например, я могу помочь вам составить план рекомендуемых изменений в вашем доме или предложить идеи о том, как улучшить вашу жизнь в доме.\n\nЕсли вы хотите изменить свой дом или улучшить его оснащение, я могу предложить некоторые рекомендации и идеи. Например, я могу помочь выбрать лучшие места для установки светильников или предложить идеи о том, как можно улучшить освещение и комфорт в вашем доме.\n\nЕсли вы ищете советы по улучшению вашего места жительности, я могу помочь вам с выбором места для установки светильников или предложить идеи о том, как можно улучшить освещение и комфорт в вашем доме.\n\nЕсли вы ищете советы по улучшению вашего дома или окружающей среды, я могу помочь вам с выбором места для установки светильников или предложить идеи о том, как можно улучшить освещение и комфорт в вашем доме.\n\nЕсли вы ищете советы по улучшению вашего дома или окружающей среды, я могу помочь вам с выбором места для установки светильников или предложить идеи о том, как можно улучшить освещение и комфорт в вашем доме.\n\nЕсли вы ищете советы по улучшени",
+          "latency_ms": 1127,
+          "tokens": 1160,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-05",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Transport vositasi uchun soliq qanday to‘lanadi?",
+      "reference_answer": "Ro‘yxatdan o‘tkazilgan transport vositasiga nisbatan yillik tartibda to‘lanadi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Transport vositasi uchun soliq to'lash uchun avvalo soliq organida ro'yxatdan o'tish kerak. So'ngra, belgilangan muddatlarda soliq miqdorini aniqlab, bank yoki onlayn to'lov tizimlari orqali to'lovni amalga oshirish lozim. To'lov kvitansiyasini saqlab qo'yish tavsiya etiladi.",
+          "latency_ms": 2119,
+          "tokens": 159,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Transport Vositasi Solig'ini To'lash Tartibi\n\n**Transport vositasi solig'i** har yili to'lanishi shart bo'lgan majburiy to'lovdir.\n\n---\n\n### To'lash usullari:\n\n1. **My.gov.uz** – elektron davlat xizmatlari portali orqali onlayn to'lash\n2. **Soliq.uz** – Soliq qo'mitasining rasmiy sayti\n3. **Tijorat banklari** – kassa yoki internet-banking orqali\n4. **Infokiosk va terminallar** orqali naqd pul bilan\n\n---\n\n### Muhim ma'lumotlar:\n\n- **To'lash muddati:** Har yilning **1 yanvaridan 1 aprelgacha**\n- **Soliq miqdori** transport vositasining **dvigatel hajmi (kub sm)** va **turiga** qarab belgilanadi\n- Eng qulay yo'l: **SOLIQ.UZ** saytiga PINFL yoki pasport ma'lumotlari bilan kirib, avtomatik hisoblab chiqarish\n\n---\n\n### Qadamlar (onlayn):\n1. **my.gov.uz** saytiga kiring\n2. \"Soliqlar\" bo'limini tanlang\n3. Shaxsiy ma'lumotlarni kiriting\n4. Summani ko'ring va to'lang\n\n> ⚠️ Muddati o'tkazib yuborilsa, **jarima** to'lanishi kerak bo'ladi.",
+          "latency_ms": 13488,
+          "tokens": 504,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 14.012206114s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '14s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Transport vositasi uchun soliq to'lash uchun \"E-moliya\" portaliga kirishingiz, so'ngra \"Soliq to'lash\" bo'limiga o'tishingiz, transport vositasi raqamini kiritishingiz va to'lovni amalga oshirishingiz kerak.",
+          "latency_ms": 844,
+          "tokens": 185,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Transport vositasi uchun soliq yiliga bir marta to'lanadi. Mablag'ni Hisobot, UzTax yoki Davlat soliq xizmati saytiga qo'shish orqali to'lash mumkin. Soliq miqdori transport vositasining kuchlanishiga (gullivayt) qarab hisoblanadi. To'lovni muddatidan o'tkazmasdan amalga oshirish kerak, aks holda jazolar cheklang.",
+          "latency_ms": 1633,
+          "tokens": 527,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Transport vositasi uchun soliq (avtomobil solig‘i) quyidagi tartibda to‘lanadi:\n\n1. **Soliq to‘lovchisini aniqlash** – Fizik shaxs (shaxsiy avtomobil) yoki yuridik shaxs (tashkilot, korxona) bo‘lishiga qarab soliq stavkasi farq qiladi.\n\n2. **Soliq stavkasini belgilash** – \n   - **Yengil avtomobillar (2 t gacha)**: 1 % – 2 % (yillik) (yoki 0,5 % – 1 % yillik, mamlakatda qabul qilingan normativlarga qarab).  \n   - **Yuk avtomobillari, avtobuslar, maxsus transport**: 2 % – 5 % (yillik) yoki tonna‑kilometrga asoslangan stavkalar.  \n   - **Elektr transport vositalari** – ba’zi hollarda soliqdan ozod yoki kamaytirilgan stavkalar qo‘llaniladi.\n\n3. **Soliq bazasini hisoblash** –  \n   - **Yengil avtomobillar**: avtomobilning ro‘yxatga olingan qiymati (yoki bozor qiymati) * soliq stavkasi.  \n   - **Yuk avtomobillari**: maksimal ruxsat etilgan yuk sig‘imi (tonna) * soliq stavkasi.\n\n4. **Soliqni to‘lash muddatlari** –  \n   - **Yillik soliq**: har yili 1‑yanvar kuni yoki 31‑dekabr kuni (yoki mahalliy hokimiyat belgilagan muddat).  \n   - **Kvartal yoki oylik to‘lovlar**: ba’zi hududlarda kvarta yoki oylik to‘lov rejimi mavjud.\n\n5. **To‘lov usullari** –  \n   - **Bank orqali**: bank filialida, bankomatda, onlayn banking (mablag‘ni “Avtomobil solig‘i” to‘lov kodi bilan kiritish).  \n   - **Mikroto‘lov punktlari**: pochta, “Mikrobank” tarmoqlari.  \n   - **Elektron hukumat portalida**: “Davlat xizmatlari” (my.gov.uz) orqali onlayn to‘lov.\n\n6. **Hujjatlar** –  \n   - Avtomobil ro‘yxatga olish guvohnomasi (sertifikat).  \n   - Soliq to‘lovini tasdiqlovchi kvitansiya yoki elektron tasdiq.\n\n**Qadam‑b‑qadam**:\n1. Avtomobil turini va quvvatini (yoki maksimal yuk sig‘imini) aniqlang.  \n2. Soliq stavkasini (mahalliy hokimiyat yoki Davlat soliq qo‘mitasining rasmiy saytida) toping.  \n3. Soliq bazasini (ro‘yxatga olingan qiymat yoki tonna) hisoblang.  \n4. Soliq summasini (baza × stavka) hisoblang.  \n5. Tanlangan to‘lov usuli orqali belgilangan muddat ichida to‘lang.  \n6. To‘lovni tasdiqlovchi hujjatni saqlang (kelgusida tekshiruv yoki qayta ro‘yxatga olishda kerak bo‘lishi mumkin).\n\nAgar sizda aniq avtomobil ma’lumotlari (model, quvvat, ro‘yxatga olish yili) bo‘lsa, mahalliy soliq organi yoki my.gov.uz portalida aniq summani hisoblab, to‘lovni amalga oshirishingiz mumkin.",
+          "latency_ms": 2139,
+          "tokens": 1000,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Transport vositasi uchun soliq jismoniy shaxslarning mol-mulkiga solinadigan soliqqa kiritilgan. Bu haqda soliq kodeksida ma'lumotlar keltirilgan. Unga ko'ra, ro'yxatdan o'tkazilgan avtomototransport vositalariga nisbatan qo'llaniladi. Ushbu soliq turi mahalliy soliq hisoblanib, uning stavkalari mahalliy vakillik organlari tomonidan belgilanadi. Ushbu soliqni to'lashdan olingan mablag'lar mahalliy budjetga tushadi.",
+          "latency_ms": 1248,
+          "tokens": 199,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Transport vositasi uchun soliq to‘lash tartibi O‘zbekiston Respublikasining Soliq kodeksi bilan belgilanadi. Jismoniy shaxslar uchun transport vositasi solig‘i har yili hisoblab chiqariladi va to‘lanadi. \n\nSoliq summasi transport vositasining turi, quvvati va yoshiga bog‘liq holda aniqlanadi. Sodiq davlat xizmatlari markazi yoki davlat soliq inspeksiyasiga murojaat qilib, soliq summasini bilib olishingiz mumkin.\n\nSoliq to‘lovlari odatda quyidagi tartibda amalga oshiriladi:\n\n1. Soliq summasini hisoblash: Davlat soliq organi har yili soliq summasini hisoblab, sizga bildirishnoma yuboradi.\n2. Sodiq davlat xizmatlari markazi yoki soliq inspeksiyasiga murojaat: Siz soliq summasini bilib olishingiz va to‘lash tartibi haqida maslahat olishingiz mumkin.\n3. Sodiq to‘lash: Siz soliq summasini bank orqali yoki online tarzda to‘lashingiz mumkin.\n\nSoliq to‘lash muddatlari haqida ma’lumot olish uchun davlat soliq organiga murojaat qiling.",
+          "latency_ms": 962,
+          "tokens": 346,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Transport vositasi solig'i Davlat soliq xizmati organlari tomonidan hisoblab, yiliga 31 yanvargacha to‘lanadi. To‘lovni «Davlat soliq xizmati» yagona portali orqali onlayn amalga oshirish mumkin.",
+          "latency_ms": 834,
+          "tokens": 171,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шуман, як менечер ОЗТИЛІДА, я хочу дати вам консультацію про матеріалів та правові запитання. Будьте відображені свої питання, а я вам відповідую. Просто вкажіть своє справжнє запитання, а я вам даду конкретну інформацію у означеному язиці. Використайте форму запитань, але відповідь буде просто у означеному язиці. Використайте цю шансу, щоб отримати конкретну допомогу з язиком ОЗТІЛІДА.",
+          "latency_ms": 613,
+          "tokens": 391,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-06",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "2018-may oyida 100 mln so‘mga xarid qilgan uyimni 2022-yil iyun ayida 230 mln so‘mga sotdim. Mazkur holatda soliq oqibatlari yuzaga keladimi.",
+      "reference_answer": "_**Javob:**_\n_Soliq kodeksining 378-moddasi 7-bandiga asosan oʻttiz olti kalendar oydan kam boʻlmagan muddatda soliq toʻlovchining mulkida boʻlgan turar joylarni sotishdan olinadigan daromadlar jismoniy shaxslardan olinadigan daromad soligʻidan ozod qilingan.\nShundan kelib chiqib, mazkur holatda soliq oqibatlari yuzaga keladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Ha, ushbu holatda kapital o'sishdan olinadigan daromad solig'i yuzaga kelishi mumkin.",
+          "latency_ms": 1183,
+          "tokens": 140,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Soliq Oqibatlari\n\n**Sizning holatingizdagi asosiy ma'lumotlar:**\n- Sotib olish: 2018-may — 100 mln so'm\n- Sotish: 2022-iyun — 230 mln so'm\n- Mulkka egalik muddati: **4 yil 1 oy**\n\n---\n\n### Soliq mavjudmi?\n\n**Ha, soliq to'lash majburiyati yuzaga keladi.**\n\nO'zbekiston soliq qonunchiligiga ko'ra, ko'chmas mulkni **5 yildan kam** muddatda egallab sotilsa, olingan daromaddan **jismoniy shaxslar daromad solig'i (JŞDS)** to'lanadi.\n\n---\n\n### Hisoblash:\n\n| Ko'rsatkich | Summa |\n|-------------|-------|\n| Sotish narxi | 230 mln so'm |\n| Sotib olish narxi | 100 mln so'm |\n| **Soliq solinadigan foyda** | **130 mln so'm** |\n| Soliq stavkasi | **12%** |\n| **To'lanadigan soliq** | **15,6 mln so'm** |\n\n---\n\n### Muhim eslatma:\n- Deklaratsiya **sotgan yildan keyingi yilning 1-aprelgacha** (ya'ni 2023-yil 1-aprelgacha) topshirilishi kerak edi.\n- Agar deklaratsiya topshirilmagan bo'lsa, **jarima va penya** yuzaga kelishi mumkin.\n\n> ⚠️ Aniq hisob-kitob uchun soliq inspeksiyasiga murojaat qilish tavsiya etiladi.",
+          "latency_ms": 15687,
+          "tokens": 620,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 58.650508694s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Sotilgan uyning sotish narxi va xarid narxi orasidagi farq 130 mln so‘m bo‘lsa, bu daromad solig‘iga tortiladi. Ya’ni, 130 mln so‘mlik daromad solig‘i 10% bo‘lib, 13 mln so‘m soliq to‘lash kerak bo‘ladi.",
+          "latency_ms": 1003,
+          "tokens": 251,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "Uy 5 yildan oldin sotilgan bo'lsa ham, mulk o'tkazish solig'iga (sotish narxining 1%) duch keladi. Siz 230 mln so'mga sotgan bo'lsangiz, 2,3 mln so'm soliq to'laysiz. 5 yildan ko'proq muddatga ega bo'lmaganligingiz sababli soliqdan bezzovurlik yo'q.",
+          "latency_ms": 2494,
+          "tokens": 760,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Siz uy‑ni 2018‑mayda sotib olib, 2022‑iyun oyida 4 yil 1 oy ushlab sotgansiz. O‘zbekiston Respublikasida shaxsiy daromad solig‘i (12 %) faqat **3 yildan kam** muddatda sotilgan ko‘chmas mulk foydasiga qo‘llaniladi. 3 yildan ortiq muddatda (sizda 4 yil + 1 oy) ushlab turilgan uyning foydasi soliqdan ozod qilинади.  \n\nШунинг учун, бу савдода даромад солиғи тўлови талаб қилинмайди. Аммо нотариус хақи, реестрга киритиш хақи ва, агар сиз солиқ органларига даромад декларацияси топшириш мажбуриятини бажарган бўлсангиз, шу ҳужжатларни тайёрлаш керак бўлади.",
+          "latency_ms": 2713,
+          "tokens": 767,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Soliq kodeksining 378-moddasiga ko'ra, jismoniy shaxslar tomonidan sotilgan yagona uy-joy (shuningdek, uy-joy bilan birgalikda sotilgan yer uchastkasini) sotib olish (qurib olish) uchun sarflangan xarajatlar chegirib tashlangan holda olingan daromad soliqqa tortilmaydi, agar ushbu uy-joy (yer uchastkasi) 3 yil va undan ortiq muddatda mulk qilib olingan bo'lsa. Sizning holatda, uy 4 yil egalikda bo'lgan, shuning uchun soliqqa tortilmaydi.",
+          "latency_ms": 1279,
+          "tokens": 257,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-scout": {
+          "response": "Jismoniy shaxslar tomonidan uy-joy sotishdan olingan daromadga soliq solinmaydi, agar u sotilayotgan uy-joyga egalik qilish huquqi ro‘yxatga olingan paytdan e’tiboran kamida 5 yil bo‘lsa.\n\nSizning uyingizga egalik qilish muddati 4 yildan kam bo‘lganligi sababli, 230 mln. so‘m - 100 mln. so‘m = 130 mln. so‘m daromad solig‘i to‘lanishi kerak.",
+          "latency_ms": 677,
+          "tokens": 243,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Xa, 230 mln - 100 mln = 130 mln so‘m, bu hisobdan 15 foiz (19.5 mln so‘m) daromad soligʻi; yashash huquqi olingan uylar uchun ushmasha 2021-yil 1 yanvardan keyin amal qiladi, lekin sizga 2019-yil 1 yanvardan ham asoslanasiz. Qisqa gap bilan: 19,5 mln so‘m soliq toʻlaysiz.",
+          "latency_ms": 4511,
+          "tokens": 257,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ: Привет, я являюсь консультантом ОБСЕ (Организация безопасности и связи Европейского банка) и готов помочь вам с вопросами связанными с международными правами и международными правилами торговли. Пожалуйста, дайте мне более подробную информацию о вашем вопросе.\n\nВаш вопрос касается изменения количества импортированного товара с 100 млн фунтов в 2018 году до 230 млн фунтов в 2022 году. Вам нужна информация о причинах этого увеличения и возможных механизмах, которые могут обеспечить контроль над такими изменениями в будущем?\n\nПожалуйста, предоставьте мне дополнительную информацию о ситуации и вопросах, которые вы имеете в вашем государстве. Я буду рад предоставить вам информацию о международных правилах и механизмах контроля над импортом и его изменениями. Также я могу предоставить информацию о международных транзакциях и их аспектах, включая ограничения и регулирование товаров. Пожалуйста, дайте мне более подробную информацию о вашей ситуации и вопросах, и я помогу вам найти соответствующие решения и рекомендации. Обратите внимание, что я не могу предоставлять конкретную информацию о вашей стране или ваших товарах, но я могу помочь вам понять международные правила и механизмы контроля над импортом и изменениями в его объеме. Пожалуйста, дайте мне более подробную информацию о вашей ситуации и вопросах, и я помогу вам найти соответствующие решения и рекомендации. Обратите внимание, что я не могу предоставить конкретную информацию о вашей стране или ваших товарах, но я могу помочь вам понять международные правила и механизмы контроля над импортом и изменениями в его объеме",
+          "latency_ms": 1181,
+          "tokens": 1180,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-07",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Soliq qarzdorligini qanday tekshirish mumkin?",
+      "reference_answer": "Soliq tizimining shaxsiy kabinetida yoki soliq organiga murojaat qilib tekshiriladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Soliq qarzdorligini soliq.uz veb-sayti yoki my.soliq.uz portalida shaxsiy kabinet orqali tekshirishingiz mumkin.",
+          "latency_ms": 1718,
+          "tokens": 107,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "claude-sonnet": {
+          "response": "## Soliq qarzdorligini tekshirish usullari\n\n**1. Soliq.uz sayti orqali (onlayn)**\n- [soliq.uz](https://soliq.uz) saytiga kiring\n- \"Shaxsiy kabinet\"ga kiring (STIR/INN raqami bilan)\n- \"Qarzdorlik\" bo'limini tekshiring\n\n**2. My.soliq.uz ilovasi orqali**\n- Smartfonga ilovani yuklab oling\n- STIR raqami bilan kiring\n- Qarzdorlik ma'lumotlarini ko'ring\n\n**3. Soliq inspeksiyasiga shaxsan murojaat**\n- Ro'yxatdan o'tgan joyingiz bo'yicha soliq inspeksiyasiga boring\n- Pasport va STIR raqamingizni olib boring\n\n**4. USSD kod orqali**\n- `*777#` raqamiga tering (ba'zi operatorlar uchun)\n\n**5. Davlat xizmatlari portali**\n- [my.gov.uz](https://my.gov.uz) orqali ham tekshirish mumkin\n\n> ⚠️ **Eslatma:** Qarzdorlik aniqlansa, jarima va penya (jarimalar) to'planib ketmasligi uchun imkon qadar tezroq to'lash tavsiya etiladi.",
+          "latency_ms": 11754,
+          "tokens": 461,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 41.253277407s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '41s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Soliq qarzdorligini tekshirish uchun \"Soliq\" ilovasidan, soliq organining rasmiy veb-saytida \"Soliq qarzdorligi\" bo'limidan yoki bevosita soliq organiga murojaat qilish mumkin.",
+          "latency_ms": 870,
+          "tokens": 186,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "qwen3-32b": {
+          "response": "1. **Moliya Xizmati saytida** (https://tax.uz): Shaxsiy kabinetda soliq qarzdorlikni tekshiring.  \n2. **e-Uz platformasida**: \"Soliq qarzdorlik\" bo'limidan ma'lumot oling.  \n3. **Moliya xizmati ofisida**: Shaxsiy karta yoki ID bilan murojaat qiling.  \n4. **Hotline:** 1477 (24/7) telefon qilish orqali so'rang.",
+          "latency_ms": 1280,
+          "tokens": 447,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Soliq qarzdorligini tekshirish uchun quyidagi usullardan foydalanishingiz mumkin:\n\n1. **Elektron davlat xizmatlari portalida (my.gov.uz) → “Soliq” bo‘limi**  \n   - “Soliq to‘lovlari va qarzdorlik” xizmatini tanlang, INN/PNR va shaxsiy ma’lumotlaringizni kiriting.  \n   - Natijada qarzdorlik miqdori, to‘langan va to‘lanmagan soliq turlari ko‘rsatiladi.\n\n2. **Soliq organining rasmiy veb‑saytida (soliq.uz) → “Onlayn xizmatlar”**  \n   - “Soliq qarzdorligi bo‘yicha ma’lumot olish” bo‘limiga kirib, shaxsiy kabinetga (INN/PNR + parol) kirish orqali qarzdorlikni ko‘rish mumkin.\n\n3. **Telefon orqali**  \n   - 122 (Soliq qo‘mitasi) raqamiga qo‘ng‘iroq qilib, INN/PNR va shaxsiy ma’lumotlaringizni aytsangiz, operator sizga qarzdorlik summasini aytadi.\n\n4. **Soliq inspeksiyasiga shaxsan murojaat qilish**  \n   - O‘zingizga yaqin bo‘lgan soliq inspeksiyasiga (davlat soliq inspeksiyasi) borib, “Soliq qarzdorligi to‘g‘risida ma’lumotnoma” (Form 1‑D) so‘rashingiz mumkin.  \n\n**Eslatma:** Tekshirishda INN (yoki PNR), pasport ma’lumotlari va, agar kerak bo‘lsa, korxona ro‘yxatidan o‘tgan raqamlar (STIR) talab qilinadi.  \n\nShu usullardan birini tanlab, soliq qarzdorligingizni tez va aniq aniqlashingiz mumkin.",
+          "latency_ms": 1416,
+          "tokens": 634,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Soliq qarzdorligini tekshirish uchun quyidagi usullardan foydalanishingiz mumkin: \n\n1. Soliq qo'mitasining rasmiy sayti (soliq.uz) orqali \"Shaxsiy kabinet\"da ro'yxatdan o'tib, qarzdorlikni tekshirish.\n2. Soliq qo'mitasining \"Soliq mobil\" ilovasini yuklab olib, undan foydalanish.\n3. Davlat xizmatlari markazlariga murojaat qilish.\n\nUshbu usullar orqali siz o'zingizning soliq qarzdorligingizni osongina tekshirishingiz mumkin.",
+          "latency_ms": 1144,
+          "tokens": 211,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-scout": {
+          "response": "Soliq qarzdorligini tekshirish uchun siz quyidagi usullardan foydalanishingiz mumkin:\n\n1. Davlat soliq qo'mitasining rasmiy veb-saytiga kirib, \"Soliq qarzdorligini tekshirish\" bo'limida o'zining identifikatsiya raqami yoki pasport ma'lumotlari orqali qarzdorlik mavjudligini tekshirishingiz mumkin.\n2. Soliq qo'mitasining mobil ilovasidan foydalanib, o'zining shaxsiy kabinetiga kirib qarzdorlikni tekshirish mumkin.\n3.  Yoki 1055 qisqa raqamiga o'zining identifikatsiya raqamini terib, qarzdorligi haqida ma'lumot olishingiz mumkin.",
+          "latency_ms": 846,
+          "tokens": 233,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "kimi-k2": {
+          "response": "O'zbekistonda soliq qarzdorligini tekshirish uchun yagona soliq organlari saytidagi “Soliq qarzdorligini tekshirish” xizmati orqali JShShIR yoki TIN kiritish orqali onlayn so‘rash mumkin.",
+          "latency_ms": 3778,
+          "tokens": 170,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "allam-2-7b": {
+          "response": "Шундук: Солиқ қарждорлигини кяндяр мяктяб ештиряк мян?\n\nОңо: Солиқ қарждорлигинин мяктяб ештирмяк мцсафратларындан олардыр:\n\n1. Мяктяб ештирмяк цчцн яшаратлардан истифадя едяряк эцнцндян эцндя эштяряк мяктяблярин мяктяб ештирмясинин мцсафратларындан олардыр.\n2. Мяктяб ештирмяк цчцн яшаратлардан истифадя едяряк мяктяблярин мяктяб ештирмясинин мцсафратларындан олардыр.\n3. Мяктяб ештирмяк цчцн яшаратлардан истифадя едяряк мяктяблярин мяктяб ештирмясинин мцсафратларындан олардыр.\n4. Мяктяб ештирмяк цчцн яшаратлардан истифадя едяряк мяктяблярин мяктяб ештирмясинин мцсафратларындан олардыр.\n5. Мяктяб ештирмяк цчцн яшаратлардан истифадя едяряк мяктяблярин мяктяб ештирмясинин мцсафратларындан олардыр.\n\nМяктяб ештирмяк цчцн яшаратлардан истифадя едяряк мяктяблярин мяктяб ештирмясинин мцсафратларындан олардыр. Мяктяблярин мяктяб ештирмясинин мцсафратларындан олардыр.\n\nМяктяб ештирмяк цчцн яшаратлардан истифадя едяряк мяктяблярин мяктяб ештирмясинин мцсафратларындан олардыр. Мяктяблярин мяктяб ештирмясинин мцсафратларындан олардыр.\n\nМяктяб ештирмяк цчцн яшаратлардан истифадя едяряк мяктяблярин мяктяб ештирмясинин мцсафратларындан олардыр. Мяктяблярин мяктяб ештирмясинин мцсафратларындан олардыр.\n\nМяктяб ештирмяк цчцн яшаратлардан истифадя едяряк",
+          "latency_ms": 1121,
+          "tokens": 1121,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-08",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "K. ismli shaxs ish joyidan beriladigan vaqtincha mehnatga qobiliyatsizlik nafaqasidan soliq hisoblaganligi haqida ma’lum qilib, bunday holatda soliq hisoblanishi to‘g‘ri yoki noto‘g‘ri ekanligi yuzasidan huquqiy tushuntirish berishni so‘radi.",
+      "reference_answer": "Mehnat layoqatini vaqtincha yo‘qotganlik uchun xodimga to‘lanadigan to‘lovlar (kasallik varaqasi asosida) jismoniy shaxslarning boshqa daromadlari hisoblanadi. Ushbu daromadlar o‘z navbatida jami daromadlar tarkibiga kiradi hamda belgilangan tartibda 12 % stavkada jismoniy shaxslardan olinadigan daromad solig‘iga tortiladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Vaqtincha mehnatga qobiliyatsizlik nafaqasi daromad solig'idan ozod qilingan. Shuning uchun, bunday nafaqadan soliq hisoblanishi noto‘g‘ri.",
+          "latency_ms": 1930,
+          "tokens": 186,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "claude-sonnet": {
+          "response": "## Vaqtincha Mehnatga Qobiliyatsizlik Nafaqasidan Soliq Hisoblanishi\n\n**Qonuniy asos:**\n\nO'zbekiston Respublikasining **Soliq kodeksi 369-moddasiga** ko'ra, vaqtincha mehnatga qobiliyatsizlik nafaqasi (kasallik varaqasi bo'yicha to'lanadigan nafaqa) **jismoniy shaxslarning daromad solig'i (JŠDS) soliqqa tortiladigan daromadlar** ro'yxatiga kiradi.\n\n**Xulosa:**\n\nIsh joyingiz vaqtincha mehnatga qobiliyatsizlik nafaqasidan soliq hisoblaши — bu **qonuniy va to'g'ri amal** hisoblanadi.\n\n**Soliq hisoblanmaydigan holat:**\n\nFaqat **ishlab chiqarishdagi baxtsiz hodisa yoki kasb kasalligi** natijasida olingan nogironlik nafaqalari soliqdan ozod etiladi (SK 378-modda).\n\n> Agar nafaqa miqdori noto'g'ri hisoblab chiqilgan bo'lsa yoki boshqa nizo mavjud bo'lsa, ish beruvchining buxgalteriyasidan hisob-kitob varaqasini so'rab tekshirishingiz mumkin.",
+          "latency_ms": 11828,
+          "tokens": 543,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 28.116312636s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '28s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Ish joyidan beriladigan vaqtincha mehnatga qobiliyatsizlik nafaqasi soliqdan ozod qilinganligi sababli, K. ismli shaxsning ushbu nafaqasi uchun soliq hisoblanishi noto'g'ri.",
+          "latency_ms": 922,
+          "tokens": 267,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "Vaziyatga ko'ra, ish beruvchi vaqtincha mehnatga qobiliyatli bo'lmaganlik nafaqasini soliqdan ozod qilish kerak, chunki bu mehnat qonunlariga asoslangan ijtimoiy foydalanishdir. Shunday qilib, soliq hisoblanishi noto'g'ri.",
+          "latency_ms": 2187,
+          "tokens": 562,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Vaqtincha mehnatga qobiliyatsizlik nafaqasi **soliqdan ozod** hisoblanadi.  \n\nOʻzbekiston Respublikasi «Jismoniy shaxslarning daromad solig‘i toʻgʻrisida»gi 2022‑yilgi Qonunning 2‑modda (1‑band)da “jismoniy shaxslar tomonidan olinadigan vaqtincha mehnatga qobiliyatsizlik nafaqasi, tug‘ilganlik, o‘lim, kasallik, jarohat, harakatlanish qobiliyatining yo‘qolishi, nogironlik, pensiya, ijtimoiy nafaqalar, davlat tomonidan beriladigan ijtimoiy yordamlar” soliqdan ozod qilinadi, deb belgilangan.\n\nШунинг учун, К. исмли шахс томонидан иш жойидан олинадиган вақтинча меҳнатга қобилиятсизлик нафақасига ПДФО (жисмоний шахслар даромад солиғи) ҳисобланмайди. Агар у шахсда бошқа солиққа тортиладиган даромадлар (масалан, иш ҳақи, бизнес даромади) бўлса, улар алоҳида солиқга тортилади, лекин бу нафақа ўз-ўзидан солиқдан озод.",
+          "latency_ms": 1199,
+          "tokens": 600,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Vaqtincha mehnatga qobiliyatsizlik nafaqasi davlat ijtimoiy sug'urta ta'minoti hisoblanadi va u holda daromad solig'i hisoblanmaydi. Shuning uchun, K.ning ish joyidan beriladigan vaqtincha mehnatga qobiliyatsizlik nafaqasidan soliq hisoblanishi noto'g'ri hisoblanadi.",
+          "latency_ms": 631,
+          "tokens": 226,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-scout": {
+          "response": "Ish joyidan beriladigan vaqtincha mehnatga qobiliyatsizlik nafaqasi O'zbekiston Respublikasining Soliq kodeksiga muvofiq daromad solig'idan ozod qilingan. Shuning uchun, K. ismli shaxsning holatida soliq hisoblanishi noto'g'ri hisoblanadi.",
+          "latency_ms": 539,
+          "tokens": 218,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "kimi-k2": {
+          "response": "Kuchda qolgan mehnatga qobiliyatsiz davr uchun to‘langan nafaqadan daromad solig‘i va BTI (bazaviy to‘lov miqdori) solinmaydi (MK 21-b, MK 25-m 4-b). Shuning uchun ishchilarga to‘l dirilgan vaqtincha mehnatga qobiliyatsizlik nafaqasidan soliq hisoblanishi noto‘g‘ri.",
+          "latency_ms": 1765,
+          "tokens": 289,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ: Привет, я являюсь консультантом ОБСЕ (Организация безопасности и связи Европейского банка) и готов помочь вам с вопросами по юридическим и международным вопросам. Ваш вопрос касается условий работы и законодательства в вашей стране. Пожалуйста, дайте мне более подробную информацию о случае с К. и его заявлении о необходимости учитывать его права при решении вопроса о его рабочей недействительности после отсутствия на работе без уведомления.\n\nВажно отметить, что в ОБСЕ мы не можем давать рекомендации или предложения по законодательству вашей страны. Но я могу помочь вам понять основные принципы и правила, которые применимы в таких случаях.\n\nПожалуйста, дайте мне более подробную информацию о случае с К. и о том, что он заявил о необходимости учитывать его права при решении вопроса о его рабочей недействительности после отсутствия на работе без уведомления. Таким образом, я смогу помочь вам понять основные принципы и правила, которые применимы в таких случаях. Если вы хотите получить информацию о конкретном законодательстве в вашей стране, я рекомендую обратиться к специалистам в вашей страны или проводить поиск в интернете. Однако, я могу помочь вам понять основные принципы и правила, которые применимы при решении таких вопросов. Пожалуйста, дайте мне более подробную информацию о случае с К. и его заявлении о необходимости учитывать его права при решении вопроса о его рабочей недействительности после отсутствия на работе без уведомления. Вам могу помочь понять основные принципы и правила, которые применимы в таких случаях. Если вы хотите получить конкретную информацию о законодательстве в вашей стране, я рекомендую обратиться к специалистам в вашей страны или провести поис",
+          "latency_ms": 1152,
+          "tokens": 1212,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-09",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "QQS bo‘yicha ro‘yxatdan qachon o‘tiladi?",
+      "reference_answer": "Aylanish hajmi belgilangan chegaraga yetganda yoki ixtiyoriy ravishda ro‘yxatdan o‘tiladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "QQS bo‘yicha ro‘yxatdan o‘tish uchun yillik aylanma 1 milliard so‘mdan oshganda majburiy hisoblanadi.",
+          "latency_ms": 1472,
+          "tokens": 113,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## QQS bo'yicha ro'yxatdan o'tish\n\n**Majburiy ro'yxatdan o'tish:**\nSoliq davri (chorak) natijalariga ko'ra, tovarlar (xizmatlar) realizatsiyasidan tushgan **yillik aylanma 1 milliard so'mdan** oshganda, korxona yoki yakka tartibdagi tadbirkor QQS to'lovchisi sifatida majburiy ro'yxatdan o'tishi shart.\n\n**Muddati:**\nBelgilangan chegaradan oshgan chorak tugaganidan so'ng **30 kun ichida** soliq organiga ariza topshiriladi.\n\n**Ixtiyoriy ro'yxatdan o'tish:**\nAylanma 1 mlrd so'mdan past bo'lsa ham, xohishga ko'ra ixtiyoriy ravishda QQS to'lovchisi bo'lish mumkin.\n\n> ⚠️ *Muddatni o'tkazib yuborish jarima va sanksiyalarga olib kelishi mumkin. Aniq holatingiz uchun soliq maslahatçisiga murojaat qilish tavsiya etiladi.*",
+          "latency_ms": 11497,
+          "tokens": 419,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 9.72991363s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '9s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "QQS bo‘yicha ro‘yxatdan o‘tish jarayoni 2023-yil 1-yanvardan boshlab amalga oshiriladi.",
+          "latency_ms": 853,
+          "tokens": 156,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "QQS bo'yicha ro'yxatdan o'tishni boshlang'ich faoliyatni boshlagan kundan hisoblab 10 kundan o'tmasdan amalga oshirish kerak.",
+          "latency_ms": 1106,
+          "tokens": 271,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "QQS (Qo‘shimcha qiymat solig‘i) ro‘yxatidan o‘tish quyidagi hollarda talab qilinadi:\n\n1. **Yillik aylanma (savdo hajmi) 2025‑yil uchun 120 mln so‘mni (yoki belgilangan boshqa limitni) oshganda** – bu limitdan yuqori daromad oluvchi tadbirkorlar QQS ro‘yxatiga kiritiladi.  \n2. **QQS to‘lash majburiy bo‘lgan faoliyat turlari bilan shug‘ullanish** (masalan, import‑eksport, ba’zi xizmat ko‘rsatish turlari, elektron savdo va h.k.).  \n3. **QQSni qaytarib olish yoki kredit olish huquqidan foydalangan holda, QQS to‘lovchisi bo‘lishni xohlagan tadbirkorlar** (ixtiyoriy ro‘yxatga olish).  \n\nAgar sizning yillik aylanmangiz belgilangan limitdan past bo‘lsa, lekin QQSni qaytarib olishni istasangiz, ixtiyoriy ravishda ham ro‘yxatdan o‘tishingiz mumkin.  \n\n**Xulosa:** QQS ro‘yxatidan o‘tish yillik aylanma belgilangan limitdan oshganda yoki QQS to‘lash majburiy bo‘lgan faoliyat bilan shug‘ullanganda, shuningdek, QQSni qaytarib olishni istagan hollarda amalga oshiriladi.",
+          "latency_ms": 1288,
+          "tokens": 574,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "2020-yil 1-oktabrdan boshlab barcha tadbirkorlik subyektlari, shuningdek, lizing faoliyatini amalga oshiruvchi tashkilotlar, xorijiy kompaniyalar va ularning filiallari QQS bo‘yicha ro‘yxatdan o‘tishi shart.",
+          "latency_ms": 741,
+          "tokens": 147,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "QQS bo‘yicha ro‘yxatdan o‘tish soliq organlariga arizani taqdim etgan kundan boshlab 10 kun ichida amalga oshiriladi.",
+          "latency_ms": 438,
+          "tokens": 122,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "QQS bo‘yicha ro‘yxatdan o‘tb bo‘lgan yil daromad 1 mlrd so‘mdan ortsa yoki 30 kun ichida 100 mln so‘mdan ortiq xaridlar bo‘lsa, o‘sha oydan boshlab 5 ish kunida.",
+          "latency_ms": 1681,
+          "tokens": 173,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ готов помочь вам с вопросами и задачами в области социальной безопасности, уголовно-юридических вопросов и других международных и местных задач. Пожалуйста, предоставьте мне ваш вопрос или задачу, и я постараюсь предоставить вам анимированную и подробную ответ. Однако, я могу ответить только на вопросы, а не предоставлять документы или помогать в решении конкретных задач. Если вам нужна помощь в другом области, пожалуйста, уточните свой вопрос.",
+          "latency_ms": 603,
+          "tokens": 377,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-10",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Yakka tartibdagi tadbirkor asosiy faoliyatidan tashqari qo‘shimcha ravishda boshqa faoliyat turi bilan shug‘ullansa qanday soliq to‘laydi?",
+      "reference_answer": "O‘zbekiston Respublikasi Soliq kodeksining 375-moddasiga asosan faoliyatning bir necha turi bilan shug‘ullanuvchi soliq to‘lovchilar qat’iy belgilangan soliqni faoliyatning xar bir turi uchun mazkur turdagi faoliyatga nisbatan belgilangan stavkalar bo‘yicha alohida-alohida to‘laydilar.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Yakka tartibdagi tadbirkor asosiy faoliyatidan tashqari qo‘shimcha faoliyat bilan shug‘ullansa, har bir faoliyat turi uchun alohida soliq to‘laydi. Soliq miqdori har bir faoliyat turiga mos ravishda belgilangan soliq stavkalariga muvofiq hisoblanadi.",
+          "latency_ms": 2620,
+          "tokens": 176,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "claude-sonnet": {
+          "response": "## Yakka tartibdagi tadbirkor (YaTT) qo'shimcha faoliyat turi bo'yicha soliq to'lash tartibi\n\nYaTT asosiy faoliyatidan tashqari qo'shimcha faoliyat bilan shug'ullansa, quyidagi qoidalar qo'llaniladi:\n\n### Asosiy qoida:\n**Har bir faoliyat turi uchun alohida soliq to'lanadi.**\n\n### Soliq rejimlari bo'yicha:\n\n**1. Oddiy soliq rejimiда (patent asosida):**\n- Har bir qo'shimcha faoliyat turi uchun **alohida patent** sotib olinadi\n- Har bir faoliyat bo'yicha belgilangan miqdorda **bazaviy hisoblash miqdori (BHM)** asosida soliq to'lanadi\n\n**2. Soddalashtirilgan soliq rejimida:**\n- Barcha faoliyat turlari **umumiy tushum** asosida hisoblanadi\n- Yagona soliq stavkasi qo'llaniladi (**4% yoki 6%** - aylanmadan)\n\n### Muhim nuance:\n- Agar qo'shimcha faoliyat **litsenziyalangan** bo'lsa — tegishli ruxsatnoma olish shart\n- Qo'shimcha faoliyat **BIRS (soliq idorasi)** da ro'yxatdan o'tkazilishi kerak\n\n> ⚠️ Aniq soliq miqdori faoliyat turiga va hududga qarab farq qilishi mumkin. Soliq inspeksiyasiga murojaat qilish tavsiya etiladi.",
+          "latency_ms": 13349,
+          "tokens": 590,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 56.817165246s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '56s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Yakka tartibdagi tadbirkor asosiy faoliyatidan tashqari qo'shimcha ravishda boshqa faoliyat turi bilan shug'ullansa, u o'zining asosiy va qo'shimcha faoliyati uchun alohida hisobda soliq to'laydi. Qo'shimcha faoliyat uchun alohida soliq hisobi ochiladi va qo'shimcha faoliyatdan olingan daromad uchun soliq to'lanadi.",
+          "latency_ms": 943,
+          "tokens": 275,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Yakka tartibdagi tadbirkor asosiy va qo'shimcha faoliyatidan olingan umumiy daromaddan 5% shaxsiy mablag' solig'ini to'laydi.",
+          "latency_ms": 2755,
+          "tokens": 645,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Yakka tartibdagi tadbirkor qo‘shimcha faoliyatdan ham olingan daromadga **yagona soliq** (yoki shaxsiy daromad solig‘i) to‘laydi. Soliq stavkasi tadbirkorning asosiy faoliyat toifasiga mos keladi:  \n\n- 4 % – birinchi toifa (yillik daromad ≤ 300 mln so‘m),  \n- 6 % – ikkinchi toifa (300 mln – 1,5 mlrd so‘m),  \n- 8 % – uchinchi toifa (daromad > 1,5 mlrd so‘m).  \n\nAgar qo‘shimcha faoliyat asosiy ro‘yxatga kiritilmagan bo‘lsa, uning daromadi ham 4 % stavkada soliqlanadi. Shuningdek, aylanma daromad belgilangan chegara (≈ 150 mln so‘m) dan oshsa, QQS (VAT) ham to‘lanadi.",
+          "latency_ms": 2547,
+          "tokens": 970,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "Yakka tartibdagi tadbirkor asosiy faoliyati uchun belgilangan tartibda soliq to'laydi, qo'shimcha faoliyatidan tushgan daromadidan jismoniy shaxslarning mol-mulk solig'i va yer solig'ini to'laydi hamda daromad solig'i to'lash uchun yagona soliq to'lovi summasini 3 baravar oshiradi.",
+          "latency_ms": 1073,
+          "tokens": 194,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-scout": {
+          "response": "Yakka tartibdagi tadbirkor asosiy faoliyatidan tashqari qo‘shimcha ravishda boshqa faoliyat turi bilan shug‘ullansa, u holda umumiy belgilangan tartibda soliq to‘laydi, ya’ni qo‘shimcha faoliyat turi bo‘yicha olingan daromadlarga ham soliq to‘lanishi lozim. Bunda, yakka tartibdagi tadbirkorlar uchun joriy etilgan barcha imtiyozlar va preferensiyalar hisobga olinadi.",
+          "latency_ms": 763,
+          "tokens": 218,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Yakka tartibdagi tadbirkor qo‘shimcha faoliyatdan olingan daromadini yakka tartibdagi tadbirkordan soliqqa tortishning umumiy tartibi asosida shaxsiy daromad solig‘i (12%) toʻlaydi.",
+          "latency_ms": 6203,
+          "tokens": 201,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ: Добрый день! Я готов помочь вам с вопросами по области международных отношений и правовой аспекты. Прежде чем я ответил на ваш вопрос, пожалуйста, дайте мне более подробную информацию о ситуации, которую вы описываете.\n\nВаш вопрос касается того, как следует проводить процедуры, если одна фирма или личность работает в соответствии с ассоциацией определенного типа, а другая работает в соответствии с другой ассоциацией. Вот некоторые возможные пути решения данной ситуации:\n\n1. Объединение двух ассоциаций: Если ассоциации имеют схожие цели и методы работы, можно предложить объединить их в одну более сильную ассоциацию. Это позволит обеспечить более сильный влияние и более эффективную работу вместе.\n\n2. Согласование методологии работы: Если ассоциации работают своими методами, но имеют общие цели, можно попробовать согласовать методологию работы. Это может помочь обеспечить более гибкий и согласованный подход к решению проблем и достижению целей.\n\n3. Создание концептуального сотрудничества: Если ассоциации работают своими методами и целями, но имеют общие интересы, можно предложить создать концептуальную сотрудничеству. Это может помочь объединить силы и знания каждой ассоциации для решения проблем и достижения общих целей.\n\n4. Создание междусобного фонда или фонда: Если ассоциации работают своими методами и целями, но имеют общие интересы, можно предложить создать междусобный фонд или фонд, который будет объединять и использовать силу и знания каждой ассоциации для решения проблем и достижения общих целей.\n\nВ зависимости от конкретной си",
+          "latency_ms": 1124,
+          "tokens": 1164,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-11",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "J. ismli shaxs asosiy ish joyidan tashqari, yana qo‘shimcha ravishda 2 ta tashkilotda ishlashi, ushbu har uchta tashkilotdan oladigan ish haqidan 12 foizlik stavkada jismoniy shaxslardan olinadigan daromad solig‘i hisoblanayotgani haqida ma’lum qilib, u jami yillik daromadlari haqida soliq idorasiga deklaratsiya topshirishi shart yoki shart emasligi yuzasidan huquqiy tushuntirish berishni so‘radi.",
+      "reference_answer": "Agar soliq to‘lovchining arizasiga asosan uning asosiy bo‘lmagan ish joyidan olingan daromadlaridan soliq ushlab qolingan bo‘lsa, jami yillik daromad to‘g‘risidagi deklaratsiya taqdim qilinmaydi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "J. ismli shaxs jami yillik daromadlari haqida soliq idorasiga deklaratsiya topshirishi shart emas, agar u har uchala tashkilotdan oladigan daromadlari bo‘yicha soliq to‘g‘ri ushlab qolinayotgan bo‘lsa.",
+          "latency_ms": 1782,
+          "tokens": 244,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Huquqiy tushuntirish\n\n**O'zbekiston Respublikasining Soliq kodeksiga asosan:**\n\nJ. ismli shaxs **deklaratsiya topshirishi shart emas**, chunki:\n\n- Uning barcha daromad manbalari (3 ta tashkilot) bo'yicha **soliq agentlari** (ya'ni ish beruvchilar) tomonidan daromad solig'i **12% stavkada to'liq hisoblab, ushlab qolingan** va byudjetga o'tkazilgan;\n\n- Soliq kodeksining **194-moddasiga** ko'ra, agar jismoniy shaxsning barcha daromadlaridan soliq agentlari tomonidan soliq to'liq ushlab qolingan bo'lsa, bunday shaxs yillik daromad deklaratsiyasini topshirishga **majbur emas**.\n\n### Muhim eslatma:\nDeklaratsiya topshirish **ixtiyoriy** tartibda amalga oshirilishi mumkin. Shuningdek, agar J. da soliq imtiyozlari (chegirmalarga) huquqi mavjud bo'lsa, u ushbu huquqdan foydalanish maqsadida **ixtiyoriy ravishda** deklaratsiya topshirishga **haqli**.\n\n**Xulosa:** J. deklaratsiya topshirishi **shart emas**, chunki soliq majburiyatlari to'liq bajarilgan.",
+          "latency_ms": 13057,
+          "tokens": 646,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 40.708845569s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "J. ismli shaxs uchta tashkilotdan oladigan ish haqidan 12 foizlik stavkada jismoniy shaxslardan olinadigan daromad solig‘i hisoblanayotgani haqida ma’lum qilingan. Jami yillik daromadlari 9 million so‘m dan oshsa, soliq idorasiga deklaratsiya topshirishi shart.",
+          "latency_ms": 689,
+          "tokens": 365,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "J. yillik daromadlari haqida soliq idorasiga deklaratsiya topshirishi shart. Chunki u bir nechta tashkilotda ishlamoqda va har bir tashkilot tomonidan olib kiritilgan solig'ni jamlash, umumiy daromadni to'g'ri hisoblash uchun kerak. Shuningdek, O'zbekiston Respublikasining Moliya qonunlariga ko'ra, jismoniy shaxslar yillik daromadlari haqida deklaratsiya topshirish majburiydir.",
+          "latency_ms": 2352,
+          "tokens": 1057,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "J. shaxsning uchta ish beruvchidan ham 12 % stavkada daromad solig‘i ushlab qolinayotgan bo‘lsa, bu ushlab qolish orqali uning soliq majburiyati to‘liq bajariladi. Shuning uchun, **yillik daromad deklaratsiyasini topshirish shart emas** – faqat quyidagi holatlarda deklaratsiya berish talab qilinadi:\n\n* ish haqi, pensiya, ijara, dividend kabi ish haqi ushlab qolinmagan boshqa daromadlar bo‘lsa;  \n* soliq imtiyozlari, chegirmalar yoki qayta hisoblash (masalan, oilaviy chegirma)dan foydalangan bo‘lsa;  \n* ushlab qolingan soliq miqdori daromadga nisbatan yetarli bo‘lmasa (yaъni, soliq to‘lanmagan qolgan bo‘lsa).  \n\nAks holda, har bir ish beruvchi ushlab qolgan 12 % soliq J.ning yillik soliq majburiyatini to‘liq qoplaydi va alohida deklaratsiya topshirish zarur emas.",
+          "latency_ms": 1780,
+          "tokens": 931,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Jismoniy shaxs J. har uchala ish joyidan olgan daromadlarini birlashtirgan holda, soliq solinadigan yillik daromadi haqidagi ma'lumotlarni soliq organlariga taqdim etishi shart. Agar ushbu umumiy daromad soliq solish minimumidan (2024-yilda 1-moliya yili uchun 846 430 so'm) ortiq bo'lsa, u holda daromad solig'i to'lashi kerak. Aks holda, faqat ma'lumot uchun deklaratsiya topshiriladi.",
+          "latency_ms": 857,
+          "tokens": 303,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-scout": {
+          "response": "J. ismli shaxsning asosiy ish joyidan tashqari yana 2 ta tashkilotda ishlashi va har uchala tashkilotdan oladigan ish haqidan 12 foizlik stavkada jismoniy shaxslardan olinadigan daromad solig‘i hisoblanishi, uning jami yillik daromadlari haqida soliq idorasiga deklaratsiya topshirish majburiyatini keltirib chiqarmaydi. Ammo, agar J.ning yillik daromadi 120 million soʻgʻlikdan oshsa, u deklaratsiya topshirishi shart.",
+          "latency_ms": 611,
+          "tokens": 309,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Ha, J. shaxs jami ish haqidan 12% PIT (predprinimatel emas, shaxsiy daromad solig‘i) ushlab qolinar ekan, baribir yil yakunida 2024-yil 1-aprelgacha O‘zbekiston soliq kodeksining 179-moddasi bo‘ylab “to‘ldirilmaydigan” turdagi SHRDR (ma’lumot) turidagi yillik daromad deklaratsiyasini topshirishi shart emas — ushbi 12% “yakuniy bo‘lgan” hisoblanadi.",
+          "latency_ms": 1945,
+          "tokens": 383,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ: Ваш вопрос касается международных прав и ситуации с международными правами. Давайте рассмотрим этот вопрос в терминах международного права.\n\nВашего человека, имя которого указано как \"J\", участвует в нескольких организациях или компаниях. Вот некоторые вопросы, которые можно задать в этом контексте:\n\n1. Какие факторы привели к тому, что он участвует в нескольких организациях или компаниях? Возможно, он имеет связи с одними или несколькими из них или ищет развитие своих карьера и навыков?\n\n2. Какие факторы привели к тому, что он участвует в нескольких организациях или компаниях? Возможно, он имеет связи с одними или несколькими из них или ищет развитие своих карьера и навыков?\n\n3. Какие правила и правила организаций или компаний, к которым он участвует, предусматривают подобные ситуации? Возможно, они имеют свои правила о работе с несколькими участниками или участником в нескольких организациях или компаниях?\n\n4. Какие правила и правила организаций или компаний, к которым он участвует, предусматривают такие ситуации? Возможно, они имеют свои правила о работе с несколькими участниками или участником в нескольких организациях или компаниях?\n\n5. В каких странах или регионах он участвует, и какие правила и правила организаций или компаний, которые он участвует в, предусматривают такие ситуации? Возможно, они имеют свои правила о работе с несколькими участниками или участником в нескольких организациях или компаниях?\n\n6. В каких странах или регионах он участвует, и какие правила и правила организаций или компаний, которые он участвует в, предусматривают такие ситуации? Возможно, они имеют свои правила о работе с несколькими участниками или участни",
+          "latency_ms": 1130,
+          "tokens": 1277,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-12",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Korxona o‘z xodimining manfaatlarini ko‘zlab uning bolalarini maktabgacha taʼlim tashkilotlarida o‘qitish, tarbiyalash haqini to‘lab keladi. Savol tashkilotda Soliqlar qanday hisoblanadi.",
+      "reference_answer": "_**Javob:**_\n_Xodim uchun ushbu mablag‘lar Soliq kodeksining 376-moddasiga asosan moddiy naf tarzida olingan daromadlar, sifatida eʼtirof etiladi. Shuningdek, Soliq kodeksining 387-moddasiga muvofiq, moddiy naf tarzidagi daromadlarga soliq agentida jismoniy shaxslardan olinadigan daromad solig‘i solinadi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Korxona xodimining bolalarini maktabgacha ta'lim tashkilotlarida o'qitish va tarbiyalash uchun to'lovlarni amalga oshirsa, bu to'lovlar xodimning daromadi sifatida qaraladi va jismoniy shaxslar daromad solig'iga tortiladi. Shuningdek, ushbu to'lovlar ijtimoiy soliq va boshqa majburiy ajratmalarga ham tortilishi mumkin.",
+          "latency_ms": 2973,
+          "tokens": 224,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Xodim bolalarining MTT to'lovini korxona tomonidan to'lash — Soliq hisobi\n\n### 1. Jismoniy shaxs daromad solig'i (JŞDS)\n\nKorxona xodim foydasiga to'lagan MTT (maktabgacha ta'lim tashkiloti) to'lovi **xodimning moddiy nafti (natura shaklidagi daromadi)** hisoblanadi.\n\n> ✅ **O'zbekiston Soliq Kodeksining 369-moddasi**ga ko'ra — bu to'lov xodimning **jami daromadiga qo'shiladi** va **12% stavkada JŞDS** ushlanadi.\n\n---\n\n### 2. Ijtimoiy soliq\n\nXodim foydasiga to'langan mazkur to'lov **ijtimoiy soliq bazasiga kiritiladi** va:\n- **12% ijtimoiy soliq** korxona tomonidan hisoblanadi\n\n---\n\n### 3. Korxona uchun xarajat sifatida tan olinishi\n\n- Agar bu to'lov **mehnat shartnomasi yoki kollektiv shartnomada** ko'rsatilgan bo'lsa — **xarajat sifatida tan olinadi**\n- Aks holda — **foyda solig'i bazasini kamaytirmaydi**\n\n---\n\n### 📌 Xulosa jadvali:\n\n| Soliq turi | Stavka | Kim to'laydi |\n|---|---|---|\n| JŞDS | 12% | Xodimdan ushlanadi |\n| Ijtimoiy soliq | 12% | Korxona to'laydi |\n\n---\n\n> ⚠️ **Tavsiya:** To'lovni mehnat yoki kollektiv shartnomasiga kiritish va to'g'ri hujjatlashtirish soliq xavfini kamaytiradi.",
+          "latency_ms": 15925,
+          "tokens": 673,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 26.142209527s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '26s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Korxona tomonidan xodimining bolalarini maktabgacha ta'lim tashkilotlarida o'qitish, tarbiyalash haqini to'lash xodimning daromadiga hisoblanadi va undan soliq (12% daromad solig'i) undiriladi.",
+          "latency_ms": 830,
+          "tokens": 247,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Korxona xodimlarga manfaat sifatida o'qish to'lovlari (maktabgacha ta'lim) xodimlarning soliqga kiritiladigan daromadlariga kiritiladi. Shu sababli, xodimlarning shaxsiy daromadlar solig'iga (5%) hisoblanadi. Korxonaning hisoboti va soliq to'lovlari ham bu to'lovlar hisobga olinadi.",
+          "latency_ms": 2934,
+          "tokens": 588,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "**Javob:**  \nXodimning bolalarini maktabgacha ta’lim tashkilotida o‘qitish (tarbiyalash) uchun korxona to‘layotgan summa **“xodimga berilgan ijtimoiy‑moliyaviy imtiyoz”** hisoblanadi. Bu imtiyoz **soliq to‘lanadigan daromad** sifatida xodimning shaxsiy daromadiga qo‘shiladi va quyidagi soliqlar hisoblanadi:\n\n| Soliq / to‘lov | Hisoblash usuli | Miqdori |\n|----------------|----------------|--------|\n| **Jismoniy shaxslar daromad solig‘i (JSD)** | Imtiyoz summasini xodimning umumiy daromadiga qo‘shib, 10 % (rezidentlar) yoki 12 % (no‑rezidentlar) stavkada hisoblanadi. | 10 % (rezident) / 12 % (no‑rezident) |\n| **Pensiya jamg‘armasiga (PJ) ijtimoiy sug‘urta** | Imtiyoz summasi asosida, ish beruvchi 10 % stavkada jamg‘aradi. | 10 % |\n| **Sog‘liqni saqlash sug‘urta jamg‘armasiga (SSJ) ijtimoiy sug‘urta** | Imtiyoz summasi asosida, ish beruvchi 2 % stavkada jamg‘aradi. | 2 % |\n| **Bandlik sug‘urta jamg‘armasiga (BSJ) ijtimoiy sug‘urta** | Imtiyoz summasi asosida, ish beruvchi 0,5 % stavkada jamg‘aradi. | 0,5 % |\n| **Korxona daromad solig‘i (KDS)** | Imtiyoz summasi korxona xarajat sifatida **soliqdan chegirmaga** (deduktsiyaga) qo‘shiladi, shuning uchun KDS hisoblanmaydi. | – |\n\n**Hisoblash misoli (misol uchun 1 000 000 so‘m):**  \n\n1. **JSD:** 1 000 000 × 10 % = **100 000 so‘m** (xodimga to‘lanadi).  \n2. **PJ:** 1 000 000 × 10 % = **100 000 so‘m** (ish beruvchi to‘laydi).  \n3. **SSJ:** 1 000 000 × 2 % = **20 000 so‘m** (ish beruvchi to‘laydi).  \n4. **BSJ:** 1 000 000 × 0,5 % = **5 000 so‘m** (ish beruvchi to‘laydi).  \n\n**Xulosa:**  \nXodimning bolalarini maktabgacha ta’limga o‘qitish uchun to‘lanadigan summa xodimning daromadiga qo‘shilib, **10 % JSD** (rezidentlar uchun) hamda **ish beruvchi tomonidan PJ 10 % + SSJ 2 % + BSJ 0,5 %** ijtimoiy sug‘urta to‘lovlari sifatida hisoblanadi. Korxona bu summani xarajat deb hisoblab, korxona daromad solig‘idan chegirma oladi.",
+          "latency_ms": 2689,
+          "tokens": 1193,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Korxonada ishlaydigan xodimning bolalarini maktabgacha ta'lim tashkilotlarida o'qitish va tarbiyalash uchun to'langan xarajatlar xodimning moddiy manfaatdorligi sifatida qaraladi va uning daromadiga qo'shiladi hamda  JShODS dan ushlab qolish amalga oshiriladi. Ushbu to'lovlar bo'yicha korxona yagona ijtimoiy to'lov (YIT) to'laydi.",
+          "latency_ms": 866,
+          "tokens": 229,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Bunday hollarda, korxona tomonidan xodimning bolalarini maktabgacha taʼlim tashkilotlarida o‘qitish, tarbiyalash haqini to‘lash xarajatlari xodimning daromadiga qo‘shilmaydi va soliqqa tortilmaydi, lekin bu xarajatlar korxonaning soliqqa tortiladigan daromadidan chegiriladi. \n\nKorxona foydadan soliq to‘lashda, bu xarajatlar chegirib tashlanadi. \n\nShuningdek, daromad solig‘i to‘g‘risidagi qonun hujjatlariga muvofiq, ish beruvchi tomonidan xodimga yoki uning oila aʼzolariga maktabgacha taʼlim xizmatini ko‘rsatish xarajatlari kompensatsiyasi  xodimning daromadi deb eʼtirof etilmaydi va daromad solig‘i bilan soliqqa tortilmaydi",
+          "latency_ms": 838,
+          "tokens": 327,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Korxona to‘lagan maktabgacha taʼlim haqi soliq solinmaydigan xarajat hisoblanadi — bu umumiy va birjismal soliq solinadigan daromadlardan chegiriladi. Soliq kodeksning 133-moddasi asosida.",
+          "latency_ms": 3202,
+          "tokens": 225,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Консультант Узбекистан: Бушларнинг файласининг манафатларининг болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа болган бошқа бол",
+          "latency_ms": 1135,
+          "tokens": 1181,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-13",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "N. ismli shaxs 2-guruh nogironi ekanligi, uning nomida hovli uy-joy borligi, soliq idorasi tomonidan ushbu hovli uy-joy bo‘yicha mol-mulk solig‘i va er solig‘i hisoblangani haqida ma’lum qilib, bunday holatda soliqlar hisoblanishi to‘g‘ri yoki noto‘g‘ri ekanligi yuzasidan huquqiy tushuntirish berishni so‘radi.",
+      "reference_answer": "I va II guruh nogironligi bo‘lgan shaxslarning mol-mulki 60 kvadrat metr doirasida soliq solishdan ozod qilinadi, shuningdek I va II guruh nogironligi bo‘lgan shaxslar jismoniy shaxslardan olinadigan er solig‘idan ozod etilgan. Mazkur imtiyoz pensiya guvohnomasi yoki tibbiy-mehnat ekspert komissiyasining ma’lumotnomasi asosida beriladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "2-guruh nogironlari O'zbekiston Respublikasida mol-mulk solig'idan ozod etilmaydi, shuning uchun N. ismli shaxsning hovli uy-joyi uchun mol-mulk solig'i hisoblanishi to'g'ri. Ammo, yer solig'i bo'yicha imtiyozlar mavjud bo'lishi mumkin, shuning uchun bu masalada soliq idorasi bilan qo'shimcha ma'lumot olish tavsiya etiladi.",
+          "latency_ms": 2634,
+          "tokens": 263,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "claude-sonnet": {
+          "response": "## Huquqiy tushuntirish\n\n**2-guruh nogironlari mol-mulk solig'i va er solig'idan qonun bo'yicha ozod qilingan.**\n\n### Huquqiy asos:\n\n**O'zbekiston Respublikasining Soliq kodeksi:**\n\n- **413-modda** – Mol-mulk solig'idan ozod qilinadigan shaxslar ro'yxatiga **I va II guruh nogironlari** kiritilgan.\n- **428-modda** – Yer solig'idan ozod qilinadigan shaxslar ro'yxatiga ham **I va II guruh nogironlari** kiritilgan.\n\n### Xulosa:\n\nSoliq idorasi tomonidan N. ga mol-mulk solig'i va er solig'i hisoblangan bo'lsa — **bu noto'g'ri**, chunki u qonun bo'yicha ushbu soliqlardan **to'liq ozod qilingan**.\n\n### N. ga tavsiya:\n\n1. **Nogironlik guvohnomasining nusxasi** bilan soliq idorasiga murojaat qilsin.\n2. Noto'g'ri hisoblangan soliqlarni **bekor qildirish** uchun ariza bersin.\n3. Agar soliq idorasi rad etsa, **sudga yoki soliq organining yuqori idorasiga** shikoyat qilish huquqi mavjud.",
+          "latency_ms": 10645,
+          "tokens": 599,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 8.590653353s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '8s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "N. ismli shaxs 2-guruh nogironi bo'lganligi sababli, uning nomidagi hovli uy-joy bo'yicha mol-mulk solig'i va er solig'i hisoblanmasligi kerak. Chunki, O'zbekiston Respublikasining Soliq kodeksiga ko'ra, 2-guruh nogironlari mol-mulk solig'idan ozod qilingan. Shuning uchun, soliq idorasi tomonidan ushbu soliqlar hisoblanishi noto'g'ri hisoblanadi.",
+          "latency_ms": 956,
+          "tokens": 366,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "N. 2-guruh nogironi bo'lib, uning nomida hovli uy-joy bor bo'lsa, O'zbekiston Respublikasining Moliya qonunlariga ko'ra, 1- va 2-guruh nogironlar **er va mol-mulk solig'idan bepul** hisoblanadi. Shunday qilib, soliq idorasi tomonidan bunday shaxsga soliq hisoblash **huquqsiz** hisoblanadi. N. soliq idorasiga nogironlik sertifikatini topshirib, soliqni bepul qilishni so'ray oladi.",
+          "latency_ms": 2362,
+          "tokens": 754,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "**Huquqiy tushuntirish**\n\n1. **Nogironlar uchun soliq imtiyozlari**  \n   Oʻzbekiston Respublikasi “Nogironlar uchun soliq imtiyozlari toʻgʻrisida” (2022‑yil, № 202) qonuniga ko‘ra, 2‑guruh nogironlar quyidagi imtiyozlarga ega:\n\n   * **Mulk solig‘i (mol‑mulk solig‘i)** – ularning asosiy turar‑joyi (ya’ni, “hovli uy‑joy”) uchun soliqdan ozod qilish. Bu ozodlik 150 m² gacha boʻlgan umumiy maydonni qamrab oladi (agar qonunda boshqa limit belgilangan bo‘lsa, shu limitga rioya qilinadi).  \n   * **Yer solig‘i** – agar yer uchastkasi uy‑joy qurilishi yoki shaxsiy turar‑joy maqsadida ishlatilsa, ham imtiyozga kiradi; yer uchastkasining maydoni ham imtiyoz chegarasiga (odatda 0,5 gа yoki 1 gа) mos kelishi shart.\n\n2. **N. shaxsning holati**  \n   * N. 2‑guruh nogiron;  \n   * Uning nomida “hovli uy‑joy” (ya’ni, turar‑joy) mavjud;  \n   * Bu uy‑joy shaxsiy (asosiy) turar‑joy sifatida foydalanilmoqda.\n\n3. **Soliq organining hisoblashiga baho**  \n   * **Mulk solig‘i** – N. ning asosiy turar‑joyi bo‘lgani va 2‑guruh nogironligi sababli, mulk solig‘idan ozod qilish kerak. Soliq idorasi bu soliqni hisoblagan bo‘lsa, bu **noto‘g‘ri** hisoblanadi.  \n   * **Yer solig‘i** – Yer uchastkasi uy‑joy qurilishi yoki shaxsiy turar‑joy maqsadida ishlatilayotgan bo‘lsa, ham 2‑guruh nogironligi tufayli yer solig‘idan ozod qilinadi (agar uchastka imtiyoz miqdoridan oshmasa). Shunday ekan, yer solig‘ini ham **noto‘g‘ri** hisoblagan bo‘lishi mumkin.\n\n4. **Xulosa va tavsiya**  \n   * N. shaxsning “hovli uy‑joy”i va unga tegishli yer uchastkasi 2‑guruh nogironligi imtiyozlari doirasida bo‘lsa, **mol‑mulk solig‘i hamda yer solig‘i hisoblanmasligi kerak**.  \n   * N. soliq organiga imtiyozni tasdiqlovchi nogironlik guvohnomasi, uy‑joy va yer uchastkasining asosiy turar‑joy maqsadida foydalanilayotganligini ko‘rsatuv",
+          "latency_ms": 2518,
+          "tokens": 1249,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Nogironligi bo‘lgan shaxslarning mol-mulk solig‘i va yer solig‘i bo‘yicha imtiyozlardan foydalanish tartibi to‘g‘risidagi Nizomga ko‘ra, 2-guruh nogironi bo‘lgan N. ushbu imtiyozlardan foydalanish huquqiga ega. Unga tegishli bo‘lgan yagona turar joy (hovli uy-joy) bo‘yicha mol-mulk solig‘i undirilmaydi. Yer solig‘i ham ushbu imtiyozga kiritilgan. Shunga ko‘ra, N.ga tegishli bo‘lgan hovli uy-joy va yer uchastkasi uchun soliqlar hisoblanmasligi lozim.",
+          "latency_ms": 1523,
+          "tokens": 335,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-scout": {
+          "response": "O'zbekiston Respublikasining Soliq kodeksiga muvofiq, nogironlar, shu jumladan 2-guruh nogironlari soliq to'lashdan ozod qilingan. N. ismli shaxs 2-guruh nogironi bo'lganligi sababli, uning nomidagi hovli uy-joy bo'yicha mol-mulk solig'i va er solig'i hisoblanmasligi kerak. Shunday ekan, soliq idorasi tomonidan ushbu soliqlarni hisoblanishi noto'g'ri hisoblanadi.",
+          "latency_ms": 610,
+          "tokens": 283,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "2-guruh nogironligi mol-mulk va yer solig‘idan ozod qilmaydi. Soliq Codeksining 435- va 508-moddalariga ko‘ra, shunday imtiyoz faqat 1-guruh nogironlariga, bola-chaqali olimlar va ayrim boshqa kategoriyalarga tegishli.\n\nShuning uchun N. ismli shaxs hovli uy-joyi va yer solig‘ini soliq idorasi belgilagan holda toʻlashi kerak – hisoblangan soliqlar qonunga muvofiqdir.",
+          "latency_ms": 1277,
+          "tokens": 350,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ: Привет, я являюсь консультантом ОБСЕ (Организация безопасности и связи ООН в Центральной Азии) и готов помочь вам с вопросами связанными с международными правами и уголовными вопросами. Пожалуйста, дайте мне более подробную информацию о своем вопросе.\n\nВаш вопрос касается личности с 2-й группы национальности и их заявления о необходимости или необходимости полного или частичного возврата прав и обязательств. Пожалуйста, дайте мне более подробную информацию о этом случае, чтобы я мог дать вам конкретную информацию и советы.",
+          "latency_ms": 671,
+          "tokens": 590,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-14",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Yer solig‘ini to‘lash muddati qachon?",
+      "reference_answer": "Yil davomida belgilangan muddatlarda to‘lovlar amalga oshiriladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Yer solig‘ini to‘lash muddati har yili 15-oktabrgacha.",
+          "latency_ms": 3451,
+          "tokens": 94,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Yer solig'ini to'lash muddati\n\nO'zbekistonda **jismoniy shaxslar** yer solig'ini yiliga **2 marta** to'laydi:\n\n- **1-to'lov** — **1 oktyabrgacha** (yillik summaning 50%)\n- **2-to'lov** — **1 dekabrgacha** (qolgan 50%)\n\n**Yuridik shaxslar** esa har chorakda — **chorak tugaganidan keyin 30 kun ichida** to'laydi.",
+          "latency_ms": 8006,
+          "tokens": 244,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 34.503766551s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '34s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Yer solig'ini to'lash muddati - yilning 1-iyulidan 1-dekabriga qadar.",
+          "latency_ms": 2971,
+          "tokens": 143,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Yer solig‘ini to‘lash muddati o‘tgan yil uchun 31 mart kuni tugaydi. Tuzatishlar yoki qo‘shimcha muddatlar bo‘lishi mumkin, shuning uchun Moliya xizmatiga murojaat qiling.",
+          "latency_ms": 3074,
+          "tokens": 384,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Yer solig‘ini har yili 15‑martga qadar to‘lash lozim.",
+          "latency_ms": 4382,
+          "tokens": 304,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "Yer solig‘ini to‘lash muddati har yili 15 apreldan 15 oktyabrgacha har oyda belgilangan tartibda amalga oshiriladi.",
+          "latency_ms": 4818,
+          "tokens": 119,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Yer solig‘ini to‘lash muddati 1 martdan 15 martgacha bo‘lgan davrda amalga oshiriladi.",
+          "latency_ms": 2002,
+          "tokens": 110,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "kimi-k2": {
+          "response": "Yer solig‘ini toʻlash muddati — ushbu yildagi 15-noyabrgacha.",
+          "latency_ms": 6091,
+          "tokens": 125,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шуман, якщак артикул О'збек салгасинин артышмасындан солар, якинчи меракетляря тушунмасындан истифадя едяък. Якщак машапурлардан истифадя едяък.\n\nТоплашма муддаты якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък.\n\nТоплашма муддаты якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан истифадя едяък. Якщак машапурлардан исти",
+          "latency_ms": 3652,
+          "tokens": 1118,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-15",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "YTT hisobotlarini qayerga topshiraman?",
+      "reference_answer": "Soliq organlarining elektron tizimi orqali belgilangan davriylikda topshiriladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "YTT hisobotlarini Davlat soliq qo'mitasiga topshirasiz.",
+          "latency_ms": 3143,
+          "tokens": 90,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## YTT Hisobotlarini Topshirish Joylari\n\n**YTT (Yakka Tartibdagi Tadbirkor)** hisobotlarini quyidagi joylarga topshirasiz:\n\n### 1. **Soliq hisobotlari**\n- **Soliq qo'mitasining my.soliq.uz** elektron portali orqali (onlayn)\n- Yoki **mahalliy soliq inspeksiyasi**ga shaxsan borib\n\n### 2. **Statistika hisobotlari**\n- **stat.uz** portali orqali yoki **mahalliy statistika boshqarmasi**ga\n\n### 3. **Ijtimoiy sug'urta (INPS)**\n- **my.soliq.uz** orqali yoki **INPS hududiy bo'limi**ga\n\n---\n\n**💡 Maslahat:** Eng qulay yo'l — **my.soliq.uz** portalidan foydalanish, chunki ko'plab hisobotlar shu yerda topshiriladi va vaqt tejaydi.",
+          "latency_ms": 10881,
+          "tokens": 375,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 5.94107452s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '5s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "YTT hisobotlarini Soliqqa qarshi kurashish bosh boshqarmasiga topshirishingiz kerak.",
+          "latency_ms": 1165,
+          "tokens": 141,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "YTT hisobotlarini quyidagi institutlarga topshirishingiz kerak: Moliya Xodimlari (Davlat Moliya Xidmati), Statistika (Davlat Statistika Komitetiga), TSTI (Tadbirkorlik, Sanoat va Texnologiya Ittifoqi) yoki hisobot maqsadiga qarab mos bo'lgan davlat organiga.",
+          "latency_ms": 1810,
+          "tokens": 575,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "YTT hisobotlarini Davlat soliq qo‘mitasining elektron tizimiga (e‑Report) yoki sizning hududingizdagi soliq inspeksiyasiga topshiring.",
+          "latency_ms": 2164,
+          "tokens": 602,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "YTT (Yakka tartibdagi tadbirkor) hisobotlarini davlat soliq qo'mitasi huzuridagi yagona interaktiv davlat xizmatlari portali (my.soliq.uz) yoki soliq inspeksiyasiga topshirishingiz mumkin.",
+          "latency_ms": 1953,
+          "tokens": 133,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-scout": {
+          "response": "YTT hisobotlarini Davlat soliq inspeksiyasiga yoki soliq.org.uz sayti orqali topshirishingiz mumkin.",
+          "latency_ms": 1134,
+          "tokens": 103,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "YTT hisobotlarini Soliq inspektsiyasiga topsirasiz.",
+          "latency_ms": 5393,
+          "tokens": 115,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шуман, якщак артикул О'збек таллида, мені тут беруть щоб помочь та допомогти у вирішенні матеріальних та юридичних запитань. Я відповіюю только на вирішення та виявлення правильного відповідного відносно запитання.\n\nПроблема: Ви запитали про виконання платного виплату (платіжних) у Україні для студентів ОБТ (Одесська базова техніко-оперативна школа).\n\nВідповідь: Якщо ви студент ОБТ і хочете виконати платіжний послугу в Україні, вам потрібно зробити следуючі шаги:\n\n1. Попросити у вашому матеріалівному центру ОБТ допомогти вам з поштою або телефонним зв'язком з платіжним банком, який вам потрібен для виконання платіжу. Ваш матеріалівний центр може звернутися до банку та зберегти вам від довгого виконання платіжу.\n\n2. Виберіть банк, який має місце для виконання платіжів у Україні. Наприклад, банки такие як ПриватБанк, Нальчик, Банк Національного Державного Банка України, Банк Національного Державного Банка України та інші банки також можуть допомогти вам з платежами.\n\n3. Відповідно до вашого банку, виконайте платеж за допомогою електронного платежу (e-коштів) чи наливки на банківський картку. Виберіть найбільш зручний та безпечний способ для вас.\n\n4. Підтвердження платежу може бути виконано через електронну пошту, електронну коштівку чи наливку на банківську картку. Виберіть найбільш зручний та безпечний способ для вас.\n\n5. Після виконання платежу, вам потрібно звернутися до матеріального центру ОТ",
+          "latency_ms": 1509,
+          "tokens": 1116,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-16",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "Yakka tartibdagi tadbirkor sifatida ro‘yxatdan qanday o‘tiladi?",
+      "reference_answer": "Yagona portal orqali yoki davlat xizmatlari markazida ariza berib ro‘yxatdan o‘tiladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Yakka tartibdagi tadbirkor sifatida ro‘yxatdan o‘tish uchun Davlat xizmatlari markaziga yoki Yagona interaktiv davlat xizmatlari portaliga murojaat qilib, ariza topshirishingiz kerak. Arizaga shaxsni tasdiqlovchi hujjat nusxasi va davlat boji to‘langanligi to‘g‘risidagi kvitansiya ilova qilinadi. Ro‘yxatdan o‘tish jarayoni odatda bir necha ish kuni ichida amalga oshiriladi.",
+          "latency_ms": 3725,
+          "tokens": 194,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "claude-sonnet": {
+          "response": "## Yakka Tartibdagi Tadbirkor (YaTT) Sifatida Ro'yxatdan O'tish\n\n### Kerakli hujjatlar:\n- Pasport nusxasi\n- Ariza (belgilangan shakl)\n- Davlat boji to'lovi kvitansiyasi\n\n### Ro'yxatdan o'tish usullari:\n\n**1. Online (tavsiya etiladi):**\n- **my.gov.uz** yoki **business.reg.uz** saytiga kiring\n- \"YaTT ro'yxatdan o'tkazish\" bo'limini tanlang\n- Shaхsiy kabinet orqali ariza yuboring\n\n**2. Shaxsan (Soliq inspeksiyasi):**\n- Yashash joyi bo'yicha soliq inspeksiyasiga boring\n- Ariza va hujjatlarni topshiring\n\n### Muhim ma'lumotlar:\n| Ko'rsatkich | Ma'lumot |\n|---|---|\n| Ro'yxatdan o'tish muddati | **1 ish kuni** |\n| Davlat boji | **1 bazaviy hisoblash miqdori** (hozirda ~330 000 so'm) |\n| Soliq rejimi | Oddiy yoki patent asosida |\n\n### Ro'yxatdan o'tgandan so'ng:\n✅ STIR (soliq raqami) beriladi\n✅ Faoliyatni boshlashingiz mumkin\n✅ Soliq hisobotlarini topshirish majburiyati boshlanadi\n\n> **Maslahat:** Online ro'yxatdan o'tish tezroq va qulayroq. Ayrim faoliyat turlari uchun **litsenziya** talab qilinishi mumkin.",
+          "latency_ms": 15424,
+          "tokens": 584,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 51.23574518s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '51s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Yakka tartibdagi tadbirkor sifatida ro'yxatdan o'tish uchun \"Davlat soliq qo'mitasi\"ga ariza bilan murojaat qilish, shaxsiy guvohnoma, pasport nusxasi va boshqa zaruriy hujjatlar bilan ta'minlash kerak.",
+          "latency_ms": 1707,
+          "tokens": 209,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Yakka tartibdagi tadbirkor bo'lib ro'yxatdan o'tish uchun quyidagilarni bajaring:  \n1. **Arafatnomani** (ID), **yashash manzilini** va **moliyaviy yutuqlar to'g'risida ma'lumotni** tayyorlang.  \n2. **Moliya bo'limiga** (Davlat moliya xizmati) arafatnomani, arafatnomadagi manzilni, moliyaviy yutuqlar to'g'risida ma'lumotni, shuningdek, **moliya yutuqlari to'g'risida Davlat moliya xizmati tomonidan berilgan tasdiqlashni** topshiring.  \n3. **Moliya bo'limi tomonidan** arafatnomani tekshiradi va **yakka tartibdagi tadbirkor sifatida ro'yxatdan o'tkazilgan arafatnomani** beradi.  \n4. **Bank hisobini oching** va **moliya yutuqlarini hisoblash uchun Davlat moliya xizmatiga murojaat qiling.**  \n\nBatafsil ma'lumot uchun Davlat moliya xizmati veb-saytiga murojaat qiling.",
+          "latency_ms": 1969,
+          "tokens": 655,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Yakka tartibdagi tadbirkor (YTT) sifatida ro‘yxatdan o‘tish bosqichlari:\n\n1. **Hujjatlarni tayyorlash**  \n   - Pasport (yoki ID karta) nusxasi.  \n   - INN (soliq raqami) nusxasi (agar oldindan berilgan bo‘lsa).  \n   - YTT ro‘yxatga olish arizasini (Form 1‑D) to‘ldirish (onlayn yoki qog‘ozda).  \n\n2. **Arizani topshirish**  \n   - **Onlayn**: e‑Xizmat (https://my.gov.uz) portalida “Yakka tartibdagi tadbirkor ro‘yxatga olish” bo‘limiga kirib, ariza va skaner qilingan hujjatlarni yuklash.  \n   - **Shaxsiy**: Yaqin joydagi Soliq inspeksiyasi (MCHJ) yoki Davlat ro‘yxatga olish markaziga (DRM) ariza va hujjatlarni topshirish.\n\n3. **To‘lovni amalga oshirish**  \n   - Ro‘yxatga olish uchun davlat to‘lovi (odatda 1 000 so‘m)ni bank orqali yoki onlayn to‘lov tizimi orqali to‘lash.\n\n4. **Ro‘yxatga olish tasdiqini olish**  \n   - Ariza qabul qilingandan so‘ng, 3‑5 ish kuni ichida Soliq inspeksiyasi sizga **“Yakka tartibdagi tadbirkorlik sub’yektlari ro‘yxatiga kiritilganligi to‘g‘risida”** sertifikatini beradi (elektron yoki qog‘oz shaklida).\n\n5. **INN va bank hisob raqamini olish**  \n   - Sertifikat bilan birga INN ham avtomatik ravishda beriladi.  \n   - Bankka murojaat qilib, YTT nomidan hisob raqami ochish (bu raqamni soliq hisobotlari va kontraktlar uchun ishlatasiz).\n\n6. **Davlat soliq hisobotlarini yuritish**  \n   - YTT sifatida soliq deklaratsiyalarini (QQS, daromad solig‘i) belgilangan muddatlarda topshirish va to‘lash majburiyati mavjud.\n\n**Qisqa tavsiya:**  \n- **e‑Xizmat** portalida “Yakka tartibdagi tadbirkor ro‘yxatga olish” bo‘limini tanlang → ariza to‘ldiring → hujjatlarni yuklang → to‘lovni amalga oshiring → tasdiqni oling. Shundan so‘ng INN va bank hisobi bilan faoliyatni boshlashingiz mumkin.",
+          "latency_ms": 2164,
+          "tokens": 816,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Yakka tartibdagi tadbirkor sifatida ro'yxatdan o'tish uchun siz quyidagi bosqichlarni bajarishingiz kerak:\n\n1. Davlat xizmatlari markaziga yoki my.gov.uz portaliga murojaat qiling.\n2. Yakka tartibdagi tadbirkor sifatida ro'yxatdan o'tish uchun ariza to'ldiring.\n3. Shaxsni tasdiqlovchi hujjat (pasport) va JSHSHIR (PINFL)ni taqdim eting.\n4. Davlat boji to'lang (2023-yil holatiga ko'ra, 50 000 so'm).\n5. Ro'yxatdan o'tish uchun hujjatlar topshirilgach, sizga yakka tartibdagi tadbirkor sifatida ro'yxatdan o'tganlik to'g'risida guvohnoma beriladi.\n\nShundan so'ng, siz yakka tartibdagi tadbirkor sifatida faoliyat yuritishingiz mumkin.",
+          "latency_ms": 2491,
+          "tokens": 294,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-scout": {
+          "response": "Yakka tartibdagi tadbirkor sifatida ro‘yxatdan o‘tish uchun quyidagi hujjatlar bilan soliq organiga murojaat etish kerak: \n\n1. Pasport yoki shaxsni tasdiqlovchi boshqa hujjat.\n2. Shtamp va imzo namunasi bilan ariza.\n3. Davlat boji to‘langanligi to‘g‘risidagi kvitansiya.\n\nSoliq organi 1 ish kuni ichida yakka tartibdagi tadbirkor sifatida ro‘yxatdan o‘tkazadi.",
+          "latency_ms": 1510,
+          "tokens": 205,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Yakka tartibdagi tadbirkor sifatida ro‘yxatdan o‘tish uchun fuqarolik yashash joyidagi davlat soliq bo‘limiga pasport va 2040-sonli ariza bilan murojaat qilinadi.",
+          "latency_ms": 2213,
+          "tokens": 171,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ готов помочь вам с вопросами и задачами в области права и международных вопросов. \n\nВаш вопрос касается освобождения от судебного дела в условиях специального типа средства. Для того чтобы получить более подробную информацию, я рекомендую обратиться к специалисту в сфере права и законодательства Узбекистана.\n\nЕсли вы ищете информацию о том, как освободиться от судебного дела в условиях специального типа средства, я рекомендую обратиться к специалисту в этой области. Они будут иметь более подробную информацию о практиках и законах Узбекистана в этой области. Вам может потребоваться предоставить больше информации о своем случае, чтобы они могли предоставить вам конкретную информацию. \n\nЕсли вы хотите узнать более подробную информацию, пожалуйста, предоставьте мне более конкретную информацию о вашем случае, и я постараюсь предоставить вам полезную информацию и советы. Однако, вопросы о специальных средствах и их применении в Узбекистане могут требовать консультации с профессионалом в области права и законодательства. Если вы хотите получить более подробную информацию, пожалуйста, предоставьте мне более конкретную информацию о вашем случае, и я постараюсь предоставить вам полезную информацию и советы. Однако, вопросы о специальных средствах и их применении в Узбекистане могут требовать советующих советов у профессионала в области права и законодательства. Если вы хотите получить более подробную информацию, пожалуйста, предоставьте мне более конкретную информацию о вашем случае, и я постараюсь предоставить вам полезную информацию и советы. Однако, вопросы о специальных средствах и их применении в Узбекистане могут требовать советующ",
+          "latency_ms": 1840,
+          "tokens": 1132,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-17",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "Onlayn kassa (KKM)dan qachon foydalanish shart?",
+      "reference_answer": "Naqd va kartadagi savdoda qonunda belgilangan toifalar uchun majburiy qo‘llaniladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Onlayn kassa (KKM)dan foydalanish savdo va xizmat ko'rsatish faoliyatini amalga oshirayotgan tadbirkorlar uchun majburiydir.",
+          "latency_ms": 1229,
+          "tokens": 116,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Onlayn kassadan (KKM) foydalanish majburiyligi\n\n**Onlayn kassa quyidagi hollarda majburiy:**\n\n### Kim uchun shart:\n- **Yuridik shaxslar** (MChJ, AJ va boshqalar) — barcha faoliyat turlari uchun\n- **Yakka tartibdagi tadbirkorlar (YaTT)** — tovar/xizmat sotishda naqd pul yoki bank kartasi orqali to'lov qabul qilganda\n\n### Qachon ishlatiladi:\n- Naqd pul qabul qilinganda\n- Plastik karta (POS-terminal) orqali to'lov olganda\n- Elektron to'lov tizimlari (Payme, Click va h.k.) orqali to'lov olganda\n\n### Istisnolar (KKM talab qilinmaydi):\n- Faqat **bank o'tkazmasi** (hisob-faktura) orqali ishlaydigan YaTT va yuridik shaxslar\n- **Qishloq xo'jaligi bozorlari**dagi ayrim savdo turlari\n- **Patent asosida** ishlovchi ba'zi tadbirkorlar (cheklangan toifalar)\n\n### Jarimalar:\n| Buzarish | Jarima |\n|---------|--------|\n| KKM ishlatmaslik | 5–50 BHM |\n| Chek bermaslik | 2–10 BHM |\n\n> 📌 **Asosiy hujjat:** O'zbekiston Respublikasining \"Kassa apparatlari to'g'risida\"gi qonuni va Soliq kodeksining tegishli moddalari.",
+          "latency_ms": 15550,
+          "tokens": 559,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 36.011158224s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Onlayn kassa (KKM)dan foydalanish 2022-yil 1-yanvardan boshlab, barcha tijorat tashkilotlari, shu jumladan, yuridik va jismoniy shaxslar tomonidan shart.",
+          "latency_ms": 786,
+          "tokens": 187,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Onlayn kassa (KKM)dan foydalanish O'zbekiston Respublikasining Moliya vazirligi tomonidan belgilangan hollarda shart. Shu jumladan, tijorat, xizmat ko'rsatish, me'yoriy mahsulot sotish kabi faoliyatlar uchun KKM foydalanish majburiy. Barcha sotuvlar KKM orqali amalga oshirilishi va moliya organlariga ma'lumotlar haqiqiy vaqtga ko'ra yuborilishi kerak.",
+          "latency_ms": 1441,
+          "tokens": 482,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Onlayn kassa (KKM)dan **har qanday savdo‑xizmat operatsiyasini amalga oshirayotgan soliq to‘lovchisi** (naqd, bank kartasi, elektron hamyon yoki boshqa to‘lov vositalari orqali) foydalanganda foydalanish shart. Bu, jumladan, do‘kon‑savdo, internet‑savdo, xizmat ko‘rsatish, yetkazib berish va boshqa har qanday to‘lov qabul qilinadigan faoliyatni o‘z ichiga oladi.",
+          "latency_ms": 965,
+          "tokens": 432,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Onlayn kassa (KKM)dan naqd yoki plastik karta orqali to'lovlarni amalga oshirishda foydalanish shart. Ya'ni, naqd pul, bank kartalari yoki boshqa to'lov tizimlari orqali to'lovlarni qabul qiluvchi faoliyat turi bilan shug'ullanuvchi tadbirkorlar onlayn-kassa texnologiyasidan foydalanishga majburdirlar.",
+          "latency_ms": 1161,
+          "tokens": 166,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-scout": {
+          "response": "Onlayn kassa (KKM)dan quyidagi hollarda foydalanish shart:\n\n* Tovarlar sotilganda yoki xizmatlar ko'rsatilganda\n* Naqd pul yoki bank kartasi orqali to'lovlar qabul qilinganda\n* Soliq organlari tomonidan talab qilinganda \n\nQonunchilikka ko'ra, O'zbekistondagi barcha tadbirkorlar, shu jumladan yakka tartibdagi tadbirkorlar ham onlayn kassa apparatidan foydalanishlari shart.",
+          "latency_ms": 612,
+          "tokens": 194,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Onlayn kassa (KKM) jismodiy yoki yuridik shaxslar tovar/sotish yoki xizmat ko‘rsatishda naqd pul toʻlovi yoki plastik karta orqali to‘lov qabul qilayotgan paytda har safar foydalanish majburiy (plastik karta orqali toʻlov qabul qilishda — 1-iyul 2021 yil dan, naqd boʻlsa — 1-aprel 2022y.)",
+          "latency_ms": 1148,
+          "tokens": 227,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шуман, як менечер ОЗТІЛІДА, мені тяжко було отримати ваш список вимог, які вам потрібні для доступу до онлайн касі (KKM) та використання її. \n\nЯ думаю, вам потрібно було вказати більше інформації про ваш запит та методи, які ви бажаєте використовувати KKK. Наприклад, які банківські сервіси ви бажаєте використовувати, які банківські сервіси ви бажаєте використовувати, які банківські сервіси ви бажаєте використовувати, та т.д.\n\nЯкщо вам потрібно додаткова інформація про вимоги до використання онлайн касі, які ви можете використовувати, будь ласка, зверніться до банку, якого ви бажаєте використовувати, та якібітні вимоги вони мають для використання онлайн касі. Ви можете звернутися до банковського менеджера або відповістить на телефонний зв'язок, який вам банк видає.\n\nЯ також можу допомогти вам зі зв'язком з банком та відповідати на ваші запитання про банкові сервіси та вимоги до використання онлайн касі. Будь ласка, зверніться до мене через цю програму, якщо вам потрібна допомога. Я буду готовий до відповіді на ваші запитання та допомогти вам зі зв'язком з банком та відповідати на ваші запитання про банкові сервіси та вимоги до використання онлайн касі. Будь ласка, зверніться до мене через цю програму, якщо вам потрібна допомога. Я буду готовий до відповіді на ваші запитання та допомогти вам зі зв'язком з банком та відповідати на ваші запитання про банкові сервіси та вимоги до використання онлайн касі. Будь ласка, зверніться до мене через цю програму, якщо вам потрібна допомога. Я буду готовий до відповіді на ваші",
+          "latency_ms": 1151,
+          "tokens": 1121,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-18",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "B. ismli shaxs 2 yildan buyon oilaviy korxona tashkil etgan holda tadbirkorlik faoliyati bilan shug‘ullanib kelayotgani, oilaviy korxona uning yashash manzilida joylashgani sababli, yashash uyiga ulangan elektr energiyasi, suv, gazdan tadbirkorlik faoliyatini yuritishda ham foydalanib kelayotgani haqida ma’lum qilib, kommunal xizmatlar uchun to‘lovlarni qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so‘radi.",
+      "reference_answer": "Oilaviy korxona turar joydan bir vaqtning o‘zida unda istiqomat qilgan holda tovarlar ishlab chiqarish (ishlar bajarish, xizmatlar ko‘rsatish) uchun foydalangan taqdirda, kommunal infratuzilma xizmatlari (elektr energiyasi, suv ta’minoti, kanalizatsiya, gaz ta’minoti va issiqlik ta’minoti) haqini to‘lash aholi uchun belgilangan tariflar bo‘yicha va shartlar asosida amalga oshiriladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "B. ismli shaxs oilaviy korxona faoliyatida yashash manzilidagi kommunal xizmatlardan foydalanganda, ushbu xizmatlar uchun to'lovlar odatda tijorat tariflari asosida amalga oshirilishi kerak. Chunki kommunal xizmatlar tadbirkorlik faoliyati uchun ishlatilmoqda. Buning uchun tegishli xizmat ko'rsatuvchi tashkilotlarga murojaat qilib, tijorat tariflariga o'tish jarayonini rasmiylashtirish lozim.",
+          "latency_ms": 2908,
+          "tokens": 299,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "claude-sonnet": {
+          "response": "## Huquqiy Tushuntirish\n\n**B. ismli shaxsning holati bo'yicha:**\n\nOilaviy korxona yashash manzilida ro'yxatdan o'tgan va tadbirkorlik faoliyati shu manzilda yuritilayotgan bo'lsa, kommunal xizmatlar uchun to'lovlar **aralash tartibda** amalga oshirilishi lozim.\n\n---\n\n### Amaldagi Normalar\n\n**O'zbekiston Respublikasi qonunchiligi asosida:**\n\n- Agar uy-joy manzilida **tadbirkorlik faoliyati** ham yuritilsa, kommunal xizmatlar (elektr, suv, gaz) iste'moli **ikki qismga** bo'linishi kerak:\n  - 🏠 **Maishiy (aholi) tarifi** – shaxsiy yashash ehtiyojlari uchun\n  - 🏢 **Tijorat (yuridik shaxs/tadbirkor) tarifi** – tadbirkorlik faoliyati uchun\n\n---\n\n### Amaliy Tavsiyalar\n\n1. **Hisoblagichlarni ajratish** – tadbirkorlik faoliyati uchun alohida hisob-schyotchi o'rnatish tavsiya etiladi\n2. **Tegishli tashkilotlarga murojaat** – elektr energiyasi bo'yicha **\"O'zbekenergo\"**, gaz bo'yicha **\"O'zgaz**, suv bo'yicha mahalliy **\"Suv ta'minoti\"** tashkilotlariga xabardor qilish\n3. **Soliq organlari** – oilaviy korxona xarajatlarini hisobda to'g'ri aks ettirish uchun kommunal to'lovlarning tadbirkorlik qismini **xarajat sifatida** kiritish mumkin\n\n> ⚠️ **Diqqat:** Tijorat tarifi aholi tarifiga nisbatan **yuqoriroq** bo'ladi. Xabardor qilmaslik esa **ma'muriy javobgarlikka** sabab bo'lishi mumkin.",
+          "latency_ms": 16751,
+          "tokens": 836,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 18.659300566s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Kommunal xizmatlar uchun to'lovlarni amalga oshirishda, tadbirkorlik faoliyatini yuritish uchun foydalanilgan elektr energiyasi, suv, gaz miqdori alohida hisoblanib, tadbirkorlik faoliyati uchun mo'ljallangan tariflar asosida to'lanadi. Yashash manzili uchun to'lovlar esa, umumiy fuqarolik tariflari bo'yicha amalga oshiriladi.",
+          "latency_ms": 1342,
+          "tokens": 397,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "Oilaviy korxona uchun yashash uyida foydalanilayotgan elektr, suv, gaz xizmatlarini to'lov qilishda ixtiyoriy tariflardan foydalanish mumkin emas. Agar tadbirkorlik faoliyatida foydalanilayotgan resurslar ajratilmagan bo'lsa, butun foydalanish \"tijorat\" tariflariga asoslanib hisoblanadi. Bu to'lov miqdorini oshirishga olib keladi. Shu sababli, tadbirkorlik uchun alohida o'lchash vositalari o'rnatish yoki foydalanish miqdorini ajratish kerak. Aks holda, huquqiy mas'uliyat yoki to'lovlar tariflarining oshishi ehtimoli yuzaga keladi. Kommunal xizmatlar to'lovlari to'g'risida aniq ma'lumot olish uchun xizmat ko'rsatuvchi tashkilotlar bilan murojaat qilish kerak.",
+          "latency_ms": 3164,
+          "tokens": 996,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "**Savolga javob**\n\nB. shaxsning oilaviy korxonasi yashash manzilida joylashganligi sababli, uyga ulangan elektr energiyasi, suv, gaz kabi kommunal xizmatlardan tadbirkorlik faoliyati uchun ham foydalanilayotganda, to‘lovlar **“kommunal xizmatlar to‘lovlari tariflari”** (O‘R. K. 1995‑yil, 2022‑yilgi tariflar to‘g‘risidagi qonunlar) asosida amalga oshiriladi.  \n\n### 1. Tariflar qanday belgilanadi?\n\n| Xizmat | Tarif turi | Qoidalar |\n|--------|------------|----------|\n| **Elektr energiyasi** | – **Uy‑xona (rezident) tarif** – odatiy iste’mol uchun.<br>– **Tadbirkorlik (no‑rezident) tarif** – korxona maqsadida foydalaniladigan qism uchun. | 1‑kuni o‘rtacha iste’molga qarab, 2022‑yilgi “Elektr energiyasi tariflari to‘g‘risida” N № 123‑sonli Nizomda belgilangan. 2‑kuni korxona qismiga alohida o‘lchov (meter) o‘rnatilsa, **no‑rezident tarif** qo‘llaniladi. |\n| **Suv** | – **Uy‑xona tarif** – ichimlik, sanitariya.<br>– **Sanoat‑tadbirkorlik tarif** – ishlab‑chiqarish, xizmat ko‘rsatish maqsadida. | “Suv xizmatlari tariflari to‘g‘risida” N № 78‑sonli Nizomda, korxona qismiga alohida o‘lchov o‘rnatilganda **no‑rezident tarif** qo‘llanadi. |\n| **Gaz** | – **Uy‑xona tarif** – isitish, pishirish.<br>– **Tadbirkorlik tarif** – sanoat, xizmat ko‘rsatish. | “Gaz xizmatlari tariflari to‘g‘risida” N № 56‑sonli Nizomda, alohida o‘lchov bo‘lsa, **no‑rezident tarif** qo‘llanadi. |\n\n### 2. Amalda qanday qilish kerak?\n\n1. **Alohida o‘lchov (meter) o‘rnatish** – Kommunal xizmat ko‘rsatuvchi tashkilotga (MCHJ “Elektron”, “Suv‑Uz”, “Gaz‑Uz” va boshq.) korxona qismi uchun alohida o‘lchov talab qilinishini yozma ravishda murojaat qilish.  \n2. **Murojaat bilan birga quyidagilarni taqdim etish:**  \n   - Korxona ro‘yxatdan o‘tganligi haqidagi hujjat (INN, O‘TK‑ro‘yxatidan olingan guvohnoma).  \n   - Yashash manzili va korxona joylashgan joyi ko‘rsatilgan xarita (yer uchastkasining reestri).  \n   - Elektr/suv/gaz o‘lchov qurilmasini almashtirish yoki qo‘shimcha o‘lchov o‘rnatish bo‘yicha texnik topshiriq.  \n3. **Tarif o‘zgartirish qarorini olish** – Kommunal xizmat ko‘rsatu",
+          "latency_ms": 2551,
+          "tokens": 1278,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Kommunal xizmatlar uchun to'lovlar \"O'zbekiston Respublikasida aholiga kommunal xizmatlar ko'rsatish qoidalarini tasdiqlash to'g'risida\"gi Nizomga muvofiq amalga oshiriladi. Unga ko'ra, tadbirkorlik faoliyati uchun alohida hisoblagich o'rnatilishi shart. Agar B.ning uyida alohida hisoblagich o'rnatilmagan bo'lsa, u holda kommunal to'lovlar iste'mol qilingan kommunal resurslar hajmiga qarab, belgilangan tartibda hisoblab chiqiladi va to'lanadi. Shu bilan birga, tadbirkorlik faoliyati bilan shug'ullanish uchun foydalanilgan kommunal xizmatlar hajmini aniqlash uchun alohida hisoblagich o'rnatilishi lozimligi hamda mazkur holatda kommunal xizmatlar uchun to'lovlar belgilangan tartibda hisoblab chiqilishi lozimligi yuzasidan kommunal xizmatlar ko'rsatuvchi tashkilotga murojaat qilishi mumkin.",
+          "latency_ms": 2197,
+          "tokens": 424,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Jismoniy shaxslarning, shu jumladan yakka tartibdagi tadbirkorlarning, oilaviy korxonaning kommunal xizmatlar (elektr energiyasi, suv, gaz) uchun to‘lovlari, ular uchun belgilangan tariflar asosida amalga oshiriladi.\n\nOilaviy korxona tashkil etgan jismoniy shaxs, agar u alohida hisob-kitob varaqasi va kadastr pasportiga ega bo‘lmasa, kommunal xizmatlar uchun to‘lovlarni jismoniy shaxslar uchun belgilangan tariflar bo‘yicha amalga oshiradi.\n\nAgar oilaviy korxona alohida hisob-kitob varaqasi va kadastr pasportiga ega bo'lsa, u holda kommunal xizmatlar uchun to‘lovlar yuridik shaxslar uchun belgilangan tariflar bo‘yicha amalga oshiriladi.\n\nShuningdek, agar kommunal xizmatlardan foydalanish, shu jumladan, elektr energiyasi, suv, gazdan foydalanish yakka tartibdagi tadbirkor yoki oilaviy korxonaning yashash joyida amalga oshirilganligi sababli, tegishli hujjatlar (shartnomalar, hisob-kitob varaqasi va kadastr pasporti) rasmiylashtirilmagan bo‘lsa, unda jismoniy shaxslar uchun belgilangan tariflar bo‘yicha to‘lov amalga oshiriladi.\n\nBundan tashqari, O‘zbekiston Respublikasi Vazirlar Mahkamasining 2019-yil 19-iyundagi 509-son qaroriga muvofiq yakka tartibdagi tadbirkorlar va oilaviy korxonalar kommunal xizmatlardan foydalanganda, ularga kommunal xizmatlar uchun to‘lovlarni jismoniy shaxslar uchun belgilangan tariflar bo‘yicha amalga oshirish tavsiya etiladi.\n\nShu sababli, B. ismli shaxsning yashash uyiga ulangan elektr energiyasi, suv, gazdan tadbirkorlik faoliyatini yuritishda ham foydalanib kelayotgani, oilaviy korxonaning yashash manzilida joylashganligi munosabati bilan kommunal xizmatlar uchun to‘lovlar jismoniy shaxslar uchun belgilangan tariflar asosida amalga oshirilishi kerak.",
+          "latency_ms": 1625,
+          "tokens": 694,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "kimi-k2": {
+          "response": "Agarda tadbirkorlik faoliyati yashash joyda amalga oshirilayotgan bo‘lsa, kommunal xizmatlar (elektr energiyasi, suv, gaz va boshqalar) uchun iste’molchi tariflari qo‘llaniladi. Boshqacha aytganda, u tariflar, aholi uchun belgilangan tariflar asosida to‘lanadi. Bunda mamlakatning “Elektr va elektr energiyasi to‘g‘risida”gi qonuni hamda tegishli hukumat qarorlari ijrosi qo‘llaniladi. Tadbirkor faoliyatni amalga oshirayotgan binoda alohida hisoblagichlar o‘rnatilgan bo‘lsa ham, aholi tarifi asosida hisob-kitob amalga oshiriladi.",
+          "latency_ms": 1415,
+          "tokens": 444,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "allam-2-7b": {
+          "response": "O'zbek tilida aniq va qisqa javob berishni tavsiya etmaganligimga jami'lik qo'llaniladi. O'zbek tili uchun mavjud va qismak qo'llanma.\n\nSavol: B. ismli shaxs 2 yildan buyon oilaviy korxona tashkil etgan holda, uning yashash manzilida joylashgani sababli, yashash uyiga ulangan elektr energiyasi, suv, gazdan tadbirkorlik faoliyatini yuritishda ham foydalanib kelayotgani haqida ma'lum qilib, kommunal xizmatlar uchun to'lovlarni qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so'radi.\n\nJavob: O'zbek tili uchun, B. ismli shaxsga yashash manzilida joylashgani sababli, elektroenergiya, suv, gazdan tadbirkorlik faoliyatini yuritishda ham foydalanib kelgani va kommunal xizmatlar uchun to'lovlarni qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so'radi.\n\nO'zbek tili uchun, bu javobda qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so'radi. O'zbek tili uchun, kommunal xizmatlar uchun to'lovlarni qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so'radi.\n\nJavob:\n\nO'zbek tili uchun, kommunal xizmatlar uchun to'lovlarni qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so'radi. Bu javobda, qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so'radi.\n\nO'zbek tili uchun, kommunal xizmatlar uchun to'lovlarni qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so'radi. Bu javobda, qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so'radi.\n\nJavob:\n\nO'zbek tili uchun, kommunal xizmatlar uchun to'lovlarni qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so'radi. Bu javobda, qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so'radi.\n\nO'zbek tili uchun, kommunal xizmatlar uchun to'lovlarni qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so'radi. Bu javobda, qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so'radi.\n\nJavob:\n\nO'zbek tili uchun, kommunal xizmatlar uchun to'lovlarni qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so'rad",
+          "latency_ms": 1138,
+          "tokens": 1295,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-19",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "Elektron chek berilmasa nima bo‘ladi?",
+      "reference_answer": "Nazorat organlari tomonidan javobgarlik chorasi qo‘llanadi; iste’molchi shikoyat berishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Elektron chek berilmasa, iste'molchi huquqlari buziladi va sotuvchi jarimaga tortilishi mumkin.",
+          "latency_ms": 1808,
+          "tokens": 98,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Elektron chek berilmasa nima bo'ladi?\n\n**Sotuvchi/Xizmat ko'rsatuvchi uchun jarimalar:**\n\n- **Birinchi marta** buzilsa — **5 BHM** miqdorida jarima (jismoniy shaxslar uchun)\n- **Yuridik shaxslar** uchun — **10 BHM** miqdorida jarima\n- Takroriy buzilishda jarima miqdori oshiriladi\n\n**Qo'shimcha oqibatlar:**\n\n- Soliq organlari tomonidan **tekshiruv** o'tkazilishi mumkin\n- Kassa intizomini buzganlik uchun **qo'shimcha sanksiyalar** qo'llanilishi mumkin\n- Onlayn kassa apparati o'rnatish majburiyati kuchaytiriladi\n\n> 📌 **Eslatma:** O'zbekiston Respublikasining \"Soliq kodeksi\" va tegishli qonunchiligiga ko'ra, elektron chek berish **majburiy** hisoblanadi. Agar chek berilmasa, xaridor **soliq organlariga shikoyat** qilish huquqiga ega.",
+          "latency_ms": 11150,
+          "tokens": 419,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 58.312494635s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Elektron chek berilmasa, hisobvaraq ochilishi to'g'risidagi iltimos qabul qilinmaydi.",
+          "latency_ms": 653,
+          "tokens": 147,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "Elektron chek berilmasa, xaridorni xavfsizlik huquqlari buziladi. Siz me'yorida bo'lmagan xizmat ko'rsatuvchi tashkilotga shikoyat qilishingiz yoki moliya va xaridorlarni himoya qilish vazirligiga murojaat qilishingiz kerak. Shuningdek, xarid qilingan tovarni qaytarish yoki garantiyadan foydalanish qiyinlashishi mumkin.",
+          "latency_ms": 1191,
+          "tokens": 385,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Elektron chek (fiskal chek) berilmasa, quyidagi oqibatlar yuzaga kelishi mumkin:\n\n1. **Soliq organlari tomonidan jazolar** – elektron chek berilmaganligi soliq qonunchiligiga zid bo‘lib, korxona yoki tadbirkorga jarima, ma’muriy javobgarlik yoki tekshiruvlar qo‘llanilishi mumkin.  \n2. **Mijozning huquqlari buzilishi** – mijoz tovar yoki xizmat uchun to‘lovni tasdiqlovchi hujjatga ega bo‘lmaydi, bu esa kelajakda qaytarish, kafolat yoki huquqiy da’vo qilishda muammolar keltirib chiqaradi.  \n3. **Hisob‑kitoblarda noaniqlik** – elektron chek yo‘qligi savdo hajmini, soliq bazasini va hisobotlarni to‘g‘ri yuritishni qiyinlashtiradi, bu esa ichki audit va moliyaviy nazoratga salbiy ta’sir ko‘rsatadi.  \n4. **Raqobatbardoshlikning pasayishi** – mijozlar ishonchini yo‘qotish, shuningdek, elektron hisobot tizimlariga mos kelmaslik biznesning raqobatbardoshligini kamaytiradi.  \n\nShu sababli, har bir savdo operatsiyasida elektron chek berilishi qonuniy majburiyatdir.",
+          "latency_ms": 1091,
+          "tokens": 485,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Soliq organlari tomonidan tegishli ravishda xabar berilgan holda, elektron chek bermaganlik uchun ma'muriy javobgarlik nazarda tutilgan. Ya'ni, bunday qilmish uchun bazaviy hisoblash miqdorining 5 baravaridan 10 baravarigacha miqdorda jarima qo'llaniladi.",
+          "latency_ms": 3955,
+          "tokens": 151,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Agar elektron chek berilmasa, xaridorga chek taqdim etish majburiyati saqlanib qoladi. Sotuvchi xaridorga qog‘oz chek berishi kerak.",
+          "latency_ms": 439,
+          "tokens": 117,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Elektron chek berilmasa, 1 BHM miqdorida jarima solinadi.",
+          "latency_ms": 764,
+          "tokens": 122,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шуман, якщак артикул ОЗБЕКСТАНСКИЙ ядерний центр (ОЗБЕКЕНЦ) фактично факторів, які виявлено в Україні, не використовували, якібітників ОЗБЕКЕНЦ не використовували, але використовували фактори, які виявлено в Таджикистані, тобто використовували фактори, які виявлено в Таджикистані, які були використані в Україні.\n\nВикористання факторів, які виявлено в Таджикистані, було використано в Україні, але не було використано фактори, які виявлено в Україні. Таким чином, щоб відповісти на вашу спиральну справу, якщо було немає факторів, які виявлено в Україні, то використання факторів, які виявлено в Таджикистані, не було використано в Україні. \n\nТаким чином, використання факторів, які виявлено в Таджикистані, було використано в Україні, але не було використано факторів, які виявлено в Україні. Таким чином, використання факторів, які виявлено в Таджикистані, було використано в Україні, але не було використано факторів, які виявлено в Україні. Таким чином, використання факторів, які виявлено в Таджикистані, було використано в Україні, але не було використано факторів, які виявлено в Україні. Таким чином, використання факторів, які виявлено в Таджикистані, було використано в Україні, але не було використано факторів, які виявлено в Україні. Таким чином, використання факторів, які виявлено в Таджики",
+          "latency_ms": 1128,
+          "tokens": 1117,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-20",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "M. ismli shaxs dori vositalari va tibbiy buyumlarni chakana realizatsiya qilish uchun litsenziya olmoqchi bo‘lganida, litsenziyalovchi organ ushbu litsenziya faqat 2 yil muddatga berilishi haqida ma’lum qilganini bayon qilib, litsenziyalovchi organning ushbu talabi qonuniyligi yuzasidan huquqiy tushuntirish berishni so‘radi.",
+      "reference_answer": "Litsenziyalovchi organning ushbu talabi noqonuniydir. Chunki, dori vositalari va tibbiy buyumlarni chakana realizatsiya qilish uchun litsenziya besh yil muddatga beriladi.\nLitsenziya 5 yildan kam muddatga faqat litsenziya talabgorining arizasiga binoan berilishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Litsenziyalovchi organning dori vositalari va tibbiy buyumlarni chakana realizatsiya qilish uchun litsenziyani faqat 2 yil muddatga berishi qonuniy hisoblanadi. O'zbekiston Respublikasining \"Litsenziyalash to'g'risida\"gi qonuniga muvofiq, ayrim faoliyat turlari uchun litsenziya berish muddati cheklanishi mumkin. Shuning uchun, litsenziyalovchi organning ushbu talabi qonuniydir.",
+          "latency_ms": 2694,
+          "tokens": 275,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "claude-sonnet": {
+          "response": "## Huquqiy tushuntirish\n\nLitsenziyalovchi organning bu talabi **qonunga zid** hisoblanadi.\n\n**Asoslar:**\n\nO'zbekiston Respublikasining **«Litsenziyalash to'g'risida»gi Qonuni**ga (2022 yil 30 sentyabrdagi yangi tahriri) va **«Ruxsat berish tartibi to'g'risida»gi Qonun**iga muvofiq:\n\n- Litsenziyalar, qoida tariqasida, **muddatsiz** beriladi.\n- Litsenziyaga **cheklangan muddat** belgilash faqat **qonunda to'g'ridan-to'g'ri nazarda tutilgan hollarda** mumkin.\n- Dori vositalari va tibbiy buyumlarni chakana sotish litsenziyasi uchun qonunda **2 yillik cheklash** belgilanmagan.\n\n**M. ga tavsiya:**\n\n1. Litsenziyalovchi organidan **muddatni cheklashning qonuniy asosini** yozma ravishda talab qilsin.\n2. Agar asosli javob berilmasa, ushbu harakat **O'zbekiston Respublikasi Ma'muriy protsessual kodeksi** asosida **ma'muriy sud tartibida** yoki yuqori turuvchi organga shikoyat orqali **e'tiroz** bildirishi mumkin.\n3. **Antimonopol qo'mita** yoki **Biznes ombudsmani** idorasiga murojaat qilishi ham mumkin.\n\n> Xulosa: M. **muddatsiz litsenziya** olish huquqiga ega, litsenziyalovchi organning 2 yillik cheklovi asossiz va noqonuniydir.",
+          "latency_ms": 16911,
+          "tokens": 701,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 45.884190894s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "O'zbekiston Respublikasining \"Litsenziyalash to'g'risida\" gi qonuniga muvofiq, dori vositalari va tibbiy buyumlarni chakana realizatsiya qilish uchun litsenziya 5 yil muddatga beriladi. Shuning uchun, litsenziyalovchi organning 2 yil muddatga litsenziya berish talabi qonuniy emas.",
+          "latency_ms": 937,
+          "tokens": 341,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "qwen3-32b": {
+          "response": "O'zbekiston Respublikasining Dori vositalari to'g'risida giyohi (2022-yilgi) 21-madde 2-hisobiga ko'ra, dori vositalari sotish litsenziyasi 5 yildan oshmaydi. Shunday bo'lsa-da, litsenziyalovchi organ litsenziya muddatini qisqartirish arafatida bo'lsa, bu qonuniy asosga ega bo'lishi kerak. Agar litsenziyalovchi organ qonunlardan o'tish arafatida bo'lsa, masalan, 2 yil muddatga litsenziya berish qonuniy asosga ega bo'lmasa, bu qaror qonuniy hisoblanmaydi. M. litsenziyalovchi organ qarorini o'z ishlariga qiyoslab ko'rib chiqish yoki qonuniy yordam olib, qonuniy asoslarni nishonlashi kerak.",
+          "latency_ms": 2821,
+          "tokens": 877,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Litsenziyalovchi organ M. shaxsga dori vositalari va tibbiy buyumlarni chakana realizatsiya qilish uchun **faqat 2 yil muddatga** litsenziya berishni taklif qilgan bo‘lsa, bu talab **O‘zbekiston Respublikasining “Farmatsevtika faoliyati to‘g‘risida”gi qonuni** hamda **“Tibbiy vositalar va dori vositalarini sotish bo‘yicha litsenziyalash tartibi”**ga muvofiq qonuniy bo‘lishi mumkin.\n\n1. **Qonunda ko‘rsatilgan maksimal muddat** – 5 yil (Qonunning 23‑modda).  \n2. **Ammo** 23‑modda 3‑bandda shunday aytilgan: “Litsenziya berish muddatini litsenziyalovchi organ, litsenziya oluvchining faoliyatini nazorat qilish, shartlar va talablarning bajarilishini baholash zarurati, shuningdek, xavf‑xatar darajasi asosida qisqartirishi mumkin.”  \n3. Shuning uchun, litsenziyalovchi organ M. shaxsning hujjatlari, moliyaviy holati, texnik‑texnologik tayyorgarligi yoki boshqa qonuniy talablarni to‘liq qondirmaganligi holatida **2 yillik muddatni belgilashi qonuniydir**.  \n\nAgar M. shaxs bu muddatni nohaq deb hisoblasa, u **litsenziyalovchi organ qaroriga 30 kun ichida yozma ravishda murojaat qilib, keyin esa ma’muriy sudga shikoyat qilish huquqiga ega**.  \n\n**Xulosa:** Litsenziyalovchi organning 2 yillik muddatni belgilashi, qonunda ko‘rsatilgan “muddatni qisqartirish” imkoniyati doirasida, qonuniy hisoblanadi.",
+          "latency_ms": 1719,
+          "tokens": 872,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "\"O'zbekiston Respublikasining \"Litsenziyalash to'g'risida\"gi Qonuniga muvofiq, litsenziya cheklanmagan muddatga beriladi. Shunga ko'ra, litsenziyalovchi organning litsenziyani faqat 2 yil muddatga berish talabi qonunga zid hisoblanadi.\"",
+          "latency_ms": 3680,
+          "tokens": 241,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-scout": {
+          "response": "Vazirlar Mahkamasining 2017-yil 23-avgustdagi 656-son qarori bilan tasdiqlangan “Dori vositalari va tibbiy buyumlarni chakana realizatsiya qilish uchun litsenziya berish” to‘g‘risidagi Nizomga muvofiq, dori vositalari va tibbiy buyumlarni chakana realizatsiya qilish uchun litsenziya cheklanmagan muddatga beriladi. Shuning uchun, litsenziyalovchi organning litsenziyani faqat 2 yil muddatga berish to‘g‘risidagi talabi noqonuniy hisoblanadi.",
+          "latency_ms": 656,
+          "tokens": 303,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "kimi-k2": {
+          "response": "Litsenziyalovchi organning dori vositalari va tibbiy buyumlarni chakana realizatsiya qilish litsenziyasini 2 yil muddatga berish haqidagi talabi qonunga muvofiqdir.\n\nO‘zbekiston Respublikasi Vazirlar Mahkamasining 2016 yil 2 iyunidagi 199-sonli qaroriga asosan, dori vositalari va tibbiy buyumlarni realizatsiya qilish litsenziyasi litsenziyalovchi tomonidan bir yildan kam bo‘lmagan va besh yildan ortiq bo‘lmagan muddatga beriladi. Shuning uchun 2 yil muddati qonunga to‘g‘ri keladi.",
+          "latency_ms": 1360,
+          "tokens": 375,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант: Привет, я помогу вам решать эту проблему. Вот некоторые информации о этом вопросе на русском языке:\n\nВаш вопрос касается лицензированного лица, который хочет реализовать деятельность с двумя видами ваканций: дорогой и медицинский байлайн. Однако, орган лицензирования утверждает, что он может дать лицензию только на реализацию вакансий на протяжении 2 года.\n\nВот некоторые вопросы, которые могу ответить на ваш вопрос:\n\n1. Какой тип лицензии этого лицензированного лица получил и зачем он хочет ее получить?\n2. Какие вакансии он предлагает и какие факторы он учитывает при выборе персонала?\n3. Какие условия органа лицензирования определились для реализации вакансий на протяжении 2 года?\n4. Какие правила и законодательство связанные с регистрацией и лицензированием физических лиц в ОАЭ Узбекистана?\n5. Какие возможности и возможности органа лицензирования для регистрации и лицензирования физических лиц в ОАЭ Узбекистана?\n\nЕсли вы предоставите дополнительную информацию о физическом лице и его деятельности, я помогу вам разобраться с данной ситуацией и предложить решение. Пожалуйста, предоставьте более подробную информацию о лице и его деятельности. Я помогу вам разобраться с данной ситуацией и предложить решение. Пожалуйста, предоставьте более подробную информацию о физическом лице и его деятельности. Вам я помогу разобраться с данной ситуацией и предложить решение. Пожалуйста, предоставьте более подробную информацию о физическом лице и его деятельности. Вам я помогу разобраться с данной ситуацией и предложить решение. Пожалуйста, предоставьте более по",
+          "latency_ms": 1126,
+          "tokens": 1242,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-21",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "“Har bir oila – tadbirkor” Dasturi doirasida ajratiladigan kreditlar miqdori qancha?",
+      "reference_answer": "Loyihani amalga oshirishda, o‘z hisobidan mablag‘ ajratish sharti bilan cheklanmagan miqdorda, dastur talablariga zid bo‘lmagan yo‘nalishlarga kredit mablag‘lari ajratiladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "\"Har bir oila – tadbirkor\" dasturi doirasida ajratiladigan kreditlar miqdori har bir loyiha uchun 225 million so‘mgacha bo‘lishi mumkin.",
+          "latency_ms": 1306,
+          "tokens": 132,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "claude-sonnet": {
+          "response": "## \"Har bir oila – tadbirkor\" Dasturi bo'yicha kredit miqdorlari\n\nDastur doirasida ajratiladigan kreditlar quyidagicha:\n\n- **Minimal miqdor:** 3 000 000 so'm\n- **Maksimal miqdor:** 100 000 000 so'm\n\n**Asosiy shartlar:**\n- Kredit muddati – **3 yilgacha**\n- Foiz stavkasi – **Markaziy bank stavkasidan past** (imtiyozli)\n- Boshlang'ich to'lov talab etilmaydi\n\n> ⚠️ Kredit miqdori va shartlari vaqt o'tishi bilan o'zgarishi mumkin. Eng dolzarb ma'lumot uchun **Bandlik va mehnat munosabatlari vazirligi** yoki **xizmat ko'rsatayotgan bank** bilan bog'lanishni tavsiya etaman.",
+          "latency_ms": 8390,
+          "tokens": 367,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 26.598668335s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '26s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "\"Har bir oila – tadbirkor\" Dasturi doirasida ajratiladigan kreditlar miqdori 100 million so'mgacha.",
+          "latency_ms": 601,
+          "tokens": 164,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "<think>\nOkay, the user is asking about the amount of loans provided under the \"Har bir oila – tadbirkor\" program. I need to recall the details of this program. From what I remember, this is a government initiative in Uzbekistan aimed at supporting families to become entrepreneurs. The program offers microloans to help start small businesses.\n\nI should check the exact figures. The maximum loan amount per family is typically around 10 million UZS. But I need to confirm if there are different tiers or conditions. Also, there might be a total allocation for the program. I think the government allocated a certain amount for this program, maybe 100 billion UZS in total for 2023. However, the user is asking specifically about the loan amount per family, not the total. \n\nWait, the user's question is about the quantity of loans, which could be interpreted as the number of loans or the amount per loan. Since they mentioned \"miqdori,\" which means quantity, but in financial context, it's more likely referring to the amount. So the answer should be the maximum loan amount per family. \n\nI should also mention the interest rate, which is usually 0% for these programs. The repayment period might be up to 3 years. But the user asked specifically for the amount, so maybe just the 10 million UZS. However, to be thorough, including the interest rate and repayment period could add context. But the user wants a concise answer. \n\nSo the key points are: maximum loan amount per family is 10 million UZS, 0% interest, repayment period up to 3 years. The total allocated funds might be 100 billion UZS for the year. But the user's question is about the quantity of loans, which is per family. Therefore, the answer should focus on the individual loan amount. \n\nI need to make sure the numbers are accurate. Let me verify. Yes, the maximum loan per family is 10 million UZS. The total allocation for the program in 2023 was 100 billion UZS. So the answer should state that each family can receive up to 10 million UZS, with the total program funds being 100 billion UZS. But the user's question is about the quantity, so maybe they want to know how many loans are given? Wait, the original question is \"ajratiladigan kreditlar miqdori qancha?\" which translates to \"how much is the amount of loans allocated?\" So \"miqdori\" here refers to the quantity, but in Uzbek, \"miqdori\" can mean both quantity and amount. However, in financial terms, it's more likely asking about the amount per loan. \n\nTherefore, the answer should specify that each family can receive up to 10 million UZS. But to be precise, the user might be asking about the total amount allocated for the program. However, the question is phrased as \"ajratiladigan kreditlar miqdori,\" which is \"the amount of loans allocated.\" So the answer should include both the per-family loan amount and the total program allocation. \n\nSo the correct answer is that each family can receive up to 10 million UZS, with the total program allocation being 100 billion UZS for 2023. But the user might just need the per-family amount. However, to be thorough, including both would be better. But the user wants a concise answer. Let me check the exact phrasing again. The user wrote: \"Har bir oila – tadbirkor\" Dasturi doirasida ajratiladigan kreditlar miqdori qancha? So \"ajratiladigan kreditlar miqdori\" means \"the amount of loans allocated\" within the program. So the answer is the total amount allocated for the program. But I'm not sure. Alternatively, it could be asking about the amount per loan. \n\nThis is a bit ambiguous. To resolve, I should check official sources. According to the Uzbek government's website, the \"Har bir oila – tadbirkor\" program provides microloans to families, with a maximum of 10 million UZS per family, and the total allocated funds for 2023 are 100 billion UZS. Therefore, the answer should mention both the per-family loan amount and the total program allocation. However, the user's question is about the \"miqdori,\" which is \"quantity\" or \"amount.\" Since the question is in Uzbek, and the user is asking for the amount of loans allocated, the answer should include both the per-family amount and the total. But the user might just need the per-family amount. \n\nGiven the ambiguity, the safest answer is to state that each family can",
+          "latency_ms": 4515,
+          "tokens": 1124,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "“Har bir oila – tadbirkor” dasturi doirasida har bir oila uchun maksimal **5 mln so‘m** kredit ajratiladi.",
+          "latency_ms": 1247,
+          "tokens": 584,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "“Har bir oila – tadbirkor” Dasturi doirasida ajratiladigan kreditlar miqdori Bosh bank tomonidan belgilanadigan eng kam ish haqining 50 baravarigacha, lekin 100 million so'mgacha tashkil etadi.",
+          "latency_ms": 1996,
+          "tokens": 150,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "\"Har bir oila - tadbirkor\" Dasturi doirasida ajratiladigan kreditlar miqdori  5 million so'mdan 100 million so'mgacha bo'lishi mumkin.",
+          "latency_ms": 452,
+          "tokens": 137,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Har bir oilaga 100 million so‘mgacha kredit ajratiladi.",
+          "latency_ms": 648,
+          "tokens": 133,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОАО \"Санкт-Петербургский банк\" готов помочь вам с вопросами по юридическим и организационным вопросам в сфере бизнеса и экономики. \n\nВ ответ на ваш вопрос о том, какой сумма кредита может быть займённая каждому предпринимателю в соответствии с законом \"О договорах о долгих платежах\", я могу предоставить вам информацию на русском языке.\n\nВ ОАО \"Санкт-Петербургский банк\" мы предлагаем различные кредиты для предпринимателей и предложим вам информацию о минимальном и максимальном значении кредитного договора в соответствии с законом \"О договорах о долгих платежах\".\n\nМинимальная сумма кредита в соответствии с законом \"О договорах о долгих платежах\" может зависеть от финансового статуса предприятия и его экономического результата. Однако, обычно минимальная сумма кредита может составлять от 100 000 до 500 000 рублей.\n\nМаксимальная сумма кредита также зависит от финансового статуса предприятия и его экономического результата. Однако, обычно максимальная сумма кредита может составлять от 500 000 до 1 миллиона рублей.\n\nОбратите внимание, что максимальная сумма кредита может быть установлена банком в зависимости от своих политик и условий. Пожалуйста, обращайтесь к вашему банку или консультанту, чтобы получить конкретную информацию о максимальной сумме кредита и её условиях. \n\nЕсли вы ищете информацию о кредитных программах и условиях кредитования в ОАЭ \"Санкт-Петербургский банк\", пожалуйста, обращайтесь к их консультанту или свяжитесь с их сервисом поддержки клиентов. Они предоставят вам конкретную информацию о максимальной сумме кредита и её условиях.",
+          "latency_ms": 1148,
+          "tokens": 1136,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-22",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "Kreditga 50 dona avtomashina sotib olganman. Ularning barchasini garovga qo‘yib, sug‘urta qildirganman. Sug‘urta shartnomasi kredit muddati davriga tuzilgan edi. Kredit qarzini muddat tugashidan 2 yil oldin to‘ladim. Sug‘urta mukofotini olsam bo‘ladimi?",
+      "reference_answer": "Fuqarolik kodeksining 948-moddasiga asosan sug‘urta shartnomasi, agar u kuchga kirganidan keyin sug‘urta hodisasi yuz berishi ehtimoli yo‘qolgan va sug‘urta xavfining mavjud bo‘lishi sug‘urta hodisasidan boshqa holatlar bo‘yicha tugagan bo‘lsa, tuzilgan muddati kelishidan oldin bekor bo‘ladi.\nSug‘urta shartnomasi yuqoridagi ko‘rsatilgan holatlar bo‘yicha muddatidan oldin bekor bo‘lganda, sug‘urtalovchi sug‘urta mukofotining bir qismini sug‘urta amal qilgan vaqtga mutanosib ravishda olish huquqiga ega.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Sug'urta shartnomasida muddatidan oldin to'lov holatida mukofot qaytarilishi ko'zda tutilgan bo'lsa, sug'urta mukofotini olishingiz mumkin. Shartnomani diqqat bilan tekshiring yoki sug'urta kompaniyangiz bilan bog'laning.",
+          "latency_ms": 2082,
+          "tokens": 218,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Sug'urta Mukofotini Qaytarish Masalasi\n\n**Qisqa javob:** Ha, qisman qaytarish talap qilishingiz mumkin, lekin bir qator shartlarga bog'liq.\n\n---\n\n### Asosiy qoidalar:\n\n**O'zbekiston Fuqarolik Kodeksi va Sug'urta qonunchiligiga ko'ra:**\n\n- Kredit muddatidan **oldin to'liq to'langan** taqdirda, garov va sug'urta majburiyati ham tugaydi\n- Foydalanilmagan **qolgan 2 yillik sug'urta mukofoti** qaytarilishi mumkin\n\n---\n\n### Amaliy qadamlar:\n\n1. **Sug'urta kompaniyasiga murojaat qiling** — shartnomani muddatidan oldin bekor qilish to'g'risida ariza yozing\n2. **Bank/kreditor tasdiqlovi** — kreditning to'liq yopilganligi haqida **bank yozuvini** oling\n3. **Shartnomani tekshiring** — ba'zi shartnomalarda **\"qaytarilmaydigan mukofot\"** bandlari bo'lishi mumkin\n\n---\n\n### Diqqat:\n> Agar sug'urta shartnomasi **bank foydasiga** tuzilgan bo'lsa (benefitsar bank), mukofot to'g'ridan-to'g'ri sizga emas, **bankka qaytarilishi** mumkin — bu holda bank bilan hisob-kitob qilish kerak.\n\n**Huquqiy yordam uchun sug'urta kompaniyasi va bank bilan bevosita muzokaralar olib borishingiz tavsiya etiladi.**",
+          "latency_ms": 15713,
+          "tokens": 660,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 16.90997598s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Ha, sug'urta mukofotini olishingiz mumkin. Sug'urta shartnomasi kredit muddati davriga tuzilgan bo'lsa ham, kredit qarzini muddat tugashidan oldin to'laganligingiz sababli, sug'urta shartnomasi bekor qilinmaydi va siz sug'urta mukofotini olish huquqiga ega bo'lasiz.",
+          "latency_ms": 1214,
+          "tokens": 305,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Kredit qarzini muddatidan oldin to'laganingiz, sug'urta mukofotini qaytarish imkoniyati bor, lekin bu sug'urta shartnomasidagi shartlarga qarab o'zgaradi. Sug'urta politsiyasini o'qib chiqing yoki sug'urta kompaniyasiga murojaat qiling. Agar politsiya qolgan muddat uchun mukofotni qaytarishni nazarda tutmasa, qaytarish mumkin bo'lmasa ham bo'ladi.",
+          "latency_ms": 2680,
+          "tokens": 832,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Ha, kredit muddatidan 2 yil oldin to‘langan taqdirda, sug‘urta shartnomasi ham shu muddatga asoslangan bo‘lgani uchun, sug‘urta muddatining qolgan qismi bekor bo‘ladi. Shuning uchun sizga ishlatilmagan (yoki “unchanged”) sug‘urta mukofotining proporsional qismi qaytarib berilishi kerak. Buning uchun sug‘urta kompaniyasiga yozma ariza berib, qolgan muddatga nisbatan qaytarilishni talab qilishingiz kifoya. (Agar shartnomada erta to‘lovda mukofotni qaytarish cheklangan bo‘lsa, shu cheklovga rioya qilinadi.)",
+          "latency_ms": 1502,
+          "tokens": 742,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Ha, siz sug'urta mukofotining qaytarib berilishi to'g'risida ariza bilan murojaat qilishingiz mumkin, chunki sug'urta shartnomasi kredit muddatigacha tuzilgan, ammo kreditni to'lash muddatidan oldin amalga oshirilgan. Qaytariladigan summa sug'urta shartnomasi shartlariga muvofiq hisoblanadi. Batafsil ma'lumot uchun sug'urta kompaniyasiga murojaat qiling.",
+          "latency_ms": 884,
+          "tokens": 254,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Sug‘urta mukofotini qaytarib olish huquqingiz bor. Kriditingizni muddatidan oldin to‘lab ketganingiz sababli sug‘urta davri ham qisqargan hisoblanadi. Siz sug‘urta kompaniyasiga tegishli hujjatlar bilan murojaat qilishingiz va ortiqcha to‘langan sug‘urta mukofotini qaytarib olishingiz mumkin.",
+          "latency_ms": 553,
+          "tokens": 238,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Ha, olsangiz bo‘ladi — kreditni oldindan to‘laganingiz uchun qolgan sug‘urta muddati uchun qaytarib olishingiz mumkin.",
+          "latency_ms": 1152,
+          "tokens": 231,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант Узбекистан: Бушланган фактор элементляринин маслахатындан истифадя едяк, яки Вам финансийская система Узбекистана маркиз фактор элементляринин маслахатындан истифадя едишга тушушак.\n\nВам 50 донат автомобиль султанларга султанларга олган, онларнинг султанларга олган маслахатдан истифадя едишга тушушак. Ташкирган маслахатдан истифадя едишга тушушак, ондан яки Вам маслахатдан истифадя едишга тушушак.\n\nТашкирган маслахатдан истифадя едишга тушушак, ондан яки Вам маслахатдан истифадя едишга тушушак. Ташкирган маслахатдан истифадя едишга тушушак, ондан яки Вам маслахатдан истифадя едишга тушушак.\n\nТашкирган маслахатдан истифадя едишга тушушак, ондан яки Вам маслахатдан истифадя едишга тушушак. Ташкирган маслахатдан истифадя едишга тушушак, ондан яки Вам маслахатдан истифадя едишга тушушак.\n\nТашкирган маслахатдан истифадя едишга тушушак, ондан яки Вам маслахатдан истифадя едишга тушушак. Ташкирган маслахатдан истифадя едишга тушушак, ондан яки Вам маслахатдан истифадя едишга тушушак.\n\nТашкирган маслахатдан истифадя едишга тушушак, ондан яки Вам маслахатдан истифадя едишга тушушак. Ташкирган маслахатдан истифадя едишга тушушак, ондан яки Вам маслахатдан истифадя едишга тушушак.\n\nТашкирган маслахатдан истифадя едишга тушушак, ондан яки Вам маслахатдан истифадя едишга тушушак. Ташкирган маслахатдан",
+          "latency_ms": 1146,
+          "tokens": 1214,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-23",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "Qarzdorlikni xususiy korxona rahbaridan undirish mumkinmi?",
+      "reference_answer": "“Xususiy korxona to‘g‘risida”gi qonunning 3-moddasiga asosan, xususiy korxona mulkdori korxonaning mol-mulki etarli bo‘lmagan taqdirda xususiy korxonaning majburiyatlari bo‘yicha o‘ziga qarashli mol-mulk bilan qonun hujjatlariga muvofiq subsidiar javobgar bo‘ladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Ha, qarzdorlikni xususiy korxona rahbaridan sud orqali undirish mumkin.",
+          "latency_ms": 6542,
+          "tokens": 101,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Qarzdorlikni Xususiy Korxona Rahbaridan Undirish\n\n**Qisqa javob:** Ha, lekin faqat muayyan hollarda.\n\n---\n\n### Qachon undirish mumkin:\n\n**1. Rahbar shaxsan javobgar bo'lgan hollar:**\n- Rahbar **kafillik shartnomasi** imzolagan bo'lsa\n- Rahbar **shaxsiy qarz olgan** bo'lsa (korxona nomidan emas)\n- **Firibgarlik yoki suiiste'mol** aniqlangan bo'lsa\n\n**2. Mas'uliyatni \"ko'chirish\" holatlari:**\n- Korxona **ataylab bankrot** qilingan bo'lsa\n- Rahbar **qonunni buzgan** holda harakat qilgan bo'lsa (subsidiär mas'uliyat)\n\n---\n\n### Umumiy qoida:\n> **MChJ yoki XK rahbari** odatda korxona qarzlari uchun **shaxsiy mol-mulki bilan javob bermaydi** — bu yuridik shaxsning asosiy printsipi.\n\n---\n\n### Amaliy maslahat:\n- **Sud orqali** korxonaga da'vo qo'ying\n- Rahbarning **shaxsiy javobgarligini** isbotlash uchun **advokat** yordamiga murojaat qiling\n- **Iqtisodiy jinoyatlar** bo'lsa — prokuraturaga murojaat qiling",
+          "latency_ms": 14671,
+          "tokens": 499,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 58.102065695s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Ha, qarzdorlikni xususiy korxona rahbaridan undirish mumkin.",
+          "latency_ms": 849,
+          "tokens": 145,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Xususiy korxona qarzdor bo'lsa, qarzdorlikni korxonaga, uning moliyaviy qobiliyatiga ko'ra to'lovni talab qilish kerak. Rahbar shaxsiy javobgarlik qo'llagan bo'lsa yoki qarzdorlikni shaxsiy sifatda qo'lga kiritgan bo'lsa, unda uning shaxsiy mulkidan to'lov talab qilish mumkin. Aks holda, korxona va rahbar o'rtasidagi javobgarlik chegaralari ajratiladi.",
+          "latency_ms": 2482,
+          "tokens": 486,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Qarzdorlik odatda xususiy korxona (yuridik shaxs)ga tegishli bo‘lgani uchun, sud qarori yoki ijro huquqiy asosida korxonaning mol-mulki, bank hisobi, aktivlari bo‘yicha undirish mumkin. Biroq, rahbar shaxsiy javobgarlikka tortilmaydi, faqat u shaxsiy kafolat (guarantor) bergan bo‘lsa yoki firibgarlik, mulkni yashirish kabi holatlar isbotlangan bo‘lsa. Shunday qilib, rahbarga qarzdorlikni shaxsiy ravishda undirish faqat yuqoridagi maxsus holatlarda mumkin, aks holda korxona aktivlari orqali undirish amalga oshiriladi.",
+          "latency_ms": 1684,
+          "tokens": 503,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Qarzdorlikni xususiy korxona rahbaridan undirish uchun sud qarori yoki boshqa qonuniy asoslar bo'lishi kerak. Agar shartnoma yoki boshqa hujjatlarda rahbarning shaxsan javobgarligi belgilangan bo'lsa, undirish mumkin. Aks holda, qarzdorlik korxonaning o'zidan undiriladi.",
+          "latency_ms": 1581,
+          "tokens": 162,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Ha, qarzdorlikni xususiy korxona rahbaridan undirish mumkin, ammo buning uchun qonuniy asos va sud qarori talab qilinadi.",
+          "latency_ms": 5989,
+          "tokens": 119,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Ha, agar u shaxsiy ravishda garov yoki kafillik majburiyati oli bo'lmasa, undirish mumkin emas.",
+          "latency_ms": 2011,
+          "tokens": 143,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шуман, як мені знати, якішан Узбекстанда масалы \"Карждәрликни хусусий кӯршән берәр мәммәддәрдән әндәриш мәксимәтә кәсәрәк?\" эксперт-асында мәлуматлар да берәк. Булган мәлуматлардан мәнәвәрдән кәсәрәк, як мәлуматлардан кәсәрәк, як мәлуматлардан кәсәрәк.\n\nБулган мәлуматлардан кәсәрәк, Карждәрликни хусусий кӯршән берәр мәммәддәрдән әндәриш мәксимәтә кәсәрәк. Булган мәлуматлардан кәсәрәк, як мәлуматлардан кәсәрәк, як мәлуматлардан кәсәрәк.\n\nБулган мәлуматлардан кәсәрәк, Карждәрликни хусусий кӯршән берәр мәммәддәрдән әндәриш мәксимәтә кәсәрәк. Булган мәлуматлардан кәсәрәк, як мәлуматлардан кәсәрәк, як мәлуматлардан кәсәрәк.\n\nБулган мәлуматлардан кәсәрәк, Карждәрликни хусусий кӯршән берәр мәммәддәрдән әндәриш мәксимәтә кәсәрәк. Булган мәлуматлардан кәсәрәк, як мәлуматлардан кәсәрәк, як мәлуматлардан кәсәрәк.\n\nБулган мәлуматлардан кәсәрәк, Карждәрликни хусусий кӯршән берәр мәммәддәрдән әндәриш мәксимәтә кәсәрәк. Булган мәлуматлардан кәсәрәк, як мәлуматлардан кәсәрәк, як мәлуматлардан кәсәрәк.\n\nБулган мәлуматлардан кәсәрәк, Карждәрликни хусусий к",
+          "latency_ms": 1835,
+          "tokens": 1128,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-24",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "Men qurilish tashkiloti rahbariman. Kredit olayotganda uning ta’minoti sifatida qurilishi tugallanmagan binoni garovga qo‘yishim mumkinmi?",
+      "reference_answer": "«Ipoteka to‘g‘risida»gi qonunning 63-moddasiga asosan, uy qurish uchun kredit yoki aniq maqsadli qarz berilayotganda ipoteka to‘g‘risidagi shartnomada majburiyatni tugallanmagan qurilish (ipotekaga qo‘yuvchi kelgusida oladigan mol-mulk va mulkiy huquqlar) bilan ta’minlash nazarda tutilishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Ha, qurilishi tugallanmagan binoni garovga qo'yish mumkin, lekin bu bank yoki moliyaviy muassasaning siyosatiga va garov sifatida qabul qilish shartlariga bog'liq.",
+          "latency_ms": 2349,
+          "tokens": 147,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Tugallanmagan Qurilishni Garovga Qo'yish\n\n**Ha, mumkin**, lekin bir qator shartlar bajarilishi kerak.\n\n### Asosiy talablar:\n\n**1. Ro'yxatdan o'tkazish**\n- Tugallanmagan qurilish ob'ekti **O'zbekiston Respublikasi qonunchiligiga muvofiq** ko'chmas mulk sifatida ro'yxatdan o'tkazilgan bo'lishi shart\n- Kadastr organlarida tegishli hujjatlar rasmiylashtirilgan bo'lishi kerak\n\n**2. Zarur hujjatlar:**\n- Yer uchastkasiga egalik/foydalanish hujjatlari\n- Qurilish ruxsatnomasi\n- Loyiha hujjatlari\n- Ob'ektning texnik baholash xulosasi\n- Mulk huquqini tasdiqlovchi guvohnoma\n\n**3. Baholash**\n- Mustaqil baholovchi tomonidan ob'ektning **bozor qiymati** aniqlanishi shart\n- Bank odatda qiymatning **50-70%** miqdorida kredit beradi\n\n### Muhim nuqtalar:\n- Ob'ekt **yuridik jihatdan toza** bo'lishi (boshqa garov, arrест yo'q)\n- Bank yoki moliya muassasasi tugallanmagan qurilishni garov sifatida **qabul qilish-qilmasligini mustaqil hal qiladi**\n- **\"O'zbekiston Respublikasi Fuqarolik Kodeksi\"** 264-270-moddalari va **Ipoteka to'g'risidagi Qonun** asosida tartibga solinadi\n\nAniq bank talablari uchun kredit beruvchi muassasa bilan bevosita maslahatlashing.",
+          "latency_ms": 18415,
+          "tokens": 640,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 43.756658778s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '43s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Ha, qurilishi tugallanmagan binoni kreditning ta'minoti sifatida garovga qo'yish mumkin. Buni amalga oshirish uchun binoning kelajakdagi qiymati va kredit miqdori o'rtasidagi nisbatga e'tibor berish kerak. Shuningdek, bankning talablariga va O'zbekiston Respublikasining qonun hujjatlariga rioya qilish zarur.",
+          "latency_ms": 1130,
+          "tokens": 268,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Qurilishi tugallanmagan binoni garovga qo'yish uchun uning sizga xususiyat qilinganligi (mulkdorlik guvohlari mavjud bo'lishi) va qurilish jarayonida qonunlarda belgilangan shartlar bajarilganligi kerak. Bank yoki kredit instituti qo'llab-quvvatlash shartnomasini tuzishdan oldin bu binoni qayd etish (mulkdorlik qaydnomasida) va xavfsizlikni kafolatlovchi shartlarni tekshiradi. Shuningdek, qurilish ishlari yakunlangandan keyin binoni qayd qilish talab qilinadi.",
+          "latency_ms": 1989,
+          "tokens": 589,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Ha, qurilishi tugallanmagan binoni kredit ta’minoti sifatida garovga qo‘yish mumkin, ammo quyidagi shartlarga rioya qilish zarur:\n\n1. **Mulk huquqi** – binoning yer uchastkasi va qurilish ob’ekti ustida sizga to‘liq mulk huquqi (yoki mulk huquqini tasdiqlovchi shartnoma) bo‘lishi kerak.  \n2. **Garovga qo‘yish huquqi** – Qurilish ishlarini amalga oshirayotgan shartnoma (podrat shartnomasi) va qurilish ruxsatnomasi mavjud bo‘lsa, bu hujjatlar garovga qo‘yish huquqini tasdiqlaydi.  \n3. **Ro‘yxatga olish** – Garov (ipotek) real‑estates ro‘yxatiga (Davlat mulk ro‘yxatiga) ro‘yxatga kiritilishi shart. Ro‘yxatga olish uchun mulk huquqi, qurilish ruxsatnomasi, shartnoma va garov shartnomasini taqdim etish lozim.  \n4. **Bank talablari** – Ko‘pgina banklar tugallanmagan ob’ektlar uchun qo‘shimcha kafolat (masalan, qurilish tamomlanishiga kafolat, kafolatli shartnoma yoki boshqa aktivlar) talab qilishi mumkin.  \n\nShunday qilib, binoning qurilishi tugallanmagan bo‘lsa ham, mulk huquqi aniq bo‘lsa, zarur hujjatlar tayyor va garov ro‘yxatga olingan bo‘lsa, uni kredit garovi sifatida qo‘yish mumkin. Bank bilan oldindan shartlarni muhokama qilish tavsiya etiladi.",
+          "latency_ms": 1571,
+          "tokens": 743,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Ha, mumkin. Buning uchun qurilishi tugallanmagan binoning qurilishi tugallanganligi to'g'risida davlat organlari tomonidan berilgan hujjat bo'lishi kerak. Ushbu hujjat asosida qurilishi tugallanmagan bino garovga qo'yilishi mumkin.",
+          "latency_ms": 941,
+          "tokens": 163,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-scout": {
+          "response": "Kredit ta’minoti sifatida qurilishi tugallanmagan binoni garovga qo‘yish mumkin, lekin buning uchun yuridik va moliyaviy jihatdan to‘g‘ri rasmiylashtirish zarur. O‘zbekiston qonunchiligiga ko‘ra, qurilishi tugallanmagan obyekt ham garov predmeti bo‘la oladi, lekin kreditorlar va davlat organlari bilan kelishuvlar muhimdir.",
+          "latency_ms": 548,
+          "tokens": 202,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Ha, bo‘ladi. Qurilishi tugallanmagan binoni garovga qo‘yish mumkin, lekin unda qo‘yilgan cheklovlarni (shartnomaviy ta’minot garovi, ijara, yakuniy qarzli) yo‘qligi rasmiy tasdiqlanishi va bahoga asoslangan ekspertiza zarur. Bunday garov ipoteka bo‘yicha ro‘yxatga olinadi.",
+          "latency_ms": 2342,
+          "tokens": 241,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ: Добрый день, господин Рабибан! Я Консультант ОБСЕ и готов помочь вам с вопросами связанными с международными правами и международными связями.\n\nВаш вопрос касается того, может ли ваша компания оказать услуги по оказанию услуг в связи с кредитом, когда она не является банком и не имеет прав на оказание кредитных услуг.\n\nВ ОБСЕ я могу предложить следующие информации:\n\n1. В ОБСЕ мы рекомендуем обратить внимание на следующие правила и рекомендации, которые могут помочь вам разрешить эту проблему:\n\n   - Убедитесь, что ваша компания не является банком и не имеет права на оказание кредитных услуг. Это важно, потому что кредитные услуги являются особыми видами банковских услуг, которые требуют особых лицензий и регулирования.\n\n   - Если ваша компания предоставляет услуги в связи с кредитом, но не является банком, вам может потребоваться зарегистрировать вашу компанию как банковскую компанию с целью оказания кредитных услуг. В ОБСЕ рекомендует обратиться к Министерству Образования, Науки и Техники Узбекистана (МОНТ) или Министерству Внутренних дел (МВД) для получения информации о необходимых лицензиях и регулировании вашей компании, которая предоставляет кредитные услуги.\n\n   - Если ваша компания предоставляет кредитные услуги, но не является банком, вам может потребоваться зарегистрировать вашу компанию как банковскую компанию с целью оказания кредитных услуг. В этом случае, вам необходимо обратиться к МВД или МОНТ для получения информации о необходимых лицензиях и регулировании вашей компании, ко",
+          "latency_ms": 1115,
+          "tokens": 1159,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-25",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "“Har bir oila – tadbirkor” Dasturi doirasida 2020-yilda yo‘naltiriladigan mablag‘lar miqdori qanchani tashkil etadi?",
+      "reference_answer": "O‘zbekiston Respublikasi Prezidentining 2019-yil 24-oktabrdagi PQ-4498-son Qaroriga asosan 2 418,0 mlrd. so‘m mablag‘ ajratiladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "2020-yilda “Har bir oila – tadbirkor” dasturi doirasida yo‘naltiriladigan mablag‘lar miqdori 6 trillion so‘mni tashkil etadi.",
+          "latency_ms": 1409,
+          "tokens": 146,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "claude-sonnet": {
+          "response": "\"Har bir oila – tadbirkor\" dasturi doirasida 2020-yilda **1 trillion so'm** miqdorida mablag' yo'naltirilishi belgilangan edi.",
+          "latency_ms": 2208,
+          "tokens": 178,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 17.37002155s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "\"Har bir oila – tadbirkor\" Dasturi doirasida 2020-yilda yo‘naltiriladigan mablag‘lar miqdori 4,5 trillion so‘mni tashkil etadi.",
+          "latency_ms": 764,
+          "tokens": 196,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "2020-yilda \"Har bir oila – tadbirkor\" Dasturi doirasida 100 milliard so'm mablag' yo'nalishga qaratilgan.",
+          "latency_ms": 919,
+          "tokens": 352,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "2020-yilda “Har bir oila – tadbirkor” dasturi doirasida **1,5 trillion so‘m** mablag‘ yo‘naltirilgan.",
+          "latency_ms": 1250,
+          "tokens": 577,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "1 trillion so'm.",
+          "latency_ms": 455,
+          "tokens": 112,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-scout": {
+          "response": "500 milliard so'm.",
+          "latency_ms": 393,
+          "tokens": 112,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "kimi-k2": {
+          "response": "300 milliard so‘m.",
+          "latency_ms": 626,
+          "tokens": 135,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОАО \"Санкт-Петербургский Банк\" готов помочь вам с вопросами по юридическим и организационным вопросам в связи с Декларацией о финансовом положении и операциях с имуществом (ДФОИО) и Декларацией о финансовом положении и операциях с имуществом (ДФОИО) в Узбекистане. Однако, я не могу предоставить конкретную информацию о конкретных мероприятиях или существующих условиях. Если вы имеете конкретные вопросы или требуете информации о конкретных мероприятиях или условиях, я рекомендую обращаться к профессиональному консультанту или юристу, который специализируется на этой области.\n\nОднако, я могу предоставить общие информации о Декларации о финансовом положении и операциях с имуществом (ДФОИО) в Узбекистане. Декларация о финансовом положении и операциях с имуществом (ДФОИО) является документом, который представляет собой общий информационный обзор финансового положения и операций с имуществом компании или лица, а также предоставляет информацию о страховании и других финансовых инструментах, используемых для обеспечения безопасности инвестиционных инструментов и их хранения.\n\nВ Узбекистане, Декларация о финансовом положении и операциях с имуществом (ДФОИО) может быть применена для компаний, предприятий или лиц, которые имеют необходимые условия и документы для выполнения этого документа. Однако, для получения конкретной информации о конкретных мероприятиях или условиях, я рекомендую обращаться к профессиональному консультанту или юридическому специалисту, который специализируется на э",
+          "latency_ms": 1162,
+          "tokens": 1156,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-26",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "Bank mening hisobraqamimdan ruxsatimsiz davlat ijrochisining inkasso topshiriqnomasi asosida qarzdorlikni echib olgan. Bankning harakati qonuniymi?",
+      "reference_answer": "Bankning harakatlari qonuniy asosga ega.\n“O‘zbekiston Respublikasida naqd pulsiz hisob-kitoblar to‘g‘risida”gi nizomning 58-bandiga asosan inkasso topshiriqnomasi - mablag‘larni oluvchining inkasso topshiriqnomasiida ko‘rsatilgan summani mablag‘larni to‘lovchining hisobvarag‘idan so‘zsiz ravishda hisobdan chiqarish bo‘yicha topshirig‘i nazarda tutilgan hisob-kitob hujjati hisoblanadi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Bankning harakati qonuniy, chunki davlat ijrochisining inkasso topshiriqnomasi asosida qarzdorlikni echib olish qonuniy tartibda amalga oshiriladi.",
+          "latency_ms": 1241,
+          "tokens": 149,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Javob\n\n**Ha, bunday holda bank harakati qonuniy bo'lishi mumkin** — lekin bir qator shartlar bajarilgan bo'lishi kerak.\n\n### Qonuniy asos\n\n**\"Ijro ishlari to'g'risida\"gi Qonun (O'zR, 2001-yil)** va **O'zbekiston Respublikasi Fuqarolik Kodeksi** asosida:\n\n- Davlat ijrochisi **ijro varaqasi** asosida **inkasso topshiriqnomasi** yuborishi mumkin\n- Bank bu hujjatni qabul qilib, **sizning roziligingizni talab qilmasdan** hisobdan pul echib olishga **majburdir**\n\n### Bu qonuniy, agar:\n\n✅ Sud qarori yoki boshqa ijro hujjati mavjud bo'lsa\n✅ Ijro varaqasi qonuniy kuchga kirgan bo'lsa\n✅ Davlat ijrochisi belgilangan tartibda inkasso yuborgan bo'lsa\n\n### Siz nima qilishingiz mumkin:\n\n1. **Bankdan** inkasso topshiriqnomasining nusxasini so'rang\n2. **Davlat ijrochisidan** ijro hujjatini va qarzdorlik asosini aniqlashtiring\n3. Agar qarzdorlik **noto'g'ri** yoki **hujjat soxta** bo'lsa — **sudga murojaat qiling**\n4. Ijro harakatlaridan **15 kun ichida** shikoyat berish huquqingiz bor\n\n> ⚠️ Agar siz bunday qarzdorlikdan xabarsiz bo'lsangiz, bu sud jarayoni sizga **xabarsiz** o'tganligini bildirishi mumkin — bu alohida tekshirilishi kerak.",
+          "latency_ms": 16442,
+          "tokens": 639,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 14.070556027s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '14s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Bankning harakati qonuniy emas. O'zbekiston Respublikasining \"Banklar va bank faoliyati to'g'risida\" gi qonuni va boshqa qonun hujjatlariga ko'ra, bank mijozning hisob raqamidan pul chiqarish uchun mijozning yozma roziligini talab qiladi. Agar bank mijozning roziligisiz hisob raqamidan pul chiqargan bo'lsa, bu qonunbuzarlik hisoblanadi.",
+          "latency_ms": 1081,
+          "tokens": 275,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "Bankning inkasso topshiriqnomasini bajarish qonuniylikka doyomi qarab o'zgarmaydi. Agar inkasso topshiriqnomasi qonuniy asos (masalan, sudiy hukm, ijro qilish hujjati) asosida berilgan bo'lsa, bankning harakati qonuniy hisoblanadi. Aks holda, bank hisobdagi mablag'ni bevosita echib olish huquqiga ega emas. Siz inkasso topshiriqnomasini tekshirib, uning qonuniy asosli ekanligini tasdiqlash kerak. Agar qonuniy asos yo'q bo'lsa, bankning harakati qonuniy emas.",
+          "latency_ms": 1511,
+          "tokens": 540,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Yo‘q, bankning bunday harakati odatda qonuniy emas. O‘zbekiston Respublikasining “Moliya instituti faoliyati to‘g‘risida”gi qonuni hamda “Fuqarolik kodeksi”ga ko‘ra, bank mijozning hisobidan pulni chiqarish uchun quyidagilar talab qilinadi:\n\n1. **Sud qarori yoki notarial tasdiqlangan qarzdorlik hujjati** – ya’ni qarzni yuridik jihatdan tasdiqlovchi rasmiy hujjat.  \n2. **Mijozning roziligi** – mijozdan yozma rozilik yoki bank bilan tuzilgan shartnoma bo‘lishi kerak.  \n3. **Xalqaro yoki xorijiy inkasso agentligi bilan kelishuv** – bunday hollarda ham, O‘zbekiston qonunchiligiga muvofiq, sud qarori yoki boshqa rasmiy tasdiq bo‘lishi shart.\n\nAgar bank “davlat ijrochisining” (ya’ni, sud ijro organi) topshiriqnomasi bo‘lmagan, xorijiy inkasso agentligi asosida hisobraqamdan pulni olib qo‘ysa, bu **mijozning roziligi va sud tasdiqlamasi yo‘qligi sababli qonunbuzarlik** hisoblanadi. Bunday holatda siz bankga qarshi da’vo yo‘llab, pulni qaytarishni talab qilishingiz, shuningdek, O‘zbekiston Respublikasi “Moliya instituti faoliyati to‘g‘risida”gi qonuni va “Fuqarolik kodeksi” 179‑madda (qarzni yuridik tasdiqlash) bo‘yicha huquqiy choralar ko‘rishingiz mumkin.",
+          "latency_ms": 1378,
+          "tokens": 659,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "Bankning davlat ijrochisining inkasso topshiriqnomasi asosida qarzdorlikni echib olishi qonuniy hisoblanadi, agar qarzdorlikka oid ijro hujjati mavjud bo'lsa va bank ushbu hujjat asosida harakat qilgan bo'lsa. O'zbekiston Respublikasining \"Bank-moliya faoliyati to'g'risida\"gi Qonuniga muvofiq, bank davlat ijrochisining qarori asosida mijozning hisobvarag'idan mablag'larni undirishi shart. Agar bunday hujjat mavjud bo'lsa, bankning harakati qonuniydir.",
+          "latency_ms": 825,
+          "tokens": 251,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Bankning harakati qonuniy emas. Davlat ijrochisi tomonidan inkasso topshiriqnomasi asosida bank hisobraqamdan mablag'larni echib olish tartibi qonunga muvofiq bo'lishi kerak. Agar sizga qarzdorlik haqida xabar berilmagan bo'lsa yoki hisobraqamdan mablag'larning echib olinishi noqonuniy amalga oshirilgan bo'lsa, siz bank va davlat ijrochisi ustidan shikoyat qilishingiz yoki sudga murojaat etishingiz mumkin.",
+          "latency_ms": 665,
+          "tokens": 229,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "kimi-k2": {
+          "response": "Yo‘q, bank ruxsatsiz inkasso asosida mablag‘ yechsa, bu qonunga zid. Bank davlat ijrochisiga faqat sizning ruxsatingiz yoki sud ijro qarori asosida xizmat qilishi kerak.",
+          "latency_ms": 954,
+          "tokens": 198,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ: Добрый день! Я помогу вам с вопросами связанными с организацией и правой ситуацией в Узбекистане. \n\nВаш вопрос касается незаконного займа, вызванного на банковском счете в связи с недостаточным удостоверением интересов государства в имени вашего банка. Вот некоторые указания по этому вопросу:\n\n1. Важно уточнить, какой банк вы используете и какой способ интересов государства используется для определения вашего счета. Если интересы государства определяются как инвестиционные или другие способы, которые банк использует, то это может помочь выявить возможные проблемы.\n\n2. Убедитесь, что ваш банк соблюдает требования к балансу интересов государства и использует соответствующие законодательства и правила. Если ваш банк не соблюдает эти требования, вы можете обратиться к Государственному банку Узбекистана или к Министерству финансов и налогов для помощи.\n\n3. Если ваш банк не предоставляет вам необходимые документы или не обрабатывает ваш заявление о незаконном займе, вы можете обратиться к Государственному банку Узбекистана или к Министерству финансов и налогов для помощи. Они могут проверить статус вашего банка и установить, соблюдается ли он законные требования к инвестиционным интересам государства.\n\n4. Если вы не можете решать эту проблему сами, вы можете обратиться к международным органам, таким как Банковский комитет Европейского Союза или Международный банковский комитет (ИБК) для помощи. Они могут помочь выявить необходимые требования к банкам и установить, соблюдается ли они законные требования к инвестиционным интересам государства.\n\n5. Если ваш банк не предоста",
+          "latency_ms": 1121,
+          "tokens": 1160,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-27",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Korrupsiyaga qarshi qanday kurashish kerak?",
+      "reference_answer": "[anticorruption.uz](https://anticorruption.uz/uz) - O'zbekiston Respublikasining korrupsiyaga qarshi kurashga bag'ishlangan rasmiy veb-sayti.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Korrupsiyaga qarshi kurashish uchun shaffoflikni oshirish, qonunlarni kuchaytirish, mustaqil nazorat organlarini tashkil etish, jamoatchilikni xabardor qilish va xodimlarni muntazam ravishda o'qitish lozim.",
+          "latency_ms": 2280,
+          "tokens": 137,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Korrupsiyaga qarshi kurash usullari\n\n**Shaxsiy darajada:**\n-Pora berish va olishdan qat'iyan bosh torting\n- Huquqlaringizni biling — ko'plab xizmatlar **bepul** ko'rsatilishi shart\n- Korrupsiya faktlarini **vakolatli organlarga xabar bering**\n\n**Xabar berish kanallari:**\n- 📞 **1007** — Korrupsiyaga qarshi kurashish agentligi ishonch telefoni\n- 🌐 **anticorruption.uz** — onlayn murojaat\n- 📱 Prokuratura va ichki ishlar organlariga ariza\n\n**Yuridik himoya:**\n- Xabar beruvchilar **qonun bilan himoyalanadi** (2017-yil Korrupsiyaga qarshi kurash to'g'risidagi Qonun)\n- Poraxo'rlik faktini **hujjatlashtiring** (audio, video, yozishmalar)\n- Mustaqil advokat yordamiga murojaat qiling\n\n**Muhim:** Agar sizdan noqonuniy to'lov talab qilinsa — bu **jinoyat** va uni qonuniy yo'l bilan hal etish mumkin.",
+          "latency_ms": 12242,
+          "tokens": 439,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 55.629704276s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '55s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Korrupsiyaga qarshi kurashish uchun ochiqlik, shaffoflik va hisobdorlikni ta'minlash, qonunlarni qat'iy bajarish, fuqarolarning huquqlarini himoya qilish va korrupsiyaga qarshi kurashuvchi tashkilotlarni qo'llab-quvvatlash kerak.",
+          "latency_ms": 989,
+          "tokens": 210,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Korrupsiyaga qarshi kurashish uchun quyidagilarni amalga oshirish kerak:  \n1. **Translyantlikni oshirish** — davlat xodisalarini ochiq va mazkur qilish.  \n2. **Yuridik me'yorlarni kuchga kiritish** — korrupsiyaga javobgarlik qo'llash va jazolar qat'iy bajarilishi.  \n3. **Mustaqil korrupsiyaga qarshi tashkilotlar** — ularni mukammal qilish va resurslari ta'minlash.  \n4. **Xalqaro hamkorlik** — tajriba almashtirish va jinoiy jihatdan hamkorlik qilish.  \n5. **Aholi bilan aloqalar** — korrupsiyani xabardor qilish mekanizmlarini yaratish va ularni himoya qilish.  \n6. **Texnologiyalarni foydalanish** — e-hukumat dasturlarini kengaytirish.  \n7. **Etik standartlarni shakllantirish** — davlat va xususiy sektorda.",
+          "latency_ms": 1929,
+          "tokens": 690,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Korrupsiyaga qarshi kurashish uchun quyidagi amallarni bajarish muhim:\n\n1. **Shaffoflikni oshirish** – davlat organlari, korxonalar va notijorat tashkilotlarda moliyaviy hisobotlar, tender jarayonlari va qarorlar ommaga ochiq bo‘lishi kerak.\n\n2. **Qonunlarni qat’iy qo‘llash** – korrupsiya bilan bog‘liq jinoyatlarni aniqlash, tergov qilish va jazolash uchun mustahkam huquqiy bazani yaratish, sud‑tekshiruvlarni mustaqil va adolatli olib borish.\n\n3. **Xabardorlik va ta’lim** – fuqarolar, xodimlar va yoshlar orasida korrupsiya xavflari, uning oqibatlari va oldini olish usullari haqida muntazam ma’ruzalar, treninglar va ommaviy axborot vositalari orqali ma’lumot tarqatish.\n\n4. **Ichki nazorat tizimlarini kuchaytirish** – har bir tashkilotda ichki audit, etika kodeksi, shikoyat va tavsiyalarni qabul qilish mexanizmlari (masalan, “korruptsiya hotlines”) joriy etilishi kerak.\n\n5. **Xalq nazorati** – fuqarolik jamiyati, ommaviy axborot vositalari va mustaqil nazorat organlari orqali davlat faoliyatini kuzatish, shikoyatlarni tezkor ko‘rib chiqish va javobgarlikni ta’minlash.\n\n6. **Xodimlarni rag‘batlantirish** – korrupsiyaga qarshi kurashishda halol xodimlarni maqtash, mukofotlash va ularning ijtimoiy himoyasini ta’minlash.\n\n7. **Xalqaro tajribani o‘rganish** – boshqa mamlakatlarning korrupsiya bilan kurashish strategiyalarini tahlil qilish, eng yaxshi amaliyotlarni mahalliy sharoitga moslashtirish.\n\nUshbu chora‑tadbirlarni birgalikda amalga oshirish korrupsiya darajasini pasaytirishga va ishonchli, adolatli jamiyat yaratishga yordam beradi.",
+          "latency_ms": 1472,
+          "tokens": 666,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Korrupsiyaga qarshi kurashishda shaffoflik, hisobdorlik va qonun ustuvorligini ta'minlash muhim. Bunda davlat organlarida monitoring kuchaytirilib, fuqarolik jamiyati institutlari faoliyati qo'llab-quvvatlanishi lozim.",
+          "latency_ms": 861,
+          "tokens": 138,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Korrupsiyaga qarshi kurashish uchun quyidagi choralarni ko‘rish kerak:\n\n- Huquqiy baza yaratish va takomillashtirish;\n- Davlat organlarida shaffoflik va hisobdorlikni oshirish;\n- Fuqarolik jamiyatini rivojlantirish va ularning ishtirokini ta’minlash;\n- Xalq ta’limi, madaniyat va axborot tarqatish orqali korrupsiya haqida xabardorlikni oshirish;\n- Huquqni muhofaza qiluvchi organlarning samaradorligini oshirish va korrupsiyaga qarshi kurashish bo‘yicha maxsus dasturlarni amalga oshirish;\n- Korrupsiyaga qarshi kurashishning milliy strategiyasini ishlab chiqish va amalga oshirish.",
+          "latency_ms": 804,
+          "tokens": 249,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Korrupsiyaga qarshi kurashish uchun shaffoflikni ta’minlash, davlat xizmatlarini elektronlashtirish, sud-huquq tizilidagi mustaqillikni kuchaytirish, fuqarolarni mafkura va huquq targ’iboti bilan ta’minlash hamda korrupsiya holatlari uchun qattiq jazolarni belgilash kerak.",
+          "latency_ms": 3089,
+          "tokens": 199,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Коррупция является одним из крупнейших проблем в мире и, конечно же, также в Узбекистане. \n\nЧтобы предотвратить и контролировать коррупцию, необходимо применить несколько мер и подходов. Вот некоторые рекомендации:\n\n1. Организация эффективного система экзаменов и оценок для практических работ и обучения: это поможет определить и предотвратить попытки заблуждения или изменения результатов.\n\n2. Развитие эффективных механизмов контроля и проверки работы ведущих и менеджеров: это поможет обеспечить качество работы и предотвратить попытки коррупции.\n\n3. Развитие системы пересмотра и ревизии работы ведущих и менеджеров: это поможет обнаружить и предотвратить попытки коррупции.\n\n4. Развитие системы обратной связи и контроля над работой правительственных органов: это поможет обеспечить честность и прозрачность в работе правительственных органов.\n\n5. Развитие системы обратной связи с общественностью и обратной связью между правительством и гражданами: это поможет обеспечить более открытую и доступную связь между правительством и населением, что поможет обнаруживать и предотвращать попытки коррупции.\n\n6. Развитие системы обратной связи и контроля над работой местных органов правительства: это поможет обеспечить более эффективную работу местных органов и обеспечить более строгий контроль над ими.\n\n7. Развитие системы обратной связи и контроля над работой местных коммуникационных инфраструктур и информационных систем: это поможет обеспечить более эффективную работу местных органов и обеспечить более строгий контроль над ими.\n\n8. Развитие системы обратной связи и контроля над работой мест",
+          "latency_ms": 1125,
+          "tokens": 1119,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-28",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Mehnatni muhofaza qilish bo‘yicha mutaxassislariga malaka sertifikatini berish uchun qancha miqdorda to‘lov undiriladi?",
+      "reference_answer": "Malaka sertifikatini berganlik uchun bazaviy hisoblash miqdorining 1 baravari, malaka sertifikatining muddatini uzaytirganlik uchun bazaviy hisoblash miqdorining 50 foizi miqdorida to‘lov undiriladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Mehnatni muhofaza qilish bo‘yicha mutaxassislariga malaka sertifikatini berish uchun to‘lov miqdori tegishli tashkilotlar va hududiy talablarga qarab o‘zgarishi mumkin. Aniq miqdorni bilish uchun tegishli davlat organlariga yoki sertifikat beruvchi tashkilotlarga murojaat qilish tavsiya etiladi.",
+          "latency_ms": 2472,
+          "tokens": 177,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "claude-sonnet": {
+          "response": "O'zbekiston Respublikasida mehnatni muhofaza qilish bo'yicha mutaxassislarига malaka sertifikati berish uchun davlat boji miqdori **2 bazaviy hisoblash miqdori (BHM)** tashkil etadi.\n\n2025-yil uchun 1 BHM = **400 000 so'm** bo'lganligi sababli, jami to'lov **800 000 so'm** ni tashkil etadi.\n\n> ⚠️ Aniq va dolzarb ma'lumot uchun **O'zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi** yoki tegishli davlat organiga murojaat qilishni tavsiya etaman, chunki miqdorlar o'zgarishi mumkin.",
+          "latency_ms": 7494,
+          "tokens": 344,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 42.251512548s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '42s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Mehnatni muhofaza qilish bo‘yicha mutaxassislariga malaka sertifikatini berish uchun 50 ming so‘m to‘lov undiriladi.",
+          "latency_ms": 604,
+          "tokens": 182,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "Mehnatni muhofaza qilish mutaxassislari sertifikatini berish uchun to'lov miqdori 100 000 so'mdan 500 000 so'mgacha bo'lishi mumkin. To'g'ri miqdorni aniqlash uchun Davlat mehnat nazorati a'zoligiga murojaat qiling.",
+          "latency_ms": 2010,
+          "tokens": 653,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Mehnatni muhofaza qilish bo‘yicha mutaxassislariga malaka sertifikatini berish uchun to‘lov 150 000 so‘mni tashkil etadi.",
+          "latency_ms": 1032,
+          "tokens": 477,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "Mehnatni muhofaza qilish bo‘yicha mutaxassislari malaka sertifikatini olish uchun bazaviy hisoblash miqdorining 1 barobari miqdorida (300 ming so'm) to‘lov undiriladi.",
+          "latency_ms": 570,
+          "tokens": 152,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "10 000 so‘m.",
+          "latency_ms": 359,
+          "tokens": 106,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "kimi-k2": {
+          "response": "Mehnatni muhofaza qilish bo‘yicha mutaxassislariga malaka sertifikatini berish uchun 50 barobar bazis hisoblash miqdorida to‘lov undiriladi (2024-yil uchun 1 BHM 330 000 so‘m).",
+          "latency_ms": 1509,
+          "tokens": 191,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Ваше уважаемые господа, я интеллектуальный помощник Сената Узбекистана и готов помочь вам с вопросами по области права и международных вопросов.\n\nВаш вопрос касается требований к персоналу, которые хотят защитить свою профессиональную судьбу. В данном случае, я не могу дать конкретную информацию о конкретных требованиях к сертификатам, но я могу предложить некоторые общие рекомендации.\n\nЕсли вы хотите защитить свою профессиональную судьбу, важно обратить внимание на следующие аспекты:\n\n1. Обратите внимание на требования к сертификатам или документам, которые ваша рабочая организация требует для защиты своих персональных информационных прав. Вы можете обратиться к вашему рабочим месту или запросить информацию о требованиях к сертификатам или документам, которые вам необходимы для защиты своих прав.\n\n2. Обратите внимание на возможность получить сертификаты или документы, которые помогут вам защитить свои права. Например, может быть полезно получить сертификат о правах информационных прав или другие сертификаты, которые могут помочь вам защитить свои права.\n\n3. Обратите внимание на возможность обучения и развития в области права и информационных прав. Вы можете участвовать в обучающих программах или конференциях, которые помогут вам улучшить свои знания и навыки в области права и информационных прав.\n\n4. Обратите внимание на возможность присоединения к общественным или профессиональным организациям, которые заботятся защитой прав и информационных прав. Вы можете присоединиться к общественным или профессиональным организациям, которые работают с защитой прав и информационных прав.\n\n5. Обратите вни",
+          "latency_ms": 1142,
+          "tokens": 1152,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-29",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Dori vositalarini litsenziyalash tartibi haqida maʼlumot bering",
+      "reference_answer": "Vazirlar Mahkamasining 2022-yil 21-fevraldagi 80-son qarori bilan tasdiqlangan Maxsus elektron tizim orqali ayrim faoliyat turlarini litsenziyalash tartibi to‘g‘risidagi yagona nizomning 29-ilovasi bilan Dori vositalari va tibbiy buyumlarni chakana realizatsiya qilish faoliyatini litsenziyalash pasporti tasdiqlangan. Ushbu xizmatning pasporti bilan tanishish uchun havoladan foydalanishingiz mumkin.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "O'zbekistonda dori vositalarini litsenziyalash tartibi quyidagi bosqichlarni o'z ichiga oladi: dori vositasini ishlab chiqaruvchi yoki import qiluvchi tashkilot O'zbekiston Respublikasi Sog'liqni saqlash vazirligiga ariza bilan murojaat qiladi. Ariza bilan birga dori vositasining sifatini, xavfsizligini va samaradorligini tasdiqlovchi hujjatlar taqdim etiladi. Ekspertiza jarayonida dori vositasi sinovdan o'tkaziladi va natijalariga ko'ra litsenziya beriladi yoki rad etiladi. Litsenziya berilgan taqdirda, dori vositasi davlat reyestriga kiritiladi.",
+          "latency_ms": 10632,
+          "tokens": 242,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "# Dori Vositalarini Litsenziyalash Tartibi (O'zbekiston)\n\n## Asosiy Tartib\n\n**Dori vositalarini ishlab chiqarish va sotish uchun litsenziya olish quyidagi bosqichlardan iborat:**\n\n---\n\n### 1️⃣ Davlat Ro'yxatidan O'tkazish\n- Dori vositasi avval **O'zbekiston Sog'liqni saqlash vazirligi** huzuridagi **Farmatsevtika agentligi**da ro'yxatdan o'tkazilishi shart\n- Klinik sinovlar natijalari, sifat sertifikatlari taqdim etiladi\n\n### 2️⃣ Litsenziya Olish\nLitsenziya beruvchi organ: **O'zbekiston Sog'liqni saqlash vazirligi**\n\n**Talab qilinadigan hujjatlar:**\n- Ariza\n- Yuridik shaxs guvohnomasi (ta'sis hujjatlari)\n- Mutaxassis diplomi va malaka sertifikatlari\n- Sanitariya-epidemiologiya xulosasi\n- Moddiy-texnik baza tavsifi\n\n### 3️⃣ Muddatlar va To'lovlar\n- Ko'rib chiqish muddati: **15-30 ish kuni**\n- Davlat boji: belgilangan tariflar asosida\n- Litsenziya amal qilish muddati: **5 yil**\n\n---\n\n### ⚠️ Muhim Eslatma\nLitsenziyasiz dori vositalarini sotish yoki ishlab chiqarish **ma'muriy va jinoiy javobgarlikka** tortadi (O'zR Ma'muriy javobgarlik to'g'risidagi kodeksi).\n\n---\n\n*Batafsil ma'lumot uchun **farmagentlik.uz** saytiga murojaat qiling.*",
+          "latency_ms": 19761,
+          "tokens": 635,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 27.614367939s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '27s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "O'zbekistonda dori vositalarini litsenziyalash tartibi \"Dori vositalari to'g'risida\"gi O'zbekiston Respublikasining Qonuni va \"Dori vositalarini litsenziyalash to'g'risida\"gi Nizomga asosan amalga oshiriladi. Dori vositalarini ishlab chiqaruvchi, import qiluvchi yoki ulardan foydalanuvchi tashkilotlar O'zbekiston Respublikasi Sog'liqni saqlash vazirligi tomonidan belgilangan tartibda litsenziya olishlari shart. Litsenziya olish uchun tashkilotlar dori vositalarining sifati, xavfsizligi va samaradorligini tasdiqlovchi hujjatlar, shuningdek, dori vositalarini ishlab chiqarish, saqlash, tashish va sotish bo'yicha talablariga rioya qilishlarini isbotlovchi hujjatlar taqdim etishlari kerak.",
+          "latency_ms": 10136,
+          "tokens": 390,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Dori vositalarini litsenziyalash O'zbekiston Respublikasining \"Dori vositalari, tibbiy jihozlar va kosmetika to'g'risida\"gi qonuni va \"Dori vositalari, tibbiy jihozlar va kosmetika haqida\"gi 2023-yilgi 12-yanvarlik 107-son Qonun hujjatlariga asoslanadi.  \n\n**Tartib:**  \n1. **Ariza topshirish:** Dori vositasini ishlab chiqaruvchi yoki olib kiruvchi tashkilot, Dori vositalari, tibbiy jihozlar va kosmetika haqida ma'lumotlarni o'z ichiga olgan ariza bilan Davlat dori vositalari, tibbiy jihozlar va kosmetika reytingi (DSTK) tomonidan belgilangan tartibda Davlat dori vositalari, tibbiy jihozlar va kosmetika reytingi (DSTK) tomonidan belgilangan tartibda Davlat dori vositalari, tibbiy jihozlar va kosmetika reytingi (DSTK) tomonidan belgilangan tartibda Davlat dori vositalari, tibbiy jihozlar va kosmetika reytingi (DSTK) tomonidan belgilangan tartibda Davlat dori vositalari, tibbiy jihozlar va kosmetika reytingi (DSTK) tomonidan belgilangan tartibda Davlat dori vositalari, tibbiy jihozlar va kosmetika reytingi (DSTK) tomonidan belgilangan tartibda Davlat dori vositalari, tibbiy jihozlar va kosmetika reytingi (DSTK) tomonidan belgilangan tartibda Davlat dori vositalari, tibbiy jihozlar va kosmetika reytingi (DSTK) tomonidan belgilangan tartibda Davlat dori vositalari, tibbiy jihozlar va kosmetika reytingi (DSTK) tomonidan belgilangan tartibda Davlat dori vositalari, tibbiy jihozlar va kosmetika reytingi (DSTK) tomonidan belgilangan tartibda Davlat dori vositalari, tibbiy jihoz",
+          "latency_ms": 5357,
+          "tokens": 1117,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "**Dori vositalarini litsenziyalash tartibi (Oʻzbekiston)**  \n\n1. **Ariza topshirish**  \n   - **Kim topshira oladi:** Dori ishlab chiqaruvchilar, importyorlar, distribyutorlar.  \n   - **Qayerga:** Oʻzbekiston Respublikasi Sogʻliqni saqlash vazirligi (SSV) yoki uning vakolatli bo‘limlariga (Masalan, “Dori vositalari va tibbiy‑texnika nazorati bo‘limi”).  \n   - **Kerakli hujjatlar:**  \n     - Litsenziya arizasi (standart shaklda).  \n     - Dori vositasining farmatsevtik‑texnik tavsifi (FTT).  \n     - Kvalifikatsiya va sertifikatlar (GMP, ISO, klinik sinov natijalari).  \n     - Ishlab chiqarish yoki import qilish joyining hujjatlari (licence, reestr).  \n     - Mahsulotning paketi, yorliq va foydalanuvchi qo‘llanmasi nusxalari.  \n\n2. **Ekspertiza va tekshiruv**  \n   - **Farmatsevtik‑kimyoviy tekshiruv:** Dori tarkibi, sifat, barqarorlik.  \n   - **Klinik‑farmakologik tekshiruv:** Xavfsizlik va samaradorlik ma’lumotlari.  \n   - **Texnik‑hujjatlar tekshiruvi:** Ishlab chiqarish jarayoni, uskunalar, sanitariya‑gigiya talablari.  \n   - **Yuridik tekshiruv:** Hujjatlarning qonuniyligi, litsenziya shartlariga muvofiqligi.  \n\n3. **Xulosa va qaror**  \n   - Ekspertiza natijalari asosida SSV “Dori vositalarini litsenziyalash bo‘yicha qaror”ni chiqaradi.  \n   - **Muvaffaqiyatli bo‘lsa:** Litsenziya (sertifikat) beriladi – dori vositasini Oʻzbekistonda ishlab chiqarish, import qilish, savdo qilish mumkin.  \n   - **Rad etilsa:** Rad etish sabablari ko‘rsatiladi, tuzatishlar kiritilgandan so‘ng qayta ariza berish mumkin.  \n\n4. **Litsenziyaning amal qilish muddati**  \n   - Odatda **5 yil** (ba’zi maxsus dori vositalarida 3 yil).  \n   - Muddat tugashidan oldin **yangilash** uchun qayta ekspertiza va hujjatlarni topshirish talab etiladi.  \n\n5. **Nazorat va monitoring**  \n   - Litsenziyaga ega bo‘lgan dori vositalari bozor nazorati, post‑marketing farmakovigilans (dori xavfsizligi) va muntazam sifat nazorati (rasional tekshiruvlar)ga bo‘ysunadi.  \n\n**Qisqacha:** Dori vositasini litsenziyalash uchun ariza, texnik‑farmatsevtik hujjatlar, klinik ma’lumotlar va ishlab chiqarish/ import sharoitlari tekshiriladi; ekspertiza natijasida SSV litsenziya beradi, bu 5 yilga amal qiladi va muntazam nazorat ostida bo‘ladi.",
+          "latency_ms": 2391,
+          "tokens": 941,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Dori vositalarini ishlab chiqarish va ulgurji savdosi faoliyatini amalga oshirish uchun litsenziya talab qilinadi. Litsenziyalar \"Dori vositalari va tibbiy buyumlar\" Sifatini nazorat qilish inspeksiyasi tomonidan beriladi. Litsenziya olish uchun dori vositalarini ishlab chiqarish yoki ulgurji savdosi bilan shug'ullanuvchi tashkilotlar tegishli talablarga javob berishi kerak. Litsenziyalash jarayoni dori vositalarining sifati, xavfsizligi va samaradorligini ta'minlashga yo'naltirilgan.",
+          "latency_ms": 2009,
+          "tokens": 218,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Dori vositalarini litsenziyalash tartibi O'zbekiston Respublikasining \"Dori vositalari va farmatsevtik faoliyat to'g'risida\"gi qonuni va Vazirlar Mahkamasining tegishli qarorlari bilan tartibga solinadi. \n\nLitsenziya olish uchun quyidagi bosqichlarni o'tash kerak:\n1. Litsenziya olish uchun arizani tayyorlash va topshirish.\n2. Arizani ko'rib chiqish va ekspertiza o'tkazish.\n3. Litsenziya talablariga muvofiqligini tekshirish.\n4. Litsenziyaning amal qilish muddatini belgilash.\n\nLitsenziya olish uchun zarur hujjatlar: \n- Arizа \n- Ta'sis hujjatlari \n- Dori vositalarini ishlab chiqarish, saqlash va sotish uchun ruxsatnoma \n- Sifat menejmenti tizimi to'g'risidagi ma'lumotnoma.\n\nLitsenziya Farmatsevtika tarmog'ini rivojlantirish agentligi tomonidan beriladi.",
+          "latency_ms": 1388,
+          "tokens": 324,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Dori vositalarini litsenziyalash Farmakonadzornig rasmiy ruxati bilan amalga oshiriladi: dori vositasini davlat ro‘yxatidan o‘tkazish, GMP/GSP talablariga muvofiq ustanovka-laboratoriya tekshiruvidan o‘tkazish va keyin 5 yil amal qiluvchi dori vositalarini qayta ishlash /sotish litsenziyasi olinadi.",
+          "latency_ms": 6897,
+          "tokens": 225,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ готов помочь вам с вопросами и задачами в области права и международных вопросов. \n\nВаше сообщение касается лицензирования дроидов. Давайте обсудим этот вопрос.\n\nВ Узбекистане дроиды (дроиды - это электронные устройства, похожие на мобильные телефоны, но с более сложными возможностями и инструментами) могут быть лицензированы в соответствии с законодательством Узбекистана. Для этого вам нужно будет предоставить некоторые документы и выполнить некоторые требования.\n\nВот некоторые шаги, которые вы должны выполнить для лицензирования дроида в Узбекистане:\n\n1. Получите предварительную информацию о лицензировании дроидов от Министерства Телекоммуникаций и Информационных Технологий (МТИТ). Они будут предоставить вам информацию о требованиях и процедурах для лицензирования дроидов.\n\n2. Получите заявку на лицензирование дроида и заполните необходимые поля. Вам нужно предоставить информацию о компании, продукте и его функциях.\n\n3. Получите необходимые документы, такие как заявление о регистрации компании, документы о собственности и правах, а также документы о продукте и его функциях.\n\n4. После получения всех необходимых документов вы должны отправить их в МТИТ для проверки и оценки вашего продукта.\n\n5. Если ваш продукт соответствует требованиям и законам Узбекистана, ваше дроид будет одобрено и вы получите лицензию для его продажи и использования в стране.\n\n6. Вам также могут потребоваться дополнительные документы и информация о компании и ее административных связях в Узбекистане.\n\n7. После получения всех необходимых документов и информации ваше д",
+          "latency_ms": 3515,
+          "tokens": 1129,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-30",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Notarius mol-mulkni boshqa shaxsga o‘tkazishni taqiqlab qo‘yish bo‘yicha notarial harakatni qaysi huquqiy me’yorga asoslanib amalga oshiradi?",
+      "reference_answer": "Mol-mulkni boshqa shaxsga o‘tkazishni taqiqlab qo‘yish va taqiqni bekor qilish bilan bog‘liq bo‘lgan notarial harakatlar O‘zR “Notariat to‘g‘risidagi” qonuniga ko‘ra, notariuslar tomonidan amalga oshiriladi. Har bir shaxs o‘z egaligidagi mol-mulkni erkin ravishda egallash undan foydalanish va tasarruf etish huquqiga egadir. Lekin baьzida, qonunda ko‘rsatilgan hollarda mulkning tasarrufiga nisbatan taqiq solib qo‘yiladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Notarius mol-mulkni boshqa shaxsga o‘tkazishni taqiqlab qo‘yish bo‘yicha notarial harakatni \"Notariat to'g'risida\"gi Qonunga asoslanib amalga oshiradi.",
+          "latency_ms": 1866,
+          "tokens": 159,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Notariusning Mol-Mulkni O'tkazishni Taqiqlash Bo'yicha Huquqiy Asosi\n\nNotarius mol-mulkni boshqa shaxsga o'tkazishni taqiqlash bo'yicha notarial harakatni quyidagi huquqiy me'yorlarga asoslanib amalga oshiradi:\n\n**Asosiy me'yoriy hujjatlar:**\n\n1. **O'zbekiston Respublikasining \"Notariat to'g'risida\"gi Qonuni** — notariusning vakolatlari va notarial harakatlar tartibi belgilanadi.\n\n2. **O'zbekiston Respublikasi Fuqarolik Kodeksining tegishli moddalari** — mulk huquqi va uni cheklash asoslari.\n\n3. **Sud ijrochilari faoliyati to'g'risidagi qonun hujjatlari** — sud yoki vakolatli organ qarori asosida mulkka cheklov qo'yish.\n\n**Amaliyotda taqiq quyidagi hollarda qo'yiladi:**\n\n- **Sud qaroriga** asosan (mulkni ta'minlash chorasi sifatida)\n- **Ijro varaqasi** asosida\n- **Kredit/garov shartnomasi** doirasida\n- **Vakolatli davlat organlari** (soliq, prokuratura va boshqalar) talabiga ko'ra\n\n> **Muhim:** Notarius mustaqil ravishda emas, balki **vakolatli organ (sud, ijro organi) hujjati** asosida bunday cheklov qo'yadi.",
+          "latency_ms": 13254,
+          "tokens": 587,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 6.912738826s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Notarius mol-mulkni boshqa shaxsga o‘tkazishni taqiqlab qo‘yish bo‘yicha notarial harakatni O‘zbekiston Respublikasining “Notariat to‘g‘risida”gi Qonuniga asoslanib amalga oshiradi.",
+          "latency_ms": 635,
+          "tokens": 229,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Notarial harakatni \"Notariat Qonuni\" (1998-yil 28-martdagi O'zbekiston Respublikasining Qonuni) asosida amalga oshiradi. Shu qonunning 14-moddasi notarial harakatlarning qo'llanilish tartibini, jumladan, mol-mulk o'tkazishni taqiqlashni belgilaydi.",
+          "latency_ms": 1579,
+          "tokens": 605,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Notarius bu harakatni Oʻzbekiston Respublikasi “Notariat faoliyati toʻgʻrisida”gi qonunining (asosan 13‑madda) talabiga asoslanib amalga oshiradi. Ushbu meʼyor notariusga qonun bilan taqiqlangan yoki huquqiy jihatdan notoʻgʻri bo‘lgan mol‑mulk oʻtkazmalarini rad etish imkonini beradi.",
+          "latency_ms": 1386,
+          "tokens": 664,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "\"Notariat to'g'risida\"gi O'zbekiston Respublikasi Qonuni 34-moddasiga muvofiq amalga oshiriladi.",
+          "latency_ms": 970,
+          "tokens": 146,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Notarius mol-mulkni boshqa shaxsga o‘tkazishni taqiqlab qo‘yish bo‘yicha notarial harakatni O‘zbekiston Respublikasi Notarial Palatasi to‘g‘risidagi nizom va O‘zbekiston Respublikasi Fuqarolik Kodeksiga asoslanib amalga oshiradi.",
+          "latency_ms": 510,
+          "tokens": 183,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "\"Notarial harakatlar toʻgʻrisida\"gi qonuning 60-moddasi.",
+          "latency_ms": 5300,
+          "tokens": 163,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Ваше уважаемые господа, я интеллектуальный специалист по озобеванию и правовому сопровождению международных транзакций. Помогу вам решать различные задачи и вопросы в области озобевания и управления правами.\n\nВ ответ на ваш вопрос:\n\nНапример, когда нотриар служит для отокзации другого человека, он выполняет свои обязательства в соответствии с правом, которое он принимает в качестве нотриара. В Узбекистане, нотриар является специалистом, который предоставляет подпись или сертификат, подтверждающий существование документа или инструмента. Нотриар не может изменять контент документа или инструмента, но только подтверждает их существование и необходимость их использования.\n\nВ случае отокзации другого человека, нотриар должен проверить, что отокзация проводится в соответствии с законодательством Узбекистана и не имеет незаконных целей. Например, нотриар не может подтверждать отокзацию, которая предназначена для предпринимательского или другого незаконного целей.\n\nВ Узбекистане, отокзация должна быть проводимая в соответствии с законодательством и иметь строгое назначение. Например, отокзация должна быть направлена на передачу прав или интересов между участниками, а не использоваться для незаконных целей.\n\nВ этом случае, нотриар должен проверить, что отокзация проводится в соответствии с законодательством Узбекистана и не имеет незаконных целей. Например, отокзация должна быть направлена на передачу прав или интересов между участниками, а не использоваться для незаконных целей.\n\nВ Узбекистане нотриар должен проверить, что отокзация проводится в соответствии с законодательством Узбекистана и не имеет незаконных целей. Например, отокзация должна быть направлена на передачу пра",
+          "latency_ms": 1122,
+          "tokens": 1168,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-31",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Davlat xizmatlari markazlari pullik xizmatlar ko‘rsatishga haqlimi?",
+      "reference_answer": "O‘zbekiston Respublikasi adliya vazirining 2018-yil 10-avgustdagi 273-um-son buyrug‘i bilan tasdiqlangan “Davlat xizmatlari markazlarida jismoniy va yuridik shaxslarga ixtiyoriy pullik xizmatlar ko‘rsatish tartibi to‘g‘risida”gi nizomga muvofiq davlat xizmatlari markazlari jismoniy va yuridik shaxslarning ixtiyoriga ko‘ra pullik xizmatlar ko‘rsatishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Ha, davlat xizmatlari markazlari qonun doirasida belgilangan tartibda pullik xizmatlar ko‘rsatishga haqlidir.",
+          "latency_ms": 2307,
+          "tokens": 110,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Javob:\n\n**Ha, Davlat xizmatlari markazlari (DXM) ba'zi pullik xizmatlar ko'rsatishga haqli**, lekin quyidagi shartlar asosida:\n\n### Asosiy qoidalar:\n- **Bepul xizmatlar** — davlat funktsiyalari doirasidagi majburiy xizmatlar (guvohnoma, ro'yxatga olish va h.k.) **tekin** ko'rsatilishi shart\n- **Pullik xizmatlar** — qo'shimcha, ixtiyoriy yoki tezlashtirilgan xizmatlar uchun **belgilangan tarif** bo'yicha to'lov olinishi mumkin\n\n### Huquqiy asos:\n- O'zbekiston Respublikasining **\"Davlat xizmatlari to'g'risida\"gi Qonuni** (2017 yil)\n- Vazirlar Mahkamasining tegishli **qarorlari** bilan tariflar belgilanadi\n\n### Muhim:\n> ❗ Belgilangan rasmiy tarifdan **ortiq** to'lov talab qilish **noqonuniy** hisoblanadi. Bunday holatlarda **\"Davlat xizmatlari agentligi\"** yoki **prokuratura**ga murojaat qilish mumkin.",
+          "latency_ms": 16415,
+          "tokens": 466,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 51.224591198s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '51s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Davlat xizmatlari markazlari pullik xizmatlar ko‘rsatishga haqisiz, chunki ular davlat tomonidan ta'minlanadigan bepul xizmatlarni ko'rsatishlari kerak.",
+          "latency_ms": 1064,
+          "tokens": 186,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "Davlat xizmatlari markazlari qonunlar orqali belgilangan hollarda (masalan, hujjatlar, sertifikatlar yoki boshqa rasmiy ishlar uchun) pullik xizmat ko'rsatishga haqiqatdan ham huquqga ega bo'lishi mumkin. Bunday to'lovlar \"Davlat to'lovlar qonuni\" va boshqa qonunlar bilan nizamlanadi. Agar xizmatlar qonunlarda belgilanmagan bo'lsa, ularni bepul o'tkazish shart.",
+          "latency_ms": 3270,
+          "tokens": 574,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Davlat xizmatlari markazlari xizmatni bepul ko‘rsatishi shart, lekin qonunda ushbu xizmat uchun to‘lov belgilangan bo‘lsa, ular faqat shu hollarda pullik xizmat ko‘rsatishi mumkin. Aks holda xizmatlar bepul bo‘lishi kerak.",
+          "latency_ms": 1393,
+          "tokens": 461,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "Davlat xizmatlari markazlari faqat qonun hujjatlarida belgilangan tartibda pullik xizmatlar ko'rsatish huquqiga ega. Shu bilan birga, ushbu qonun hujjatlarida nazarda tutilmagan pullik xizmatlar ko'rsatish taqiqlanadi.",
+          "latency_ms": 3607,
+          "tokens": 145,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Ha, davlat xizmatlari markazlari qonuniy asosda pullik xizmatlar ko‘rsatishga haqli.",
+          "latency_ms": 3021,
+          "tokens": 110,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "error": "Error code: 503 - {'error': {'message': 'moonshotai/kimi-k2-instruct is currently over capacity. Please try again and back off exponentially. Visit https://groqstatus.com to see if there is an active incident.', 'type': 'internal_server_error'}}",
+          "score": 0,
+          "correct": false
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ готов помочь вам с вопросами и задачами в области права и международных вопросов. \n\nВаш вопрос касается департаментов государства, которые предоставляют услуги по публичному сервису. Давайте рассмотрим этот вопрос в основном на азербайджанском языке.\n\nВ ОБСЕ (Организация безопасности и связи) мы предоставляем помощь и консультации в различных областях, включая правовые и международные вопросы. Если вы имеете вопросы или задачи в этой области, пожалуйста, предоставьте более подробную информацию о своих задачах и вопросах, и я постараюсь предоставить вам конкретную информацию и советы.",
+          "latency_ms": 5399,
+          "tokens": 499,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-32",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Davlat xizmati olishim uchun Davlat xizmatlari markaziga bormasdan navbat olishim mumkinmi?",
+      "reference_answer": "Albatta, Davlat xizmatlari agentligining davxizmat.uz veb-sayti orqali onlayn yoki oldindan navbat olish orqali amalga oshirishingiz mumkin.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Ha, Davlat xizmatlari markaziga bormasdan onlayn navbat olish mumkin.",
+          "latency_ms": 2027,
+          "tokens": 107,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Ha, mumkin!\n\nDavlat xizmatlari markaziga bormasdan navbat olishning bir necha usuli mavjud:\n\n1. **my.gov.uz** — Yagona interaktiv davlat xizmatlari portali orqali onlayn navbat olish\n2. **\"My ID\" ilovasi** — Smartfon orqali navbat band qilish\n3. **1233 raqamiga qo'ng'iroq qilish** — Telefon orqali navbat olish\n\nBu usullar orqali vaqtingizni tejab, belgilangan vaqtda markazga borishingiz mumkin.",
+          "latency_ms": 6128,
+          "tokens": 285,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 33.5371133s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Ha, davlat xizmatlari markaziga bormasdan, \"MyGov.uz\" sayti orqali yoki \"Davlat xizmatlari\" mobil ilovasi orqali navbat olishingiz mumkin.",
+          "latency_ms": 658,
+          "tokens": 186,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Ha, \"e-Himoya\" yoki \"Mijozxona\" saytlari orqali onlayn navbat olish mumkin.",
+          "latency_ms": 5489,
+          "tokens": 332,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Ҳа, навбатни онлайн олишингиз мумкин. “my.gov.uz” ёки “Davlat Xizmatlari” мобил иловасида (ёки ихтиёрий равишда телефон орқали) шахсий кабинетга кириб, хизмат турини танлаб, навбат рақамини олишингиз мумкин. Навбат рақами электрон почта ёки SMS орқали ҳам юборилади. Шундай қилиб, Давлат хизматлари марказига шахсан бормасдан навбат олиш имкони мавжуд.",
+          "latency_ms": 786,
+          "tokens": 343,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Ha, Davlat xizmatlari markaziga bormasdan oldindan navbat olish mumkin. Buning uchun \"Davlat xizmatlari\" mobil ilovasidan yoki 1234 qisqa raqamiga qo'ng'iroq qilib navbat olish mumkin.",
+          "latency_ms": 602,
+          "tokens": 144,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Ha, mumkin. Davlat xizmatlari markaziga bormasdan navbat olish uchun \"Davlat xizmatlari\" mobil ilovasi yoki \"My.gov.uz\" portalidan foydalanishingiz mumkin.",
+          "latency_ms": 423,
+          "tokens": 132,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "kimi-k2": {
+          "response": "Ha, siz \"Davlat xizmati\" mobil ilovasi yoki my.gov.uz orqali navbat olishingiz mumkin.",
+          "latency_ms": 2516,
+          "tokens": 150,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шуман, як мені знати, Україна є членом Європейського Союзу та має міжнародні відносини з ОБСЕ, ЄС та іншими державами. Якщо ваша робота стосується міжнародних відносин, то можна будемо допомогти вам з англійською мовою. Якщо вам потрібна допомога з Українською мовою, повідомте мені, який тема вам важкого, якість інформації та якщо можна, вкажіть якої мови ви знаєте. Якщо ваша робота стосується міжнародних відносин, які застосовуються до України, якіні питання вам виконуватимемо у англійському.",
+          "latency_ms": 645,
+          "tokens": 478,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-33",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Аxborot va aloqa sohasidagi korxonalar soni nechta?",
+      "reference_answer": "Davlat statistika qo‘mitasi ma‘lumotlariga ko‘ra, 2022 yilning yanvar-noyabr oylarida axborot va aloqa sohasida yangi tashkil etilgan korxonalar soni 2 423 tani tashkil etgan.\nBu 2018 yilning mos davri bilan solishtirilganda 2,1 barobarga ko‘paygan.\nSo‘nggi besh yillikda ushbu sohada yangi tashkil etilgan korxonalar soni:\n— 2018 yilda – 1 160 ta\n— 2019 yilda – 1 560 ta\n— 2020 yilda – 1 740 ta\n— 2021 yilda – 2 382 ta\n— 2022 yilda – 2 423 ta",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Kechirasiz, lekin men hozirgi vaqtda axborot va aloqa sohasidagi korxonalar soni haqida aniq ma'lumot bera olmayman.",
+          "latency_ms": 1565,
+          "tokens": 116,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "claude-sonnet": {
+          "response": "Kechirasiz, menда аxborot va aloqa sohasidagi korxonalar soniga oid aniq va dolzarb statistik ma'lumot mavjud emas.\n\nBu ma'lumotni quyidagi rasmiy manbalardan olishingizni tavsiya qilaman:\n- **O'zbekiston Respublikasi Davlat statistika qo'mitasi** (stat.uz)\n- **Axborot texnologiyalari va kommunikatsiyalarini rivojlantirish vazirligi** (mitc.uz)",
+          "latency_ms": 5544,
+          "tokens": 245,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 26.990457376s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '26s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "O'zbekistonda axborot va aloqa sohasidagi korxonalar soni 2022-yil holatiga ko'ra 234 ta.",
+          "latency_ms": 572,
+          "tokens": 150,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "2023-yil holatiga ko'ra, O'zbekistonda axborot va aloqalar sohasida faoliyat olib borayotgan korxonalarning to'g'ri soni 1500 dan oshib ketgan. Aniq ma'lumot uchun Davlat statistika qo'mitasi yoki IT sohasi rivojlantirish agentligi (IT Park) manbalari bilan murojaat qilish tavsiya etiladi.",
+          "latency_ms": 1787,
+          "tokens": 648,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Oʻzbekistonda axborot‑va‑aloqa sohasidagi korxonalar soni 2023 yilgi ma’lumotlarga ko‘ra taxminan **12 000 ta** ga yaqin.",
+          "latency_ms": 818,
+          "tokens": 337,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "2023-yil 1-oktabr holatiga ko'ra O'zbekistonda 2 273 ta axborot va aloqa sohasidagi korxonalar faoliyat ko'rsatmoqda.",
+          "latency_ms": 951,
+          "tokens": 128,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-scout": {
+          "response": "2022-yil 1-yanvar holatiga ko‘ra, mamlakatimizda axborot va aloqa sohasida 5,4 ming korxona faoliyat ko‘rsatmoqda.",
+          "latency_ms": 519,
+          "tokens": 130,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "9 962 ta (2023-yil 1-yanvar holatiga ko‘ra).",
+          "latency_ms": 5051,
+          "tokens": 124,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Контактный номер Вашего офиса или контактный личный номер я не могу предоставить, так как я AI интеллектуального ассистента и не имею контактных данных. Однако, я могу помочь вам с вопросами и задачами по юридическим и социальным вопросам по Узбекистану. Пожалуйста, дайте мне знать, какой вопрос вы имеете в виду, и я постараюсь вам помочь.",
+          "latency_ms": 602,
+          "tokens": 315,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-34",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Yangi gerbli guvohnomalar berganlik uchun qancha gerb yig‘imi undiriladi?",
+      "reference_answer": "BHMning 15 foizi.\nAsos: Vazirlar Mahkamasining 01.07.2012-yildagi “Gerbli guvohnomalar berganlik uchun gerb yig‘imi miqdorini tasdiqlash to‘g‘risida”gi qarori.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Yangi gerbli guvohnomalar berganlik uchun gerb yig‘imi miqdori 90% bazaviy hisoblash miqdorini tashkil etadi.",
+          "latency_ms": 3568,
+          "tokens": 120,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "claude-sonnet": {
+          "response": "## Yangi gerbli guvohnomalar uchun gerb yig'imi\n\nO'zbekiston Respublikasida yangi **gerbli guvohnomalar** berganlik uchun quyidagi miqdorda gerb yig'imi undiriladi:\n\n- **Fuqarolarga** — **1 bazaviy hisoblash miqdori (BHM)**\n- **Yuridik shaxslarga** — **3 bazaviy hisoblash miqdori (BHM)**\n\n> 📌 **Eslatma:** 2025-yil uchun 1 BHM = **395 000 so'm** (belgilangan miqdor o'zgarishi mumkin, amaldagi BHM miqdorini soliq organlaridan aniqlab olish tavsiya etiladi).",
+          "latency_ms": 8677,
+          "tokens": 319,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 18.789836495s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Yangi gerbli guvohnomalar berganlik uchun 1 ta gerb yig‘imi undiriladi.",
+          "latency_ms": 695,
+          "tokens": 154,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "Gerbli guvohnomalar uchun gerb yig‘imi 0,5% (nominal qiymatdan olib, 100 000 so'mgacha). Nominal qiymatsiz guvohnomalar uchun 100 000 so'm.",
+          "latency_ms": 1883,
+          "tokens": 589,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Yangi gerbli guvohnomalar berganlik uchun 5 000 so‘m gerb yig‘imi undiriladi.",
+          "latency_ms": 3231,
+          "tokens": 440,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "Yangi gerbli guvohnomalar berganlik uchun eng kam ish haqining 1 baravari miqdorida gerb yig‘imi undiriladi.",
+          "latency_ms": 3004,
+          "tokens": 126,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-scout": {
+          "response": "50 so’m.",
+          "latency_ms": 2735,
+          "tokens": 93,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "kimi-k2": {
+          "error": "Error code: 503 - {'error': {'message': 'moonshotai/kimi-k2-instruct is currently over capacity. Please try again and back off exponentially. Visit https://groqstatus.com to see if there is an active incident.', 'type': 'internal_server_error'}}",
+          "score": 0,
+          "correct": false
+        },
+        "allam-2-7b": {
+          "response": "Шуман, якщак артикул О'збек таллида анъиқ иңгилардан эшлейдик. Бирок, якщак машапқан факторлардан ишарчи меракет эшлейдик.\n\nЯкщак машапқан факторлардан ишарчи меракет эшлейдик:\n\n1. Башга машапқан факторлар: Башга машапқан факторлардан ишарчи меракет эшлейдик, тактиклардан, физикалардан, физико-химических процессахдан, медицинских процессахдан и т.д. Тактиклардан, физикалардан и т.д. машапқан факторлардан ишарчи меракет эшлейдик.\n\n2. Башга машапқан факторлардан ишарчи меракет эшлейдик:\n\nБашга машапқан факторлардан ишарчи меракет эшлейдик, тактиклардан, физикалардан, физико-химических процессахдан, медицинских процессахдан и т.д. Тактиклардан, физикалардан и т.д. машапқан факторлардан ишарчи меракет эшлейдик.\n\nБу меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эшларинин ишарчилик меракет эш",
+          "latency_ms": 1125,
+          "tokens": 1131,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-35",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Kollektiv murojaatni qanday topshirish kerak va uni qonunchilik darajasida qanday ko'rib chiqish mumkin?",
+      "reference_answer": "[meningfikrim.uz](https://meningfikrim.uz/) – Kollektiv murojaatlar portali bo‘lib, ushbu axborot tizimi orqali siz qiziqarli mavzular bo'yicha takliflaringizni yuborishingiz mumkin. Moderator tomonidan tekshirilgandan so'ng, ular portalga joylashtiriladi. Agar sizning jamoaviy murojaatingiz kerakli miqdorda qo'llab-quvvatlansa, sizning jamoaviy murojaatingiz tegishli ravishda Oliy Majlis palatalaridan biri yoki xalq deputatlari mahalliy Kengashi tomonidan ko'rib chiqiladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Kollektiv murojaatni topshirish uchun avvalo barcha ishtirokchilar tomonidan imzolangan ariza tayyorlanadi. Arizada muammo aniq va tushunarli tarzda bayon qilinishi kerak. Murojaat tegishli davlat organiga yoki tashkilotga yuboriladi. Qonunchilik darajasida ko'rib chiqilishi uchun murojaat O'zbekiston Respublikasining \"Jismoniy va yuridik shaxslarning murojaatlari to'g'risida\"gi qonuniga muvofiq ko'rib chiqiladi. Bu qonunga ko'ra, murojaat belgilangan muddatlarda ko'rib chiqilishi va natijasi haqida murojaatchilarga xabar berilishi lozim.",
+          "latency_ms": 4707,
+          "tokens": 250,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Kollektiv Murojaat Topshirish Tartibi\n\n### 📝 Kollektiv Murojaat Nima?\n\nKollektiv murojaat — ikki yoki undan ortiq shaxs tomonidan birgalikda yoziladigan rasmiy ariza yoki shikoyat.\n\n---\n\n### 📌 Topshirish Tartibi\n\n**1. Hujjatni Tayyorlash:**\n- Murojaat yozma shaklda tuziladi\n- Barcha ishtirokchilarning F.I.Sh., manzili, imzosi ko'rsatiladi\n- Muammo aniq va lo'nda bayon etiladi\n- Talab yoki iltimos aniq ifodalanadi\n\n**2. Topshirish Usullari:**\n- 🏢 Shaxsan — tegishli idoraga borib topshirish\n- 📬 Pochta orqali — jo'natish\n- 💻 Elektron — [murojaat.gov.uz](https://murojaat.gov.uz) platformasi orqali\n\n---\n\n### ⚖️ Qonunchilik Asosi\n\n**\"Fuqarolarning murojaatlari to'g'risida\"gi Qonun (2017-yil)** asosida:\n\n| Masala | Muddat |\n|--------|--------|\n| Ko'rib chiqish muddati | **15 kun** (oddiy) |\n| Murakkab masalalar | **30 kun** |\n| Javob berish majburiy | **Ha** |\n\n---\n\n### ✅ Muhim Talablar\n\n- Murojaat asosli va haqiqiy bo'lishi shart\n- Imzo va sanani qo'yish majburiy\n- Javob berilmasa — **prokuraturaga shikoyat** qilish mumkin",
+          "latency_ms": 15970,
+          "tokens": 609,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 7.476765803s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '7s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Kollektiv murojaatni topshirish uchun quyidagi bosqichlarni bajaring:\n\n1. Murojaat matnini tayyorlang, unda muammo yoki talablar aniq ifodalangan bo'lsin.\n2. Murojaatni imzolash uchun vakolatli shaxslarni tanlang.\n3. Murojaatni tegishli davlat organiga, masalan, Oliy Majlis, Vazirlar Mahkamasi yoki boshqa davlat idoralariga topshiring.\n4. Murojaatni qabul qilgan organ uni ko'rib chiqib, tegishli qaror qabul qiladi.\n\nKollektiv murojaatni qonunchilik darajasida ko'rib chiqish uchun O'zbekiston Respublikasining \"Murojaatlar to'g'risida\" gi qonuniga murojaat qiling. Ushbu qonunda murojaatlar tartibi, ularni ko'rib chiqish va javob berish tartibi belgilab qo'yilgan.",
+          "latency_ms": 1916,
+          "tokens": 397,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Kollektiv murojaatni topshirish uchun 50 nafar shaxs imzosi kerak. Murojaatni dastlabki o'rinni (tuman, shahar hokimligi) yoki qonuniy jonsiz shaxs tomonidan qabul qilinadi. Murojaatda masala, imzolovchilar ro'yxati, arafatlar to'plami bo'lishi kerak. Qonunchilikka ko'ra, murojaatni 30 kundan o'tkazmasdan ko'rib chiqish, 10 kundan o'tkazmasdan qabul qilish yoki rad etishni javob qaytarish kerak. Rad etilgan bo'lsa, 30 kundan o'tkazmasdan yuqori organlarga yuboriladi.",
+          "latency_ms": 1736,
+          "tokens": 598,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "**Kollektiv murojaatni topshirish tartibi**\n\n1. **Murojaatni tayyorlash**  \n   - **Murojaat mazmuni**: muammo, talab yoki taklifni aniq, lo‘nda va faktlar bilan asoslab yozing.  \n   - **Murojaat qiluvchilar ro‘yxati**: har bir qatnashchining ismi, familiyasi, pasport (yoki ID) raqami, manzili va imzosi.  \n   - **Dalillar**: hujjatlar, fotosuratlar, audio‑video materiallar va boshqalar ilova qilinsin.  \n   - **Murojaat shakli**: O‘zbekiston Respublikasi “Fuqarolar huquq va erkinliklari to‘g‘risida”gi qonuniga muvofiq, yozma shaklda (elektron yoki qog‘oz) bo‘lishi shart.\n\n2. **Murojaatni topshirish joyi**  \n   - **Davlat organlari**: tegishli vazirlik, idora, mahalliy hokimiyat organi (masalan, viloyat hokimligi, shahar hokimligi).  \n   - **Sudlar**: agar murojaat sudga murojaat qilishni talab qilsa, tegishli sudga (masalan, iqtisodiy, ma’muriy yoki fuqarolar sudiga).  \n   - **Elektron tizimlar**: “Elektron hukumat” (my.gov.uz) portalida “Murojaat va taklif” bo‘limi orqali ham yuborish mumkin.\n\n3. **Murojaatni topshirish jarayoni**  \n   - **Qog‘oz shaklida**: murojaatni yozib, imzo qo‘yib, ilovalar bilan birga, tasdiqlangan nusxasini (notarius yoki notarial tasdiq) olish tavsiya etiladi.  \n   - **Elektron shaklida**: my.gov.uz portaliga kirib, “Murojaat” bo‘limida shaklni to‘ldiring, fayllarni yuklang, “Yuborish” tugmasini bosing.  \n   - **Qabul tasdiqlash**: organ murojaatni qabul qilganligi haqida tasdiq (rasmiy xat, elektron tasdiq) beradi. Bu tasdiqni saqlab qo‘ying.\n\n**Qonunchilik darajasida ko‘rib chiqish**\n\n- **Me’yoriy hujjatlar**:  \n  - **O‘zbekiston Respublikasi “Fuqarolar huquq va erkinliklari to‘g‘risida”gi qonuni** (mad. 31‑33) – fuqarolar, jamoalar va tashkilotlarning murojaat qilish huquqi, murojaatni qabul qilish, ko‘rib chiqish va javob berish tartibi.  \n  - **O‘zbekiston Respublikasi “Ma’muriy huquqiy munosabatlar to‘g‘risida”gi qonuni** – ma’muriy organlarning murojaatlarni ko‘rib chiqish muddatlari (odatda 30 kun ichida) va javob berish majburiyati.  \n  - **O‘zbekiston Respublikasi “Sud tizimi to‘g‘risida”gi qonuni** – sudga kollektiv da’vo yoki murojaat topshirish shartlari, sudning ko‘rib chiqish muddati va qaror chiqarish tartibi.  \n\n- **Ko‘rib chiqish bosqichlari**  \n  1. **Qabul qilish** – organ murojaatni rasmiy ravishda qabul qiladi, tasdiq beradi.  \n  2. **Tekshirish** – murojaat mazmuni, ilovalar, qonuniy asoslar tekshiriladi; zarur bo‘lsa, qo‘shimcha ma’lumot so‘raladi.  \n  3. **Ko‘rib chiqish** – organ (yoki sud) murojaatni qonuniy me’yorlar asosida tahlil qiladi, ekspertiza, tinglovlar o‘tkazishi mumkin.  \n  4. **Javob berish** – 30 kun ichida (ba’zi hollarda 60 kun) rasmiy javob (qaror, tavsiya, rad etish) beriladi. Javobda asosiy sabablar, huquqiy asoslar va amalga oshirilishi lozim bo‘lgan",
+          "latency_ms": 2529,
+          "tokens": 1176,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Kollektiv murojaat fuqarolar tomonidan shaxsan yoki vakil orqali yuborilishi mumkin. Murojaat yozma yoki elektron shaklda taqdim etiladi. Qonunchilikka ko'ra, murojaat 15 kun ichida ko'rib chiqilishi shart, ammo ayrim hollarda ushbu muddat bir marta 15 kunga uzaytirilishi mumkin. Murojaat mazmuni bo'yicha qaror qabul qilinib, murojaat qiluvchiga yozma ravishda javob beriladi. Batafsil ma'lumot O'zbekiston Respublikasining \"Fuqarolarning murojaatlari to'g'risida\"gi qonunida keltirilgan.",
+          "latency_ms": 1257,
+          "tokens": 241,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Kollektiv murojaatni topshirish uchun, avvalo, siz murojaatning maqsadini aniq belgilab olishingiz kerak. So'ngra, quyidagi bosqichlarni amalga oshirishingiz mumkin:\n\n1. **Murojaatni tayyorlash**: Murojaat matnini tayyorlang, unda muammo bayoni, taklif yoki iltimos va imzolarning ro'yxati bo'lishi kerak.\n\n2. **Imzo to'plash**: Murojaatga qo'shilish uchun odamlardan imzo to'plang. Imzo qo'yuvchi shaxslarning FIO, manzili va aloqa ma'lumotlari (telefon raqami, elektron pochta) bo'lishi maqsadga muvofiqdir.\n\n3. **Murojaatni rasmiylashtirish**: Murojaatning oxirida jamoaviy murojaatni yo'naltiruvchi vakilni ko'rsating.\n\n4. **Murojaatni topshirish**: Murojaatni tegishli davlat organiga yoki mahalliy hokimiyatga topshirish. Buni shaxsan, pochta orqali yoki elektron shaklda amalga oshirish mumkin.\n\n5. **Kvitansiya olish**: Agar murojaatni shaxsan topshirsangiz, qabul qiluvchidan kvitansiya olishga harakat qiling. Bu, kelajakda murojaatingizning qabul qilinganligini isbotlashda yordam beradi.\n\n**Qonunchilik darajasida ko'rib chiqish**: \n\n- **O'zbekiston Respublikasi Konstitutsiyasi**: Har qanday murojaat bilan bog'liq huquqlar va erkinliklar Konstitutsiyada mustahkamlangan.\n- **\"O'zbekiston Respublikasida jamoatchilik nazorati to'g'risida\"gi Qonun**: Jamoatchilik nazorati institutini, shu jumladan, jamoaviy murojaatlar bilan ishlash tartibini tartibga soladi.\n- **\"Fuqarolar murojaatlari to'g'risida\"gi Qonun**: Fuqarolar murojaatlarini ko'rib chiqish tartibi, murojaatlarni qabul qilish, ro'yxatga olish va ko'rib chiqish muddatlari va boshqa masalalarni tartibga soladi.\n\nMurojaatlarni topshirish va ko'rib chiqish tartibi to'g'risida batafsil ma'lumotni O'zbekiston Respublikasining qonunchilik hujjatlaridan olish mumkin.",
+          "latency_ms": 1600,
+          "tokens": 629,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Kollektiv murojaatni oʻz hukumatning “Yagona elektron murojaatlar” onlayn-portali (“Mening hukumatim”) orqali topsiring. Murojaatchilar (2 yoki undan ko‘p kishi) ayni bir muammo boʻyicha oʻz FISH, telefon, manzil va elektron imzo bilan murojaatni onlayn, shuningdek mahalliy hokimga yozma shaklda topshirishadi. 15 kun ichida hukumat, hukumat nazorati organi yoki sud murojaatni ma’muriy tomonidan korib chiqib, rasmiy javob yozib beradi – qonun asosida koʻrib chiqish majburiy. Javobdan norozi bo‘lsangiz, yuqori turdagi organga yoki sudga shikoyat bera olasiz.",
+          "latency_ms": 6030,
+          "tokens": 326,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Коллективная муражажа - это механизм, который помогает группе сотрудников объединить свои усилия и знания для выполнения сложных и важных задач. Вот некоторые рекомендации по организации коллективной муражажи и ее применению в условиях управления и правовой среды:\n\n1. Определите цели и задачи коллектива: Создайте общие цели и задачи, которые нужно выполнить вместе. Это поможет группе ориентироваться и разработать стратегию работы.\n\n2. Определите специализации и умения сотрудников: Определите, какие умения и специализации у каждого сотрудника и используйте их для выполнения задач. Это поможет сделать работу более эффективной и уменьшит возможные конфликты.\n\n3. Организуйте коллективную работу: Создайте систему, которая поможет сотрудникам работать вместе и обменяться знаниями и опытом. Возможные варианты:\n   - Создайте команду или группу, где каждый сотрудник будет ответственным за конкретную часть задачи и будет обменяться информацией с другими сотрудниками.\n   - Создайте систему обмена информацией и опытом через междусобные встречи, конференции или информационные системы.\n\n4. Организуйте обучение и развитие: Помогите сотрудникам развивать свои навыки и знания, чтобы они могли более эффективно работать вместе. Возможные варианты:\n   - Организуйте обучающие мероприятия, такие как конференции, семинары или информационные программы.\n   - Помогите сотрудникам развивать свои навыки и знания через обучающие программы или курсы.\n\n5. Организуйте контроль и контроль: Установите систему контроля и контроля над работой сотрудников, чтобы обеспечить качественную работу и улучшить",
+          "latency_ms": 1133,
+          "tokens": 1144,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-36",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Remont muddati cho‘zilsa iste’molchi nima qila oladi?",
+      "reference_answer": "Muqobil mahsulot, almashtirish yoki pulni qaytarishni talab qilishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Agar remont muddati cho‘zilsa, iste'molchi shartnomada belgilangan muddatlarga rioya qilinmagani uchun kompensatsiya talab qilishi yoki shartnomani bekor qilib, to'langan mablag'ni qaytarib olishni talab qilishi mumkin.",
+          "latency_ms": 1931,
+          "tokens": 142,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "claude-sonnet": {
+          "response": "## Remont muddati cho'zilsa iste'molchi nima qila oladi?\n\n**O'zbekiston Respublikasining \"Iste'molchilarning huquqlarini himoya qilish to'g'risida\"gi Qonuniga asosan:**\n\n### Iste'molchi quyidagilarni talab qilishi mumkin:\n\n1. **Tovarni almashtirish** – xuddi shunday yoki teng qiymatli boshqa tovar bilan almashtirishni talab qilish\n\n2. **Narxni kamaytirish** – nuqsonli tovar uchun narxni mutanosib ravishda pasaytirishni talab qilish\n\n3. **Shartnomani bekor qilish** – to'liq pul qaytarishni talab qilib, tovarni qaytarish\n\n4. **Kechikish uchun jarima** – har bir kechiktirilgan kun uchun **tovar narxining 1%** miqdorida penya (jarimapul) talab qilish\n\n### Amaliy qadamlar:\n\n- ✅ Sotuvchi/ta'mirchiga **yozma da'vo** yuborish\n- ✅ **Iste'molchilar huquqlarini himoya qilish** bo'limiga murojaat qilish\n- ✅ **Sud** orqali da'vo arizasi berish\n- ✅ **Antimonopol qo'mita**ga shikoyat qilish\n\n> **Muhim:** Da'voni yozma shaklda yuboring va unga javob berilmasa, 10 kun ichida tegishli organlarga murojaat qiling.",
+          "latency_ms": 14783,
+          "tokens": 546,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 50.209639998s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Iste'molchi remont muddati cho'zilganda, mahsulotni almashtirish yoki qaytarish haqqiga ega bo'ladi, shuningdek, qo'shimcha kompensatsiya talab qilishi mumkin.",
+          "latency_ms": 810,
+          "tokens": 181,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Iste'molchi remont muddati muddati o'tib ketgan bo'lsa, quyidagilarni qilishi mumkin:  \n1. **Shikoyat qilish** — Sotuvchiga yoki xizmat ko'rsatuvchi tashkilotga shikoyat yuborish.  \n2. **To'lovni qaytarish** — Shartnoma shartlariga ko'ra to'lovni qaytarishni so'rash.  \n3. **Mazkur narsani almashtirish** — Boshqa mahsulotga almashtirishni talab qilish.  \n4. **Xususiy xarajatlarni o'zgartirish** — Qo'shimcha xarajatlarni (masalan, qo'shimcha xizmatlar) sotuvchi tomonidan qoplanishini so'rash.  \n5. **Yuridik shikoyat** — Agar kelishuvga erishmasa, mazkur hujjatlarni qo'shish orqali sudga murojaat qilish.",
+          "latency_ms": 1482,
+          "tokens": 495,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Agar ta’mir muddati belgilangan vaqt ichida tugamasa, iste’molchi quyidagilarni talab qilishi mumkin:\n\n1. **Bepul ta’mirni davom ettirish** – sotuvchi yoki xizmat ko‘rsatuvchi kompaniya ta’mirni kechiktirmasdan, qo‘shimcha xarajat talab qilmasdan yakunlashi kerak.  \n2. **Mahsulotni almashtirish** – bir xil yoki teng sifatli boshqa mahsulotni olish.  \n3. **Narxni kamaytirish** – mahsulotni saqlab qolish, lekin uning foydalanuvchanligi pasayganligi sababli narxni pasaytirishni talab qilish.  \n4. **Shartnomani bekor qilish** – mahsulotni qaytarib, to‘lovni to‘liq yoki qisman qaytarishni so‘rash.  \n5. **Zararni qoplash** – kechikish tufayli kelgan qo‘shimcha xarajatlar yoki zararlarni qoplashni talab qilish.\n\nBu huquqlarni amalga oshirish uchun iste’molchi yozma ravishda talabni bildirish va zarur hujjatlarni (kafolat, shartnoma, ta’mir bayonnomasi) taqdim etishi lozim.",
+          "latency_ms": 1049,
+          "tokens": 479,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Iste'molchi bajaruvchi bilan kelishuvda ko'rsatilgan xizmat muddatini uzaytirish to'g'risida yozma ravishda ogohlantirib, shartnomadan voz kechishi va sifatli ta'mirlashni talab qilishi mumkin.",
+          "latency_ms": 1020,
+          "tokens": 141,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Agar remont muddati cho‘zilsa, iste’molchi quyidagi huquqlarga ega:\n\n- Iste’molchi shartnomada ko‘rsatilgan muddatda ishni bajarish talabini qo'yish huquqiga ega.\n- Iste’molchi bajarilmagan ish uchun kompensatsiya talab qilish huquqiga ega.\n- Iste’molchi boshqa servis markaziga yoki ustaga murojaat qilish huquqiga ega.\n- Iste’molchi zararni qoplashni talab qilish huquqiga ega.",
+          "latency_ms": 620,
+          "tokens": 202,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "error": "Error code: 503 - {'error': {'message': 'moonshotai/kimi-k2-instruct is currently over capacity. Please try again and back off exponentially. Visit https://groqstatus.com to see if there is an active incident.', 'type': 'internal_server_error'}}",
+          "score": 0,
+          "correct": false
+        },
+        "allam-2-7b": {
+          "response": "Шуман, якщак артикул \"Сен\" є формою відновлення інформації, які були використані у Україні, то ваша запитання связано з особистостями та матеріальними законами України. Якщо вам потрібна допомога з матеріальними законами України, якщо б Ви жителі України, то можна використовувати юридичну компанію або спеціаліста, який знає Українську юридичну систему.\n\nЯкщо ваша запитання связано з матеріальними законами України, якщо ви жителі України, то можна звернутися до юридичної компанії або спеціаліста, який знає Українську юридичну систему. Ви можете звернутися до юридичного консультанта, юридичної компанії або юридичного центру, які мають оперативні консультантів, які можуть відповісти на ваші запитання та допомогти вам з юридичними вопросами.\n\nЯкщо ваша запитання связано з особистостю та матеріальними законами України, якщо ви жителі України, то можете звернутися до юридичного консультанта, юридичної компанії або юридичного центру, які мають оперативні консультанти, які можуть відповісти на ваші запитання та допомогти вам з юридичними вопросами. \n\nЯкщо ваша запитання связано з матеріальними законами України, якщо ви жителі України, то можете звернутися до юридичного консультанта, юридичної компанії або юридичного центру, які мають оперативні консультанти, які можуть відповісти на ваші запитання та допомогти вам з юридичними вопросами. \n\nЯкщо ваша запитання связано з особистостю та матеріальними законами України, якщо ви жителі України, то можете звернутися до",
+          "latency_ms": 1130,
+          "tokens": 1123,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-37",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Sotuvchi chek bermasa nima qilish kerak?",
+      "reference_answer": "Iste’molchi yozma shikoyat qilib, nazorat organlariga murojaat etishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Sotuvchi chek bermasa, Davlat soliq qo'mitasiga shikoyat qiling yoki iste'molchilar huquqlarini himoya qilish tashkilotiga murojaat qiling.",
+          "latency_ms": 1323,
+          "tokens": 111,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "claude-sonnet": {
+          "response": "## Sotuvchi chek bermasa nima qilish kerak?\n\n**1. Chekni talab qiling**\nSotuvchidan chek yoki kassa cheki berishini so'rang — bu sizning qonuniy huquqingiz.\n\n**2. Rad etsa — shikoyat yozing**\nQuyidagi joylarga murojaat qilishingiz mumkin:\n\n* **Soliq organlari** (Soliq qo'mitasi) — [soliq.uz](http://soliq.uz) saytida yoki **1198** raqamiga qo'ng'iroq qiling\n* **Iste'molchilar huquqlarini himoya qilish qo'mitasi** — **1090** raqami\n\n**3. Elektron chek tekshiring**\nSotuvchi elektron chek berishi shart — uni **SOLIQ QO'MITASI** ilovasi orqali tekshirishingiz mumkin.\n\n---\n\n> ⚠️ **Eslatma:** Chek bermaslik — bu **soliq qonunchiligini buzish** bo'lib, sotuvchiga **jarima** solinadi (daromadning 50–100% gacha).",
+          "latency_ms": 11517,
+          "tokens": 404,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 33.847612611s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Sotuvchi chek bermasa, sotib olingan mahsulot yoki xizmatning to'lovini tasdiqlovchi hujjatni (quittansiya, kassa cheki yoki boshqa hujjat) talab qilish kerak. Agar sotuvchi buni bermasa, mahsulot yoki xizmatni qabul qilmaslik yoki boshqa rasmiy organlarga shikoyat qilish mumkin.",
+          "latency_ms": 1000,
+          "tokens": 231,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "qwen3-32b": {
+          "response": "Sotuvchi chek bermasa, siz o'sha sotuvchiga rasman arafat qilishingiz kerak. Agar hech qanday nihoyat bo'lmasa, Davlat xaridorlarni himoya qilish xizmatiga murojaat qiling yoki sotuvchini me'yorida sotish uchun jazolash uchun Moliya vazirligi bilan aloqada bo'ling. Shuningdek, xarid qilish haqidagi hujjatlarni (to'lov tizimidan olingan qayd, kamera o'quvlarini) saqlashingiz kerak.",
+          "latency_ms": 1695,
+          "tokens": 566,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Agar sotuvchi chek (kvitansiya) bermasa, quyidagi amallarni bajaring:\n\n1. **Sotuvchidan qayta so‘rang** – chek berish majburiyligini (O‘zbekiston Respublikasi “Iste’molchilar huquqlarini himoya qilish to‘g‘risida”gi qonun) eslatib, yozma ravishda (SMS, elektron pochta) talab qiling.  \n2. **To‘lovni tasdiqlovchi hujjatlarni saqlang** – bank kartasi, naqd pulni qayd etgan kassirning imzoli kvitansiyasi, telefon raqami yoki boshqa dalillar.  \n3. **Mahalliy iste’molchilar huquqlarini himoya qilish bo‘limiga (Ishlab chiqarish‑savdo nazorati) murojaat qiling** – shikoyatni yozma ravishda topshiring, hujjatlarni ilova qiling.  \n4. **Savdo‑xizmat ko‘rsatish markaziga yoki mahalliy politsiyaga (agar firibgarlik holati bo‘lsa) murojaat qiling**.  \n5. **Sudga murojaat qilish** – agar sotuvchi chek berishni rad etishda qat’iy bo‘lsa va zarar ko‘rgan bo‘lsangiz, huquqiy yordam so‘rab, sudda da’vo qilish imkoniyati mavjud.  \n\nBu bosqichlar orqali chek olishni majburiylashtirish va huquqingizni himoya qilish mumkin.",
+          "latency_ms": 1361,
+          "tokens": 606,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Sotuvchi chek bermasa, siz uning nomidan shikoyat qilish uchun mahalliy iste'molchilar huquqlarini himoya qilish tashkilotiga murojaat qilishingiz yoki to'lovni qaytarib olish uchun bank orqali da'vo qilishingiz mumkin. Shuningdek, sotuvchidan tushuntirish talab qiling va agar u chek bermasa, ma'muriy javobgarlikka tortilishi mumkinligini eslatib o'ting.",
+          "latency_ms": 831,
+          "tokens": 173,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Sotuvchi chek bermagan taqdirda, xaridor quyidagi choralarni ko'rishi mumkin:\n\n- Sotuvchiga chek berish to'g'risida murojaat qilish;\n- Agar sotuvchi chek bermasa, xaridor sotish faktini tasdiqlovchi boshqa dalillarni to'plashi mumkin (guvohlar, video yozuvlar, boshqa hujjatlar);\n- Shikoyatni hal qilish uchun iste'molchi huquqlarini himoya qiluvchi tashkilot yoki soliq organiga murojaat qilish.",
+          "latency_ms": 625,
+          "tokens": 192,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "kimi-k2": {
+          "error": "Error code: 503 - {'error': {'message': 'moonshotai/kimi-k2-instruct is currently over capacity. Please try again and back off exponentially. Visit https://groqstatus.com to see if there is an active incident.', 'type': 'internal_server_error'}}",
+          "score": 0,
+          "correct": false
+        },
+        "allam-2-7b": {
+          "response": "Шансан, як мені потрібно відповісти на ваш саксофон саксофоністу, яке використовується для саксофоністів.\n\nВідповідь на ваш саксофон:\n\nСотові чеків в Узбекистані використовуються для оплати інших серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійних серійни",
+          "latency_ms": 1132,
+          "tokens": 1118,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-38",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Internetdan onlayn tarzda telefon sotib oldim. Saytning reklamasida ko‘rsatilgan ma’lumotlar bilan uni etkazib berishganida ma’lumotlar to‘g‘ri kelmas ekan. Bu holatda nima qilish mumkin?",
+      "reference_answer": "Agar tovar (ish, xizmat) haqida noto‘g‘ri yoki yetarli darajada to‘liq bo‘lmagan ma’lumot berilganligi, zarur iste’mol xossalariga ega bo‘lmagan tovar (ish, xizmat) sotib olinishiga sabab bo‘lsa, iste’molchi shartnomani bekor qilishga va o‘ziga etkazilgan zararning qoplanishini talab qilishga haqlidir.\nNoto‘g‘ri reklama oqibatida sotib olingan tovar (ish, xizmat) tufayli iste’molchiga etkazilgan zarar ishlab chiqaruvchi (ijrochi, sotuvchi) tomonidan to‘liq hajmda qoplanishi lozim.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Siz iste'molchi sifatida huquqlaringizni himoya qilish uchun mahsulotni qaytarish yoki almashtirishni talab qilishingiz mumkin. Saytning mijozlarga xizmat ko'rsatish bo'limiga murojaat qiling va muammoni tushuntiring. Agar muammo hal qilinmasa, iste'molchilar huquqlarini himoya qilish tashkilotlariga shikoyat qilishingiz mumkin.",
+          "latency_ms": 2797,
+          "tokens": 210,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Bu holatda quyidagi qadamlarni bajaring:\n\n**1. Sotuvchiga murojaat qiling**\n- Mahsulotni qabul qilganingizdan **14 kun ichida** sotuvchiga yozing yoki qo'ng'iroq qiling\n- Reklama va haqiqiy mahsulot o'rtasidagi farqni **isbotlovchi foto/video** tayyorlang\n\n**2. Mahsulotni qaytarish/almashtirish talabi**\n- O'zbekiston **\"Iste'molchilar huquqlarini himoya qilish to'g'risida\"gi Qonuni** asosida siz noto'g'ri ma'lumot berilgan tovar uchun:\n  - Tovarni **qaytarish** va pulni olish\n  - Yoki **almashtirish** talabini qo'yishga haqlisingiz\n\n**3. Agar sotuvchi rad etsa**\n- **Iste'molchilar huquqlarini himoya qilish qo'mitasiga** shikoyat yuboring\n- Yoki **sudga** murojaat qiling\n\n**4. Dalillarni saqlang**\n- Reklama skrinshoti\n- Buyurtma tasdiqnomasi (chek, SMS, email)\n- Tovar holati (foto/video)\n\n> ⚠️ **Muhim:** Tovarni ochganingizda **videoga oling** — bu asosiy dalil bo'ladi.",
+          "latency_ms": 13539,
+          "tokens": 553,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 21.072750278s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '21s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Siz sotuvchi bilan bog'lanib, mahsulotni qaytarish yoki almashtirish haqida kelishuvga erishishingiz mumkin. Agar kelishuvga erishib bo'lmayotgan bo'lsa, O'zbekiston Respublikasi \"Mehnat va aholini ijtimoiy muhofaza qilish\" vazirligi yoki \"Antimonopoliya\" qo'mitasiga shikoyat qilishingiz mumkin.",
+          "latency_ms": 1092,
+          "tokens": 281,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "1. Sotuvchi bilan aloqaga kiring va etkazib berilgan mahsulotning aynan qaysi xususiyatlari reklama bilan mos kelmasa, tushuntiring.  \n2. Qayta qaytish yoki almashtirish shartlari mavjud bo'lsa, ulardan foydalaning.  \n3. To'lovni plastik kartalarda amalga oshirgan bo'lsangiz, bank yoki to'lov tizimiga shikoyat qiling.  \n4. O'zbekiston Respublikasining Xaridorlarni himoya qilish qonunlariga muvofiq, Respublika xaridorlarni himoya qilish va sifatni nazorat qilish a'zoligiga murojaat qiling.  \n5. Shikoyatlar to'plami yoki rasmiy yozma shikoyat topshirish ham yaxshi.",
+          "latency_ms": 2199,
+          "tokens": 614,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Agar onlayn sotib olingan telefonning tavsifi, texnik xususiyatlari yoki narxi etkazib berilganda reklama bilan mos kelmasa, quyidagi amallarni bajarish tavsiya etiladi:\n\n1. **Sotuvchi bilan bog‘lanish**  \n   - Telefonni yetkazib bergan yoki sotgan saytning mijozlarga xizmat ko‘rsatish bo‘limiga (e‑mail, telefon, onlayn chat) yozma ravishda murojaat qiling.  \n   - Reklama va yetkazib berilgan mahsulot o‘rtasidagi tafovutni, shu jumladan skrinshotlar, foto‑tasvirlar, faktura nusxasini ilova qiling.  \n   - “Mahsulotni tavsifga mos ravishda almashtirish” yoki “to‘liq qaytarib berish va pulni qaytarish” talabini aniq ko‘rsating.\n\n2. **Muddati belgilangan javobni kutish**  \n   - Odatda qonun (O‘zbekiston Respublikasi “Iste’molchilar huquqlarini himoya qilish to‘g‘risida”gi Qonun) bo‘yicha sotuvchi 7 kun ichida javob berishi shart.  \n   - Agar bu muddat ichida javob kelmasa yoki javob rad javob bo‘lsa, keyingi bosqichga o‘ting.\n\n3. **Mahsulotni qaytarish**  \n   - Sotuvchi “mahsulotni almashtirish” yoki “pulni qaytarish” taklif qilmasa, “mahsulotni qaytarish” (return) huquqini amalga oshiring.  \n   - Qaytarish jarayonini (paketni tasdiqlash, jo‘natish raqami) yozma ravishda tasdiqlang.\n\n4. **Rasmiy shikoyat qilish**  \n   - **Iste’molchilar huquqlarini himoya qilish bo‘limi** (Mahalliy hokimiyat, Davlat inspeksiya)ga yozma shikoyat yuboring.  \n   - Shikoyatda: sotib olish sanasi, sayt manzili, reklama matni, yetkazib berilgan mahsulot tafsilotlari, sotuvchiga yuborilgan murojaat nusxalari keltiring.  \n\n5. **Sudga murojaat**  \n   - Agar sotuvchi majburiyatini bajarmasa, “noto‘g‘ri ma’lumot berish” (qalbaki aldash) va “shartnoma shartlarini buzish” asosida **sudga da’vo** berish mumkin.  \n   - Da’vo arizasini tayyorlashda huquqshunos yoki advokat yordami tavsiya etiladi.\n\n6. **Dalillarni saqlash**  \n   - Barcha yozishmalar, skrinshotlar, faktura, to‘lov hujjatlari, qaytarish tasdiqlovchi hujjatlarni bir joyda saqlang – bu keyingi har qanday da’vo yoki tekshiruvda asos bo‘ladi.\n\n**Qisqacha:**  \n1) Sotuvchiga yozma ravishda “mahsulot reklama bilan mos kelmaydi, almashtirish yoki pulni qaytarishni talab qilaman” deb murojaat qiling;  \n2) 7 kun ichida javob kelmasa, iste’molchilarni himoya qilish bo‘limiga shikoyat qiling;  \n3) Sotuvchi javob bermasa yoki rad etsa, mahsulotni qaytarib, pulni qaytarishni talab qiling;  \n4) Hali ham hal бўлмаса, sudga da’vo berish imkoniyatini ko‘rib chiqing.  \n\nBu yo‘nalishlar O‘zbekiston Respublikasi iste’molchilar huquqlarini himoya qilish qonuniga muvofiq amalga oshiriladi.",
+          "latency_ms": 2329,
+          "tokens": 1114,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Sotuvchi bilan bog'lanib, muammoni hal qilishga harakat qiling. Agar muvaffaqiyatga erishmasangiz, iste'molchilar huquqlarini himoya qilish tashkilotiga (Masalan, O'zbekiston Respublikasi Monopoliyaga qarshi kurashish qo'mitasi) shikoyat qilish mumkin. Shuningdek, saytda ko'rsatilgan ma'lumotlarni saqlab qo'ying va huquqiy choralar ko'rish haqida o'ylab ko'ring.",
+          "latency_ms": 1156,
+          "tokens": 235,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Siz quyidagi choralarni ko'rishingiz mumkin:\n\n1. Sotuvchiga murojaat qiling: Telefonni etkazib berishgan sayt yoki sotuvchiga murojaat qilib, reklamada ko'rsatilgan ma'lumotlar bilan haqiqiy telefonning parametrlari o'rtasidagi farq haqida shikoyat qiling.\n\n2. Rad etish huquqini qo'llang: O'zbekiston qonunchiligiga ko'ra, siz onlayn tarzda sotib olingan mahsulotni 14 kun ichida qaytarib berish yoki almashtirish huquqiga egasiz.\n\n3. Shikoyat bildiring: Agar sotuvchi bilan kelishuvga erishilmasa, siz O'zbekiston Respublikasining iste'molchi huquqlarini himoya qilish bo'yicha tashkilotlariga yoki davlat organlariga shikoyat bildirishingiz mumkin.\n\n4. Yuridik yordam so'rang: Agar vaziyat hal etilmasa, yuridik maslahatchidan yordam so'rashingiz mumkin.",
+          "latency_ms": 903,
+          "tokens": 346,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "kimi-k2": {
+          "response": "Onlayn doʻkonga tayangan holda “Oliy va oʼrta maxsus ta’lim vazirligi” (“О весах и единицах измерения”), “Maslahat va huquqiy yordatish” MChJ (Oʻzbekiston) va ZOOMIT LLC (Rossiya) dan olingan hujjat asosida:  \n\n**15 kun ichida sotuvchiga eʼtiroz (shikoyat) yozing.**  \n- Aksiyani foto-video suratga olib, tarqiqlangan (reklama, saifadagi) maʼlumot va oldingan “aksiyasini” taqqoslab taqdim eting.  \n- Sotuvchi 14 kun ichida narxini to‘liq qaytarishi, tovarni almashtirishi yoki uzishga harakat qilishi shart; rad qilsa – eʼtirozni ushbu manzillarga yuboring:  \n  – DIAQ: 70-uz.online, matnli namuna mezonlari (online-forma orqali);  \n  – BMBT, Sotuv va xizmat ko‘rsatish sifatini nazorat qilish inspeksiyasi: e-rijoyat.gov.uz (OʻZ).  \n\n**30 kun ichida gapni hal qilish mumkin bo‘lmay qolsa:**  \n– E-rijoyat.gov.uz orqali “Onlayn-tijorot bo‘limida” nazorat organlariga ariza yozing;  \n– Tovar qiymati 100 BHM (11 mln so‘m) dan kam bo‘lsa – aholi huquqini himoya boʻyicha iqtisodiy sudga; ko‘proq bo‘lsa – ishtirokchilar manzillariga bitta arznoma bilan ahli sudga.  \n– Sud jarayonida video-yozuvlar, e‘tiroz javoblari va “oʻxshash tovar” ekspert xulosasini taqdim eting; natijada: tovarni qaytarib, pulni, yetkazish va sud xarajatlarini undirish haqida hukm chiqadi.  \n\n**Kerakli dalillar:**  \n- Oldindan saqlangan sayt/reklama skrinshotlari;  \n- Sotuvchi bilan suhbat (chat) yozmalari;  \n- Yetkazib berish qat‘inamasidagi tovar tavsifi va sizning foto-tegis.  \n\n**Xarajatsiz:** eʼtiroz, DIAQ orqali sudga qadar yig‘ish, e-rijoyat.gov.uz murojaatlari pulli emas; sudga – 1 BHM (110 ming so‘m) davlat boji, lekin sud sizga yutkazilsa sotuvchi toʻlaydi.",
+          "latency_ms": 6481,
+          "tokens": 811,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Assalamu alaykum,\n\nSen O'zbek tilida moliyaviy va yuridik masalalar bo'yicha maslahat beruvchi assistantsan. O'zbek tilida aniq va qisqa javob beramiz.\n\nSaytning reklamasida ko‘rsatilgan ma'lumotlar bilan uni etkazib berishganida, ma'lumotlar to'g'ri kelmas ekan. Bu, yordam berishga imkoniyatni tavsiya etmiz.\n\nMa'lumotlar ko'rsatishga imkoniyatni tavsiya etmiz:\n\n1. Telefon saytlarini yordam berishga imkoniyatni tavsiya etmiz. O'zbek tilida yordam berishga imkoniyatni tavsiya etmiz.\n2. Telefon saytlarini yordam berishga imkoniyatni tavsiya etmiz. O'zbek tilida yordam berishga imkoniyatni tavsiya etmiz.\n3. Telefon saytlarini yordam berishga imkoniyatni tavsiya etmiz. O'zbek tilida yordam berishga imkoniyatni tavsiya etmiz.\n\nMa'lumotlar ko'rsatishga imkoniyatni tavsiya etmiz:\n\n1. Telefon saytlarini yordam berishga imkoniyatni tavsiya etmiz. O'zbek tilida yordam berishga imkoniyatni tavsiya etmiz.\n2. Telefon saytlarini yordam berishga imkoniyatni tavsiya etmiz. O'zbek tilida yordam berishga imkoniyatni tavsiya etmiz.\n3. Telefon saytlarini yordam berishga imkoniyatni tavsiya etmiz. O'zbek tilida yordam berishga imkoniyatni tavsiya etmiz.\n\nMa'lumotlar ko'rsatishga imkoniyatni tavsiya etmiz:\n\n1. Telefon saytlarini yordam berishga imkoniyatni tavsiya etmiz. O'zbek tilida yordam berishga imkoniyatni tavsiya etmiz.\n2. Telefon saytlarini yordam berishga imkoniyatni tavsiya etmiz. O'zbek tilida yordam berishga imkoniyatni tavsiya etmiz.\n3. Telefon saytlarini yordam berishga imkoniyatni tavsiya etmiz. O'zbek tilida yordam berishga imkoniyatni tavsiya etmiz.\n\nMa'lumotlar ko'rsatishga imkoniyatni tavsiya etmiz:\n\n1. Telefon saytlarini yordam berishga imkoniyatni tavsiya etmiz. O'zbek tilida yordam berishga imkoniyatni tavsiya etmiz.\n2. Telefon saytlarini yordam berishga imkoniyatni tavsiya etmiz. O'zbek tilida yordam berishga imkoniyatni tavsiya etmiz.\n3. Telefon saytlarini yordam berishga imkoniyatni tavsiya etmiz. O'zbek tilida yordam berishga imkoniyatni tavsiya etmiz.\n\nMa'lumotlar ko'rsatishga imkoniyatni tavsiya etmiz:\n\n1. Telefon saytlarini yordam berishga imkoniyatni tavsiya etmiz. O'zbek tilida yordam berishga imkoniyatni tavsiya etmiz.\n2. Telefon saytlarini yordam berishga imkoniyatni tavsiya etmiz. O'zbek tilida yordam berishga imkon",
+          "latency_ms": 1139,
+          "tokens": 1180,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-39",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Chegirma davrida ham iste’molchi huquqlari saqlanadimi?",
+      "reference_answer": "Ha, chegirma mavjudligi kafolat va qaytarish huquqlarini bekor qilmaydi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Ha, chegirma davrida ham iste'molchi huquqlari saqlanadi.",
+          "latency_ms": 2138,
+          "tokens": 102,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Chegirma davrida iste'molchi huquqlari\n\n**Ha, chegirma davrida ham iste'molchi huquqlari to'liq saqlanadi.**\n\nO'zbekiston Respublikasining **\"Iste'molchilarning huquqlarini himoya qilish to'g'risida\"gi Qonuniga** ko'ra:\n\n- **Sifat kafolati** — chegirmali tovar ham standartlarga javob berishi shart\n- **Almashtirish/qaytarish huquqi** — sifatsiz tovarni qaytarish yoki almashtirish mumkin\n- **To'liq ma'lumot olish huquqi** — sotuvchi tovar haqida to'g'ri ma'lumot berishi shart\n- **Kafolat muddati** — chegirmali bo'lsa ham kafolat muddati saqlanadi\n\n> ⚠️ **Muhim:** \"Chegirmali tovar qaytarilmaydi\" yoki \"kafolat yo'q\" degan yozuvlar **qonunga zid** va haqiqiy emas.\n\nAgar huquqingiz buzilsa, **iste'molchilar huquqlarini himoya qilish organlari**ga murojaat qilishingiz mumkin.",
+          "latency_ms": 11489,
+          "tokens": 439,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 6.480634839s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Ha, chegirma davrida ham iste’molchi huquqlari saqlanadi.",
+          "latency_ms": 448,
+          "tokens": 140,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Chegirma davrida ham iste'molchi huquqlari qonunlarda belgilangan tartibda saqlanadi. Mahsulot sifati yoki xatolari bo'lsa, qaytarish, almashtirish yoki qaytish huquqi mavjud bo'ladi. Kafolat muddati sotuv sanasidan boshlanadi.",
+          "latency_ms": 5962,
+          "tokens": 482,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gpt-oss-120b": {
+          "response": "Ha, chegirma davrida ham iste’molchi huquqlari to‘liq saqlanadi. Chegirma narxi mahsulot yoki xizmatning sifatiga, kafolatga, qaytarish va almashtirish huquqlariga ta’sir qilmaydi; iste’molchi qonuniy kafolatlar, qaytarish, almashtirish va boshqa huquqlaridan foydalanishda cheklanishi yo‘q.",
+          "latency_ms": 836,
+          "tokens": 314,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Ha, chegirma davrida ham iste'molchi huquqlari saqlanadi. Chegirmada sotilgan tovarlar ham sifatli bo'lishi shart. Agar tovar sifatli bo'lmasa, iste'molchi huquqlarini himoya qilish qonuniga asosan savdo do'koni uni qaytarib olish yoki almashtirish shart.",
+          "latency_ms": 1278,
+          "tokens": 165,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-scout": {
+          "response": "Ha, chegirma davrida ham iste’molchi huquqlari saqlanadi.",
+          "latency_ms": 373,
+          "tokens": 106,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Albatta iste’molchi huquqlari har doim saqlanadi, chegirma davrida ham.",
+          "latency_ms": 1369,
+          "tokens": 136,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ готов помочь вам с вопросами и задачами в области права и международных вопросов. \n\nВаш вопрос касается защиты прав интересов в ситуации с чегирмами. \n\nОбратите внимание, что я говорю по-узбекски. Вот краткое ответ на ваш вопрос:\n\nЕсли вы являетесь интересующимся чегирмами и имеете защищаемые права, важно знать, что в Узбекистане существуют законодательные акты, которые защищают права интересов чегирмами. Однако, детали и конкретные случаи могут зависеть от конкретной ситуации и законодательства в вашем месте.\n\nЕсли вы страдаете из-за чегирки или имеете вопросы о защите ваших прав, рекомендую обратиться к юристам или органам защиты прав человека в вашем месте. Они смогут предоставить конкретную информацию и помочь вам с защитой ваших прав. Если вы хотите обсудить свои ситуации и получить конкретные советы, я могу помочь перевести ваше сообщение на русский язык и предоставить некоторые общие советы. Однако, для получения конкретной информации и помощи рекомендуется обратиться к юристам или органам защиты прав человека в вашем месте. \n\nЕсли вы хотите обсудить свою ситуацию и получить конкретные советы, я могу перевести ваше сообщение на русский язык. Но для получения конкретной информации и помощи рекомендуется обратиться к юристам или органам защиты прав человека в вашем месте. \n\nЕсли вы хотите обсудить свою ситуацию и получить конкретные советы, я могу перевести ваше сообщение на русский язык. Однако, для получения конкретной информации и помощи рекомендуется обратиться к юристам или органам защиты прав человека в вашем месте. \n\nЕсли вы хотите обсудить свою ситуацию и получить кон",
+          "latency_ms": 1635,
+          "tokens": 1126,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-40",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Onlayn xaridda qaytarish tartibi qanday?",
+      "reference_answer": "Masofaviy savdoda belgilangan muddatda shartnoma bekor qilinib, to‘lov qaytarilishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Onlayn xaridda qaytarish tartibi sotuvchining siyosatiga bog'liq. Odatda, mahsulotni olgan kundan boshlab 14 kun ichida qaytarish mumkin. Mahsulot asl holatda va qadoqda bo'lishi kerak. Qaytarish uchun sotuvchi bilan bog'lanib, kerakli hujjatlarni to'ldirish lozim.",
+          "latency_ms": 2883,
+          "tokens": 158,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Onlayn Xaridda Qaytarish Tartibi\n\n**O'zbekiston qonunchiligiga ko'ra** (Iste'molchilar huquqlarini himoya qilish to'g'risidagi Qonun):\n\n### Asosiy qoidalar:\n- **14 kun** ichida tovarni qaytarish huquqingiz bor (ishlatilmagan holda)\n- Tovar **original qadoqda**, **chek yoki hujjat** bilan qaytarilishi kerak\n\n### Qaytarish bosqichlari:\n1. **Do'kon/sayt bilan bog'laning** — sotuvchining qo'llab-quvvatlash xizmatiga murojaat qiling\n2. **Ariza yozing** — qaytarish sababini ko'rsating\n3. **Tovarni yuboring** — kuryer orqali yoki o'zingiz olib boring\n4. **Pul qaytarilishini kuting** — odatda **10–30 kun** ichida\n\n### Muhim nuanslar:\n- ✅ Sifatsiz tovar bo'lsa — **sotuvchi xarajatlarni to'laydi**\n- ✅ Shunchaki ko'ngilga to'q kelmasa — **xarajatni xaridor to'laydi**\n- ❌ Oziq-ovqat, ichki kiyim, dasturiy ta'minot — **qaytarilmaydi**\n\n### Muammo chiqsa:\n**Iste'molchilar huquqlarini himoya qilish agentligiga** yoki sudga murojaat qilishingiz mumkin.",
+          "latency_ms": 15212,
+          "tokens": 536,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 52.623735258s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '52s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Onlayn xaridda qaytarish tartibi quyidagicha:\n\n1. Mahsulot yetkazilgan kundan boshlab 14 kun ichida sotuvchi bilan bog'laning.\n2. Qaytarish sababini va mahsulotning holatini bildirib, qaytarish arizasi yuboring.\n3. Sotuvchi tomonidan qaytarish sharti va tartibi haqida ma'lumot oling.\n4. Mahsulotni qaytarish uchun kerakli hujjatlar (chek, garantiya va boshqalar) tayyorlang.\n5. Mahsulotni qaytarish uchun sotuvchi tomonidan ko'rsatilgan manzilga jo'natib, jo'natilganligi haqidagi ma'lumotni sotuvchiga xabar qiling.\n6. Qaytarilgan mablag' sotuvchi tomonidan 14 kun ichida qaytariladi.",
+          "latency_ms": 1965,
+          "tokens": 349,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Onlayn xarid qaytarish tartibi quyidagicha:  \n1. **Do'kon qaytarish shartlarini tekshiring** (muddat, shart-shartlar).  \n2. **Mijoz xizmatiga murojaat qiling** (e-mail, chat yoki telefon qilish orqali).  \n3. **Qaytarishni tasdiqlang** (qaytarish raqami yoki yo'nalishlar beriladi).  \n4. **Mahsulotni original qutisida qaytaring** (tushlantirilgan, yengil, barcha qo'shimchalar bilan).  \n5. **Qaytarishni kuzatish** (qaytarish raqamini saqlang).  \n6. **Qaytish yoki almashtirishni kuting** (qaytarish muddati 5-15 kunni tashkil qiladi).  \n\nEslatma: Do'kon qaytarish shartlariga e'tibor qaratilishi kerak.",
+          "latency_ms": 1955,
+          "tokens": 591,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Onlayn xariddan mahsulotni qaytarish tartibi odatda quyidagicha amalga oshiriladi:\n\n1. **Sotuvchining qaytarish siyosatini tekshiring** – veb‑saytda “Qaytarish” yoki “Return Policy” bo‘limida qaytarish muddatlari, shartlari va talab qilinadigan hujjatlar ko‘rsatilgan bo‘ladi.\n\n2. **Qaytarish muddatiga rioya qiling** – ko‘pincha 14‑30 kun ichida mahsulotni qaytarish talab qilinadi. Muddat o‘tib ketgan bo‘lsa, qaytarish rad etilishi mumkin.\n\n3. **Mahsulotni tayyorlang**  \n   - Mahsulotni original qadoq, paket, qo‘shimcha aksessuarlar va hujjatlari (faktura, qadoq ichidagi qo‘llanma) bilan birga tayyorlang.  \n   - Mahsulot zarar ko‘rmagan, ishlatilmagan (yoki faqat sinov maqsadida) bo‘lishi kerak.\n\n4. **Qaytarish so‘rovini yuboring**  \n   - Sotuvchining mijozlarga xizmat ko‘rsatish bo‘limiga (email, onlayn forma, chat) qaytarish niyatini bildiring.  \n   - Buyurtma raqami, mahsulot nomi, qaytarish sababi va kerak bo‘lsa fotosuratlarni qo‘shing.\n\n5. **Qaytarish etiketi yoki raqamli kodni oling**  \n   - Sotuvchi sizga qaytarish etiketi (prepaid shipping label) yoki pochtaga yuborish uchun manzil va kodni beradi.\n\n6. **Mahsulotni jo‘natish**  \n   - Etiketni paketga yopishtiring, pochtaga yoki kuryerga topshiring.  \n   - Jo‘natish kvitansiyasini saqlang – bu qaytarish jarayonini kuzatish va ehtimoliy muammolarni hal qilishda kerak bo‘ladi.\n\n7. **Qaytarish tasdiqini kuting**  \n   - Sotuvchi mahsulotni qabul qilgandan so‘ng, odatda 3‑7 ish kuni ichida qaytarish tasdiqini va pulni qaytarish yoki almashtirish jarayonini boshlaydi.  \n   - Qaytarish tasdiqini email yoki hisobingizda ko‘rishingiz mumkin.\n\n8. **Pulni qaytarish yoki almashtirish**  \n   - Qaytarish tasdiqlangandan so‘ng, sotuvchi sizga to‘lov usuliga (karta, PayPal, bank o‘tkazmasi) qarab pulni qaytaradi yoki yangi mahsulotni yuboradi.  \n   - Qaytarish summasiga yetkazib berish xarajatlari (agar sotuvchi tomonidan qoplanmagan bo‘lsa) ham kirishi mumkin.\n\n**Eslatma:** Ba’zi mahsulotlar (innerwear, kosmetika, maxsus buyurtmalar, elektronika) uchun maxsus cheklovlar yoki qaytarilmaslik siyosati bo‘lishi mumkin. Shuning uchun har doim sotuvchining aniq qaytarish shartlarini o‘qib chiqing.",
+          "latency_ms": 1952,
+          "tokens": 886,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Odatda, onlayn xaridlarda qaytarish tartibi quyidagicha: \n1. Sotuvchi bilan bog'laning: Xarid qilingan mahsulotni qaytarish istagini bildiring.\n2. Qaytarish sababini tushuntiring.\n3. Qaytarish shartlarini muhokama qiling: Qaytarish muddati, qaytarish usuli (pochta orqali yoki shaxsan topshirish).\n4. Qaytarish jarayonini bajaring: Mahsulotni belgilangan manzilda yoki pochta orqali qaytaring.\n5. Pulni qaytarib olish: Sotuvchi qaytarilgan mahsulotni qabul qilib, pulni qaytaradi.",
+          "latency_ms": 1631,
+          "tokens": 231,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Onlayn xaridda qaytarish tartibi: \n\n1. Mijoz xaridni amalga oshiradi va tovarni oladi.\n2. Agar tovar sifatsiz yoki noto'g'ri bo'lsa, mijoz sotuvchiga murojaat qiladi.\n3. Sotuvchi qaytarish talabini ko'rib chiqadi va qaror qabul qiladi.\n4. Agar qaytarish ma'qullansa, mijoz tovarni qaytarib beradi.\n5. Sotuvchi mijozga to'lovni qaytarib beradi yoki almashtirish imkonini beradi.",
+          "latency_ms": 635,
+          "tokens": 198,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Sotilgan tovarni 14 kun ichida qaytarib pulni qayta olish mumkin. Tovar ushlanmagan, taqdirmagan va sotuvchini qaytarish huuqiga ega ekanligini bildiruvchi belgisi bo'lishi shart.",
+          "latency_ms": 1387,
+          "tokens": 170,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шуман, як мені потрібно відповісти на вашу спиральну справу про онлайн-курсовий процес. Я буду використовувати означення для Узбекської мови.\n\nВаша спиральна справа связана з описом процесу курсового заняття в онлайн-режимі. Дозволюся викласти вам короткий обзор цього процесу.\n\nОнлайн-курсовий процес включає наступні шаги:\n\n1. Вибір курсу: Виберіть курс, який вам відповідає, і зареєструйтесь на його. Ви можете вибрати курси з разом виконавання завдань, контрольних завдань та курсових проектів.\n\n2. Доступ до матеріалів: Потім ви отримаєте доступ до матеріалів курсу, включаючи лекції, викладки, додатки та додаткові матеріали.\n\n3. Виконання завдань: Виконати завдання, які визначено у курсі. Ви можете виконати завдання відповідно до вказаних правил та правилів.\n\n4. Відповідність курсу: Виконання завдань відповідаючи курсу, виконання контрольних завдань та курсових проектів.\n\n5. Контрольний процес: Ваші виконання будуть контролюватися за допомогою контрольних завдань та курсових проектів. Виконання вашого курсу буде контролюватися за допомогою контрольних завдань та курсових проектів.\n\n6. Видалення контрольних завдань та курсових проектів: Ваші виконання будуть оцінюватися за допомогою контрольних завдань та курсових проектів.\n\n7. Подача курсового проекта: Ваш курсовий проект буде оцінюватися за допомогою контрольних завдань та курсових проектів.\n\n8. Проведення контролю: Ваші виконання будуть контролюватися за допомогою контрольних завдань та курсових проектів.\n\n9. Подача курсово",
+          "latency_ms": 1122,
+          "tokens": 1120,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-41",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Mahsulotni olganligimiz to‘g‘risida chek bor, ammo kafolat muddati talonda belgilanmagan. Do‘kon egasi 10 kun ichida kelsangiz almashtirib beraman degan edi. Bu holat qonun bilan tartibga solinganmi?",
+      "reference_answer": "Nuqsonli tovar sotilganda iste’molchi, agar bu hol shartnoma tuzish paytida aytib o‘tilmagan bo‘lsa, almashtirib berishni talab qilishga haqli. Kafolat muddati va yaroqlilik muddati belgilanmagan tovarlar bo‘yicha 6 oy mobaynida amalga oshirilishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Ha, O'zbekiston qonunchiligiga ko'ra, iste'molchi mahsulotni olganidan keyin 14 kun ichida uni almashtirish yoki qaytarish huquqiga ega, agar mahsulot foydalanilmagan va tovar ko'rinishi saqlangan bo'lsa. Chek va kafolat taloni bu jarayonda yordam beradi.",
+          "latency_ms": 3873,
+          "tokens": 201,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Javob\n\nHa, bu holat **O'zbekiston qonunchiligi bilan tartibga solingan**.\n\n### Asosiy normativ hujjatlar:\n- **\"Iste'molchilarning huquqlarini himoya qilish to'g'risida\"gi Qonun** (1996-yil, keyingi o'zgartirishlar bilan)\n\n### Qonun nimani belgilaydi:\n\n**Kafolat muddati ko'rsatilmagan hollarda:**\n- Tovar sifatiga **qonuniy kafolat muddati — 2 yil** (ko'chmas mulkka — 5 yil)\n- Do'kon egasining **\"10 kun\"** degan og'zaki va'dasi **qonuniy talabdan past** bo'lib, u sizning huquqlaringizni cheklay olmaydi\n\n### Sizning huquqlaringiz:\n✅ Kafolat taloni bo'lmasa ham **chek asosida** tovarni almashtirish yoki pul qaytarish talabi qo'yishingiz mumkin\n✅ **15 kun ichida** sifatsiz tovar aniqlansa — almashtirishni talab qilishingiz mumkin\n✅ Do'kon egasi rad etsa — **iste'molchilar huquqlarini himoya qilish bo'limiga** yoki **sudga** murojaat qilishingiz mumkin\n\n### Tavsiya:\nChekni **saqlab qoling** va do'kon bilan muloqotni yozma (xabar, email) tarzida olib boring — bu dalil bo'lib xizmat qiladi.",
+          "latency_ms": 14981,
+          "tokens": 596,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 36.108202601s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "O'zbekiston Respublikasining \"Kafolat va garantiya to'g'risida\"gi qonuni talablariga ko'ra, sotuvchi mahsulotning sifati kafolati muddatini belgilashi shart. Do'kon egasining 10 kun ichida almashtirib berish haqidagi so'zi qonuniy emas, chunki bu muddat qonunda belgilangan muddatdan qisqaroq.",
+          "latency_ms": 3482,
+          "tokens": 286,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Ushbu holat qonun bilan tartibga solinmagan. Do'kon egasi o'z shartlarini (10 kun) belgilashi mumkin, lekin bu shartlar qonunlarga zid bo'lmasa bo'ladi. Kafolat muddati mahsulot xususiyatlariga bog'liq bo'lib, chekda belgilanmasa ham, qonun tomonidan talab qilinmaydi. Mahsulotni almashtirish shartlari do'konning o'z qoidalariga asoslanadi.",
+          "latency_ms": 2701,
+          "tokens": 576,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Ҳа, бундай ҳолат Ўзбекистон Республикаси “Истеъмолчилар ҳуқуқларини ҳимоя қилиш тўғрисида”ги қонуни ва Мажбурий гражданлик кодексида тартибга солинган.\n\n1. **Кафолат муддатининг минимал даври** – товар учун камида 2 йил (ёки сотувчининг шартномада бошқача белгиланган бўлса, шу муддат). Агар чекда ёки товар ҳужжатларида кафолат муддати кўрсатилмаса, қонун бўйича у 2 йилни ташкил этади.\n\n2. **Товарни алмаштириш** – сотувчи “10 кун ичида келиб, алмаштириб беринг” деганида, бу қонун томонидан рухсат этилган “ихтиёрий” таклифдир. У шунингдек, истеъмолчининг қонуний 2 йиллик кафолатидан ҳам фойдаланиш ҳуқуқини сақлаб қолади. Яъни, агар товар 2 йил давомида дефектли бўлса, истеъмолчи таъмир, алмаштириш ёки пулни қайтаришни талаб қилиш ҳуқуқига эга.\n\nШунинг учун, до‘кон эгасининг 10 кун ичида алмаштириш таклифини қабул қилишингиз мумкин, лекин қонунда белгиланган камида 2 йиллик кафолатдан ҳам фойдаланишингиз мумкин. Агар товар 10 кундан кейин ҳам дефектли бўлса, сизга қонуний кафолат асосида таъмир, алмаштириш ёки қайтаришни талаб қилиш ҳуқуқи бор.",
+          "latency_ms": 2075,
+          "tokens": 760,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "Sotuvchi bilan kelishilgan shartlar va kafolat muddatlari O‘zbekiston Respublikasining \"Iste'molchilar huquqlarini himoya qilish to‘g‘risida\"gi Qonuni bilan tartibga solinadi. Kafolat muddati belgilanmagan mahsulot sifatli hisoblanadi va uni almashtirish yoki qaytarib berish kafolat muddati mavjud bo‘lgan tovarlarga nisbatan qo'llaniladigan qoidalarga bo'ysunadi. Agar sotuvchi 10 kun ichida almashtirishga rozi bo'lgan bo'lsa, ushbu shartnomaga rioya qilishi shart. Iste'molchi kafolat muddati ichida mahsulotdagi nuqsonlarni aniqlaganida, O‘zbekiston qonunchiligiga ko‘ra, u almashtirish yoki qaytarib berishni talab qilish huquqiga ega. Batafsil ma'lumot uchun huquqiy manbalarga murojaat qilish tavsiya etiladi.",
+          "latency_ms": 2840,
+          "tokens": 345,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "O'zbekiston Respublikasi \"Iste'molchilarning huquqlarini himoya qilish to'g'risida\"gi qonunining 20-moddasiga ko'ra, agar tovarning kafolat muddati belgilanmagan bo'lsa, iste'molchi 10 kun ichida almashtirish, ta'mirlash yoki qaytarish huquqiga ega. Do'kon egasining og'zaki va'dasi qonuniy kuchga ega emas, lekin siz talabni bildirish huquqiga egasiz.",
+          "latency_ms": 656,
+          "tokens": 244,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Yo‘q, bu qonun bilan tartibga solingan emas. Mahsulot kafolat muddati belgilanmagan bo‘lsa, o‘rnatilgan kafolat muddati amal qiladi (ko‘pincha 2 yil). 10 kunlik shart do‘konning o‘z sharti, lekin u qonuniy jihatdan majburiy emas.",
+          "latency_ms": 2212,
+          "tokens": 255,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант Узбекистан: Бушланган машхолт маркетинговый фактор этой ситуации может быть связан с недостаточным количеством клиентов или неэффективным методами рекламы или продаж. В таком случае, вам может потребоваться увеличить количество клиентов или изменить методы рекламы и продаж.\n\nЕсли месяцев 10 спустя ваша компания все еще не смогла получить достаточно клиентов, чтобы удовлетворить ваши требования к качеству продаж, вам может потребоваться рассмотреть следующие варианты:\n\n1. Увеличьте масштаб или масштабируйте ваше предприятие, чтобы увеличить количество клиентов. Это может включать в себя расширение акционерного комитета, увеличение количества сотрудников или расширение вашей аудитории.\n\n2. Измените методы рекламы и продаж. Вам может потребоваться изменить стратегию рекламы или изменить целевую аудиторию. Вам может потребоваться использовать другие методы рекламы, такие как мероприятия, мероприятия или информационные материалы, чтобы привлечь больше клиентов.\n\n3. Обратите внимание на качество продукта или услуги, предоставляемые вашей компанией. Вам может потребоваться улучшить качество вашего продукта или услуги, чтобы увеличить ваше количество покупателей и увеличить вашу доходность.\n\n4. Обратите внимание на маркетинговые и методы продаж. Вам может потребоваться изменить маркетинговые методы или продажные методы, чтобы увеличить количество клиентов и увеличить вашу доходность.\n\n5. Обратите внимание на маркетинговые материалы или информационные материалы, которые вы используете для привлечения клиентов. Вам может потребоваться изменить материалы или информационные материалы, чтобы увеличить количество клиентов и уве",
+          "latency_ms": 5650,
+          "tokens": 1183,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-42",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Kafolat muddati ichida buzilgan buyum uchun kim javobgar?",
+      "reference_answer": "Ishlab chiqaruvchi yoki sotuvchi kafolat majburiyatiga muvofiq bepul bartaraf etishi yoki almashtirishi kerak.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Kafolat muddati ichida buzilgan buyum uchun sotuvchi yoki ishlab chiqaruvchi javobgar.",
+          "latency_ms": 1028,
+          "tokens": 99,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Kafolat muddati ichida buzilgan buyum uchun javobgarlik\n\n**Sotuvchi yoki ishlab chiqaruvchi javobgar** bo'ladi.\n\n### Asosiy qoidalar:\n\n- **Sotuvchi** — agar nuqson sotib olish paytida mavjud bo'lgan yoki kafolat muddatida yuzaga kelgan bo'lsa\n- **Ishlab chiqaruvchi** — agar nuqson ishlab chiqarish jarayonidagi xatolardan kelib chiqqan bo'lsa\n\n### Xaridor nimaga haqli:\n\n✅ Buyumni **bepul ta'mirlash**\n✅ **Almashtirish** (o'xshash mahsulotga)\n✅ **Pul qaytarish**\n✅ Narx **kamaytirishni** talab qilish\n\n### Muhim shart:\n\nNuqson **xaridorning aybi bilan** yuzaga kelmagan bo'lishi kerak (noto'g'ri ishlatish, mexanik shikast va hokazo bundan mustasno).\n\n> **Huquqiy asos:** O'zbekiston Respublikasining \"Iste'molchilarning huquqlarini himoya qilish to'g'risida\"gi Qonuni (18, 19-moddalar).",
+          "latency_ms": 12651,
+          "tokens": 456,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 19.676709192s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Kafolat muddati ichida buzilgan buyum uchun sotuvchi yoki ishlab chiqaruvchi javobgar bo'ladi.",
+          "latency_ms": 557,
+          "tokens": 153,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Kafolat muddati ichida buzilgan buyum uchun sotuvchi javobgar bo'lib, undan tuzatish, almashtirish yoki qaytim berish so'raladi.",
+          "latency_ms": 938,
+          "tokens": 323,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Kafolat muddati ichida buyum buzilgan bo‘lsa, javobgarlik kafolatni kim berganiga bog‘liq:\n\n- **Sotuvchi** (agar kafolatni u berayotgan bo‘lsa) – buzilgan buyumni ta’mirlash, almashtirish yoki pulini qaytarish majburiyatiga ega.  \n- **Ishlab chiqaruvchi** (agar kafolat ishlab chiqaruvchidan kelib chiqqan bo‘lsa) – shuningdek, ta’mirlash, almashtirish yoki qaytarish majburiyatini bajaradi.  \n\nDemak, kafolat shartnomasida ko‘rsatilgan tomon (sotuvchi yoki ishlab chiqaruvchi) buzilgan buyum uchun javobgardir.",
+          "latency_ms": 879,
+          "tokens": 393,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Sotuvchi javobgar.",
+          "latency_ms": 1075,
+          "tokens": 88,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Kafolat muddati ichida buzilgan buyum uchun sotuvchi yoki ishlab chiqaruvchi javobgar hisoblanadi.",
+          "latency_ms": 418,
+          "tokens": 106,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Sotuvchi javobgar.",
+          "latency_ms": 1240,
+          "tokens": 112,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шундук: Кафолат муддати ичида бузилган буйум эске оширган кем дяйар?\n\nОңозбек тілінде аңылдық жаңалық алынса, толгойдан алысам. Саволда толгойдан алмаймыз. Башга шафатта эмеске жоқ.",
+          "latency_ms": 519,
+          "tokens": 263,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-43",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Tovarni almashtirish uchun qanday shartlar kerak?",
+      "reference_answer": "Tovar foydalanilmagan bo‘lishi, to‘liq butligi saqlangan va belgilangan muddatdan kech bo‘lmasligi kerak.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Tovarni almashtirish uchun quyidagi shartlar kerak: tovarning asl holati saqlangan bo'lishi, xarid cheki yoki boshqa tasdiqlovchi hujjat mavjud bo'lishi, almashtirish muddati (odatda 14 kun) o'tmagan bo'lishi.",
+          "latency_ms": 2069,
+          "tokens": 137,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "claude-sonnet": {
+          "response": "## Tovarni Almashtirish Shartlari\n\nO'zbekiston qonunchiligiga ko'ra (**\"Iste'molchilarning huquqlarini himoya qilish to'g'risida\"gi Qonun**), tovarni almashtirish uchun quyidagi shartlar talab etiladi:\n\n### Asosiy shartlar:\n- **Sifatsiz tovar** — tovar nuqsonli yoki e'lon qilingan sifatga mos kelmasa\n- **Muddati** — tovar sotib olinganidan **14 kun** ichida (oziq-ovqat bo'lmagan tovarlar uchun)\n- **Holati** — tovar **ishlatilmagan**, savdo ko'rinishi, yorliqlari va qadoqlanishi **saqlanган** bo'lishi kerak\n- **Hujjat** — **chek yoki boshqa to'lov hujjati** mavjud bo'lishi kerak\n\n### Almashtirish sabablari:\n- Tovar mos kelmadi (o'lchami, rangi, modeli)\n- Tovar nuqsonli chiqdi\n- Tovar e'lon qilingan xususiyatlarga mos kelmaydi\n\n### Muhim:\n> Agar o'xshash tovar mavjud bo'lmasa — **pul qaytarilishi** yoki **boshqa tovar taklif etilishi** shart.\n\nQo'shimcha savollar bo'lsa, aniqlashtiring! 😊",
+          "latency_ms": 14004,
+          "tokens": 509,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 5.513784614s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '5s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Tovarni almashtirish uchun quyidagi shartlar kerak: \n1. Tovar sifati yomon bo'lishi yoki nuqsonli bo'lishi.\n2. Tovar haqidagi ma'lumotda noto'g'ri ma'lumot berilgan bo'lishi.\n3. Tovar yetkazib berilganidan keyin 14 kun ichida almashtirish talab qilingan bo'lishi.\n4. Tovar uchun almashtirish uchun ariza berilgan bo'lishi.\n5. Tovar sotuvchi tomonidan almashtirish sharti belgilangan bo'lishi.",
+          "latency_ms": 1119,
+          "tokens": 278,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Tovarni almashtirish uchun quyidagilarga e'tibor qaratiladi:  \n1. Tovar defektli yoki kelishilgan shartlarga javob bermasa;  \n2. Xarid qilingan kundan 14 kundan o'tmasa;  \n3. Tovar boshlang'ich holatida, xarid qilingan do'kon tomonidan berilgan hamma qutisi, hujmi va hujjatlari bilan qaytarilgan bo'lsa;  \n4. Xarid qilingan hujjat (chek, savdo qaydnomasi) mavjud bo'lsa.  \nShartlar do'konning qaytish shartlari hamda O'zbekiston Respublikasining Xaridorlarni himoya qilish qonunlariga mos kelishi kerak.",
+          "latency_ms": 1899,
+          "tokens": 601,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gpt-oss-120b": {
+          "response": "Tovarni almashtirish (almashtirish huquqi) quyidagi shartlarga asoslanadi:\n\n1. **Mahsulotning nuqsoni** – sotib olingan tovarda ishlab chiqarish yoki material nuqsoni bo‘lishi kerak (yoki tavsifga mos kelmasligi).  \n2. **Nuqsonni aniqlash muddati** – nuqsonni sotib olgan kundan boshlab **14 kun** ichida (iste’molchi huquqini amalga oshirishi) yoki qonunda belgilangan boshqa muddatda (masalan, 2 yil ichida) bildirish lozim.  \n3. **Tovarni qaytarish** – nuqsonli tovarni sotuvchiga yoki ishlab chiqaruvchiga asl holatda, barcha hujjatlari (chek, faktura) bilan birga qaytarish.  \n4. **Almashtirish talabi** – iste’molchi nuqsonli tovarni o‘xshash yoki teng sifatli yangi tovar bilan almashtirishni talab qilishi mumkin (agar bunday tovar mavjud bo‘lsa).  \n5. **Sotuvchi yoki ishlab chiqaruvchining roziligi** – ular nuqsonni tasdiqlab, almashtirishni tasdiqlashlari kerak; agar buni rad etsa, iste’molchi sudga murojaat qilishi mumkin.  \n\nAgar yuqoridagi shartlar bajarilsa, iste’molchi nuqsonli tovarni yangi, sog‘lom tovar bilan almashtirish huquqiga ega bo‘ladi.",
+          "latency_ms": 1169,
+          "tokens": 524,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Tovarni almashtirish uchun quyidagi shartlar bajarilishi kerak: tovarni sotib olinganligi to'g'risida hujjat (chek yoki kvitansiya) mavjud bo'lishi, tovarni almashtirish muddati (odatda 14 kun) ichida bo'lishi va tovarning o'zida nuqson yoki kamchilik bo'lmasligi, ammo ayrim hollarda kafolatli ta'mirlash yoki almashtirish ham mumkin. Shuningdek, sotuvchi yoki ishlab chiqaruvchi tomonidan belgilangan qo'shimcha shartlar ham bo'lishi mumkin.",
+          "latency_ms": 1882,
+          "tokens": 202,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Tovarni almashtirish uchun tomonlarning o'zaro roziligi va quyidagi shartlar kerak: \n\n1. Tomonlarning malum bir shartlarda kelishuvi.\n2. Tovarlarning teng qiymatga ega ekanligi.\n3. Bitimning yozma shaklda rasmiylashtirilishi.",
+          "latency_ms": 507,
+          "tokens": 146,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "kimi-k2": {
+          "response": "Tovarni almashtirish uchun quyidagi shartlar kerak:\n- Sotib olinganidan keyin 14 kun ichida\n- To'liq saqlangan tovar va uning zaxkasi\n- Sotuv cheki yoki online buyurtma tasdiqi\n- Tovarning sifati buzilmagan boʻlishi, shuningdek, birinchi sotuv holatida boʻlishi",
+          "latency_ms": 1037,
+          "tokens": 199,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "allam-2-7b": {
+          "response": "Шундук: Товарни алмаштириш формаласам буйруган мясляклар мянбясинин адына мяшавалашмак шяклиндя якдашларла бярабяр олмалыдыр. Бу мяшавалы мянбядя якдашларла бярабяр олмайарамышдыр.\n\nЯкдашларла бярабяр олмайарамышдыр, эюрцнцр:\n\n1. Товарлар якдашларла бярабяр олмайарамышдыр. Бу мяшавалы мянбядя якдашларла бярабяр олмайарамышдыр.\n2. Товарлар якдашларла бярабяр олмайарамышдыр. Бу мяшавалы мянбядя якдашларла бярабяр олмайарамышдыр.\n3. Товарлар якдашларла бярабяр олмайарамышдыр. Бу мяшавалы мянбядя якдашларла бярабяр олмайарамышдыр.\n\nБу мяшаваларда якдашларла бярабяр олмайарамышдыр, эюрцнцр:\n\n1. Товарлар якдашларла бярабяр олмайарамышдыр.\n2. Товарлар якдашларла бярабяр олмайарамышдыр.\n3. Товарлар якдашларла бярабяр олмайарамышдыр.\n\nБу мяшаваларда якдашларла бярабяр олмайарамышдыр, эюрцнцр:\n\n1. Товарлар якдашларла бярабяр олмайарамышдыр.\n2. Товарлар якдашларла бярабяр олмайарамышдыр.\n3. Товарлар якдашларла бярабяр олмайарамышдыр.\n\nБу мяшаваларда якдашларла бярабяр олмайарамышдыр, эюрцнцр:\n\n1. Товарлар якдашларла бярабяр олмайарамышдыр.\n2. Товарлар якдашларла бярабяр олмайарамышдыр.\n3. Товарлар якдашларла бярабяр олмайарамышдыр.\n\nБу мяшаваларда якдашларла бярабяр олмайарамышдыр, эюрцнцр:\n\n1. Товарлар якдашларла бярабяр олмайарамышдыр.\n2. Товарлар якдашларла бярабяр олмайарам",
+          "latency_ms": 1165,
+          "tokens": 1122,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-44",
+      "type": "sugurta",
+      "category_uz": "Sug'urta va Kompensatsiya",
+      "question": "Kredit qaytmasligi xatari sug'urtasi kim tomonidan qilinadi?",
+      "reference_answer": "Fuqarolik kodeksining 920-moddasiga ko‘ra, tadbirkorlik xavfini sug‘urta qilish shartnomasi bo‘yicha faqat sug‘urta qildiruvchining o‘z tadbirkorlik xavfi va faqat uning foydasiga sug‘urtalanishi mumkin.\nShunday ekan, kredit qaytmasligi xatarini sug‘urta qilishda faqat tijorat banklari sug‘urta qildiruvchi sifatida ishtirok etishi lozim. Sug‘urta mukofoti ham sug‘urta qildiruvchi, yaʼni tijorat banki tomonidan to‘lanadi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Kredit qaytmasligi xatari sug'urtasi sug'urta kompaniyalari tomonidan qilinadi.",
+          "latency_ms": 1002,
+          "tokens": 102,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Kredit qaytmasligi xatari sug'urtasi\n\nKredit qaytmasligi xatari sug'urtasi quyidagilar tomonidan amalga oshirilishi mumkin:\n\n1. **Qarz oluvchi (mijoz)** – bank talabiga ko'ra, kredit garaniti sifatida o'z majburiyatlarini sug'urta qiladi.\n\n2. **Bank (kreditor)** – o'z mablag'larini himoya qilish maqsadida kredit portfelini sug'urta qiladi.\n\n3. **Sug'urta kompaniyalari** – \"O'zbekinvest\", \"Gross Insurance\" va boshqa litsenziyalangan sug'urta tashkilotlari bu xizmatni ko'rsatadi.\n\n> 📌 O'zbekiston amaliyotida ko'pincha **qarz oluvchi** kredit olishdan oldin sug'urta shartnomasi tuzishi **bank tomonidan majburiy shart** sifatida qo'yiladi.",
+          "latency_ms": 9270,
+          "tokens": 385,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 50.218952103s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Kredit qaytmasligi xatari sug'urtasi kreditni beruvchi tomonidan qilinadi.",
+          "latency_ms": 501,
+          "tokens": 147,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Kredit qaytmasligi xatari sug'urtasi xususiy sug'urta kompaniyalari tomonidan amalga oshiriladi.",
+          "latency_ms": 1206,
+          "tokens": 475,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Kredit qaytmasligi xatari sug'urtasini sug‘urta kompaniyalari amalga oshiradi; bank yoki kredit beruvchi tashkilotlar bu sug‘urta xizmatini o‘zlari sotib oladi.",
+          "latency_ms": 1240,
+          "tokens": 350,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Kredit qaytmasligi xatari sug'urtasi sug'urta kompaniyasi tomonidan amalga oshiriladi.",
+          "latency_ms": 549,
+          "tokens": 104,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-scout": {
+          "response": "Kredit qaytmasligi xatari sug'urtasi sug'urta kompaniyalari tomonidan amalga oshiriladi.",
+          "latency_ms": 430,
+          "tokens": 105,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Bank tomonidan.",
+          "latency_ms": 879,
+          "tokens": 110,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ готов помочь вам с вопросами и задачами в области международных отношений и правовой аспекты. \n\nВаш вопрос касается кредитного судебного процесса. В Узбекистане кредитные процессы осуществляются в соответствии с законодательством Узбекистана. Вот некоторые основные факторы, которые могут помочь вам понять, кто отвечает за исполнение кредитного судебного процесса:\n\n1. Суд: В Узбекистане суды являются основными органами, которые решают кредитные вопросы. Выберите суд, который имеет специализированные судьи и специалисты в области кредитования и кредитных процессов.\n\n2. Кредитный банк или кредитная компания: Выберите банк или компанию, которая предоставляет кредиты и имеет опыт в обработке кредитных процессов. Они могут предоставить вам информацию о кредитных условиях и процедурах исполнения кредита.\n\n3. Кредитный агент: Если вы не можете найти банк или компанию, вы можете обратиться к кредитному агенту, который предоставляет помощь в обработке кредитных процессов и имеет знания о законодательстве и практиках в области кредитования.\n\nВажно учитывать, что кредитные процессы могут быть сложными и требуют мастерства в области законодательства и практик. Если вы не опытный в области кредитования, рекомендуется обратиться к профессионалам, которые могут помочь вам разобраться с кредитными процессами и законодательством в этой области. \n\nЕсли вы ищете информацию о конкретном кредитном банке или компании, я рекомендую обратиться к их клиентам или кредитным агентам, которые могут предоставить вам информацию о кредитных условиях и процедурах исполнения кредита. Они могут объяснить вам законодательство и помочь вам разобраться с",
+          "latency_ms": 1130,
+          "tokens": 1128,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-45",
+      "type": "sugurta",
+      "category_uz": "Sug'urta va Kompensatsiya",
+      "question": "Kredit qaytmasligi xatari sug‘urtasi kim tomonidan qilinadi?",
+      "reference_answer": "Fuqarolik kodeksining 920-moddasiga ko‘ra, tadbirkorlik xavfini sug‘urta qilish shartnomasi bo‘yicha faqat sug‘urta qildiruvchining o‘z tadbirkorlik xavfi va faqat uning foydasiga sug‘urtalanishi mumkin.\nShunday ekan, kredit qaytmasligi xatarini sug‘urta qilishda faqat tijorat banklari sug‘urta qildiruvchi sifatida ishtirok etishi lozim. Sug‘urta mukofoti ham sug‘urta qildiruvchi, yaʼni tijorat banki tomonidan to‘lanadi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Kredit qaytmasligi xatari sug‘urtasi sug‘urta kompaniyalari tomonidan qilinadi.",
+          "latency_ms": 1072,
+          "tokens": 103,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Kredit qaytmasligi xatari sug'urtasi\n\nKredit qaytmasligi xatari sug'urtasi odatda quyidagilar tomonidan amalga oshiriladi:\n\n- **Qarz oluvchi (mijoz)** — bank talabiga ko'ra o'z kreditini sug'urta qildirishi mumkin\n- **Bank (kreditor)** — o'z mablag'larini himoya qilish maqsadida kredit portfelini sug'urta qildiradi\n- **Sug'urta kompaniyalari** — to'g'ridan-to'g'ri kredit risklarini sug'urtalash xizmatini taqdim etadi\n\nO'zbekistonda bu xizmat litsenziyalangan **sug'urta kompaniyalari** tomonidan ko'rsatiladi va jarayon **O'zbekiston Respublikasining \"Sug'urta faoliyati to'g'risida\"gi Qonuni** asosida tartibga solinadi.",
+          "latency_ms": 8350,
+          "tokens": 378,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 39.499155581s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Kredit qaytmasligi xatari sug‘urtasi kreditni beruvchi tomonidan qilinadi.",
+          "latency_ms": 510,
+          "tokens": 147,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Kredit qaytmasligi xatari sug‘urtasi kredit oluvchi tomonidan bank yoki alohida sug‘urtalash kompaniyasiga topshiriladi.",
+          "latency_ms": 1264,
+          "tokens": 464,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Kredit qaytmasligi xatari sug‘urtasini sug‘urta kompaniyalari (kredit sug‘urta kompaniyalari) amalga oshiradi.",
+          "latency_ms": 806,
+          "tokens": 360,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Kredit qaytmasligi xatari sug‘urtasi sug'urta kompaniyasi tomonidan amalga oshiriladi.",
+          "latency_ms": 836,
+          "tokens": 104,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Kredit qaytmasligi xatari sug‘urtasi bank yoki sug‘urta kompaniyasi tomonidan amalga oshiriladi.",
+          "latency_ms": 448,
+          "tokens": 106,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Kredit qaytmasligi xatari sug‘urtasi bank tomonidan qilinadi.",
+          "latency_ms": 572,
+          "tokens": 126,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ готов помочь вам с вопросами и задачами в области международных отношений и правовой аспекты. \n\nВаш вопрос касается кредитного судебного процесса. В Узбекистане кредитные процессы осуществляются в соответствии с законодательством Узбекистана. Вот некоторые основные факторы, которые могут помочь вам понять, кто отвечает за установление кредитного суда:\n\n1. Кредитные процессы в Узбекистане осуществляются в Судебном Суде Узбекистана (ССУ). Этот суд является основным органом, отвечающим за решение кредитных вопросов и процессов.\n\n2. В ССУ могут приниматься заявки от кредитных организаций или клиентов, имеющих проблемы с кредитом. Они рассматривают случаи и решают вопросы, связанные с кредитными договорами, платежами, несоблюдением кредитных условий и другими кредитными проблемами.\n\n3. В ССУ также могут приниматься заявки от клиентов, которые страдают из-за неправильного исполнения кредитных договоров или неплатежей. Они могут помочь клиентам решать проблемы с кредиторами и предоставлять информацию о правах и обязательствах кредиторов и клиентов.\n\n4. В Узбекистане есть также Кредитный комиссионер, который отвечает за контроль кредитных организаций и предотвращение неправильного использования кредитных услуг. Он может помочь клиентам и кредиторам решать проблемы и предоставлять информацию о правах и обязательствах в области кредитования.\n\nЕсли вы имеете более конкретные вопросы или проблемы с кредитом, я рекомендую обратиться к Судебному суду Узбекистана или к Кредитному комиссионеру, чтобы получить помощь и информацию о правах и обязательствах в этой области. Они могут помочь решать проблемы",
+          "latency_ms": 1120,
+          "tokens": 1128,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-46",
+      "type": "sugurta",
+      "category_uz": "Sug'urta va Kompensatsiya",
+      "question": "Transport vositalari egalarining fuqarolik javobgarligining majburiy sug'urtasi bo'yicha sug'urta tovonini to'lab berish qancha muddatda amalga oshiriladi?",
+      "reference_answer": "Sug‘urta tashkilotiga sug‘urta qildiruvchi tomonidan sug‘urta hodisasiga oid barcha hujjatlar topshirilganidan so‘ng, sug‘urta tovonini to‘lash to‘g‘risida qaror qabul qilingan kundan eʼtiboran 5 ish kunidan kechiktirmay sug‘urta tovoni to‘lab beriladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Sug'urta tovonini to'lab berish 15 ish kuni ichida amalga oshiriladi.",
+          "latency_ms": 1449,
+          "tokens": 129,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "claude-sonnet": {
+          "response": "## MTPL Sug'urta Tovonini To'lash Muddati\n\n**O'zbekiston qonunchiligiga ko'ra** (\"Transport vositasi egalarining fuqarolik javobgarligini majburiy sug'urta qilish to'g'risida\"gi Qonun):\n\nSug'urta kompaniyasi barcha zarur hujjatlar to'liq topshirilgan kundan boshlab **15 ish kuni** ichida:\n- Sug'urta tovonini to'lashi **yoki**\n- To'lashdan asosli **rad javobi** berishi shart.\n\n> ⚠️ Agar sug'urta kompaniyasi belgilangan muddatda to'lovni amalga oshirmasa, har bir kechiktirilgan kun uchun **tovon summasining 0,1%** miqdorida **penya** to'lashga majbur bo'ladi.",
+          "latency_ms": 9104,
+          "tokens": 387,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 29.916441895s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '29s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Transport vositalari egalarining fuqarolik javobgarligining majburiy sug'urtasi bo'yicha sug'urta tovonini to'lab berish 3 ish kuni muddatda amalga oshiriladi.",
+          "latency_ms": 534,
+          "tokens": 209,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "O'zbekistondagi Yo'nalish xavfsizligi qonuniga ko'ra, sug'urta tovonini to'lab berish 20 kundan o'tmasdan amalga oshiriladi.",
+          "latency_ms": 1092,
+          "tokens": 433,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Sug‘urta tovonini to‘lov majburiy sug‘urta kompaniyasi da’vo va zarur hujjatlarni olgandan keyin **10 kun ichida** amalga oshiriladi.",
+          "latency_ms": 888,
+          "tokens": 422,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "Sug'urta hodisasi yuz bergan vaqtda sug'urta shartnomasi tuzilgan bo'lsa, sug'urta tovoni sug'urta hodisidan so'ng 10 kun muddatda, ammo sug'urta hodisiga oid barcha hujjatlar taqdim etilgan kundan boshlab 5 ish kuni ichida to'lanadi.",
+          "latency_ms": 4155,
+          "tokens": 183,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Transport vositalari egalarining fuqarolik javobgarligining majburiy sug'urtasi bo'yicha sug'urta tovonini to'lab berish 15 kun ichida amalga oshiriladi.",
+          "latency_ms": 443,
+          "tokens": 154,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "kimi-k2": {
+          "response": "30 kun ichida.",
+          "latency_ms": 560,
+          "tokens": 142,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Вопрос: В какие условиях применяются гражданские защиты в случае недостатка прав перевозчиков и как это влияет на процесс регистрации товаров?\n\nОбращаю ваше внимание на то, что я говорю по-русски, так как вы запрашиваете информацию на русском языке. Однако, я готов помочь вам и на озероке. Пожалуйста, дайте мне вопрос, и я объясню вам основные аспекты гражданской защиты для перевозчиков в случае недостатка прав и её влияния на процесс регистрации товаров в Узбекистане.",
+          "latency_ms": 605,
+          "tokens": 440,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-47",
+      "type": "sugurta",
+      "category_uz": "Sug'urta va Kompensatsiya",
+      "question": "Men YTH da aybdor bo‘ldim va sug‘urta polisim bo‘yicha sug‘urta tovonini to‘lab berishdi. YAna YTH sodir bo‘lsa mazkur polis bo‘yicha yana sug‘urta tovoni to‘lab berishadimi yoki yangi sug‘urta polisini sotib olishim kerakmi?",
+      "reference_answer": "Agar majburiy sug‘urta shartnomasi amalda bo‘lgan davrda sug‘urtalovchi jabrlanuvchiga (uning merosxo‘riga yoki huquqiy vorisiga) sug‘urta tovoni to‘lasa, u holda sug‘urta qildiruvchi sug‘urtalovchidan sug‘urta tovoni to‘langanligi to‘g‘risidagi xabarnoma olingan kundan e’tiboran ikki hafta muddatda to‘langan sug‘urta tovoni summasiga va majburiy sug‘urta shartnomasi amal qilishining qolgan muddatiga mutanosib ravishda qo‘shimcha sug‘urta mukofotini to‘lashi lozim.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Agar sug'urta polisingizda ko'rsatilgan limitlar tugamagan bo'lsa, yana sug'urta tovoni to'lab berilishi mumkin. Ammo, limitlar tugagan bo'lsa, yangi sug'urta polisini sotib olishingiz kerak bo'ladi.",
+          "latency_ms": 1904,
+          "tokens": 200,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Javob:\n\n**Mavjud polis bo'yicha** — ha, yana sug'urta tovoni to'lanishi mumkin, **lekin bir necha muhim shartga bog'liq:**\n\n1. **Polis muddati** — agar sug'urta polisingiz hali amal qilayotgan bo'lsa (muddat tugamagan bo'lsa), keyingi YTH uchun ham qoplanish mumkin.\n\n2. **To'lov limiti** — polisda belgilangan **maksimal sug'urta summasi** tugab qolmagan bo'lishi kerak. Agar avvalgi to'lov limitni to'liq yopgan bo'lsa, qolgan muddat uchun qoplama bo'lmaydi.\n\n3. **Sug'urta kompaniyasi shartlari** — ba'zi kompaniyalar zararli mijozga nisbatan **polisni bekor qilish** yoki **keyingi yil mukofotini oshirish** huquqiga ega.\n\n### Amaliy maslahat:\n- Polisingizning **qolgan summasi va muddatini** sug'urta kompaniyangizdan aniqlashtiring.\n- Agar limit tugagan bo'lsa — **yangi polis** sotib olishingiz zarur.\n- O'zbekistonda **OSAGO** (majburiy) polis har yili yangilanadi va har bir YTH so'ng mukofot miqdori oshishi mumkin.",
+          "latency_ms": 13228,
+          "tokens": 574,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 19.333897042s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Sug'urta polisi bo'yicha sug'urta to'lovi to'langanidan keyin, yangi YTH sodir bo'lsa, sug'urta kompaniyasi yana sug'urta to'lovini to'lab bermaydi. Buning o'rniga, siz yangi sug'urta polisini sotib olishingiz kerak bo'ladi.",
+          "latency_ms": 811,
+          "tokens": 273,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "Agar sug'urta polisingiz hali muddatida bo'lsa, yana YTH sodir bo'lsa, sug'urta tovonini polis bo'yicha to'lab berishadi. Agar polis muddati tugagan bo'lsa, yangi sug'urta polisini sotib olish kerak.",
+          "latency_ms": 1308,
+          "tokens": 523,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Yo‘l harakati hodisasi (YTH) bo‘yicha sug‘urta polisi bir yillik (yoki shartnoma muddatli) bo‘lib, uning amal qilish muddatida bir nechta da’volarni qamrab oladi. Shuning uchun:\n\n1. **Polis bir martalik to‘lovga cheklangan emas** – sug‘urta tovonini to‘lash limitlari (maksimal summa, bir hodisa uchun limit, yillik limit) ichida bo‘lsa, yana bir YTH sodir bo‘lsa ham shu polisdan to‘lov olinadi.  \n2. **Agar birinchi da’vo limitni (masalan, yillik maksimal to‘lov summasini) to‘liq sarflagan bo‘lsa** yoki polis muddati tugagan bo‘lsa, keyingi da’vo uchun yangi sug‘urta polisi (yoki mavjud polisni yangilash/ko‘paytirish) kerak bo‘ladi.  \n3. **Polis shartlariga e’tibor bering** – ba’zi polislar “bir yil ichida bir martalik” yoki “bir hodisa uchun maksimal limit” kabi cheklovlar qo‘yishi mumkin. Shartnomani diqqat bilan o‘rganib chiqing.\n\n**Xulosa:** Agar polis muddati davomida va uning limitlari ichida bo‘lsa, ikkinchi YTH uchun ham shu polisdan to‘lov olinadi; limit yoki muddat tugagan bo‘lsa, yangi yoki yangilangan polis olish zarur.",
+          "latency_ms": 1276,
+          "tokens": 639,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Sug'urta polisi bo'yicha sug'urta tovonining to'langan-to'lanmaganligidan qat'i nazar, sug'urta polisi amal qilish muddati davomida (odatda 1 yil) bir martadan ortiq YTH sodir bo'lgan taqdirda sug'urta tovoni to'lab beriladi. Ammo, sug'urta hodisasi yuz berganda sug'urta kompaniyasi tomonidan sug'urta tovoni to'langan bo'lsa, ushbu sug'urta polisi bo'yicha sug'urta qoplamasining maksimal chegarasi (limit) tugaydi. Shuning uchun, kelajakda yana YTH sodir bo'lish ehtimoli bo'lsa, yangi sug'urta polisini sotib olishingiz tavsiya etiladi.",
+          "latency_ms": 1125,
+          "tokens": 295,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Sug'urta polisi shartlariga bog'liq, lekin odatda, agar siz avvalgi YTH da aybdor bo'lib, sug'urta tovini olgan bo'lsangiz, keyingi YTH uchun ham xuddi shu polis bo'yicha sug'urta tovini to'lashadi. Lekin, sug'urta kompaniyasi shartlarini o'qib chiqishingiz va aniqlik kiritishingiz tavsiya etiladi.",
+          "latency_ms": 605,
+          "tokens": 232,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Yo‘q, biror YTH bo‘lsa sug‘urta to‘g‘ridan-to‘g‘ri to‘lanmaydi: har bir YTH uchun KBM (ko‘ndalanish bo‘yicha malus) yana 25 foizga oshadi, shu bilan transport solig‘iz va ijaraga olish narxlari qimmatlashadi. Shuning uchun keyingi YTHdan himoya qilish uchun yangi polisni kafolatlangan qiymatga bo‘ladigan “musavvar polis” (KASKO) yoki AvtoPOM sotib olish mumkin.",
+          "latency_ms": 1385,
+          "tokens": 319,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ: Добрый день! Я помогу вам с вопросами по юридическим и международным вопросам. Пожалуйста, дайте мне более подробную информацию о вашем случае.\n\nВаш вопрос касается вашего статуса как адвоката и попытки получить дополнительную информацию о судьбе вашего судья полицейского. Если вы являетесь адвокатом и у вас есть доказательства того, что ваш судья полицейский имел участие в подделке суда, вы можете использовать эти доказательства для попытки получить новый судьевый полицейский или изменить судью в вашем случае.\n\nВ Узбекистане судебные процедуры могут быть сложными и требуют масштабного понимания законодательства и правовой архитектуры. Если вы не опытный правовой адвокат, я рекомендую вам обратиться к опытному и профессиональному правовому консультанту, который сможет помочь вам с этим вопросом.\n\nЕсли вы хотите изменить судью или попробовать получить новый судьевый полицейский, вам нужно будет предоставить доказательства того, что судья или судебный администратор участвовал в подделке суда. Вот некоторые шаги, которые вы можете предпринять:\n\n1. Получите доказательства того, что судья или судебный администратор участвовал в подделке суда. Это может включать доказательства подделки, поддельные документы или доказательства того, что судья или администратор имел связи с поддельными документами или участие в подделке суда.\n\n2. Получите помощь опытного правового консультанта или адвоката, который специализируется на судебных вопросах и может помочь вам с этим вопросом. Они могут помочь вам с поиском нового судебного администратора или судебного суда, а также помочь вам с предложением изменить судью или судебный администратор.\n\n3",
+          "latency_ms": 1133,
+          "tokens": 1204,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-48",
+      "type": "sugurta",
+      "category_uz": "Sug'urta va Kompensatsiya",
+      "question": "Jabrlanuvchining yo'l transport hodisasi sodir bo'lganda, sug'urta tashkiloti tomonidan to'lab beriladigan sug'urta tovoni miqdorini to'lash tartibi qanday?",
+      "reference_answer": "Agar, jabrlanuvchining hayoti yoki sog'lig'iga YTH natijasida zarar etkazilganida, sug'urta tovonining umumiy miqdori sug'urta pulining (40 mln so'm) 65 foizidan ortiq bo'lishi, ya'ni 26 mln so'mdan ko'proq bo'lishi mumkin emas.\nJabrlanuvchining mol-mulkiga zarar etgan taqdirda esa, sug'urta tovoni miqdori sug'urta pulining 35 foizi, ya'ni 14 mln so'mgacha to'lab berilishi ko'zda tutilgan.\nBiroq, sug'urta tovoni to'lab berilishida sug'urta tashkiloti tomonidan sud xarajatlari, jarimalar va boshqa shu kabi to'lovlar qoplab berilmaydi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Yo'l transport hodisasi sodir bo'lganda, sug'urta tovoni miqdorini to'lash tartibi quyidagicha: Jabrlanuvchi sug'urta tashkilotiga hodisa haqida darhol xabar berishi kerak. Keyin, zarur hujjatlar, jumladan, hodisa to'g'risidagi dalolatnoma va zararni tasdiqlovchi hujjatlar taqdim etiladi. Sug'urta tashkiloti hujjatlarni ko'rib chiqib, zararni baholaydi va sug'urta shartnomasiga muvofiq tovon miqdorini belgilaydi. Belgilangan miqdor sug'urta shartnomasida ko'rsatilgan muddatda jabrlanuvchiga to'lanadi.",
+          "latency_ms": 3213,
+          "tokens": 271,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Yo'l-Transport Hodisasida Sug'urta Tovonini Olish Tartibi\n\n### 1. Hodisani Rasmiylashtirish\n- **Davlat yol harakati xavfsizligi inspeksiyasi (DYHXI)** xodimlarini chaqiring\n- Hodisa bo'yicha **protokol** va **sxema** rasmiylashtirilsin\n- Aybdor tomon aniqlansin\n\n### 2. Hujjatlarni Tayyorlash\nSug'urta kompaniyasiga quyidagilarni taqdim eting:\n- Arizangiz\n- Shaxsni tasdiqlovchi hujjat (pasport)\n- Transport vositasi texnik pasporti\n- DYHXI tomonidan berilgan hodisa haqidagi hujjatlar (protokol, sxema, qaror)\n- Tibbiy hujjatlar (jarohat bo'lsa)\n- Bank rekvizitlari\n\n### 3. Sug'urta Kompaniyasiga Murojaat\n- Hodisa sodir bo'lgan kundan **5 ish kuni** ichida sug'urta kompaniyasiga xabar bering\n- Aybdor tomonning **majburiy avtocivil sug'urtasi (MTAS)** bo'yicha kompaniyasiga murojaat qiling\n\n### 4. Ekspertiza va To'lov\n- Sug'urta kompaniyasi **transport vositasini** va **zarar miqdorini** baholaydi\n- Baholash natijasiga ko'ra **15-30 kun** ichida tovon to'lanadi\n\n### 5. Kelishmovchilik Bo'lsa\n- Mustaqil ekspertiza o'tkazing\n- Sudga murojaat qiling\n\n> ⚠️ **Eslatma:** Hozirgi qonunchilikka ko'ra MTAS bo'yicha to'lov miqdori belgilangan **limit** doirasida amalga oshiriladi.",
+          "latency_ms": 17773,
+          "tokens": 685,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 3.735341288s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '3s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Jabrlanuvchining yo'l transport hodisasi sodir bo'lganda, sug'urta tashkiloti tomonidan to'lab beriladigan sug'urta tovoni miqdorini to'lash tartibi quyidagicha amalga oshiriladi: \n\n1. Jabrlanuvchi yoki uning qonuniy vakili sug'urta tashkilotiga ariza bilan murojaat qiladi.\n2. Arizaga quyidagi hujjatlar qo'shiladi: \n   - Shaxsni tasdiqlovchi hujjat (pasport) nusxasi;\n   - Sug'urta polisi nusxasi;\n   - Yo'l transport hodisasi haqidagi xabar (protokol) nusxasi;\n   - Tibbiy ma'lumotnoma (agar jabrlanuvchi jarohat olgan bo'lsa).\n3. Sug'urta tashkiloti murojaatni ko'rib chiqadi va sug'urta tovonini hisoblaydi.\n4. Agar sug'urta polisi amal qiladigan bo'lsa, sug'urta tashkiloti to'lovni amalga oshiradi.\n5. To'lov miqdori sug'urta polisi shartlariga muvofiq belgilanadi.",
+          "latency_ms": 2185,
+          "tokens": 470,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Jabrlanuvchi sug'urta tashkilotiga arafat topgan hodisani, shuningdek, zarar miqdorini tasdiqlovchi hujjatlarni (tibbiy atest, politsiya hisoboti, xarajatlar chetligi) topshiradi. Sug'urta tashkiloti 10 ish kunida tekshiradi va sug'urta tovoni miqdorini sug'urta polizasidagi shartlarga ko'ra to'laydi. Agar arafatni boshqasining xatoti sababli bo'lsa, xatolikni amalga oshirgan shaxs sug'urta tashkilotiga to'lovdan javobgar bo'ladi.",
+          "latency_ms": 1568,
+          "tokens": 535,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Yo‘l transport hodisasi sodir bo‘lganda sug‘urta tashkiloti tomonidan to‘lanadigan sug‘urta tovoni miqdorini to‘lash tartibi quyidagicha amalga oshiriladi:\n\n1. **Hodisa haqida xabar berish** – Jabrlanuvchi (yoki uning vakili) hodisa ro‘y bergan kundan boshlab 5 kun ichida sug‘urta kompaniyasiga yozma ravishda (telefon, fax, elektron pochta yoki shaxsiy murojaat orqali) xabar beradi. Xabarda hodisaning sanasi, joyi, ishtirokchi tomonlar, zarar miqdori va boshqa muhim ma’lumotlar ko‘rsatiladi.\n\n2. **Da’vo hujjatlarini topshirish** – Xabar berilgandan so‘ng, jabrlanuvchi quyidagi hujjatlarni (asosan) taqdim etadi:  \n   - Sug‘urta polisi va uning nusxasi;  \n   - Hodisa haqida polis (politsiya) protokoli yoki boshqa rasmiy hujjat;  \n   - Zarar ko‘rilgan transport vositasi (yoki boshqa mulk) ekspertiza hisobi;  \n   - Tibbiy ma’lumotlar, davolash xarajatlari, ishga qaytish bo‘yicha dalillar (agar shaxsiy jarohat bo‘lsa);  \n   - Da’vo summasini tasdiqlovchi hujjatlar (kvitalar, fakturalar, bank ma’lumotlari).\n\n3. **Ekspertiza va baholash** – Sug‘urta kompaniyasi belgilangan mutaxassis (ekspert) orqali zarar miqdorini aniqlaydi. Ekspertiza natijasi asosida sug‘urta to‘lovining maksimal miqdori (polisda belgilangan limitga qadar) aniqlanadi.\n\n4. **To‘lov qarorini qabul qilish** – Ekspertiza natijasi va taqdim etilgan hujjatlar asosida sug‘urta tashkiloti 10 kun ichida (ba’zi hollarda 15 kun) to‘lov qarorini chiqaradi. Agar qo‘shimcha ma’lumot yoki tekshiruv zarur bo‘lsa, bu muddat uzaytirilishi mumkin, lekin uzaytirish sababi jabrlanuvchiga yozma ravishda bildiriladi.\n\n5. **To‘lov amalga oshirilishi** – Qaror qabul qilingandan so‘ng, sug‘urta kompaniyasi belgilangan muddat (odatda 5 ish kuni) ichida mablag‘ni jabrlanuvchining bank hisob raqamiga yoki boshqa kelishilgan usulda (naqd, chek) o'tkazadi.\n\n6. **Aloqa va huquqiy himoya** – Agar jabrlanuvchi to‘lov miqdoridan norozi bo‘lsa, u sug‘urta kompaniyasining ichki apellyatsiya tartibiga muvofiq 30 kun ichida qarorni qayta ko‘rib chiqishni talab qilishi mumkin. Shuningdek, sudga murojaat qilish huquqi ham saqlanadi.\n\n**Muhim eslatma:** Sug‘urta polisi shartlarida belgilangan “xavfsizlik muddatlari” (masalan, hodisa ro‘yganidan keyin 30 kun ichida da’vo qilish) va “to‘lov limitlari” (maksimal summa, franshiza) ham hisobga olinadi. Bu shartlarga rioya qilinmasa, to‘lov kechikishi yoki qisman rad etilishi mumkin.",
+          "latency_ms": 2182,
+          "tokens": 1021,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Jabrlanuvchiga to'lanadigan sug'urta tovonining miqdori va to'lash tartibi \"Avtotransport vositalarining majburiy sug'urtasi to'g'risida\"gi O'zbekiston Respublikasi Qonunida belgilab qo'yilgan. Unga ko'ra, sug'urta hodisasi yuz berganda, jabrlanuvchiga tibbiy yordam va fuqarolik javobgarligi bo'yicha sug'urta tovonining to'lanishi belgilangan tartibda amalga oshiriladi.",
+          "latency_ms": 1104,
+          "tokens": 231,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Yo'l-transport hodisasi sodir bo'lganda, sug'urta tashkiloti jabrlanuvchiga to'lashi kerak bo'lgan sug'urta tovoni miqdori O'zbekiston Respublikasining \"Sug'urta faoliyati to'g'risida\" gi qonuni va \"Transport vositalarining egalarini fuqarolik javobgarligini sug'urta qilish to'g'risida\" gi qonuni bilan tartibga solinadi. \n\nJabrlanuvchiga to'lanadigan sug'orta tovoni miqdori quyidagi tartibda amalga oshiriladi:\n\n- Sug'urta tashkiloti jabrlanuvchining zararini aniqlash uchun zarur bo'lgan hujjatlarni olgandan keyin, 15 kun ichida sug'urta tovoni miqdorini to'lashi kerak.\n\n- Agar yo'l-transport hodisasi natijasida jabrlanuvchi vafot etgan bo'lsa, sug'urta tovoni miqdori 50 million so'mdan kam bo'lmasligi kerak.\n\n- Agar jabrlanuvchi jismoniy shaxs bo'lsa, unga to'lanadigan sug'urta tovoni miqdori tibbiy xarajatlar va yo'qotilgan daromad miqdoridan iborat bo'ladi.\n\n- Sug'urta tovoni miqdori to'lash tartibi va muddatlari sug'urta shartnomasi va amaldagi qonun hujjatlari bilan belgilanadi.\n\nSug'urta tashkiloti tomonidan to'lab beriladigan sug'urta tovoni miqdori to'g'risida batafsil ma'lumot olish uchun, O'zbekiston Respublikasining sug'urta faoliyatini tartibga soluvchi qonunlari va sug'urta tashkilotining o'zi bilan maslahatlashish tavsiya etiladi.",
+          "latency_ms": 1286,
+          "tokens": 497,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Jabrlanuvchiga sug‘urta to‘lovi avvalo ayblanuvchi haydovchining MChJ polisi boʻyicha (O‘zbekistonda majburiy avtotransport sugʻurtasi) qoplanadi – maksimal cheklovlari: shaxsga yetkazilgan zarar uchun 10 000 BRV (2024 y. 1 BRV ≈ 340 ming so‘m), va-mulkka yetkazilgan zarar uchun 1 000 BRV. Agar bu miqdor zararni toʻliq qoplamasa, jabrlanuvchi toʻldiruvchi (ixtiyoriy) KASKO yoki fuqarotik javobgarlik sugʻurtasi boʻyicha, shuningdek ayblanuvchidan sud yoʻli bilan toʻldirishni talab qilishi mumkin.",
+          "latency_ms": 3434,
+          "tokens": 343,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант по юридическим и малой экономической проблемам для Узбекистана\n\nПриветствую вас! Я помогу вам решать вопросы связанные с малой экономикой и юридическими вопросами в Узбекистане. \n\nВопрос: Если перевозчик Ябленков находится на маршруте, предоставленном компанией перевозки \"Том\", как выполнить условие оплаты маршрута?\n\nОтвет: Если перевозчик Ябленков находится на маршруте, предоставленном компанией перевозки \"Том\", выполнить условие оплаты маршрута можно следующим образом:\n\n1. Получите контракт или договор между перевозчиком Ябленков и компанией \"Том\". Это договор должен указывать на условия оплаты маршрута.\n\n2. Убедитесь, что перевозчик Ябленков выполнил все требования, указанные в договоре, чтобы получить оплату за маршрут. Это может включать выполнение своего обязательства по перевозке товаров в указанный маршрут и времени.\n\n3. Если перевозчик выполнил все требования и перевез работу, вы можете запросить оплату маршрута от компании \"Том\". Вы можете обратиться к их контактному человеку или представителю, указанному в договоре или контакте.\n\n4. Обратитесь к компании \"Том\" и предоставьте им документы, подтверждающие выполнение вашего обязательства и перевозку товаров в указанный маршрут. Вы должны предоставить информацию о том, что вы выполнили все требования, указанные в договоре или контракте с компанией \"Том\".\n\n5. Если все документы и информация подтверждают выполнение вашего обязательства и перевозку товаров в указанный маршрут, вы можете запросить оплату маршрута от компании \"Том\". Вы должны предоставить информацию о том, что вы выполнили все требования, указанные в договоре или контракте с компанией \"Том\".\n\n6. Если",
+          "latency_ms": 1195,
+          "tokens": 1168,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-49",
+      "type": "sugurta",
+      "category_uz": "Sug'urta va Kompensatsiya",
+      "question": "Yo‘l-transport hodisasida zarar ko‘rgan jabrlanuvchining fuqarolik javobgarligi sug‘urtalanmagan bo‘lsa, sug‘urta tovoni yoki kompensatsiya to‘lovini olishda qanchalik ahamiyatga ega?",
+      "reference_answer": "Sug‘urta to‘lovi javobgarlikni sug‘urtalagan sug‘urta kompaniyasi tomonidan sug‘urta polisiga muvofiq amalga oshiriladi, kompensatsiya to‘lovi Jamg‘arma tomonidan amalga oshiriladi va amalga oshirgan to‘lovni javobgar shaxsdar regress tartibida undirib oladi (sug‘urta kompaniyasi faqat ayrim belgilangan xollardagina regress xuquqini amalga oshiradi). Aynan jabrlanuvchining javobgarligi sug‘urta qilingan qilinmaganligi axamiyatsiz.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Agar jabrlanuvchining fuqarolik javobgarligi sug‘urtalanmagan bo‘lsa, sug‘urta tovoni olish imkoniyati bo‘lmaydi. Bunday holatda, zarar qoplash masalasi to‘qnashuvda aybdor bo‘lgan shaxsning o‘z zimmasiga tushadi va jabrlanuvchi to‘g‘ridan-to‘g‘ri aybdor shaxsdan kompensatsiya talab qilishi mumkin.",
+          "latency_ms": 3302,
+          "tokens": 227,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Fuqarolik Javobgarligi Sug'urtasi Bo'lmagan Jabrlanuvchi Uchun Kompensatsiya Olish Imkoniyatlari\n\n### Asosiy holat:\nAgar **jabrlanuvchining o'zi** sug'urtalanmagan bo'lsa, lekin **aybdor tomon** sug'urtalangan bo'lsa — jabrlanuvchi **aybdorning sug'urta kompaniyasidan** to'liq kompensatsiya talab qilish huquqiga ega. Bu holda jabrlanuvchining sug'urtasi **muhim emas**.\n\n### Amaliy ta'sir:\n\n| Holat | Natija |\n|-------|--------|\n| Aybdor sug'urtalangan, jabrlanuvchi esa yo'q | Jabrlanuvchi aybdor sug'urtasidan to'lov oladi ✅ |\n| Ikkalasi ham sug'urtalanmagan | Faqat sud orqali aybdordan shaxsan undiriladi ⚠️ |\n| Jabrlanuvchi ham sug'urtalangan | Tezroq va osonroq kompensatsiya olish imkoni ✅ |\n\n### Muhim jihatlar:\n- **O'zbekiston qonunchiligi** bo'yicha aybdor tomon O'TAJ (majburiy sug'urta) bo'yicha javobgar\n- Jabrlanuvchining sug'urtasi **yo'qligi** uning **kompensatsiya olish huquqini cheklamaydi**\n- Biroq jabrlanuvchining **o'z sug'urtasi bo'lmasa**, qo'shimcha himoya mexanizmlari (KASKO va h.k.) ishlamaydi\n\n### Tavsiya:\nAybdorning sug'urta polisini aniqlash va sug'urta kompaniyasiga **rasman murojaat qilish** — birinchi qadam.",
+          "latency_ms": 15071,
+          "tokens": 691,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 44.536925365s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '44s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Yo'l-transport hodisasida zarar ko'rgan jabrlanuvchining fuqarolik javobgarligi sug'urtalanmagan bo'lsa, sug'urta tovoni yoki kompensatsiya to'lovini olishda ahamiyatga ega emas, chunki sug'urta shartnomasi mavjud bo'lmagani uchun jabrlanuvchi sug'urta to'lovlariga da'vo qila olmaydi.",
+          "latency_ms": 860,
+          "tokens": 271,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "<think>\nOkay, let's tackle this question. The user is asking about the importance of a victim not having civil liability insurance in a traffic accident. They want to know how significant it is for getting compensation or payment from the insurance company.\n\nFirst, I need to recall Uzbek law regarding traffic accidents and insurance. In Uzbekistan, there's mandatory civil liability insurance for vehicle owners. If someone is at fault in an accident, their insurance should cover the victim's damages. But if the victim doesn't have this insurance, how does that affect their ability to get compensation?\n\nWait, the question is about the victim's lack of insurance. Wait, no, the victim is the injured party. The civil liability insurance is usually the driver's responsibility, not the victim's. So maybe there's confusion here. Let me clarify.\n\nIf the victim is the one who caused the accident, then their insurance would cover the other party. But if the victim is not at fault, then the at-fault driver's insurance should cover their damages. However, if the victim doesn't have their own insurance, does that affect their compensation? Probably not, because the liability is on the other driver. But maybe the victim's insurance could provide coverage if they are underinsured. But if they don't have insurance, they might not get full compensation.\n\nWait, maybe the user is confused. Let me check the original question again. It says the victim's civil liability is not insured. So, if the victim is the one who is supposed to have insurance but doesn't, how does that affect their ability to get compensation. But in most cases, the victim isn't required to have insurance unless they are the one driving. So if the victim is a pedestrian or a passenger, they don't need insurance. The driver is responsible for having liability insurance.\n\nSo, if the victim is not the one at fault, their lack of insurance shouldn't affect their right to compensation from the at-fault driver's insurance. However, if the at-fault driver doesn't have insurance, then the victim might have to go through legal channels to get compensation. But the question is about the victim's own insurance status. So maybe the answer is that the victim's lack of insurance doesn't prevent them from seeking compensation from the at-fault party's insurance. However, if the victim is the one at fault and doesn't have insurance, then they can't claim from their own insurance, which would affect their ability to get compensation.\n\nBut the question is phrased as \"the victim's civil liability is not insured.\" So maybe the victim is the one who is supposed to have insurance but doesn't. For example, if the victim is a driver who caused the accident but doesn't have insurance. In that case, they can't claim from their own insurance, and the other party's insurance might cover their damages if they are at fault. Wait, no. If the victim is at fault, their insurance should cover the other party's damages. If they don't have insurance, then the other party might not get compensation unless they have their own insurance.\n\nBut the question is about the victim getting compensation. So if the victim is not at fault, their lack of insurance doesn't affect their right to compensation from the at-fault driver's insurance. If the victim is at fault and doesn't have insurance, then they can't get compensation from their own insurance, but the other party might still be able to claim from them through legal means.\n\nSo the answer would be that the victim's lack of civil liability insurance doesn't prevent them from seeking compensation from the at-fault party's insurance. However, if the victim is the one at fault and doesn't have insurance, they may not be able to get compensation from their own insurance, but the at-fault party's insurance might still cover the other party's damages. Wait, this is getting a bit tangled.\n\nLet me simplify. In Uzbekistan, the mandatory insurance is for the driver's civil liability. If a driver causes an accident, their insurance covers the victim's damages. If the victim is not the driver (e.g., pedestrian, passenger), they don't need insurance. So if the victim is not the driver and doesn't have insurance, it doesn't affect their right to compensation from the at-fault driver's insurance. If the victim is the driver and caused the accident without insurance, then they can't claim from their own insurance, but the other party might still be able to claim from them. However, the question is about the victim's own insurance status. So the key point is that the victim's lack of insurance doesn't prevent them from getting compensation from the at-fault party's insurance. Therefore, the answer is that the victim's lack of civil liability insurance doesn't affect their right to compensation from the at-fault party's insurance. However, if the victim is the one at fault and doesn't have insurance, they can't get compensation from their own insurance, but the other party might still be able to claim from them.",
+          "latency_ms": 2579,
+          "tokens": 1164,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Yo‘l‑transport hodisasida jabrlanuvchining fuqarolik javobgarligi sug‘urtalanmagan bo‘lsa, sug‘urta tovoni yoki kompensatsiya to‘lovini olishning ahamiyati juda katta:\n\n1. **Moliyaviy himoya** – sug‘urta tovonini olmasa, jabrlanuvchi barcha zararlarni (tibbiy xarajatlar, yo‘qotilgan daromad, mulk zararini) o‘zi to‘lashga majbur bo‘ladi. Sug‘urta bu xarajatlarni qoplashga yordam beradi.\n\n2. **Tezkor to‘lov** – sug‘urta kompaniyasi odatda sud jarayoniga qaraganda tezroq to‘lov qiladi. Sug‘urta bo‘lmasa, jabrlanuvchi javobgar tomon (yoki uning sug‘urta kompaniyasi) bilan sudga murojaat qilishi, huquqiy protseduralarni o‘tkazishi va kechikishlarga duch kelishi kerak.\n\n3. **Xavfni kamaytirish** – sug‘urta bo‘lsa, jabrlanuvchi kelgusida shunga o‘xshash hodisalardan kelib chiqadigan moliyaviy xavfdan himoyalanadi; sug‘urta bo‘lmasa, har bir yangi hodisa uchun alohida moliyaviy risk mavjud.\n\n4. **Qonuniy talablar** – O‘zbekistonda ko‘plab transport vositalari (avtomobillar, yuk mashinalari) uchun majburiy fuqarolik javobgarlik sug‘urtasi (MFS) talab qilinadi. Agar bu sug‘urta bo‘lmasa, jabrlanuvchi qonuniy ravishda to‘lovni faqat javobgar shaxsdan (yoki uning mulkidan) talab qila oladi, bu esa sudga murojaat qilish va to‘lovni yig‘ish jarayonini murakkablashtiradi.\n\n**Xulosa:** Sug‘urta tovoni yoki kompensatsiya to‘lovini olish jabrlanuvchining moliyaviy zararini qoplash, to‘lovni tez va ishonchli olish, hamda kelgusidagi xavflarni kamaytirish nuqtai nazaridan juda muhimdir. Sug‘urta bo‘lmasa, jabrlanuvchi faqat sud orqali javobgar shaxsdan to‘lovni talab qila oladi, bu esa ko‘proq vaqt, xarajat va noaniqlik keltiradi.",
+          "latency_ms": 1682,
+          "tokens": 807,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "Yo‘l-transport hodisasida jabrlanuvchining moddiy zararini qoplashda, agar jabrlanuvchining fuqarolik javobgarligi sug‘urtalanmagan bo‘lsa, sug‘urta tovonini olish imkoniyati bo‘lmaydi. Bunday holda, zarar ko'rgan shaxs tovonni to'g'ridan-to'g'ri aybdor shaxsdan yoki sud orqali undirishi mumkin.",
+          "latency_ms": 838,
+          "tokens": 213,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Agar yo‘l-transport hodisasida zarar ko‘rgan jabrlanuvchining fuqarolik javobgarligi sug‘urtalanmagan bo‘lsa, u holda jabrlanuvchi kompensatsiya to‘lovini olish huquqiga ega bo‘ladi. Bunday holda, kompensatsiya to‘lovi davlat tomonidan amalga oshiriladi.",
+          "latency_ms": 728,
+          "tokens": 195,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Agar haydovchi fuqarolik javobgarligi sug‘urtalanmagan bo‘lsa, jabrlanuvchi sug‘urta tovoni olishi qiyin bo‘ladi. U holda zararni haydovchi yoki egasi o‘zi to‘lashi kerak bo‘ladi.",
+          "latency_ms": 1086,
+          "tokens": 232,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ Узбекистана говорит:\n\nЕсли у погибших перевозчиков не было указано условие о поддержке украшения или компенсации в случае погибших, то это может привести к большому трудом и затратам для семьи и друзей погибших перевозчиков. В таком случае, семья или друзья могут стремиться к получению помощи или поддержки для поддержания семьи или уплаты за потерю рабочего времени.\n\nВ Узбекистане есть различные программы поддержки и помощи для семей погибших работников, такие как страховые планы или программы поддержки семьи. Вы можете обратиться к соответствующим органам или организациям, чтобы узнать более подробную информацию о доступных вам возможностях поддержки и помощи.\n\nЕсли перевозчик не имел страхового плана или не было указано определенное количество компенсации, то семья или друзья могут стремиться к получению помощи в соответствующих органах или организациях. Вы можете обратиться к Министерству транспорта или другим связанным органам, чтобы узнать более подробную информацию о возможных мерах поддержки и помощи.\n\nВажно обратиться к соответствующим органам или организациям, чтобы получить помощь и поддержку для семьи или друзей погибших перевозчиков. Они могут предоставить вам информацию о возможных мерах поддержки и помощи. Важно учитывать ваши права и возможности получить помощь в соответствующих органах или организациях. Они могут помочь вам найти способы получить помощь и поддержку для ваших родственников или друзей, погибших перевозчиков. Они могут предоставить вам информацию о возможных мерах поддержки и помощи. Не стесняйтесь обращаться к ним, чтобы получить помощь и поддержку для ваших",
+          "latency_ms": 1143,
+          "tokens": 1184,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-50",
+      "type": "sugurta",
+      "category_uz": "Sug'urta va Kompensatsiya",
+      "question": "Sug‘urta polisim bo‘yicha avtomashinamni faqat dadam va men boshqarish xuquqiga egamiz, lekin do‘stimni sug‘urta polisi bo‘yicha avtomashinasini istalgan haydovchi haydamoqda. U qoidani buzmayaptimi?",
+      "reference_answer": "Yo‘q, buzmayapti. Buning uchun majburiy sug‘urta shartnomasini tuzayotganda transport vositalarini boshqarishga qo‘yilgan shaxslar soni cheklanmasligi shartini tanlash lozim. Bunda sug‘urta polisida transport vositasidan uni boshqarishga qo‘yilgan haydovchilar ko‘rsatilmaydi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Yo'q, u qoidani buzmayapti. Sug'urta polisi shartlariga ko'ra, ba'zi polislar istalgan haydovchiga ruxsat berishi mumkin.",
+          "latency_ms": 1837,
+          "tokens": 171,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Javob\n\nDo'stingizning sug'urta polisi **\"Istalgan haydovchi\"** (Any Driver) sharti bilan rasmiylashtirilgan bo'lsa, u **qoidani buzmayapti**. Bunday polis turi O'zbekistonda mavjud bo'lib, avtomobilni ixtiyoriy shaxs haydashiga ruxsat beradi.\n\nSizning polisingiz esa **cheklangan haydovchilar ro'yxati** bilan rasmiylashtirilgan (faqat siz va dadam), shuning uchun ikki xil polis ikki xil shartlarda ishlaydi — bu mutlaqo normal holat.\n\n> ⚠️ **Eslatma:** Agar siz yoki dadangizdan boshqa birov sizning avtomobilingizni haydasa, sug'urta kompaniyasi **zararni to'lashdan bosh tortishi** mumkin.",
+          "latency_ms": 9058,
+          "tokens": 416,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 27.955891622s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '27s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Ha, qoidani buzmoqda, chunki uning sug'urta polisi bo'yicha faqat u va uning otasi avtomashinani boshqarish huquqiga ega.",
+          "latency_ms": 678,
+          "tokens": 223,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "Sug'urta polisida faqat dadangiz va sizni haydovchi sifatida ro'yxatdan o'tkazgan bo'lsangiz, do'stingizni haydovchilik qonuniy jihatdan joqin qilmaydi, lekin sug'urta polisining shartlarini buzadi. Sug'urta polisida haydovchilarni cheklash shartlari mavjud bo'lsa, ularni bajarmaslik sug'urta o'zini o'z qamrab qo'ymasligiga olib keladi. Do'stingizni haydovchilikdan oldin sug'urta kompaniyasi bilan murojaat qiling.",
+          "latency_ms": 2049,
+          "tokens": 712,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Agar do‘stingizning sug‘urta polisi “istalgan haydovchi”ni avtomashinasini boshqarishga ruxsat beradigan shartga ega bo‘lsa, u holda u qoidani buzmaydi. Biroq, quyidagilarni tekshirish lozim:\n\n1. **Polis shartlari** – “istalgan haydovchi” deganda, sug‘urta kompaniyasi tomonidan tasdiqlangan, litsenziyali haydovchilar nazarda tutiladi.  \n2. **Haydovchi ro‘yxati** – ba’zi polislar “faqat oilaviy a’zolar” yoki “ma’lum haydovchilar” ro‘yxatini talab qiladi. Agar bunday cheklov bo‘lsa, do‘stingiz ro‘yxatda bo‘lishi kerak.  \n3. **Yuridik mas’uliyat** – haydovchi sug‘urta shartlariga muvofiq bo‘lsa ham, avtohalokatda haydovchining o‘zi ham qonuniy javobgarlikka tortilishi mumkin.\n\nShunday qilib, do‘stingizning polisi haqiqatan ham “har qanday haydovchi”ni ruxsat berayotgan bo‘lsa, u qoidani buzmaydi; lekin polis shartlarini aniq o‘qib, kerak bo‘lsa sug‘urta kompaniyasiga tasdiq olish tavsiya etiladi.",
+          "latency_ms": 1219,
+          "tokens": 601,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Yo‘q, qoidani buzmayapti. Sug‘urta polisi shartlariga ko‘ra, avtoulovni kim boshqarishini tanlash huquqi sug‘urta egasiga tegishli. Agar sug‘urta polisi cheklanmagan haydovchilar doirasini nazarda tutsa, do‘stingiz avtomashinani istalgan haydovchiga topshirishi mumkin.",
+          "latency_ms": 1098,
+          "tokens": 219,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-scout": {
+          "response": "Ha, do'stingiz sug'urta polisi shartlarini buzmoqda, chunki sug'urta polisi faqat ma'lum haydovchilar, ya'ni dadam va sizga avtomashinani boshqarish huquqini beradi. Boshqa shaxslar, shu jumladan do'stingiz ham avtomashinani sug'urta polisi asosida boshqarishga haqli emas.",
+          "latency_ms": 540,
+          "tokens": 214,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "kimi-k2": {
+          "response": "Ha, u qoidani buzmoqda. Agar sug‘urta polisida faqat muayyan shaxslar haydamoqchi boʻlsa, boshqa kishilar haydash taqiqlanadi. Polis shartlari buzilsa, sug‘urta toʻ‘lovmay qolishi mumkin.",
+          "latency_ms": 920,
+          "tokens": 237,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ: Привет, я помощник консультанта по юридическим и международным вопросам для Узбекистана. Я готов помочь вам с решением ваших проблем.\n\nВаше сообщение касается следующих вопросов:\n\n1. Ваша ситуация с автомобилем и его возвратом вашей должности.\n2. Ваша ситуация с возвратом вашего автомобиля в службу полиции после покупки его от неговика.\n\nЯ понимаю, что ваш вопрос касается возврата вашего автомобиля в службу полиции после его покупки от неговика. В таком случае, я рекомендую обратиться к специалистам в службе полиции или запросить помощь адвоката, который будет иметь более подробную информацию о правилах и правилах возврата автомобиля в службу полиции.\n\nВ Узбекистане, если вы покупили автомобиль от неговика и теперь хотите возвратить его в службу полиции, вам необходимо выполнить следующие шаги:\n\n1. Получите информацию о правилах возврата автомобиля в службу полиции. Вы можете обратиться к специалистам в службе полиции или запросить помощь адвоката, который будет предоставить вам информацию о правилах возврата автомобиля в службу полиции.\n\n2. Получите документы, необходимые для возврата автомобиля в службу полиции. Вы должны предоставить необходимые документы, такие как документы приобретения автомобиля и доказательства вашего права на его возврат в службу полиции.\n\n3. Обратитесь в службу полиции и предоставьте им необходимые документы. Вы должны обратиться в службу полиции и предоставить им все необходимые документы, чтобы пройти процедуру возврата автомобиля в службу полиции.\n\n4. Обратитесь к адвокату, если необходимо. Если вы не уверены в своих знаниях по юридическим требованиям, вы можете обратиться к адвокату, кото",
+          "latency_ms": 1131,
+          "tokens": 1188,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-51",
+      "type": "audit",
+      "category_uz": "Auditorlik va Moliyaviy Nazorat",
+      "question": "Auditorlik Tashkilotini yaratish uchun qanday talablar mavjud?",
+      "reference_answer": "Auditorlik tashkiloti quyidagi majburiy shartlar asosida qonun hujjatlarida nazarda tutilgan har qanday tashkiliy-huquqiy shaklda tuzilishi va faoliyatini amalga oshirishi mumkin, aksiyadorlik jamiyati bundan mustasno:\nauditorlik tashkiloti asosiy ish joyi bo‘lgan auditorlarning eng kam soni to‘rttadan kam bo‘lmagan shtatdagi auditorni tashkil etadi;\nauditorlik tashkilotining ustav kapitali (ustav kapitali) mol-mulk, shu jumladan, auditorlik tashkiloti o‘z faoliyatini amalga oshirishda bevosita foydalaniladigan mablag‘lar hisobidan shakllantiriladi.;\nauditorlarga (auditorga) tegishli ustav kapitalining (ustav kapitalining) ulushi kamida ellik bir foizni tashkil etishi kerak (auditorlik tashkiloti — xorijiy auditorlik tashkilotining filiali yoki shu‘ba xo‘jalik jamiyatini tashkil etish hollari bundan mustasno).;\nauditorlik tashkilotining rahbari faqat ushbu auditorlik tashkiloti asosiy ish joyi bo‘lgan auditor bo‘lishi kerak.;\nauditorlik tashkiloti boshqa auditorlik tashkilotining ta’sischisi (ishtirokchisi) bo‘lishi mumkin emas.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Auditorlik tashkilotini yaratish uchun quyidagi talablar mavjud:\n\n1. **Ro'yxatdan o'tish**: Tashkilot O'zbekiston Respublikasi Adliya vazirligida yuridik shaxs sifatida ro'yxatdan o'tishi kerak.\n2. **Litsenziya olish**: Auditorlik faoliyatini amalga oshirish uchun O'zbekiston Respublikasi Moliya vazirligidan litsenziya olish zarur.\n3. **Malakali kadrlar**: Tashkilotda kamida bitta sertifikatlangan auditor ishlashi kerak.\n4. **Ustav kapitali**: Belgilangan minimal ustav kapitaliga ega bo'lishi lozim.\n5. **Ichki nazorat tizimi**: Tashkilot ichki nazorat va sifatni ta'minlash tizimiga ega bo'lishi kerak.",
+          "latency_ms": 3929,
+          "tokens": 257,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## O'zbekistonda Auditorlik Tashkilotini Yaratish Talablari\n\n**Huquqiy asos:** \"Auditorlik faoliyati to'g'risida\"gi Qonun (2000-yil, keyingi o'zgartirishlar bilan).\n\n---\n\n### Asosiy Talablar:\n\n**1. Tashkiliy-huquqiy shakl:**\n- Faqat **yuridik shaxs** sifatida tashkil etiladi (MChJ, AJ va boshqalar)\n- Yakka tartibdagi tadbirkor sifatida ham faoliyat yuritish mumkin\n\n**2. Auditorlar soni:**\n- Tashkilot tarkibida kamida **3 nafar** malakali auditor bo'lishi shart\n\n**3. Malaka sertifikati:**\n- Har bir auditor **auditor malaka sertifikatiga** ega bo'lishi kerak\n- Sertifikat **Auditorlar palatasi** tomonidan beriladi\n\n**4. Litsenziya:**\n- Auditorlik faoliyatini amalga oshirish uchun **litsenziya** olish majburiy\n- Litsenziya beruvchi organ — **O'zbekiston Respublikasi Auditorlar palatasi**\n\n**5. Ustav kapitali:**\n- Belgilangan miqdordagi ustav kapitaliga ega bo'lish\n\n**6. Ro'yxatdan o'tish:**\n- **Soliq organlari**da yuridik shaxs sifatida davlat ro'yxatidan o'tish\n- **Auditorlar palatasi**da ro'yxatdan o'tish\n\n---\n\n> 📌 Aniq va yangilangan talablar uchun **O'zbekiston Auditorlar palatasi**ga murojaat qilish tavsiya etiladi.",
+          "latency_ms": 14234,
+          "tokens": 595,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 17.24194351s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Auditorlik tashkilotini yaratish uchun quyidagi talablar mavjud:\n\n- Auditorlik faoliyati bilan shug'ullanish huquqiga ega bo'lgan litsenziya;\n- Auditorlik xizmatlarini ko'rsatish uchun zarur bo'lgan malakali xodimlar;\n- Auditorlik faoliyatini amalga oshirish uchun zarur bo'lgan texnik va axborot-resurs bazasi;\n- Auditorlik tashkilotining ustav fondi;\n- Auditorlik tashkilotining nomi va manzili.",
+          "latency_ms": 1075,
+          "tokens": 257,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Auditorlik tashkilotini yaratish uchun quyidagilarni bajarish kerak:  \n1. **Yuridik shaxs sifatida ro'yxatdan o'tkazish** (Moliya bo'limi tomonidan).  \n2. **3 nafar sertifikatlangan auditor** (Milliy audit palatasi tomonidan sertifikatlangan).  \n3. **Milliy audit palatasiga ro'yxatdan o'tkazish** (auditorlik tashkiloti sertifikatini olish).  \n4. **Moliyaviy talablarga javob berish** (kapital miqdori 50 mln so'mdan kam bo'lmasa kerak).  \n5. **Tashkilot hujjatlari** (statuta, ichki nazorat qoidalari).  \n6. **Xalqaro audit standartlariga rioya qilish**.",
+          "latency_ms": 1700,
+          "tokens": 517,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Auditorlik tashkilotini (audit firmasi) yaratish uchun quyidagi asosiy talablar bajarilishi kerak:\n\n1. **Yuridik shakl** – aksionerlik jamiyati, MChJ yoki yakkaxon tadbirkorlik shaklida ro‘yxatdan o‘tkazish mumkin.  \n2. **Ro‘yxatdan o‘tish** – O‘zbekiston Respublikasi “Audit faoliyati to‘g‘risida”gi qonuniga muvofiq, auditorlik tashkiloti “Davlat nazorati va audit xizmatlari bo‘yicha qo‘mitaga” (yoki Moliya vazirligiga) ro‘yxatdan o‘tkaziladi.  \n3. **Minimal kapital** – MChJ yoki aksionerlik jamiyati uchun qonunda belgilangan minimal asosiy kapital (odatda 10 mln so‘m) mavjud bo‘lishi shart.  \n4. **Kadrlar talablari** –  \n   - Bosh auditor (yoki direktor) – O‘zbekiston Respublikasi “Auditor” (yoki “Bosh auditor”) unvoniga ega, auditorlik faoliyatida kamida 3 yil tajribaga ega bo‘lishi kerak.  \n   - Boshqa auditorlar – oliy ma’lumot (moliyaviy, iqtisodiy yoki yuridik) va auditorlik sertifikati (yoki “Auditor” unvoni) bilan tasdiqlangan bo‘lishi zarur.  \n5. **Litsenziya/ro‘yxatga olish** – Auditorlik xizmatlarini ko‘rsatish uchun “Davlat nazorati va audit xizmatlari bo‘yicha qo‘mitadan” ruxsatnoma (litsenziya) olish.  \n6. **Ichki hujjatlar** – Statut, ichki audit siyosati, me’yoriy hujjatlar, mijozlar bilan shartnomalar va maxfiylik siyosati kabi hujjatlarni tayyorlash.  \n7. **Moliyaviy hisobot** – Tashkilot faoliyatini boshlashdan oldin va har yili audit hisobotini tasdiqlash, soliq organlariga topshirish.  \n8. **Boshqa talablar** –  \n   - Auditorlik faoliyatini amalga oshirishda mustaqillik va ob’ektivlikni ta’minlash.  \n   - Maxsus texnik‑boshqaruv tizimlari (ma’lumotlar xavfsizligi, sifat nazorati)ga ega bo‘lish.  \n   - Moliya vazirligi yoki Davlat nazorati va audit xizmatlari bo‘yicha qo‘mitaning belgilagan me’yoriy talablari va standartlariga (ISO 9001, ISO 19011, O‘zbekiston auditorlik standartlari) rioya qilish.  \n\nUshbu talablar bajarilgandan so‘ng, auditorlik tashkiloti qonuniy ravishda faoliyat ko‘rsatishi va mijozlarga audit xizmatlarini taqdim etishi mumkin.",
+          "latency_ms": 1856,
+          "tokens": 862,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "O'zbekistonda auditorlik tashkilotini yaratish uchun quyidagi talablar mavjud: \n\n1. Tijorat tashkiloti sifatida davlat ro'yxatidan o'tgan bo'lishi;\n2. Kamida 3 ta litsenziyaga ega auditorlardan iborat jamoa;\n3. Auditorlik faoliyatini amalga oshirish uchun zarur infratuzilma va resurslarga ega bo'lishi;\n4. Auditorlik tashkilotlari reyestrida ro'yxatdan o'tgan bo'lishi. \n\nShuningdek, tashkilot rahbarining ham auditorlik litsenziyasiga ega bo'lishi talab qilinadi.",
+          "latency_ms": 868,
+          "tokens": 210,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Auditorlik Tashkilotini yaratish uchun quyidagi talablar mavjud:\n\n- Auditorlik tashkiloti yuridik shaxs shaklida tuziladi;\n- Ustav fondi (kapitali)ning miqdori kamida 100 mln. so‘m bo‘lishi kerak;\n- Kamida 2 nafar auditor (shuningdek, 1 nafar yordamchi auditor) bo‘lishi kerak;\n- Bosh auditor yoki uning o‘rinbosari lavozimiga ega bo‘lgan xodim kamida 3 yillik auditorlik tajribasiga ega bo‘lishi kerak;\n- Auditorlik tashkiloti o‘z shtatida kamida bitta ichki auditorga ega bo‘lishi kerak;\n- U o‘z faoliyatini “Auditorlik faoliyati to‘g‘risida”gi qonunga, O‘zbekiston Respublikasi Prezidentining farmonlari va qarorlariga, Vazirlar Mahkamasining qarorlariga, O‘zbekiston Respublikasi Moliya vazirining buyruqlariga va boshqa normativ hujjatlarga muvofiq amalga oshirishi kerak.",
+          "latency_ms": 896,
+          "tokens": 317,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Tasdiqlangan hisobga ega bo‘lish, auditorlik xizmati litsenziyasi, malakali auditorlarga ega bo‘lish va 50 million so‘mdan kam bo‘lmagan kapital.",
+          "latency_ms": 898,
+          "tokens": 156,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОАО \"Аудиторский центр\" готов помочь вам с вопросом о создании аудиторского филиала. \n\nДля создания аудиторского филиала вам необходимо выполнить следующие шаги:\n\n1. Определите цели и задачи создания аудиторского филиала. Вам нужно решать, какие услуги вы предлагаете и к клиентам куда вы хотите расширить свои возможности.\n\n2. Проведите анализ рынка и оцените возможности развития вашего бизнеса в новом месте. Обратите внимание на специфику этого региона, клиентов, которые могут интересоваться вашими услугами и возможность сотрудничества с другими аудиторскими компаниями или компаниями в сфере бухгалтерского управления.\n\n3. Получите необходимые документы и разрешения для создания аудиторского филиала. В Узбекистане для аудиторского филиала вам необходимо:\n\n   - Получить регистрационные документы для аудиторского филиала, такие как заявка на регистрацию и документы о финансовой способности и опыте аудиторского филиала.\n   - Получить разрешение на выполнение аудиторских работ в новом регионе. Вам может потребоваться получить разрешение от Министерства финансов и налоговых вопросов.\n   - Получить разрешение на работу в экономическом контроле и налоговом контроле.\n\n4. Создайте план развития и размещение аудиторского филиала. Выберите месторасположение, где будет удобно для ваших клиентов и будущих работников. Планируйте организацию и работу аудиторского филиала, учитывая специфику региона и предложения вашего бизнеса.\n\n5. Организовывайте аудиторский филиал и устанавливайте его финансовые и юридические условия. Выберите административные и юридические лицензии и установите связ",
+          "latency_ms": 1138,
+          "tokens": 1126,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-52",
+      "type": "audit",
+      "category_uz": "Auditorlik va Moliyaviy Nazorat",
+      "question": "Qaysi hollarda auditorlik tashkiloti Auditorlik tashkilotlarining reyestridan chiqariladi?",
+      "reference_answer": "Auditorlik tashkiloti quyidagi hollarda Auditorlik tashkilotlarining reyestridan chiqariladi:\nO‘zbekiston Respublikasi “Auditorlik faoliyati to‘g‘risida”gi Qonunining 27-moddasida belgilangan talablarga nomuvofiqlik aniqlangan taqdirda;\nauditorlik tashkiloti tugatilganda;\nauditorlik faoliyati bilan bog‘liq bo‘lmagan boshqa faoliyat turlari amalga oshirilganda yoki faoliyat turi o‘zgarganda;\nauditorlik tekshiruvini o‘tkazishdagi cheklovlar buzilganda;\nbila turib soxta auditorlik xulosasi tuzilganda;\nauditorlik xizmatlari ko‘rsatish chog‘ida olingan maxfiy axborot oshkor qilinganda;\nauditorlik faoliyatini amalga oshirishda auditorlik tashkiloti javobgarligining sug‘urta polisi mavjud bo‘lmaganda;\nauditorlik tashkiloti ishi sifatining tashqi nazorati o‘tkazilayotganda zarur hujjatlarni va axborotlarni vakolatli davlat organiga taqdim etmaganda.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Auditorlik tashkiloti quyidagi hollarda Auditorlik tashkilotlarining reyestridan chiqariladi: litsenziyaning amal qilish muddati tugaganda, litsenziya bekor qilinganda yoki auditorlik tashkiloti tugatilganda.",
+          "latency_ms": 2292,
+          "tokens": 133,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Auditorlik tashkilotining Reyestrdan chiqarilish holatlari\n\nO'zbekiston Respublikasining **\"Auditorlik faoliyati to'g'risida\"gi Qonuniga** asosan, auditorlik tashkiloti reyestrdan quyidagi hollarda chiqariladi:\n\n1. **Tashkilotning o'z ixtiyori bilan** ariza berishi;\n\n2. **Yuridik shaxs tugatilganda** (likvidatsiya yoki bankrotlik);\n\n3. **Litsenziya bekor qilinganda** — qonun talablarini buzganligi uchun;\n\n4. **Malakaviy talablar bajarilmaganda** — masalan, tashkilot tarkibida belgilangan miqdorda sertifikatlangan auditor bo'lmasa;\n\n5. **Sug'urta shartnomasi tuzilmaganda** — kasbiy javobgarlik sug'urtasi mavjud bo'lmasa;\n\n6. **Yolg'on ma'lumotlar taqdim etilganda** — reyestrga kiritish uchun noto'g'ri hujjatlar berilganda;\n\n7. **Mustaqillik talablari buzilganda** — auditorlik faoliyatiga qo'yilgan cheklovlar e'tiborga olinmaganda.\n\n> ⚠️ Reyestrdan chiqarilgan tashkilot **auditorlik faoliyatini yuritish huquqini yo'qotadi**.",
+          "latency_ms": 14174,
+          "tokens": 518,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 1.987027507s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '1s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Auditorlik tashkiloti quyidagi hollarda Auditorlik tashkilotlarining reyestridan chiqariladi:\n\n- Auditorlik faoliyatini to'xtatganligi yoki tugatilganligi to'g'risida ariza bergan taqdirda;\n- Auditorlik tashkiloti litsenziyasining amal qilish muddati tugagan taqdirda;\n- Auditorlik tashkiloti bankrot deb e'lon qilingan taqdirda;\n- Auditorlik tashkiloti qonun hujjatlariga rioya qilmagani yoki auditorlik faoliyatini noto'g'ri olib borayotganligi aniqlangan taqdirda.",
+          "latency_ms": 1341,
+          "tokens": 302,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Auditorlik tashkiloti quyidagi hollarda reyestrdan chiqariladi:  \n1. Moliyaviy hisobotlarni yolg'iz tayyorlash yoki yolg'iz ma'lumotlar taqdim etish.  \n2. Auditorlik standartlarini buzish.  \n3. Rekvisitlar yoki faoliyat shartlarini qonuniy talablarga javob bermaslik.  \n4. Qaydnomalarni yoki hisobotlarni bepul topshirmaslik.  \n5. Yuridik jihatdan cheklangan faoliyat yoki jinoyat ishlari bilan aloqadorlik.",
+          "latency_ms": 1359,
+          "tokens": 485,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Auditorlik tashkiloti quyidagi hollarda Auditorlik tashkilotlari reyestridan chiqariladi:\n\n1. **Litsenziya yoki ro‘yxatdan o‘tish huquqini yo‘qotganda** (masalan, litsenziya muddati tugashi, yangilanishi rad etilganda).  \n2. **Qonunbuzarlik yoki axloq‑buzarlik sodir etilganda** (audit standartlariga rioya qilmaslik, firibgarlik, korrupsiya, jiddiy moliyaviy xatolar).  \n3. **Bankrotlik yoki likvidatsiya jarayoniga kirganda**.  \n4. **Jiddiy jinoiy javobgarlikka tortilganda** (masalan, moliyaviy jinoyatlar, firibgarlik, pul yuvish).  \n5. **Davlat nazorati organlari tomonidan audit faoliyatini to‘xtatish yoki cheklash qarori qabul qilinganda**.  \n6. **Reyestrda keltirilgan ma’lumotlar noto‘g‘ri yoki yangilanmagan bo‘lsa, va bu holat tuzatilmasa**.",
+          "latency_ms": 1203,
+          "tokens": 553,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Auditorlik faoliyati to'g'risidagi qonunchilikni buzganligi, reyestrga kiritilgan ma'lumotlarni o'zgartirish yoki yangilash tartibini bir necha bor buzganligi, tugatilishi yoki bankrotligi munosabati bilan auditorlik tashkiloti Auditorlik tashkilotlarining reyestridan chiqariladi.",
+          "latency_ms": 796,
+          "tokens": 161,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Auditorlik tashkiloti quyidagi hollarda Auditorlik tashkilotlarining reyestridan chiqariladi:\n\n- auditorlik tashkiloti tomonidan berilgan deklaratsiya asosida;\n- auditorlik tashkilotining faoliyatini tugatish (yoki to'xtatib turish) to'g'risida qaror qabul qilinganda;\n- sudning qonuniy kuchga kirgan qarori bilan;\n- agar auditorlik tashkiloti o'z faoliyatini bir yildan ortiq muddat davomida amalga oshirmasa;\n- reyestrga kiritilgan paytdan e'tiboran 6 oydan ortiq muddat davomida litsenziya talablariga muvofiq bo‘lmagan hollarda.",
+          "latency_ms": 939,
+          "tokens": 231,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Auditorlik tashkiloti quyidagi hollarda reyestrdan chiqariladi:\n\n1. O‘z ariza bilan\n2. Litsenziyasi bekor qilinsa\n3. Majburiy sukut tartibida reyestrda 12 oy mavjud bo‘lmasa\n4. Muddati o‘tgan hisob-sanarsho‘ni topshirmasa\n5. Hay’ati to‘liq bo‘lmasa",
+          "latency_ms": 1358,
+          "tokens": 219,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Шуман, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандыр. Бирок сонгондукча, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандыр.\n\nАудитория тушкунлардан чыгаргандырлар, ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын ОЗТАС башкаша аудитория тушкунлардан чыгаргандырлар. Бирок, якын",
+          "latency_ms": 1126,
+          "tokens": 1136,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-53",
+      "type": "audit",
+      "category_uz": "Auditorlik va Moliyaviy Nazorat",
+      "question": "Moliyaviy hisobotning xalqaro standartlari (MHXS) va Auditning xalqaro standartlari (AXS) bo‘yicha qanday o‘quv markazlarida o‘quv kurslaridan o‘tish mumkin?",
+      "reference_answer": "O‘zbekiston Respublikasi Prezidentining 2020-yil 24-fevraldagi “Moliyaviy hisobotning xalqaro standartlariga o‘tish bo‘yicha qo‘shimcha chora-tadbirlar to‘g‘risida”gi PQ-4611-sonli qaroriga muvofiq, 2021-yildan boshlab MHXS va AXS bo‘yicha o‘qitish faqat buxgalteriya hisobi sohasidagi xalqaro tashkilotning akkreditatsiyasidan o‘tgan o‘quv markazlari tomonidan amalga oshirilishi belgilangan.\nAССА akkreditatsiyasidan o‘tgan o‘quv markazlarining to‘liq ro‘yxati “Buxgalteriya hisobi va audit uslubiyoti departamenti ~ Akkreditatsiyadan o‘tgan o‘quv markazlari” (https://www.mf.uz/ru/auditorskaya-deyatelnost.html) bo‘limida joylashtirilgan.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "O'zbekistonda MHXS va AXS bo'yicha o'quv kurslarini \"PricewaterhouseCoopers\" (PwC), \"Deloitte\", \"Ernst & Young\" (EY), va \"KPMG\" kabi xalqaro kompaniyalar hamda \"O'zbekiston Respublikasi Buxgalterlar va Auditorlar Milliy Assotsiatsiyasi\" kabi mahalliy tashkilotlarda o'tish mumkin.",
+          "latency_ms": 2010,
+          "tokens": 198,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## MHXS va AXS bo'yicha O'quv Markazlari\n\n### 🇺🇿 O'zbekistondagi asosiy markazlar:\n\n**1. ACCA O'zbekiston**\n- MHXS va audit bo'yicha xalqaro sertifikatlar\n- Toshkent shahrida faoliyat yuritadi\n\n**2. PWC Academy O'zbekiston**\n- MHXS bo'yicha amaliy kurslar\n- Korporativ va individual o'qitish\n\n**3. Toshkent Moliya Instituti**\n- MHXS asoslari bo'yicha rasmiy dasturlar\n\n**4. Deloitte Academy (O'zbekiston ofisi)**\n- Moliyaviy hisobot standartlari bo'yicha seminarlar\n\n**5. O'zbekiston Auditorlar Palatasi**\n- AXS bo'yicha malaka oshirish kurslari\n- Auditorlik sertifikati olish uchun tayyorlov\n\n### 🌐 Online platformalar:\n- **Coursera / edX** – MHXS bo'yicha xalqaro kurslar\n- **ACCA Global** – acca.global sayti orqali\n- **ICAP / ICAEW** – xalqaro audit standartlari\n\n### 📌 Tavsiya:\nRasmiy **ACCA** yoki **CPA** sertifikati olish uchun akkreditatsiyalangan markazlarga murojaat qilish maqsadga muvofiq.",
+          "latency_ms": 11000,
+          "tokens": 569,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 46.172001278s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '46s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Moliyaviy hisobotning xalqaro standartlari (MHXS) va Auditning xalqaro standartlari (AXS) bo‘yicha o‘quv markazlarida o‘quv kurslaridan o‘tish uchun \"ACCA\" (Association of Chartered Certified Accountants), \"CIMA\" (Chartered Institute of Management Accountants) va \"IFRS\" (International Financial Reporting Standards) kabi xalqaro tashkilotlar tomonidan akkreditatsiya qilingan o‘quv markazlarga murojaat qilish mumkin.",
+          "latency_ms": 948,
+          "tokens": 293,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "O'zbekistonda IFRS va ISA bo'yicha o'quv kurslarini quyidagi institutlarda o'tish mumkin:  \n1. **TATU (Dunyo iqtisodiyoti va diplomatikasining O'zbekiston Davlat universiteti)** – Moliya, audit va moliyaviy hisobot bo'yicha keng dasturlar.  \n2. **Moliya vazirligi Akademiyasi** – Moliyaviy xisobot va audit bo'yicha xalqaro standartlarni o'rgatadi.  \n3. **CPE (Xalqaro xususiy biznes markazi)** – Xalqaro standartlarga asoslangan audit va moliya bo'yicha treninglar.  \n4. **Toshkent iqtisodiyot va moliya instituti** – IFRS/ISA kurslari mavjud.  \n5. **Onlayn platformalar** (masalan, Coursera, edX) – xalqaro universitetlar tomonidan o'qitiladi.  \n\nKurslar haqida tafsilot uchun institutlar veb-saytlarini ko'rib chiqing.",
+          "latency_ms": 1810,
+          "tokens": 686,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Moliyaviy hisobotning xalqaro standartlari (MHXS) va Auditning xalqaro standartlari (AXS) bo‘yicha kurslar taklif qiluvchi asosiy o‘quv markazlari:\n\n- **Toshkent Davlat Iqtisodiyot Universiteti (TDIU) – Moliyaviy hisobot va audit kafedrasi**  \n- **O‘zbekiston Auditorlar Instituti (OAI) – Sertifikatli IFRS va ISA kurslari**  \n- **Professional Academy of Auditors (PAA) – Xalqaro standartlar bo‘yicha intensiv treninglar**  \n- **KPMG Uzbekistan Training Center** – IFRS 2024, ISA 2023 kurslari  \n- **PwC Uzbekistan Academy** – IFRS Fundamentals, ISA Practical Application  \n- **EY Uzbekistan Learning Hub** – Xalqaro moliyaviy hisobot va audit standartlari  \n- **Deloitte Uzbekistan Training Center** – IFRS Implementation, ISA Audit Techniques  \n- **Uzbekiston Moliyaviy Akademiyasi (UFA) – Xalqaro standartlar bo‘yicha qisqa kurslar**  \n\nUshbu markazlarda odatda onlayn ham, shaxsan ham kurslar o‘tkaziladi; ro‘yxatdan o‘tish va kurs jadvalini ularning rasmiy veb‑saytlaridan tekshirish tavsiya etiladi.",
+          "latency_ms": 1485,
+          "tokens": 702,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "O'zbekistonda MHXS va AXS bo'yicha o'quv kurslarini ACCA, ICAEW, CFA Institute kabi xalqaro tashkilotlar yoki mahalliy o'quv markazlari, masalan, \"Tashkent Academy of Finance\", \"Professional Development Center\" va boshqa shu kabi tashkilotlarda o'tash mumkin.",
+          "latency_ms": 1220,
+          "tokens": 187,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Moliyaviy hisobotning xalqaro standartlari (MHXS) va Auditning xalqaro standartlari (AXS) bo‘yicha o‘quv kurslaridan o‘tish uchun quyidagi o‘quv markazlariga murojaat qilishingiz mumkin:\n\n*   Jahon banki va xalqaro moliya korporatsiyasi (IFC) o'quv markazlari;\n*   Xalqaro buxgalteriya federatsiyasi (IFAC) va KPMG, EY, Deloitte kabi xalqaro kompaniyalarning O'zbekistan dagi filiallari;\n*   Oliy ta'lim muassasalarining (uni) buxgalteriya hisobi va audit yo'nalishlari;\n*   Xalqaro va mahalliy institutlarning, masalan, O'zbekiston Respublikasi Moliya vazirligi, Davlat soliq qo'mitasi huzuridagi o'quv markazlari.",
+          "latency_ms": 835,
+          "tokens": 320,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Toshkent moliyaviy instituti, Tashkent State University of Economics, Grant Pro, PwC Academy, Deloitte, ACCA, CIMA o‘quv markazlarida MHXS (IFRS) va AXS (ISA) bo‘yicha kurslar mavjud.",
+          "latency_ms": 2623,
+          "tokens": 204,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ: Добрый день! Я готов помочь вам с вопросами связанными с международными стандартами и услугами консультации в области международных финансовых и уголовных законодательств.\n\nВ отношении вашего вопроса о том, как получить образование в области международных стандартов финансового и уголовного управления в ОБСЕ, я могу предложить следующие методы:\n\n1. Обучение в ОБСЕ: В ОБСЕ предлагаются различные курсы и семинары по международным стандартам финансового и уголовного управления. Вы можете обратиться на сайт ОБСЕ или связаться с их контактными членами, чтобы получить дополнительную информацию о предлагаемых программах обучения и возможности принятия участия в их проведении.\n\n2. Обучение в ОБСЕ и в других организациях: Вы можете искать информацию о возможности обучения в других организациях, которые предлагают курсы по международным стандартам финансового и уголовного управления. Например, ОБСЕ может предложить вам связаться с другими организациями, которые предлагают такие курсы, такие как Международный Комитет по Финансовому Управлению (INTOSAI) или Международный Комитет по Уголовному Управлению (INTAG). Вы можете обратиться к их сайтам или контактным членам, чтобы получить информацию о возможных курсах и возможности обучения.\n\n3. Обучение в ОБСЕ и в других международных организациях: Вы можете искать информацию о возможности обучения в других международных организациях, которые предлагают курсы по международным стандартам финансового и уголовного управления. Например, Международный Комитет по Ф",
+          "latency_ms": 1121,
+          "tokens": 1172,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-54",
+      "type": "audit",
+      "category_uz": "Auditorlik va Moliyaviy Nazorat",
+      "question": "Bitta tadbirkorlik subyektida auditorlik tekshiruvlarini o‘tkazish davomiyligi bo‘yicha qanday cheklovlar o‘rnatilgan?",
+      "reference_answer": "O‘zbekiston Respublikasining 2021-yil 25-fevraldagi O‘RQ-677-sonli “Auditorlik faoliyati to‘g‘risida”gi Qonunining 34-moddasida auditorlik tashkiloti bitta tadbirkorlik subyektida ketma-ket yetti yildan ortiq auditorlik tekshiruvini o‘tkazishga haqli emasligi belgilangan.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Bitta tadbirkorlik subyektida auditorlik tekshiruvlarini o‘tkazish davomiyligi bir yil davomida 30 ish kunidan oshmasligi kerak.",
+          "latency_ms": 2578,
+          "tokens": 138,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "claude-sonnet": {
+          "response": "## Auditorlik tekshiruvi davomiyligi bo'yicha cheklovlar\n\nO'zbekiston Respublikasining **\"Auditorlik faoliyati to'g'risida\"gi Qonuni** va tegishli me'yoriy hujjatlarga asosan:\n\n### Asosiy cheklovlar:\n\n- **Bir auditorlik tashkiloti** tomonidan bir xil subyektda **ketma-ket 3 yildan ortiq** muddatga majburiy audit o'tkazish **taqiqlanadi**\n\n- Majburiy auditda **audit boshlig'i (yetakchi auditor)** bir subyektda ketma-ket **5 yildan ortiq** ishlay olmaydi\n\n### Tekshiruv muddati:\n\n- Audit o'tkazish muddati **shartnomada belgilanadi** va odatda subyektning hajmi hamda murakkabligiga qarab **bir necha kundan bir necha oygacha** davom etishi mumkin\n\n### Maqsad:\nBu cheklovlar auditorning **mustaqilligini ta'minlash** va **manfaatlar to'qnashuvini** oldini olish maqsadida joriy etilgan.\n\n> ⚠️ *Aniq holatlar uchun amaldagi qonunchilikni yoki malakali auditor/yuristga murojaat qilish tavsiya etiladi, chunki normalar yangilanishi mumkin.*",
+          "latency_ms": 14173,
+          "tokens": 512,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 33.138170751s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "O'zbekiston Respublikasida bitta tadbirkorlik subyektida auditorlik tekshiruvlarini o‘tkazish davomiyligi 45 kalendar kunidan oshmasligi kerak.",
+          "latency_ms": 759,
+          "tokens": 193,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "Bitta tadbirkorlik subyektida auditorlik tekshiruvlarini o‘tkazish muddati 3 oydan oshmasa bo‘ladi. Agar kerak bo‘lsa, 1 marta 3 oyga qo‘shimcha muddat berilishi mumkin. Jami muddat 6 oydan oshmasa kerak.",
+          "latency_ms": 3105,
+          "tokens": 887,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Bitta tadbirkorlik subyektida auditorlik tekshiruvining davomiyligi bo‘yicha quyidagi cheklovlar mavjud:\n\n1. **Auditorlik tekshiruvi – 3 oy ichida yakunlanishi** kerak (hisob‑davr oxiridan boshlab).  \n2. **Auditorlik hisobotini – tekshiruv yakunlangandan keyin 30 kun ichida topshirish** shart.  \n3. **Bir auditor bir subyektni besh (5) ketma‑ketik yildan ortiq audit qilolmaydi**; besh yildan keyin rotatsiya (boshqa auditor yoki audit firmasi) talab qilinadi.  \n\nUshbu me’yorlar auditorlik tekshiruvining vaqtinchalik chegaralarini belgilab, mustaqillik va sifatni ta’minlaydi.",
+          "latency_ms": 1812,
+          "tokens": 805,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "Bitta tadbirkorlik subyektida auditorlik tekshiruvlarini o‘tkazish davomiyligi  bir yilda 60 kundan ortiq bo‘lmasligi kerak. Shu bilan birga, bunday tekshiruvlarning minimal davomiyligi ham mavjud bo‘lib, u 20 kundan kam bo‘lmasligi lozim.",
+          "latency_ms": 1279,
+          "tokens": 185,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-scout": {
+          "response": "Bitta tadbirkorlik subyektida auditorlik tekshiruvlarini o‘tkazish davomiyligi 30 ish kunidan oshmasligi kerak.",
+          "latency_ms": 540,
+          "tokens": 143,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "kimi-k2": {
+          "response": "Audit tekshiruvining maksimal davomiyligi — 15 ish kuni (audit tashkiloti ishtirokidagi tekshiruv uchun 10 ish kuni).",
+          "latency_ms": 2810,
+          "tokens": 170,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОАО \"ТадбирКорпус\" готов помочь вам с вопросами по экономике и праву. Пожалуйста, предоставьте мне более подробную информацию о вашем вопросе, и я предложу вам соответствующие рекомендации и инструменты для решения проблемы.\n\nВопрос: Как проверить аудит отчетов в сфере битваньеса?\n\nОтвет: Для проверки аудит отчетов в сфере битваньеса вы можете применить следующие шаги:\n\n1. Установите контакт с аудиторским агентством, которое выбираете для проведения аудита. Обратитесь к их специалистам и обсудите ваши требования и вопросы.\n\n2. Определите требования к аудиту и основные критерии, которые важны для вашего бизнеса. Например, вы можете запросить аудит отчетов о битваньях, проведение аудита финансовых данных или аудит системы управления качеством.\n\n3. Обратите внимание на сертификаты или дипломы аудиторского агентства, которые выбираете. Убедитесь, что они имеют необходимые сертификаты или дипломы, чтобы обеспечить качество аудита и достоверность результатов.\n\n4. Обратите внимание на опыт аудиторского агентства и специалистов, которые будут проводить аудит. Убедитесь, что они имеют необходимый опыт в области аудита битванья и имеют знания о стандартах и требованиях к аудиту в вашей сфере деятельности.\n\n5. Обсудите стоимость и услуги аудиторского агентства. Убедитесь, что они предоставляют выгодные условия и не вызывают дополнительные затраты для вашего бизнеса.\n\n6. Обсудите сроки и планы аудита. Убедитесь, что аудиторы смогут выполнить аудит в удобное для вас время и с учетом ваших требований и перспектив.\n\n7. Обсудите результаты аудита и их использование для улучшени",
+          "latency_ms": 1240,
+          "tokens": 1155,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-55",
+      "type": "valyuta",
+      "category_uz": "Bojxona va Valyuta",
+      "question": "Bojxona ombori faoliyatini litsenziyalash uchun arizani ko‘rib chiqish uchun to‘lanadigan yig‘im miqdori qancha?",
+      "reference_answer": "Bazaviy hisoblash miqdorining 50 foizi. Shu jumladan litsenziya qayta rasmiylashtirilayotganda, litsenziya berish to‘g‘risidagi arizani ko‘rib chiqqanlik uchun to‘lanadigan summaning ellik foizi miqdorida.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Bojxona ombori faoliyatini litsenziyalash uchun arizani ko‘rib chiqish yig‘imi miqdori 10 BHM (bazaviy hisoblash miqdori)ni tashkil etadi.",
+          "latency_ms": 1347,
+          "tokens": 144,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "claude-sonnet": {
+          "response": "Bojxona ombori faoliyatini litsenziyalash uchun arizada ko'rib chiqish yig'imi **5 bazaviy hisoblash miqdori (BHM)** tashkil etadi.\n\n> ⚠️ **Eslatma:** BHM miqdori har yili o'zgarishi mumkin. Eng dolzarb ma'lumot uchun O'zbekiston Davlat Bojxona Qo'mitasiga yoki rasmiy me'yoriy hujjatlarga murojaat qilish tavsiya etiladi.",
+          "latency_ms": 5162,
+          "tokens": 280,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 17.62838532s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Bojxona ombori faoliyatini litsenziyalash uchun arizani ko‘rib chiqish uchun to‘lanadigan yig‘im miqdori 5 million so‘m.",
+          "latency_ms": 527,
+          "tokens": 191,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "qwen3-32b": {
+          "response": "Bojxona ombori litsenziyalash arizasini ko‘rib chiqish uchun 1 500 000 so'm to'lanadi.",
+          "latency_ms": 1250,
+          "tokens": 411,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Bojxona ombori faoliyatini litsenziyalash uchun arizani ko‘rib chiqish yig‘imi — 100 000 so‘m.",
+          "latency_ms": 1063,
+          "tokens": 501,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-maverick": {
+          "response": "Bojxona ombori faoliyatini litsenziyalash uchun arizani ko‘rib chiqish uchun BHMning 5 baravari miqdorida yig‘im undiriladi. 2024-yil 1-maydan boshlab O'zbekistonda BHM miqdori 330 000 so'm. Demak, 5 x 330 000 = 1 650 000 so'm.",
+          "latency_ms": 1180,
+          "tokens": 194,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "llama4-scout": {
+          "response": "Bojxona ombori faoliyatini litsenziyalash uchun arizani ko‘rib chiqish uchun to‘lanadigan yig‘im miqdori 500 AQSh dollaridir.",
+          "latency_ms": 624,
+          "tokens": 144,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "kimi-k2": {
+          "response": "Bojxona ombori faoliyatini litsenziyalash uchun arizani ko‘rib chiqish uchun to‘lanadigan yig‘im 10 000 dollar.",
+          "latency_ms": 1189,
+          "tokens": 169,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "allam-2-7b": {
+          "response": "Консультант ОБСЕ Узбекистана говорит:\n\nВаш вопрос касается фактора, необходимого для организации бойцовки в Узбекистане, чтобы получить лицензию. Для того чтобы помочь вам найти ответ, я попробую предоставить вам информацию о этом факторе и правилах бойцовки в Узбекистане.\n\nВ Узбекистане бойцовка является спортивной игрой, и ее проведение требует согласования с государственными органами и соответствующими организациями. Важно учитывать следующие факторы, которые могут влиять на процесс получения лицензии для бойцовки:\n\n1. Организация и проведение бойцовки: Узбекстан требует, чтобы бойцовка была проведена в соответствии с законодательством и правилами государства. Вам необходимо обратиться к соответствующим органам и организациям, чтобы узнать требования и требования к проведению бойцовки.\n\n2. Организация бойцовки: Вам необходимо обратиться к органам государства и организациям, занимающимся спортом, чтобы узнать требования к организации бойцовки, включая требования к месту проведения, безопасности, медицинскому обслуживанию и другим важным аспектам.\n\n3. Лицензия и регистрация: Вам необходимо уточнить, какие документы и формы регистрации требуются для получения лицензии на проведение бойцовки в Узбекистане. Вам необходимо обратиться к государственным органам и организациям, занимающимся спортом, чтобы узнать требования к регистрации и получению лицензии на проведение бойцовки.\n\n4. Безопасность и безопасность: Важно убедиться, что проведение бойцовки будет соответствовать требованиям к безопасности и безопасности для участников, поддержателей и наблюдателей. Ва",
+          "latency_ms": 1129,
+          "tokens": 1151,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-56",
+      "type": "valyuta",
+      "category_uz": "Bojxona va Valyuta",
+      "question": "Bojxona deklaratsiyasini qachon to‘ldirish shart?",
+      "reference_answer": "Kiritilayotgan yoki olib chiqilayotgan tovarlar belgilangan me’yorlardan oshsa deklaratsiya majburiy.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Bojxona deklaratsiyasini tovarlar yoki valyutani mamlakat chegarasidan olib kirishda yoki olib chiqishda, belgilangan qiymat yoki miqdor chegaralaridan oshganda to'ldirish shart.",
+          "latency_ms": 2443,
+          "tokens": 128,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "claude-sonnet": {
+          "response": "## Bojxona Deklaratsiyasini To'ldirish Majburiy Bo'lgan Holatlar\n\nBojxona deklaratsiyasi quyidagi hollarda **majburiy ravishda** to'ldiriladi:\n\n### 🛃 Shaxslar uchun:\n- Chegara orqali **2 000 AQSh dollaridan ortiq** naqd pul olib o'tilganda\n- **Yuridik shaxslar** uchun esa istalgan miqdordagi valyuta olib o'tishda\n- Bojxona nazoratiga **tobe bo'lgan tovarlar** olib kirilganda yoki olib chiqilganda (oziq-ovqat, hayvonlar, qimmatbaho metallar, qurol va boshqalar)\n\n### 📦 Tovarlar uchun:\n- Tijorat maqsadida tovar **import yoki eksport** qilinganda\n- Shaxsiy foydalanish uchun **me'yordan ortiq** tovar olib o'tilganda\n- **Boj to'lovlariga** tortiluvchi har qanday mahsulot olib o'tishda\n\n### ✈️ Transport vositalari uchun:\n- Xorijiy transport vositasi **vaqtincha olib kirilganda**\n\n> ⚠️ Deklaratsiya **bojxona punktidan o'tishdan oldin** to'ldirilishi shart. To'ldirilmagan taqdirda ma'muriy yoki jinoiy javobgarlik yuzaga kelishi mumkin.",
+          "latency_ms": 14180,
+          "tokens": 518,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 11.221954445s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Bojxona deklaratsiyasini to'ldirish O'zbekiston Respublikasi hududiga tovarlar, transport vositalari va boshqa narsalar olib kirilganda, chiqarilganda yoki tranzit orqali o'tkazilganda shart.",
+          "latency_ms": 803,
+          "tokens": 188,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Bojxona deklaratsiyasini to'ldirish muddati boj xizmati tomonidan belgilangan muddatlarga qarab o'zgaradi. Umuman olganda, shaxsiy daromad bojxonasini keyingi yilning 31-martigacha, Qo'shimcha qiymatli bojxonasini esa o'tgan oyni 20-kunda to'ldirish kerak. Tashkilotlar uchun esa deklaratsiya muddati o'zgarishiga qaramay, o'tgan yilning 31-martigacha topshiriladi.",
+          "latency_ms": 1382,
+          "tokens": 467,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Bojxona deklaratsiyasini to‘ldirish shart bo‘ladigan holatlar:\n\n1. **Import (import) yoki eksport (eksport) operatsiyalarida** – tovarni mamlakatga kiritish yoki chiqarish paytida.\n2. **Mamlakat ichida bojxona hududidan tashqariga chiqadigan yoki hududga kiradigan** har qanday transport vositasi (yuk, pochtalar, samolyot, temir yo‘l, avtomobil) bilan olib kelinayotgan yoki olib ketilayotgan tovarlar.\n3. **Mulkni bojxona nazorati ostida saqlash, qayta ishlash, qayta eksport qilish** kabi maxsus rejalar doirasida amalga oshirilayotgan har qanday operatsiyada.\n4. **Bojxona nazorati ostida bo‘lgan maxsus rejalar (masalan, vaqtinchalik import, qayta eksport, tranzit) bo‘yicha** amalga oshiriladigan har qanday harakatda.\n\nUmuman olganda, har qanday **xalqaro savdo, transport yoki bojxona hududiga kirish/chiqish** holatida deklaratsiya to‘ldirilishi shart.",
+          "latency_ms": 982,
+          "tokens": 432,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "Tovar va transport vositalarini O'zbekiston hududidan olib o'tishda yoki ushbu hududga olib kirishda.",
+          "latency_ms": 589,
+          "tokens": 106,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Bojxona deklaratsiyasini quyidagi hollarda to‘ldirish shart:\n- Agar siz olib kelayotgan yoki olib ketayotgan tovarlar bojxona to‘lovlariga tortilishi kerak bo‘lsa;\n- Agar siz olib kelayotgan yoki olib ketayotgan tovarlar uchun bojxona deklaratsiyasi talab qilinsa.",
+          "latency_ms": 517,
+          "tokens": 149,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Bojxona deklaratsiyasini tovar chegaradan o‘tkazishdan oldin to‘ldirish shart.",
+          "latency_ms": 1282,
+          "tokens": 134,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шундук: Божксона декларациясини кўйиш шартларининг буларни о'згурлашдириш маслахатларининг эммонасиясини бердик. Бунинг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсасларининг бирликсининг эминлик эсаслари",
+          "latency_ms": 1130,
+          "tokens": 1123,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-57",
+      "type": "valyuta",
+      "category_uz": "Bojxona va Valyuta",
+      "question": "Valyutani chetga olib chiqishning ruxsat etilgan hajmi qanday?",
+      "reference_answer": "Amaldagi qoidalarga muvofiq belgilangan limitlar mavjud; oshsa deklaratsiya talab etiladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "O'zbekistonda jismoniy shaxslar tomonidan chet el valyutasini olib chiqishning ruxsat etilgan hajmi 10,000 AQSh dollarigacha bo'lgan miqdorda deklaratsiyasiz amalga oshiriladi.",
+          "latency_ms": 1697,
+          "tokens": 135,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "claude-sonnet": {
+          "response": "## Valyutani chetga olib chiqish chegaralari (O'zbekiston)\n\n**Naqd xorijiy valyuta:**\n\n* **10 000 AQSh dollari** (yoki ekvivalent miqdor) gacha — **bojxona deklaratsiyasisiz** olib chiqish mumkin\n* **10 000 dollardan ortiq** bo'lsa — **bojxona deklaratsiyasi** to'ldirilishi **majburiy**\n\n**O'zbek so'mi:**\n\n* Naqd so'mni chetga olib chiqish **taqiqlangan**\n\n> ⚠️ **Muhim:** Chegara qoidalari vaqti-vaqti bilan o'zgarishi mumkin. Sayohatdan oldin O'zbekiston Davlat Bojxona Qo'mitasi yoki xizmat ko'rsatuvchi bank bilan **rasmiy ma'lumotni tekshirib olish** tavsiya etiladi.",
+          "latency_ms": 9045,
+          "tokens": 363,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 55.814148171s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '55s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "O'zbekiston Respublikasi fuqarolari uchun valyutani chetga olib chiqishning ruxsat etilgan hajmi 5000 AQSh dollarigacha.",
+          "latency_ms": 608,
+          "tokens": 168,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "O'zbekistonda shaxslar yili 10 000 AQSH dollari yoki mazkur miqdorga teng bo'lgan boshqa valyutalarni chetga olib chiqish ruxsat etilgan. Bu miqdorni o'ttirish uchun O'zbekiston Milliy Banki tomonidan ruxsatnomani olish kerak. Chiqishda valyuta miqdori 10 000 AQSH dollari yoki undan ortiq bo'lsa, valyuta xabarnomasi yoki ruxsatnoma talab qilinadi. Yuridik shaxslar uchun alohida qoidalarga e'tibor qaratiladi.",
+          "latency_ms": 2192,
+          "tokens": 659,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Oʻzbekiston fuqarolari va rezidentlari valyutani chetga olib chiqishda bir safar uchun **10 000 AQSh dollari (yoki unga teng bo‘lgan boshqa xorijiy valyuta)** miqdorigacha ruxsat etilgan. Bu miqdordan oshgan holda, valyuta miqdori va manbaini deklaratsiya qilish, shuningdek, tegishli ruxsatnomalarni olish talab qilinadi. (Yuridik shaxslar uchun maksimal ruxsat etilgan hajm 100 000 AQSh dollari yoki unga teng bo‘lgan valyuta.)",
+          "latency_ms": 973,
+          "tokens": 434,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-maverick": {
+          "response": "O'zbekistondan chet elga chet el valyutasini olib chiqish O'zbekiston Respublikasi Markaziy banki tomonidan belgilangan tartibga muvofiq amalga oshiriladi. Jismoniy shaxslar bojxona nazorati zonasidan naqd pul shaklidagi chet el valyutasini (shu jumladan, yo'lovchi cheklarini) quyidagi miqdorda olib chiqishlari mumkin: agar olib chiqilayotgan naqd pul shaklidagi chet el valyutasining (yo'lovchi cheklarining) umumiy summasi 5 ming AQSh dollariga teng yoki undan kam bo'lsa, bojxona nazorati ostida ekanligi to'g'risida belgilangan tartibda tasdiqlangan holda bojxona to'lovlari va soliqlarsiz; 5 mingdan 10 ming AQSh dollarigacha bo'lgan summani bojxona deklaratsiyasida ko'rsatilgan holda bojxona to'lovlari va soliqlarsiz. Ushbu miqdordan ortiq chet el valyutasini naqd pul shaklida olib chiqish taqiqlanadi.",
+          "latency_ms": 1544,
+          "tokens": 339,
+          "score": 100,
+          "parsed": "togri",
+          "correct": true,
+          "verdict_raw": "togri"
+        },
+        "llama4-scout": {
+          "response": "Chet el valyutasini O'zbekistondan olib chiqish uchun ruxsat etilgan miqdor har bir shaxs uchun 1000 AQSh dollarigacha cheklangan, yil davomida undan ortiq bo'lmagan miqdorda olib chiqish mumkin.",
+          "latency_ms": 481,
+          "tokens": 142,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "kimi-k2": {
+          "response": "Jismoniy shaxslar uchun $2 000 AQSh dollari miqdoridagi xorijiy valyutani naqd olib chiqishiga ruxsat berilgan.",
+          "latency_ms": 956,
+          "tokens": 149,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шуман, як мені потрібно відповісти на вашу спиральну справу про валюту Узбекистана. Якщо вам потрібно додаткові інформації про валюту Узбекистану, я зобов'язаний допомогти вам. Однак, ваша спиральна справа буде окремо відредагована з використанням Узбекістанського мова.\n\nВалюта Узбекистану - це юзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзбекская ўзб",
+          "latency_ms": 1132,
+          "tokens": 1128,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-58",
+      "type": "lombard",
+      "category_uz": "Lombard va Turizm",
+      "question": "Lombard faoliyatini amalga oshirish uchun qanday shartlarda litsenziya beriladi?",
+      "reference_answer": "Lombard faoliyatini faqat ixtisoslashtirilgan yuridik shaxslar amalga oshirishi mumkin va buning uchun Markaziy bank tomonidan berilgan litsenziyaga ega bo‘lishi shart. Litsenziya muddatsiz beriladi, uni boshqa yuridik shaxsga berish taqiqlanadi. Litsenziya olish uchun yuridik shaxs lombard sifatida qonunchilikda belgilangan tartibda ro‘yxatdan o‘tgan bo‘lishi, kamida 500 mln. so‘m ustav fondiga ega bo‘lishi kerak. Ushbu fond faqat muassislarning pul mablag‘lari hisobidan shakllantiriladi, kredit yoki garov mablag‘lari hisobidan shakllantirish taqiqlanadi. Shuningdek, bino va kassalar texnik mustahkamligi, yong‘in xavfsizligi, signalizatsiya, aloqa liniyalari va buxgalteriya dasturiy ta’minoti bo‘yicha Markaziy bank hududiy boshqarmasidan ijobiy xulosa bo‘lishi shart.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Lombard faoliyatini amalga oshirish uchun litsenziya olish uchun quyidagi shartlar talab etiladi: yuridik shaxs sifatida ro'yxatdan o'tish, minimal ustav kapitaliga ega bo'lish, zaruriy hujjatlarni taqdim etish va litsenziya to'lovini to'lash. Shuningdek, moliyaviy barqarorlik va malakali kadrlar mavjudligi ham tekshiriladi.",
+          "latency_ms": 3295,
+          "tokens": 175,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Lombard faoliyati uchun litsenziya shartlari\n\nO'zbekiston Respublikasida lombard faoliyatini amalga oshirish uchun quyidagi shartlar bajarilishi lozim:\n\n### Tashkiliy shartlar:\n- **Yuridik shaxs** sifatida ro'yxatdan o'tish (MChJ yoki AJ shaklida)\n- **Ustav kapitali** – belgilangan minimal miqdorda (O'zbekiston Markaziy banki talablariga muvofiq)\n- **Muassislar** tegishli malaka va obro'ga ega bo'lishi\n\n### Hujjatlar:\n- Ariza\n- Ustav va ta'sis hujjatlari\n- Davlat ro'yxatidan o'tganlik guvohnomasi\n- Rahbarlar va mas'ul xodimlar haqida ma'lumot\n- Moddiy-texnik baza mavjudligi to'g'risida hujjatlar\n- Moliyaviy ahvol to'g'risida hisobot\n\n### Texnik talablar:\n- Maxsus **omborxona va seyf** mavjudligi\n- Xavfsizlik tizimi (signal, kamera)\n- Mol-mulkni baholash uchun malakali mutaxassis\n\n### Litsenziya beruvchi organ:\nLombard faoliyatiga litsenziyani **O'zbekiston Respublikasi Markaziy banki** beradi.\n\n> ⚠️ Aniq va dolzarb talablar uchun Markaziy bankning rasmiy veb-saytiga ([cbu.uz](https://cbu.uz)) yoki tegishli me'yoriy hujjatlarga murojaat qilish tavsiya etiladi.",
+          "latency_ms": 15011,
+          "tokens": 593,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 45.376211827s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Lombard faoliyatini amalga oshirish uchun litsenziya O'zbekiston Respublikasi Markaziy banki tomonidan beriladi. Buning uchun lombardga asosiy kapital, tajriba, xodimlar malakasi va boshqa talablar bo'yicha qat'iy me'yorlar mavjud.",
+          "latency_ms": 903,
+          "tokens": 212,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "Lombard litsenziyasini olish uchun quyidagilarni qondirish kerak:  \n1. **Moliyaviy ehtimoliyat** — 50 mln so'mdan kam bo'lmasa kerak.  \n2. **Xavfsiz joy** — faoliyat yuritish uchun xavfsiz va qonuniy qurilgan joy kerak.  \n3. **Moliyaviy reja** — lombardning moliyaviy rejasini taqdim etish talab qilinadi.  \n4. **Menejerlar** — boshqaruv xodimlarida jinoyat arafatining bo'lmasligi kerak.  \n5. **Qonunlarga rioya** — AML (qo'shni pulni yashirish) qoidalari va boshqa qonunlarga amal qilish.  \n6. **Sertifikatlar** — xavfsizlik, moliyaviy ehtimoliyatni tasdiqlovchi hujjatlar topshirish.  \n\nLitsenziya **O'zbekiston Respublikasi Markaziy Banki** tomonidan beriladi.",
+          "latency_ms": 2461,
+          "tokens": 690,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Lombard (zaxira aktivlar asosida kredit) faoliyatini yuritish uchun litsenziya O‘zbekiston Markaziy banki (MBank) tomonidan beriladi. Litsenziya olish shartlari quyidagilardan iborat:\n\n1. **Yuridik shaxsning ro‘yxatdan o‘tganligi** – bank, moliyaviy institut yoki boshqa moliyaviy xizmat ko‘rsatishga ruxsat etilgan yuridik shaxs bo‘lishi kerak.  \n2. **Minimal kapital talabi** – MBank belgilagan minimal asosiy kapital miqdorini (odatda bir necha milliard so‘m) ta’minlash.  \n3. **Xodimlar va boshqaruv** – moliyaviy, kredit va risk‑boshqaruv sohalarida yetarli malakaga ega, litsenziyali faoliyatni boshqarish uchun zarur bo‘lgan bosh direktor va boshqaruv kengashi a’zolari bo‘lishi.  \n4. **Ichki nazorat va risk‑boshqaruv tizimi** – kredit riskini, likvidlik riskini, operatsion riskni nazorat qilish uchun yozma ichki siyosat, protseduralar va audit tizimi mavjud bo‘lishi.  \n5. **Moliya hisobotlari va audit** – mustaqil auditor tomonidan tasdiqlangan moliyaviy hisobotlarni taqdim etish.  \n6. **Kredit siyosati va zaxira aktivlar bo‘yicha me’yorlar** – zaxira aktivlar (qimmatli qog‘ozlar, obligatsiyalar, depozit sertifikatlari va h.k.) qabul qilish, baholash va saqlash bo‘yicha aniq me’yorlar va protseduralar mavjud bo‘lishi.  \n7. **Xavfsizlik va ma’lumotlarni himoya qilish** – mijoz ma’lumotlarini himoya qilish, kiberxavfsizlik choralarini ko‘rish.  \n8. **Qonuniy va tartibga soluvchi talablar** – O‘zbekiston Respublikasining “Bank faoliyati to‘g‘risida”gi qonuni, “Moliyaviy institutlar faoliyati to‘g‘risida”gi normativ hujjatlari va MBankning litsenziyalash bo‘yicha ko‘rsatmalariga rioya qilish.  \n\nUshbu shartlar to‘liq bajarilganda, ariza MBankga topshirilib, tekshirishdan o‘tgandan so‘ng, Lombard kredit faoliyatini yuritish uchun litsenziya beriladi.",
+          "latency_ms": 2022,
+          "tokens": 903,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Lombard faoliyatini amalga oshirish uchun litsenziya quyidagi shartlarga rioya qilinganda beriladi: \n\n1. Tijorat tashkiloti sifatida davlat ro'yxatidan o'tgan bo'lishi;\n2. Ta'sischilar (ishtirokchilar) va ijro organlari rahbarlarining ishonchliligi;\n3. To'char kapitalning mavjudligi;\n4. Boshqaruv va moliyaviy hisobot talablariga rioya qilish.",
+          "latency_ms": 1431,
+          "tokens": 184,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Lombard faoliyatini amalga oshirish uchun litsenziya berish shartlari O‘zbekiston Respublikasi Prezidentining 2017-yil 20-oktyabrdagi “O‘zbekiston Respublikasida lombard faoliyatini litsenziyalash to‘g‘risida”gi qarori bilan belgilangan.\n\nLitsenziya olish uchun quyidagi shartlarga rioya qilish zarur:\n- yuridik shaxs maqomi;\n- ustav kapitali kamida 100 million so‘m;\n- axborot xavfsizligi va kompyuter tizimlari himoyalanganligi;\n- xodimlarga qo‘yiladigan malaka talablariga rioya etish.",
+          "latency_ms": 758,
+          "tokens": 237,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Lombard faoliyatini amalga oshirish uchun litsenziya berish quyidagi shartlarga asoslangan:\n\n1. **Huquqiy shakl** – yuridik shaxs sifatida ro‘yxatdan o‘tilgan bo‘lishi kerak (YO‘L, MChJ, AK yoki XK korxonasi).\n\n2. **Asosiy kapital** – minimal asosiy kapital 1 000 ta minimum hisoblash miqdoridan (MHM) kam bo‘lmasligi kerak (bugungi kunda bu miqdor taxminan 340 mln so‘m).\n\n3. **Ofis va jihozlar** – lombard ofisi, tarona va kassavoy jihozlari bilan jihozlangan bo‘lishi talab etiladi.\n\n4. **Xodimlar** – lombard menejerlari va direktori litsenziya olish huquqiga ega bo‘lgan malakali bo‘lishi kerak.\n\n5. **Antisub‘ekt holati** – lombard aktsionerlari, yirik ishtirokchilari va rahbar xodimlari sui-qasaq ishtirokchi (antisub‘ekt) ekanligi holati bo‘yicha tekshiruvdan o‘tadi.\n\n6. **Kredit so‘rovi** – lombard litsenziyasi faqatlikka ajralmaydi; lombard litsenziyasi olish uchun **Markaziy Bankka aralashmasdan so‘raladi**. Litsenziya olish ariza bilan birga tegishli hujjatlar (kapital bo‘yicha hisobot, jamg‘armaning nomeri, ofis mavjudligi haqida dalil) taqdim etiladi.\n\nMarkaziy Bank 15 kun davomida arizani ko‘rib chiqadi va litsenziya oshkor shaklda beriladi.\n\n**JAVOB QISQA:**  \n– 1,000 MHM (≈340 mln so‘m) minimal asossiz kapital;  \n– jihozlangan ofis;  \n– litsenziya olish huquqiga ega bo‘lgan xodimlar;  \n– sui-qasaq ishtirokchi bo‘lmagan ishtirokchilar;  \n– Markaziy Bankka arzimzozlik bilan hujjatlar topshiriladi;  \n– Markaziy Bank 15 kun ichida litsenziya beradi.",
+          "latency_ms": 3359,
+          "tokens": 682,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шуман, як мені потрібно відповісти на вашу спиральну справу про лімбардську файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову файлову фа",
+          "latency_ms": 1192,
+          "tokens": 1136,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-59",
+      "type": "lombard",
+      "category_uz": "Lombard va Turizm",
+      "question": "Turizm sohasida tabdirkorlikni yo‘lga qo‘ymoqchiman, davlat tomonidan qanday moliyaviy ko‘makka umid qilsam bo‘ladi?",
+      "reference_answer": "O‘zbekiston Respublikasi Prezidentining \"Turizm, madaniyat, madaniy meros va sport sohalarini yanada rivojlantirish uchun qo‘shimcha sharoitlar yaratish to‘g‘risida\"gi farmoniga asosan 2022-yil 1-maydan boshlab yoshlarning tadbirkorlik tashabbuslarini qo‘llab-quvvatlash maqsadida Davlat byudjetidan Turizm va sportni qo‘llab-quvvatlash jamg‘armasiga ajratiladigan mablag‘lar hisobidan har bir tashabbuskorga 50 mln so‘m miqdorida, jami 10 mlrd so‘mgacha grantlar ajratiladi.\nBunda:\n- grant mablag‘lari onlayn to‘lovlarni qabul qiluvchi zamonaviy veb-sayt yaratishga, xorijiy mamlakatlardagi turizm ko‘rgazma va yarmarkalarida ishtirok etishga yo‘naltiriladi;\n- grant mablag‘lari belgilangan tartibda xorijiy mamlakatlardan O‘zbekiston Respublikasiga uch yil davomida kamida 200 nafar xorijiy turistlar uchun tur tashkil qilish sharti bilan ajratiladi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "O'zbekistonda turizm sohasida tadbirkorlikni rivojlantirish uchun davlat tomonidan quyidagi moliyaviy ko‘makka umid qilishingiz mumkin: imtiyozli kreditlar, grantlar, soliq imtiyozlari va subsidiyalar. Bu dasturlar doimiy ravishda yangilanib turadi, shuning uchun Davlat turizm qo‘mitasi va tijorat banklari bilan bog‘lanib, dolzarb ma'lumotlarni olish tavsiya etiladi.",
+          "latency_ms": 3370,
+          "tokens": 211,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Turizm sohasida davlat moliyaviy ko'magi\n\n### 1. **Imtiyozli kreditlar**\n- **Tadbirkorlik jamg'armasi** orqali yillik **8-12%** foizda kredit olish mumkin\n- **\"Yoshlar - kelajagimiz\"** dasturi doirasida yoshlar uchun qulayroq shartlar mavjud\n\n### 2. **Soliq imtiyozlari**\n- Turizm infratuzilmasini rivojlantiruvchi korxonalar **mulk solig'i va yer solig'idan ozod** qilinishi mumkin\n- Yangi turistik hududlarda faoliyat yurituvchilar uchun **soliq ta'tillari** ko'zda tutilgan\n\n### 3. **\"Visit Uzbekistan\" dasturi**\n- Turistik mahsulotlarni xorijda targ'ib qilish uchun **davlat ko'magi**\n- Xalqaro ko'rgazmalarga **subsidiyalashtirilgan ishtirok**\n\n### 4. **Erkin iqtisodiy zonalar**\n- Turizmga yo'naltirilgan EIZlarda (masalan, Chimyon, Charvak) **maxsus imtiyozlar** taqdim etiladi\n\n### 5. **Murojaat qilish joylari**\n- **Tadbirkorlik agentligi** (tadbirkorlik.uz)\n- **O'zbekturizm** milliy kompaniyasi\n- **Hududiy hokimliklar** investitsiya bo'limlari\n\n> ⚠️ **Eslatma:** Imtiyozlar biznes-reja va loyiha turiga qarab farqlanadi. Aniq shartlar uchun tegishli idoraga murojaat qilish tavsiya etiladi.",
+          "latency_ms": 16268,
+          "tokens": 620,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 28.797672341s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '28s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Turizm sohasida tadbirkorlikni yo‘lga qo‘yish uchun O‘zbekiston hukumati tomonidan turli moliyaviy ko‘maklar taqdim etiladi. Jumladan, mikro-kreditlar, subsidiyalar, soliq imtiyozlari, investitsiya loyihalariga moliyaviy qo‘llab-quvvatlash va boshqalar. Shuningdek, \"O‘zbekiston Turizm Develoment\" kompaniyasi ham turizm sohasidagi tadbirkorlarga moliyaviy yordam ko‘rsatadi.",
+          "latency_ms": 1281,
+          "tokens": 294,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "O'zbekiston Respublikasining \"Startup\" dasturi, Davlat kichik bizneslarga moliyaviy qo'llash dasturlari, \"Investitsiya va eksport rivojlantirish agentligi\" (IEA) tomonidan kichik bizneslarga beriladigan kreditlar, shuningdek, \"Samarqand-2030\" kabi mintaqaviy rivojlantirish dasturlari turizm sohasiga moliyaviy qo'llash imkonini beradi. Batafsil ma'lumot olish uchun Davlat katta bizneslarni rivojlantirish vazirligi veb-saytini ko'rib chiqing.",
+          "latency_ms": 1506,
+          "tokens": 443,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gpt-oss-120b": {
+          "response": "Davlat turizm sohasida tadbirkorlikni qo‘llab‑quvvatlash uchun bir necha moliyaviy yordam shakllarini taklif etadi:\n\n- **Grant (grant) dasturlari** – “Turizmni rivojlantirish” fondi, “Investitsion grant” dasturi orqali loyiha xarajatlarining 30‑50 % gacha qoplanadi (maksimal miqdor 10 mln so‘m).  \n- **Past foizli kreditlar** – O‘zbekiston Respublikasi Markaziy banki va O‘zbekInvest banki tomonidan turizm obyektlari, xizmat ko‘rsatish infratuzilmasi uchun 5‑7 % yillik stavkada kreditlar beriladi.  \n- **Mikrokredit va start‑up kreditlari** – “Yosh tadbirkorlar” dasturi doirasida 1‑5 mln so‘mgacha mikrokreditlar, qaytarish muddati 3‑5 yil.  \n- **Soliq imtiyozlari** – turizm obyektlari uchun 3‑5 yillik daromad solig‘i, QQS (QQS) to‘lovlaridan ozod qilish yoki kamaytirish, yer uchastkasini ijaraga olishda imtiyozli tariflar.  \n- **Mahalliy hokimiyatlar yordamlari** – viloyat va tuman hokimiyatlari orqali yer uchastkasini ijaraga berish, kommunal xizmatlar (elektr, suv) uchun subsidiyalar.  \n- **Konsultatsiya va texnik yordam** – Turizm va sport vazirligi, Investitsiyalar va tashqi iqtisodiy aloqalar vazirligi tomonidan loyiha tayyorlash, litsenziyalash, sertifikatlash bo‘yicha bepul maslahatlar.\n\nBu yordamlarni olish uchun:\n1. **Loyihani tayyorlash** – biznes‑reja, moliyaviy prognoz, ijtimoiy‑ekologik ta’sir tahlili.  \n2. **Murojaat qilish** – Turizmni rivojlantirish fondi, O‘zbekInvest, mahalliy hokimiyat yoki “Yosh tadbirkorlar” dasturi portaliga ariza topshirish.  \n3. **Talablarni bajarish** – loyiha hajmi, investitsiya miqdori, ish o‘rinlari yaratish ko‘rsatkichlari va boshqa mezonlarga mos kelishi.\n\nShu yo‘nalishlarda murojaat qilsangiz, davlatdan moliyaviy ko‘mak olish imkoniyati yuqori.",
+          "latency_ms": 1829,
+          "tokens": 860,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Turizm sohasida tadbirkorlikni boshlash uchun davlat tomonidan turli moliyaviy ko'mak turlari mavjud. \"Tadbirkorlikni qo'llab-quvvatlash jamg'armasi\" hamda \"O'zbekinvest\" eksport-import banki tomonidan imtiyozli kreditlar ajratiladi. Shuningdek, \"Biznesni boshlash uchun zarur hujjatlar sonini qisqartirish va tadbirkorlik faoliyatini ro'yxatdan o'tkazishni soddalashtirish\" kabi dasturlar orqali ham qo'llab-quvvatlanadi. Batafsil ma'lumotni tegishli davlat organlari va mahalliy hokimiyatlardan olish mumkin.",
+          "latency_ms": 1096,
+          "tokens": 258,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "O‘zbekiston hukumati turizm sohasini rivojlantirish uchun turli moliyaviy ko‘maklar beradi.  Siz quyidagi imkoniyatlardan foydalanishingiz mumkin:\n\n- Subsidiyalar: Turizm sohasidagi yangi loyihalar uchun davlat subsidiyalar ajratishi mumkin. \n\n- Kreditlar: Imtiyozli kreditlar turizm biznesini yo‘lga qo‘yish yoki kengaytirish uchun ajratiladi. \n\n- Soliq imtihozlari: Turizm sohasidagi faoliyat uchun soliq imtihozlari berilishi mumkin.\n\n- Grantlar: Xalqaro tashkilotlar va davlat dasturlari orqali grantlar ajratiladi.\n\nDavlat tomonidan beriladigan moliyaviy ko‘maklar haqida batafsil ma’lumot olish uchun O‘zbekiston Turizm va madaniy meros vazirligi yoki boshqa tegishli davlat organlariga murojaat qilishingiz mumkin.",
+          "latency_ms": 797,
+          "tokens": 297,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Turizm sohasida biznes boshlash uchun quyidagi davlat moliyaviy ko‘maklari mavjud:\n\n1. **Befoqr kreditlar**: Milliy banklar orqali 7-14% foiz stavkada, 3-5 yil muddatga.\n\n2. **Grantlar**: \"Yo‘lboshchi\" dasturi orqali 30-50 mln so‘mgacha grant.\n\n3. **Lizing**: Jihozlarni 0-5% boshlang‘ich to‘lov bilan 3-7 yilga olish mumkin.\n\n4. **Sug‘urta kafolati**: Kreditning 50-80% qismi davlat tomonidan sug‘urtalanadi.\n\n5. **Soliq imtiyozlari**: Yangi biznes uchun 2-3 yil soliq imtiyozlari.\n\nMurojaat uchun: \"Kichik biznesni rivojlantirish jamgʻarmasi\" va yoki \"Turizm rivojlantirish markazi\".",
+          "latency_ms": 3454,
+          "tokens": 360,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Ваше уважаемые гостя, я помощник по материальной литературе и я готов помочь вам с вопросами по юридическим и материальным вопросам. Однако, ваш вопрос касается того, как можно получить медицинскую помощь в сфере туризма в Узбекистане. Если вы имеете вопрос по этому поводу, пожалуйста, дайте мне знать, и я постараюсь предоставить вам информацию и советы. Если ваш вопрос касается другой темы, пожалуйста, уточните, и я помогу вам найти информацию по этой теме.",
+          "latency_ms": 617,
+          "tokens": 422,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    },
+    {
+      "id": "LQ-60",
+      "type": "lombard",
+      "category_uz": "Lombard va Turizm",
+      "question": "Lombard litsenziyasi olish uchun qaysi hujjatlar taqdim etilishi kerak?",
+      "reference_answer": "Litsenziya olish uchun da’vogar yuridik shaxs quyidagi hujjatlarni Markaziy bankka topshirishi lozim: litsenziya berish haqida ariza; bir yillik faoliyat uchun biznes-reja; muassislar ro‘yxati va ularning shaxsiy yoki yuridik ma’lumotlari, ulushlari va oxirgi 5 yil ichida qo‘llangan huquqiy jazo choralari; boshqaruv organlari tarkibi va tuzilishi haqida ma’lumotlar; naqd pul va garov mulklarining xavfsiz saqlanishi uchun jihozlangan xonalar mavjudligini tasdiqlovchi hujjatlar; litsenziya uchun yig‘im to‘langanligini tasdiqlovchi to‘lov topshiriqnomasi. Ushbu ro‘yxat to‘liq hisoblanadi va ortiqcha hujjat talab qilish taqiqlanadi.",
+      "source": "wakilai-legal-benchmark-uz",
+      "responses": {
+        "gpt-4o": {
+          "response": "Lombard litsenziyasi olish uchun quyidagi hujjatlar taqdim etilishi kerak:\n\n1. Ariza;\n2. Tashkilotning ustav hujjatlari;\n3. Ta'sischilar to'g'risidagi ma'lumotlar;\n4. Moliyaviy hisobotlar;\n5. Litsenziya yig'imi to'langanligini tasdiqlovchi hujjat.\n\nHujjatlar ro'yxati va talablar hududiy qonunchilikka qarab o'zgarishi mumkin.",
+          "latency_ms": 2712,
+          "tokens": 193,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "claude-sonnet": {
+          "response": "## Lombard Litsenziyasi Olish Uchun Talab Qilinadigan Hujjatlar\n\nO'zbekiston Respublikasida lombard faoliyatini litsenziyalash **Markaziy bank** tomonidan amalga oshiriladi. Taqdim etiladigan asosiy hujjatlar:\n\n### Asosiy Hujjatlar:\n1. **Ariza** – belgilangan namuna bo'yicha\n2. **Ta'sis hujjatlari** – ustav, ta'sis shartnomasi (notarial tasdiqlangan nusxalari)\n3. **Davlat ro'yxatidan o'tganlik guvohnomasi** nusxasi\n4. **Soliq ro'yxatidan o'tganlik** hujjati (STIR)\n5. **Ustav kapitali** to'langanligini tasdiqlovchi hujjat\n6. **Rahbar va bosh buxgalter** haqida ma'lumot (diplom, mehnat daftarchasi, shaxsiy guvohnoma)\n7. **Biznes-reja**\n8. **Ijara shartnomasi** yoki mulkka egalik hujjati\n9. **Ichki qoidalar va tartiblar** to'plami\n10. **Davlat boji** to'langanligi haqida kvitansiya\n\n### Muhim Eslatma:\n> Talablar vaqti-vaqti bilan yangilanishi mumkin. Eng dolzarb ro'yxat uchun **O'zbekiston Markaziy banki** rasmiy saytiga ([cbu.uz](https://cbu.uz)) yoki bevosita muassasaga murojaat qilish tavsiya etiladi.",
+          "latency_ms": 14267,
+          "tokens": 573,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "gemini-flash": {
+          "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 10.963023657s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '10s'}]}}]",
+          "score": 0,
+          "correct": false
+        },
+        "llama-70b": {
+          "response": "Lombard litsenziyasi olish uchun quyidagi hujjatlar taqdim etilishi kerak: \n- Tashkilotning davlat ro'yxatidan o'tganligi haqidagi guvohnoma;\n- Tashkilotning ustav fondi to'g'risidagi ma'lumot;\n- Tashkilotning moliyaviy hisoboti;\n- Boshqaruv organi tomonidan tasdiqlangan litsenziya olish uchun ariza;\n- Boshqa zarur hujjatlar.",
+          "latency_ms": 1021,
+          "tokens": 258,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "qwen3-32b": {
+          "response": "1. Yuridik shaxs sertifikati (Yuridik shaxs sertifikatini olish to'g'risida giyoh).  \n2. Kompyuterlashtirilgan moliya hisobi (CIN) sertifikati.  \n3. Kompyuterlashtirilgan moliya hisobi (CIN) sertifikati.  \n4. Kompyuterlashtirilgan moliya hisobi (CIN) sertifikati.  \n5. Kompyuterlashtirilgan moliya hisobi (CIN) sertifikati.  \n6. Kompyuterlashtirilgan moliya hisobi (CIN) sertifikati.  \n7. Kompyuterlashtirilgan moliya hisobi (CIN) sertifikati.  \n8. Kompyuterlashtirilgan moliya hisobi (CIN) sertifikati.  \n9. Kompyuterlashtirilgan moliya hisobi (CIN) sertifikati.  \n10. Kompyuterlashtirilgan moliya hisobi (CIN) sertifikati.",
+          "latency_ms": 1966,
+          "tokens": 702,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        },
+        "gpt-oss-120b": {
+          "response": "Lombard litsenziyasini olish uchun quyidagi hujjatlar taqdim etilishi kerak:\n\n1. **Ariza** – litsenziya olish uchun to‘ldirilgan rasmiy ariza.\n2. **Tashkilotning asosiy hujjatlari** – ustav (charter), ro‘yxatdan o‘tkazish to‘g‘risidagi guvohnoma.\n3. **Moliyaviy hisobotlar** – oxirgi 2‑3 yilga oid auditdan o‘tkazilgan balans, foyda‑zarar hisobi va pul oqimlari hisobotlari.\n4. **Kapital yetarliligi haqida ma’lumot** – minimal talab qilingan kapital miqdorini tasdiqlovchi hujjat.\n5. **Risk‑boshqaruv siyosati** – Lombard kreditlari, garov aktivlari va likvidlik risklarini boshqarish bo‘yicha ichki qoidalar.\n6. **Ichki nazorat va audit tizimi** – ichki audit, monitoring va nazorat mexanizmlari tavsifi.\n7. **Boshqaruv organlari haqida ma’lumot** – direktorlar, boshqaruv kengashi a’zolari, ularning malakasi va tajribasi.\n8. **Garov aktivlari ro‘yxati** – qabul qilinadigan aktiv turlari va ularning baholash me’yorlari.\n9. **Kompaniya faoliyatini tasdiqlovchi litsenziyalar yoki ruxsatnomalar** (agar mavjud bo‘lsa).\n10. **To‘lov kvitansiyasi** – litsenziya arizasini topshirish uchun belgilangan to‘lovni amalga oshirganligini tasdiqlovchi hujjat.\n\nBu hujjatlarni to‘liq va aniq shaklda taqdim etish Lombard litsenziyasini olish jarayonini tezlashtiradi.",
+          "latency_ms": 1654,
+          "tokens": 723,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-maverick": {
+          "response": "Lombard litsenziyasi olish uchun quyidagi hujjatlar taqdim etilishi kerak: \n\n1. Arizachi tashkilotning yuridik shaxsini tasdiqlovchi hujjatlar (ta'sis hujjatlari, nizom, davlat ro'yxatidan o'tkazilganligi to'g'risidagi guvohnoma);\n2. Boshqaruv tarkibi va mulkdorlar to'g'risidagi ma'lumotlar;\n3. Moliyaviy hisobotlar (balans, daromadlar va xarajatlar to'g'risidagi hisobot);\n4. Lombard faoliyatini amalga oshirish uchun zarur bo'lgan moddiy-texnik bazani tasdiqlovchi hujjatlar (binolar, jihozlar va boshqalar);\n5. Davlat boji to'langanligini tasdiqlovchi hujjat.",
+          "latency_ms": 1006,
+          "tokens": 268,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "llama4-scout": {
+          "response": "Lombard litsenziyasi olish uchun quyidagi hujjatlar taqdim etilishi kerak:\n\n1. Litsenziya olish uchun ariza.\n2. Ta'sis hujjatlari (ustav, ta'sis shartnomasi).\n3. Davlat ro'yxatidan o'tkazilganlik to'g'risidagi guvohnoma.\n4. Soliq organida ro'yxatdan o'tganlik to'g'risidagi guvohnoma.\n5. Bankrotlik to'g'risidagi guvohnoma (bo'lishi kerak emas).\n6. Litsenziya olish uchun zarur bo'lgan boshqa hujjatlar.\n\nBarcha hujjatlar notarial tasdiqlangan bo'lishi kerak.",
+          "latency_ms": 709,
+          "tokens": 233,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "kimi-k2": {
+          "response": "Lombard litsenziyasi olish uchun quyidagi hujjatlar taqdim etiladi:\n\n1. Litsenziyaga ilova (so‘rov)\n2. Suddan ro‘yxatdan o‘tganlik to‘g‘risidagi guvohnoma (asosiy arizani qo‘shib)\n3. Davlat boji to‘landi to‘g‘risidagi kvitansiya\n\n(yana: idora akkreditatsiyasidan o‘tganlik guvohnomasi, xodimlar doimiy yashash shahobida yuborilgan malumot, bank rekvizitlari, elektron ko‘rinishdagi uchtaraf ishchi bitim)",
+          "latency_ms": 3498,
+          "tokens": 269,
+          "score": 50,
+          "parsed": "qisman",
+          "correct": false,
+          "verdict_raw": "qisman"
+        },
+        "allam-2-7b": {
+          "response": "Шуман, як менечер ОЗБЕКСЕНТЕРА, менең ОЗБЕКСЕНТЕРА машинасинги маслахатнинг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг эмвондларининг",
+          "latency_ms": 1130,
+          "tokens": 1131,
+          "score": 0,
+          "parsed": "notogri",
+          "correct": false,
+          "verdict_raw": "notogri"
+        }
+      }
+    }
+  ],
+  "lq_leaderboard": {
+    "gpt-4o": {
+      "overall": 46.7,
+      "moliya": 50.0,
+      "biznes": 37.5,
+      "raqamli": 33.3,
+      "istemolchi": 68.8,
+      "sugurta": 42.9,
+      "audit": 37.5,
+      "valyuta": 66.7,
+      "lombard": 50.0
+    },
+    "llama4-maverick": {
+      "overall": 48.3,
+      "moliya": 50.0,
+      "biznes": 50.0,
+      "raqamli": 38.9,
+      "istemolchi": 56.2,
+      "sugurta": 50.0,
+      "audit": 37.5,
+      "valyuta": 50.0,
+      "lombard": 50.0
+    },
+    "kimi-k2": {
+      "overall": 36.7,
+      "moliya": 35.7,
+      "biznes": 45.8,
+      "raqamli": 27.8,
+      "istemolchi": 43.8,
+      "sugurta": 28.6,
+      "audit": 25.0,
+      "valyuta": 33.3,
+      "lombard": 50.0
+    },
+    "allam-2-7b": {
+      "overall": 0.0,
+      "moliya": 0.0,
+      "biznes": 0.0,
+      "raqamli": 0.0,
+      "istemolchi": 0.0,
+      "sugurta": 0.0,
+      "audit": 0.0,
+      "valyuta": 0.0,
+      "lombard": 0.0
+    },
+    "gemini-flash": {
+      "overall": 0.0,
+      "moliya": 0.0,
+      "biznes": 0.0,
+      "raqamli": 0.0,
+      "istemolchi": 0.0,
+      "sugurta": 0.0,
+      "audit": 0.0,
+      "valyuta": 0.0,
+      "lombard": 0.0
+    },
+    "qwen3-32b": {
+      "overall": 34.2,
+      "moliya": 28.6,
+      "biznes": 37.5,
+      "raqamli": 27.8,
+      "istemolchi": 56.2,
+      "sugurta": 28.6,
+      "audit": 37.5,
+      "valyuta": 16.7,
+      "lombard": 33.3
+    },
+    "claude-sonnet": {
+      "overall": 65.0,
+      "moliya": 85.7,
+      "biznes": 58.3,
+      "raqamli": 44.4,
+      "istemolchi": 93.8,
+      "sugurta": 50.0,
+      "audit": 50.0,
+      "valyuta": 50.0,
+      "lombard": 50.0
+    },
+    "gpt-oss-120b": {
+      "overall": 53.3,
+      "moliya": 57.1,
+      "biznes": 54.2,
+      "raqamli": 38.9,
+      "istemolchi": 75.0,
+      "sugurta": 42.9,
+      "audit": 37.5,
+      "valyuta": 66.7,
+      "lombard": 50.0
+    },
+    "llama4-scout": {
+      "overall": 42.5,
+      "moliya": 42.9,
+      "biznes": 41.7,
+      "raqamli": 44.4,
+      "istemolchi": 56.2,
+      "sugurta": 35.7,
+      "audit": 37.5,
+      "valyuta": 16.7,
+      "lombard": 50.0
+    },
+    "llama-70b": {
+      "overall": 35.0,
+      "moliya": 32.1,
+      "biznes": 29.2,
+      "raqamli": 27.8,
+      "istemolchi": 56.2,
+      "sugurta": 28.6,
+      "audit": 37.5,
+      "valyuta": 33.3,
+      "lombard": 50.0
     }
   }
 };
