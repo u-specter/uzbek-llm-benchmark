@@ -33,7 +33,7 @@ const MODEL_SUPERSEDED_BY = { 'grok-2': 'grok-3' };
 
 // ── Состояние ──────────────────────────────────────────────────
 const state = {
-  activeView:   'lq',
+  activeView:   'lqRating',
 
   qaSub:        'all',
   clSub:        'all',
@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderRBView();
   renderFKView();
   renderRCView();
+  renderLQRatingView();
   renderLQView();
   renderDeptsView();
 });
@@ -113,19 +114,20 @@ function setTextIfExists(id, text) {
 // ═══════════════════════════════════════════════════════════════
 
 const VIEW_MAP = {
-  rating: 'ratingView',
-  qa:     'qaView',
-  cl:     'clView',
-  rb:     'rbView',
-  fk:     'fkView',
-  rc:     'rcView',
-  lq:     'lqView',
-  depts:  'deptsView',
-  about:  'aboutView',
+  rating:   'ratingView',
+  lqRating: 'lqRatingView',
+  qa:       'qaView',
+  cl:       'clView',
+  rb:       'rbView',
+  fk:       'fkView',
+  rc:       'rcView',
+  lq:       'lqView',
+  depts:    'deptsView',
+  about:    'aboutView',
 };
 
 // Views that use simple block layout (not two-panel flex)
-const BLOCK_VIEWS = new Set(['rating', 'about']);
+const BLOCK_VIEWS = new Set(['rating', 'lqRating', 'about']);
 
 function setupNavigation() {
   document.querySelectorAll('.nav-tab').forEach(btn => {
@@ -1239,6 +1241,84 @@ function toggleRCPassage(qId, btn) {
   if (!el) return;
   const collapsed = el.classList.toggle('collapsed');
   btn.textContent = collapsed ? 'Показать полностью' : 'Свернуть';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// LQ RATING VIEW
+// ═══════════════════════════════════════════════════════════════
+
+function renderLQRatingView() {
+  const data = state.appData;
+  if (!data) return;
+
+  const lb = data.lq_leaderboard || {};
+  const categories = ['moliya','biznes','raqamli','istemolchi','sugurta','audit','valyuta','lombard'];
+  const catLabels  = {
+    moliya: 'Moliya', biznes: 'Biznes', raqamli: 'Raqamli',
+    istemolchi: "Iste'molchi", sugurta: "Sug'urta",
+    audit: 'Audit', valyuta: 'Valyuta', lombard: 'Lombard',
+  };
+  const medals = ['🥇','🥈','🥉'];
+
+  const models = Object.entries(lb)
+    .map(([id, s]) => ({ id, meta: getModelMeta(id, data), ...s }))
+    .filter(m => m.overall != null)
+    .sort((a, b) => (b.overall || 0) - (a.overall || 0));
+
+  // stat tiles
+  const tiles = document.getElementById('lqStatTiles');
+  if (tiles && models.length) {
+    const best = models[0];
+    tiles.innerHTML = `
+      <div class="stat-tile">
+        <div class="stat-tile-label">Лучшая модель</div>
+        <div class="stat-tile-value">${escHtml(best.meta.name)}</div>
+        <div class="stat-tile-sub score-green">${best.overall}%</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-tile-label">Протестировано</div>
+        <div class="stat-tile-value">${models.length} моделей</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-tile-label">Датасет</div>
+        <div class="stat-tile-value">60 вопросов</div>
+        <div class="stat-tile-sub score-yellow">wakilai-legal-benchmark-uz</div>
+      </div>`;
+  }
+
+  // table
+  const table = document.getElementById('lqLbTable');
+  if (!table) return;
+
+  const catCols = categories.map(c =>
+    `<th class="lb-cell lb-cell-score">${catLabels[c]}</th>`
+  ).join('');
+
+  const rows = models.map((m, i) => {
+    const rank  = i < 3 ? medals[i] : `${i+1}`;
+    const dot   = `<span class="model-dot" style="background:${m.meta.color || '#94a3b8'}"></span>`;
+    const badge = m.meta.type === 'commercial'
+      ? `<span class="badge badge-comm">commercial</span>`
+      : `<span class="badge badge-oss">open-source</span>`;
+    const ov    = m.overall != null ? `<span class="${scoreClass(m.overall)}">${m.overall}%</span>` : '—';
+    const catCells = categories.map(c => {
+      const v = m[c];
+      return `<td class="lb-cell lb-cell-score">${v != null ? `<span class="${scoreClass(v)}">${v}%</span>` : '—'}</td>`;
+    }).join('');
+    return `<tr>
+      <td class="lb-cell lb-cell-rank">${rank}</td>
+      <td class="lb-cell lb-cell-model">${dot}${escHtml(m.meta.name)} ${badge}</td>
+      <td class="lb-cell lb-cell-score lb-overall">${ov}</td>
+      ${catCells}
+    </tr>`;
+  }).join('');
+
+  table.innerHTML = `<thead><tr>
+    <th class="lb-cell lb-cell-rank">#</th>
+    <th class="lb-cell lb-cell-model">Модель</th>
+    <th class="lb-cell lb-cell-score">Итого</th>
+    ${catCols}
+  </tr></thead><tbody>${rows}</tbody>`;
 }
 
 // ═══════════════════════════════════════════════════════════════

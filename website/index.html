@@ -19,7 +19,8 @@
     </div>
 
     <nav class="hdr-nav">
-      <button class="nav-tab" data-view="lq">⚖️ Юридический Q&A</button>
+      <button class="nav-tab" data-view="lqRating">📊 Результаты</button>
+      <button class="nav-tab" data-view="lq">⚖️ Вопросы</button>
       <button class="nav-tab" data-view="about">ℹ О тесте</button>
       <!-- hidden: old synthetic modules (branch feature/lq-serious-benchmark) -->
       <button class="nav-tab" data-view="rating" style="display:none">🏆 Рейтинг</button>
@@ -180,6 +181,17 @@
       <main class="content" id="rcContent">
         <div class="empty-state"><div class="empty-icon">←</div><p>Выберите вопрос из списка слева</p></div>
       </main>
+    </div>
+
+    <!-- ── LQ RATING ── -->
+    <div id="lqRatingView" class="view-page" style="display:none">
+      <div class="rating-wrap">
+        <div class="stat-tiles" id="lqStatTiles"></div>
+        <div class="lb-toolbar">
+          <span class="lb-title">Рейтинг моделей · LQ</span>
+        </div>
+        <div class="lb-table-wrap"><table class="lb-table" id="lqLbTable"></table></div>
+      </div>
     </div>
 
     <!-- ── LQ — Юридический Q&A ── -->
