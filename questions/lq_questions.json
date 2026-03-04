@@ -1,0 +1,484 @@
+{
+  "questions": [
+    {
+      "id": "LQ-01",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Soliq organlarining elektron davlat xizmatlari portali bilan qanday bog‘lansa bo‘ladi?",
+      "reference_answer": "Kontaktlar va havolalar:\nSayt: my.soliq.uz\nE-mail: my@soliq.uz\nTelefon: (71) 202-32-82 yoki 1198",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-02",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Elektron soliq hisobotlari qanday topshiriladi?",
+      "reference_answer": "Soliq organlarining elektron tizimi orqali shaxsiy kabinetdan yuboriladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-03",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Jismoniy shaxs daromad solig‘ining asosiy stavkasi qanday?",
+      "reference_answer": "Asosiy stavkalar qonun bilan belgilanadi; daromad turiga ko‘ra farqlanishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-04",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "O‘zimning hovlimda qulupunay etishtiraman. Etishtirilgan hosilni mahallamdagi qo‘chada sotsam, men qancha va qanday soliq to‘layman?",
+      "reference_answer": "Soliq kodeksining 378-moddasiga asosan, uy xo‘jaligida dehqonchilik mahsulotlarini tabiiy va qayta ishlangan holda sotishdan olinadigan daromadlar bo‘yicha imtiyoz berilgan bo‘lib, bunda mazkur daromadlardan jismoniy shaxslardan olinadigan daromad solig‘i undirilmaydi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-05",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Transport vositasi uchun soliq qanday to‘lanadi?",
+      "reference_answer": "Ro‘yxatdan o‘tkazilgan transport vositasiga nisbatan yillik tartibda to‘lanadi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-06",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "2018-may oyida 100 mln so‘mga xarid qilgan uyimni 2022-yil iyun ayida 230 mln so‘mga sotdim. Mazkur holatda soliq oqibatlari yuzaga keladimi.",
+      "reference_answer": "_**Javob:**_\n_Soliq kodeksining 378-moddasi 7-bandiga asosan oʻttiz olti kalendar oydan kam boʻlmagan muddatda soliq toʻlovchining mulkida boʻlgan turar joylarni sotishdan olinadigan daromadlar jismoniy shaxslardan olinadigan daromad soligʻidan ozod qilingan.\nShundan kelib chiqib, mazkur holatda soliq oqibatlari yuzaga keladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-07",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Soliq qarzdorligini qanday tekshirish mumkin?",
+      "reference_answer": "Soliq tizimining shaxsiy kabinetida yoki soliq organiga murojaat qilib tekshiriladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-08",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "K. ismli shaxs ish joyidan beriladigan vaqtincha mehnatga qobiliyatsizlik nafaqasidan soliq hisoblaganligi haqida ma’lum qilib, bunday holatda soliq hisoblanishi to‘g‘ri yoki noto‘g‘ri ekanligi yuzasidan huquqiy tushuntirish berishni so‘radi.",
+      "reference_answer": "Mehnat layoqatini vaqtincha yo‘qotganlik uchun xodimga to‘lanadigan to‘lovlar (kasallik varaqasi asosida) jismoniy shaxslarning boshqa daromadlari hisoblanadi. Ushbu daromadlar o‘z navbatida jami daromadlar tarkibiga kiradi hamda belgilangan tartibda 12 % stavkada jismoniy shaxslardan olinadigan daromad solig‘iga tortiladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-09",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "QQS bo‘yicha ro‘yxatdan qachon o‘tiladi?",
+      "reference_answer": "Aylanish hajmi belgilangan chegaraga yetganda yoki ixtiyoriy ravishda ro‘yxatdan o‘tiladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-10",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Yakka tartibdagi tadbirkor asosiy faoliyatidan tashqari qo‘shimcha ravishda boshqa faoliyat turi bilan shug‘ullansa qanday soliq to‘laydi?",
+      "reference_answer": "O‘zbekiston Respublikasi Soliq kodeksining 375-moddasiga asosan faoliyatning bir necha turi bilan shug‘ullanuvchi soliq to‘lovchilar qat’iy belgilangan soliqni faoliyatning xar bir turi uchun mazkur turdagi faoliyatga nisbatan belgilangan stavkalar bo‘yicha alohida-alohida to‘laydilar.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-11",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "J. ismli shaxs asosiy ish joyidan tashqari, yana qo‘shimcha ravishda 2 ta tashkilotda ishlashi, ushbu har uchta tashkilotdan oladigan ish haqidan 12 foizlik stavkada jismoniy shaxslardan olinadigan daromad solig‘i hisoblanayotgani haqida ma’lum qilib, u jami yillik daromadlari haqida soliq idorasiga deklaratsiya topshirishi shart yoki shart emasligi yuzasidan huquqiy tushuntirish berishni so‘radi.",
+      "reference_answer": "Agar soliq to‘lovchining arizasiga asosan uning asosiy bo‘lmagan ish joyidan olingan daromadlaridan soliq ushlab qolingan bo‘lsa, jami yillik daromad to‘g‘risidagi deklaratsiya taqdim qilinmaydi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-12",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Korxona o‘z xodimining manfaatlarini ko‘zlab uning bolalarini maktabgacha taʼlim tashkilotlarida o‘qitish, tarbiyalash haqini to‘lab keladi. Savol tashkilotda Soliqlar qanday hisoblanadi.",
+      "reference_answer": "_**Javob:**_\n_Xodim uchun ushbu mablag‘lar Soliq kodeksining 376-moddasiga asosan moddiy naf tarzida olingan daromadlar, sifatida eʼtirof etiladi. Shuningdek, Soliq kodeksining 387-moddasiga muvofiq, moddiy naf tarzidagi daromadlarga soliq agentida jismoniy shaxslardan olinadigan daromad solig‘i solinadi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-13",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "N. ismli shaxs 2-guruh nogironi ekanligi, uning nomida hovli uy-joy borligi, soliq idorasi tomonidan ushbu hovli uy-joy bo‘yicha mol-mulk solig‘i va er solig‘i hisoblangani haqida ma’lum qilib, bunday holatda soliqlar hisoblanishi to‘g‘ri yoki noto‘g‘ri ekanligi yuzasidan huquqiy tushuntirish berishni so‘radi.",
+      "reference_answer": "I va II guruh nogironligi bo‘lgan shaxslarning mol-mulki 60 kvadrat metr doirasida soliq solishdan ozod qilinadi, shuningdek I va II guruh nogironligi bo‘lgan shaxslar jismoniy shaxslardan olinadigan er solig‘idan ozod etilgan. Mazkur imtiyoz pensiya guvohnomasi yoki tibbiy-mehnat ekspert komissiyasining ma’lumotnomasi asosida beriladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-14",
+      "type": "moliya",
+      "category_uz": "Soliq va Moliya",
+      "question": "Yer solig‘ini to‘lash muddati qachon?",
+      "reference_answer": "Yil davomida belgilangan muddatlarda to‘lovlar amalga oshiriladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-15",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "YTT hisobotlarini qayerga topshiraman?",
+      "reference_answer": "Soliq organlarining elektron tizimi orqali belgilangan davriylikda topshiriladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-16",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "Yakka tartibdagi tadbirkor sifatida ro‘yxatdan qanday o‘tiladi?",
+      "reference_answer": "Yagona portal orqali yoki davlat xizmatlari markazida ariza berib ro‘yxatdan o‘tiladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-17",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "Onlayn kassa (KKM)dan qachon foydalanish shart?",
+      "reference_answer": "Naqd va kartadagi savdoda qonunda belgilangan toifalar uchun majburiy qo‘llaniladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-18",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "B. ismli shaxs 2 yildan buyon oilaviy korxona tashkil etgan holda tadbirkorlik faoliyati bilan shug‘ullanib kelayotgani, oilaviy korxona uning yashash manzilida joylashgani sababli, yashash uyiga ulangan elektr energiyasi, suv, gazdan tadbirkorlik faoliyatini yuritishda ham foydalanib kelayotgani haqida ma’lum qilib, kommunal xizmatlar uchun to‘lovlarni qanday tariflar asosida amalga oshirilishi yuzasidan huquqiy tushuntirish berishni so‘radi.",
+      "reference_answer": "Oilaviy korxona turar joydan bir vaqtning o‘zida unda istiqomat qilgan holda tovarlar ishlab chiqarish (ishlar bajarish, xizmatlar ko‘rsatish) uchun foydalangan taqdirda, kommunal infratuzilma xizmatlari (elektr energiyasi, suv ta’minoti, kanalizatsiya, gaz ta’minoti va issiqlik ta’minoti) haqini to‘lash aholi uchun belgilangan tariflar bo‘yicha va shartlar asosida amalga oshiriladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-19",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "Elektron chek berilmasa nima bo‘ladi?",
+      "reference_answer": "Nazorat organlari tomonidan javobgarlik chorasi qo‘llanadi; iste’molchi shikoyat berishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-20",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "M. ismli shaxs dori vositalari va tibbiy buyumlarni chakana realizatsiya qilish uchun litsenziya olmoqchi bo‘lganida, litsenziyalovchi organ ushbu litsenziya faqat 2 yil muddatga berilishi haqida ma’lum qilganini bayon qilib, litsenziyalovchi organning ushbu talabi qonuniyligi yuzasidan huquqiy tushuntirish berishni so‘radi.",
+      "reference_answer": "Litsenziyalovchi organning ushbu talabi noqonuniydir. Chunki, dori vositalari va tibbiy buyumlarni chakana realizatsiya qilish uchun litsenziya besh yil muddatga beriladi.\nLitsenziya 5 yildan kam muddatga faqat litsenziya talabgorining arizasiga binoan berilishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-21",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "“Har bir oila – tadbirkor” Dasturi doirasida ajratiladigan kreditlar miqdori qancha?",
+      "reference_answer": "Loyihani amalga oshirishda, o‘z hisobidan mablag‘ ajratish sharti bilan cheklanmagan miqdorda, dastur talablariga zid bo‘lmagan yo‘nalishlarga kredit mablag‘lari ajratiladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-22",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "Kreditga 50 dona avtomashina sotib olganman. Ularning barchasini garovga qo‘yib, sug‘urta qildirganman. Sug‘urta shartnomasi kredit muddati davriga tuzilgan edi. Kredit qarzini muddat tugashidan 2 yil oldin to‘ladim. Sug‘urta mukofotini olsam bo‘ladimi?",
+      "reference_answer": "Fuqarolik kodeksining 948-moddasiga asosan sug‘urta shartnomasi, agar u kuchga kirganidan keyin sug‘urta hodisasi yuz berishi ehtimoli yo‘qolgan va sug‘urta xavfining mavjud bo‘lishi sug‘urta hodisasidan boshqa holatlar bo‘yicha tugagan bo‘lsa, tuzilgan muddati kelishidan oldin bekor bo‘ladi.\nSug‘urta shartnomasi yuqoridagi ko‘rsatilgan holatlar bo‘yicha muddatidan oldin bekor bo‘lganda, sug‘urtalovchi sug‘urta mukofotining bir qismini sug‘urta amal qilgan vaqtga mutanosib ravishda olish huquqiga ega.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-23",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "Qarzdorlikni xususiy korxona rahbaridan undirish mumkinmi?",
+      "reference_answer": "“Xususiy korxona to‘g‘risida”gi qonunning 3-moddasiga asosan, xususiy korxona mulkdori korxonaning mol-mulki etarli bo‘lmagan taqdirda xususiy korxonaning majburiyatlari bo‘yicha o‘ziga qarashli mol-mulk bilan qonun hujjatlariga muvofiq subsidiar javobgar bo‘ladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-24",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "Men qurilish tashkiloti rahbariman. Kredit olayotganda uning ta’minoti sifatida qurilishi tugallanmagan binoni garovga qo‘yishim mumkinmi?",
+      "reference_answer": "«Ipoteka to‘g‘risida»gi qonunning 63-moddasiga asosan, uy qurish uchun kredit yoki aniq maqsadli qarz berilayotganda ipoteka to‘g‘risidagi shartnomada majburiyatni tugallanmagan qurilish (ipotekaga qo‘yuvchi kelgusida oladigan mol-mulk va mulkiy huquqlar) bilan ta’minlash nazarda tutilishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-25",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "“Har bir oila – tadbirkor” Dasturi doirasida 2020-yilda yo‘naltiriladigan mablag‘lar miqdori qanchani tashkil etadi?",
+      "reference_answer": "O‘zbekiston Respublikasi Prezidentining 2019-yil 24-oktabrdagi PQ-4498-son Qaroriga asosan 2 418,0 mlrd. so‘m mablag‘ ajratiladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-26",
+      "type": "biznes",
+      "category_uz": "Tadbirkorlik va Biznes",
+      "question": "Bank mening hisobraqamimdan ruxsatimsiz davlat ijrochisining inkasso topshiriqnomasi asosida qarzdorlikni echib olgan. Bankning harakati qonuniymi?",
+      "reference_answer": "Bankning harakatlari qonuniy asosga ega.\n“O‘zbekiston Respublikasida naqd pulsiz hisob-kitoblar to‘g‘risida”gi nizomning 58-bandiga asosan inkasso topshiriqnomasi - mablag‘larni oluvchining inkasso topshiriqnomasiida ko‘rsatilgan summani mablag‘larni to‘lovchining hisobvarag‘idan so‘zsiz ravishda hisobdan chiqarish bo‘yicha topshirig‘i nazarda tutilgan hisob-kitob hujjati hisoblanadi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-27",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Korrupsiyaga qarshi qanday kurashish kerak?",
+      "reference_answer": "[anticorruption.uz](https://anticorruption.uz/uz) - O'zbekiston Respublikasining korrupsiyaga qarshi kurashga bag'ishlangan rasmiy veb-sayti.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-28",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Mehnatni muhofaza qilish bo‘yicha mutaxassislariga malaka sertifikatini berish uchun qancha miqdorda to‘lov undiriladi?",
+      "reference_answer": "Malaka sertifikatini berganlik uchun bazaviy hisoblash miqdorining 1 baravari, malaka sertifikatining muddatini uzaytirganlik uchun bazaviy hisoblash miqdorining 50 foizi miqdorida to‘lov undiriladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-29",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Dori vositalarini litsenziyalash tartibi haqida maʼlumot bering",
+      "reference_answer": "Vazirlar Mahkamasining 2022-yil 21-fevraldagi 80-son qarori bilan tasdiqlangan Maxsus elektron tizim orqali ayrim faoliyat turlarini litsenziyalash tartibi to‘g‘risidagi yagona nizomning 29-ilovasi bilan Dori vositalari va tibbiy buyumlarni chakana realizatsiya qilish faoliyatini litsenziyalash pasporti tasdiqlangan. Ushbu xizmatning pasporti bilan tanishish uchun havoladan foydalanishingiz mumkin.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-30",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Notarius mol-mulkni boshqa shaxsga o‘tkazishni taqiqlab qo‘yish bo‘yicha notarial harakatni qaysi huquqiy me’yorga asoslanib amalga oshiradi?",
+      "reference_answer": "Mol-mulkni boshqa shaxsga o‘tkazishni taqiqlab qo‘yish va taqiqni bekor qilish bilan bog‘liq bo‘lgan notarial harakatlar O‘zR “Notariat to‘g‘risidagi” qonuniga ko‘ra, notariuslar tomonidan amalga oshiriladi. Har bir shaxs o‘z egaligidagi mol-mulkni erkin ravishda egallash undan foydalanish va tasarruf etish huquqiga egadir. Lekin baьzida, qonunda ko‘rsatilgan hollarda mulkning tasarrufiga nisbatan taqiq solib qo‘yiladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-31",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Davlat xizmatlari markazlari pullik xizmatlar ko‘rsatishga haqlimi?",
+      "reference_answer": "O‘zbekiston Respublikasi adliya vazirining 2018-yil 10-avgustdagi 273-um-son buyrug‘i bilan tasdiqlangan “Davlat xizmatlari markazlarida jismoniy va yuridik shaxslarga ixtiyoriy pullik xizmatlar ko‘rsatish tartibi to‘g‘risida”gi nizomga muvofiq davlat xizmatlari markazlari jismoniy va yuridik shaxslarning ixtiyoriga ko‘ra pullik xizmatlar ko‘rsatishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-32",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Davlat xizmati olishim uchun Davlat xizmatlari markaziga bormasdan navbat olishim mumkinmi?",
+      "reference_answer": "Albatta, Davlat xizmatlari agentligining davxizmat.uz veb-sayti orqali onlayn yoki oldindan navbat olish orqali amalga oshirishingiz mumkin.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-33",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Аxborot va aloqa sohasidagi korxonalar soni nechta?",
+      "reference_answer": "Davlat statistika qo‘mitasi ma‘lumotlariga ko‘ra, 2022 yilning yanvar-noyabr oylarida axborot va aloqa sohasida yangi tashkil etilgan korxonalar soni 2 423 tani tashkil etgan.\nBu 2018 yilning mos davri bilan solishtirilganda 2,1 barobarga ko‘paygan.\nSo‘nggi besh yillikda ushbu sohada yangi tashkil etilgan korxonalar soni:\n— 2018 yilda – 1 160 ta\n— 2019 yilda – 1 560 ta\n— 2020 yilda – 1 740 ta\n— 2021 yilda – 2 382 ta\n— 2022 yilda – 2 423 ta",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-34",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Yangi gerbli guvohnomalar berganlik uchun qancha gerb yig‘imi undiriladi?",
+      "reference_answer": "BHMning 15 foizi.\nAsos: Vazirlar Mahkamasining 01.07.2012-yildagi “Gerbli guvohnomalar berganlik uchun gerb yig‘imi miqdorini tasdiqlash to‘g‘risida”gi qarori.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-35",
+      "type": "raqamli",
+      "category_uz": "Davlat Xizmatlari va Raqamli Xizmatlar",
+      "question": "Kollektiv murojaatni qanday topshirish kerak va uni qonunchilik darajasida qanday ko'rib chiqish mumkin?",
+      "reference_answer": "[meningfikrim.uz](https://meningfikrim.uz/) – Kollektiv murojaatlar portali bo‘lib, ushbu axborot tizimi orqali siz qiziqarli mavzular bo'yicha takliflaringizni yuborishingiz mumkin. Moderator tomonidan tekshirilgandan so'ng, ular portalga joylashtiriladi. Agar sizning jamoaviy murojaatingiz kerakli miqdorda qo'llab-quvvatlansa, sizning jamoaviy murojaatingiz tegishli ravishda Oliy Majlis palatalaridan biri yoki xalq deputatlari mahalliy Kengashi tomonidan ko'rib chiqiladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-36",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Remont muddati cho‘zilsa iste’molchi nima qila oladi?",
+      "reference_answer": "Muqobil mahsulot, almashtirish yoki pulni qaytarishni talab qilishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-37",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Sotuvchi chek bermasa nima qilish kerak?",
+      "reference_answer": "Iste’molchi yozma shikoyat qilib, nazorat organlariga murojaat etishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-38",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Internetdan onlayn tarzda telefon sotib oldim. Saytning reklamasida ko‘rsatilgan ma’lumotlar bilan uni etkazib berishganida ma’lumotlar to‘g‘ri kelmas ekan. Bu holatda nima qilish mumkin?",
+      "reference_answer": "Agar tovar (ish, xizmat) haqida noto‘g‘ri yoki yetarli darajada to‘liq bo‘lmagan ma’lumot berilganligi, zarur iste’mol xossalariga ega bo‘lmagan tovar (ish, xizmat) sotib olinishiga sabab bo‘lsa, iste’molchi shartnomani bekor qilishga va o‘ziga etkazilgan zararning qoplanishini talab qilishga haqlidir.\nNoto‘g‘ri reklama oqibatida sotib olingan tovar (ish, xizmat) tufayli iste’molchiga etkazilgan zarar ishlab chiqaruvchi (ijrochi, sotuvchi) tomonidan to‘liq hajmda qoplanishi lozim.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-39",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Chegirma davrida ham iste’molchi huquqlari saqlanadimi?",
+      "reference_answer": "Ha, chegirma mavjudligi kafolat va qaytarish huquqlarini bekor qilmaydi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-40",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Onlayn xaridda qaytarish tartibi qanday?",
+      "reference_answer": "Masofaviy savdoda belgilangan muddatda shartnoma bekor qilinib, to‘lov qaytarilishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-41",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Mahsulotni olganligimiz to‘g‘risida chek bor, ammo kafolat muddati talonda belgilanmagan. Do‘kon egasi 10 kun ichida kelsangiz almashtirib beraman degan edi. Bu holat qonun bilan tartibga solinganmi?",
+      "reference_answer": "Nuqsonli tovar sotilganda iste’molchi, agar bu hol shartnoma tuzish paytida aytib o‘tilmagan bo‘lsa, almashtirib berishni talab qilishga haqli. Kafolat muddati va yaroqlilik muddati belgilanmagan tovarlar bo‘yicha 6 oy mobaynida amalga oshirilishi mumkin.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-42",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Kafolat muddati ichida buzilgan buyum uchun kim javobgar?",
+      "reference_answer": "Ishlab chiqaruvchi yoki sotuvchi kafolat majburiyatiga muvofiq bepul bartaraf etishi yoki almashtirishi kerak.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-43",
+      "type": "istemolchi",
+      "category_uz": "Iste'molchilar Huquqlari",
+      "question": "Tovarni almashtirish uchun qanday shartlar kerak?",
+      "reference_answer": "Tovar foydalanilmagan bo‘lishi, to‘liq butligi saqlangan va belgilangan muddatdan kech bo‘lmasligi kerak.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-44",
+      "type": "sugurta",
+      "category_uz": "Sug'urta va Kompensatsiya",
+      "question": "Kredit qaytmasligi xatari sug'urtasi kim tomonidan qilinadi?",
+      "reference_answer": "Fuqarolik kodeksining 920-moddasiga ko‘ra, tadbirkorlik xavfini sug‘urta qilish shartnomasi bo‘yicha faqat sug‘urta qildiruvchining o‘z tadbirkorlik xavfi va faqat uning foydasiga sug‘urtalanishi mumkin.\nShunday ekan, kredit qaytmasligi xatarini sug‘urta qilishda faqat tijorat banklari sug‘urta qildiruvchi sifatida ishtirok etishi lozim. Sug‘urta mukofoti ham sug‘urta qildiruvchi, yaʼni tijorat banki tomonidan to‘lanadi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-45",
+      "type": "sugurta",
+      "category_uz": "Sug'urta va Kompensatsiya",
+      "question": "Kredit qaytmasligi xatari sug‘urtasi kim tomonidan qilinadi?",
+      "reference_answer": "Fuqarolik kodeksining 920-moddasiga ko‘ra, tadbirkorlik xavfini sug‘urta qilish shartnomasi bo‘yicha faqat sug‘urta qildiruvchining o‘z tadbirkorlik xavfi va faqat uning foydasiga sug‘urtalanishi mumkin.\nShunday ekan, kredit qaytmasligi xatarini sug‘urta qilishda faqat tijorat banklari sug‘urta qildiruvchi sifatida ishtirok etishi lozim. Sug‘urta mukofoti ham sug‘urta qildiruvchi, yaʼni tijorat banki tomonidan to‘lanadi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-46",
+      "type": "sugurta",
+      "category_uz": "Sug'urta va Kompensatsiya",
+      "question": "Transport vositalari egalarining fuqarolik javobgarligining majburiy sug'urtasi bo'yicha sug'urta tovonini to'lab berish qancha muddatda amalga oshiriladi?",
+      "reference_answer": "Sug‘urta tashkilotiga sug‘urta qildiruvchi tomonidan sug‘urta hodisasiga oid barcha hujjatlar topshirilganidan so‘ng, sug‘urta tovonini to‘lash to‘g‘risida qaror qabul qilingan kundan eʼtiboran 5 ish kunidan kechiktirmay sug‘urta tovoni to‘lab beriladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-47",
+      "type": "sugurta",
+      "category_uz": "Sug'urta va Kompensatsiya",
+      "question": "Men YTH da aybdor bo‘ldim va sug‘urta polisim bo‘yicha sug‘urta tovonini to‘lab berishdi. YAna YTH sodir bo‘lsa mazkur polis bo‘yicha yana sug‘urta tovoni to‘lab berishadimi yoki yangi sug‘urta polisini sotib olishim kerakmi?",
+      "reference_answer": "Agar majburiy sug‘urta shartnomasi amalda bo‘lgan davrda sug‘urtalovchi jabrlanuvchiga (uning merosxo‘riga yoki huquqiy vorisiga) sug‘urta tovoni to‘lasa, u holda sug‘urta qildiruvchi sug‘urtalovchidan sug‘urta tovoni to‘langanligi to‘g‘risidagi xabarnoma olingan kundan e’tiboran ikki hafta muddatda to‘langan sug‘urta tovoni summasiga va majburiy sug‘urta shartnomasi amal qilishining qolgan muddatiga mutanosib ravishda qo‘shimcha sug‘urta mukofotini to‘lashi lozim.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-48",
+      "type": "sugurta",
+      "category_uz": "Sug'urta va Kompensatsiya",
+      "question": "Jabrlanuvchining yo'l transport hodisasi sodir bo'lganda, sug'urta tashkiloti tomonidan to'lab beriladigan sug'urta tovoni miqdorini to'lash tartibi qanday?",
+      "reference_answer": "Agar, jabrlanuvchining hayoti yoki sog'lig'iga YTH natijasida zarar etkazilganida, sug'urta tovonining umumiy miqdori sug'urta pulining (40 mln so'm) 65 foizidan ortiq bo'lishi, ya'ni 26 mln so'mdan ko'proq bo'lishi mumkin emas.\nJabrlanuvchining mol-mulkiga zarar etgan taqdirda esa, sug'urta tovoni miqdori sug'urta pulining 35 foizi, ya'ni 14 mln so'mgacha to'lab berilishi ko'zda tutilgan.\nBiroq, sug'urta tovoni to'lab berilishida sug'urta tashkiloti tomonidan sud xarajatlari, jarimalar va boshqa shu kabi to'lovlar qoplab berilmaydi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-49",
+      "type": "sugurta",
+      "category_uz": "Sug'urta va Kompensatsiya",
+      "question": "Yo‘l-transport hodisasida zarar ko‘rgan jabrlanuvchining fuqarolik javobgarligi sug‘urtalanmagan bo‘lsa, sug‘urta tovoni yoki kompensatsiya to‘lovini olishda qanchalik ahamiyatga ega?",
+      "reference_answer": "Sug‘urta to‘lovi javobgarlikni sug‘urtalagan sug‘urta kompaniyasi tomonidan sug‘urta polisiga muvofiq amalga oshiriladi, kompensatsiya to‘lovi Jamg‘arma tomonidan amalga oshiriladi va amalga oshirgan to‘lovni javobgar shaxsdar regress tartibida undirib oladi (sug‘urta kompaniyasi faqat ayrim belgilangan xollardagina regress xuquqini amalga oshiradi). Aynan jabrlanuvchining javobgarligi sug‘urta qilingan qilinmaganligi axamiyatsiz.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-50",
+      "type": "sugurta",
+      "category_uz": "Sug'urta va Kompensatsiya",
+      "question": "Sug‘urta polisim bo‘yicha avtomashinamni faqat dadam va men boshqarish xuquqiga egamiz, lekin do‘stimni sug‘urta polisi bo‘yicha avtomashinasini istalgan haydovchi haydamoqda. U qoidani buzmayaptimi?",
+      "reference_answer": "Yo‘q, buzmayapti. Buning uchun majburiy sug‘urta shartnomasini tuzayotganda transport vositalarini boshqarishga qo‘yilgan shaxslar soni cheklanmasligi shartini tanlash lozim. Bunda sug‘urta polisida transport vositasidan uni boshqarishga qo‘yilgan haydovchilar ko‘rsatilmaydi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-51",
+      "type": "audit",
+      "category_uz": "Auditorlik va Moliyaviy Nazorat",
+      "question": "Auditorlik Tashkilotini yaratish uchun qanday talablar mavjud?",
+      "reference_answer": "Auditorlik tashkiloti quyidagi majburiy shartlar asosida qonun hujjatlarida nazarda tutilgan har qanday tashkiliy-huquqiy shaklda tuzilishi va faoliyatini amalga oshirishi mumkin, aksiyadorlik jamiyati bundan mustasno:\nauditorlik tashkiloti asosiy ish joyi bo‘lgan auditorlarning eng kam soni to‘rttadan kam bo‘lmagan shtatdagi auditorni tashkil etadi;\nauditorlik tashkilotining ustav kapitali (ustav kapitali) mol-mulk, shu jumladan, auditorlik tashkiloti o‘z faoliyatini amalga oshirishda bevosita foydalaniladigan mablag‘lar hisobidan shakllantiriladi.;\nauditorlarga (auditorga) tegishli ustav kapitalining (ustav kapitalining) ulushi kamida ellik bir foizni tashkil etishi kerak (auditorlik tashkiloti — xorijiy auditorlik tashkilotining filiali yoki shu‘ba xo‘jalik jamiyatini tashkil etish hollari bundan mustasno).;\nauditorlik tashkilotining rahbari faqat ushbu auditorlik tashkiloti asosiy ish joyi bo‘lgan auditor bo‘lishi kerak.;\nauditorlik tashkiloti boshqa auditorlik tashkilotining ta’sischisi (ishtirokchisi) bo‘lishi mumkin emas.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-52",
+      "type": "audit",
+      "category_uz": "Auditorlik va Moliyaviy Nazorat",
+      "question": "Qaysi hollarda auditorlik tashkiloti Auditorlik tashkilotlarining reyestridan chiqariladi?",
+      "reference_answer": "Auditorlik tashkiloti quyidagi hollarda Auditorlik tashkilotlarining reyestridan chiqariladi:\nO‘zbekiston Respublikasi “Auditorlik faoliyati to‘g‘risida”gi Qonunining 27-moddasida belgilangan talablarga nomuvofiqlik aniqlangan taqdirda;\nauditorlik tashkiloti tugatilganda;\nauditorlik faoliyati bilan bog‘liq bo‘lmagan boshqa faoliyat turlari amalga oshirilganda yoki faoliyat turi o‘zgarganda;\nauditorlik tekshiruvini o‘tkazishdagi cheklovlar buzilganda;\nbila turib soxta auditorlik xulosasi tuzilganda;\nauditorlik xizmatlari ko‘rsatish chog‘ida olingan maxfiy axborot oshkor qilinganda;\nauditorlik faoliyatini amalga oshirishda auditorlik tashkiloti javobgarligining sug‘urta polisi mavjud bo‘lmaganda;\nauditorlik tashkiloti ishi sifatining tashqi nazorati o‘tkazilayotganda zarur hujjatlarni va axborotlarni vakolatli davlat organiga taqdim etmaganda.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-53",
+      "type": "audit",
+      "category_uz": "Auditorlik va Moliyaviy Nazorat",
+      "question": "Moliyaviy hisobotning xalqaro standartlari (MHXS) va Auditning xalqaro standartlari (AXS) bo‘yicha qanday o‘quv markazlarida o‘quv kurslaridan o‘tish mumkin?",
+      "reference_answer": "O‘zbekiston Respublikasi Prezidentining 2020-yil 24-fevraldagi “Moliyaviy hisobotning xalqaro standartlariga o‘tish bo‘yicha qo‘shimcha chora-tadbirlar to‘g‘risida”gi PQ-4611-sonli qaroriga muvofiq, 2021-yildan boshlab MHXS va AXS bo‘yicha o‘qitish faqat buxgalteriya hisobi sohasidagi xalqaro tashkilotning akkreditatsiyasidan o‘tgan o‘quv markazlari tomonidan amalga oshirilishi belgilangan.\nAССА akkreditatsiyasidan o‘tgan o‘quv markazlarining to‘liq ro‘yxati “Buxgalteriya hisobi va audit uslubiyoti departamenti ~ Akkreditatsiyadan o‘tgan o‘quv markazlari” (https://www.mf.uz/ru/auditorskaya-deyatelnost.html) bo‘limida joylashtirilgan.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-54",
+      "type": "audit",
+      "category_uz": "Auditorlik va Moliyaviy Nazorat",
+      "question": "Bitta tadbirkorlik subyektida auditorlik tekshiruvlarini o‘tkazish davomiyligi bo‘yicha qanday cheklovlar o‘rnatilgan?",
+      "reference_answer": "O‘zbekiston Respublikasining 2021-yil 25-fevraldagi O‘RQ-677-sonli “Auditorlik faoliyati to‘g‘risida”gi Qonunining 34-moddasida auditorlik tashkiloti bitta tadbirkorlik subyektida ketma-ket yetti yildan ortiq auditorlik tekshiruvini o‘tkazishga haqli emasligi belgilangan.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-55",
+      "type": "valyuta",
+      "category_uz": "Bojxona va Valyuta",
+      "question": "Bojxona ombori faoliyatini litsenziyalash uchun arizani ko‘rib chiqish uchun to‘lanadigan yig‘im miqdori qancha?",
+      "reference_answer": "Bazaviy hisoblash miqdorining 50 foizi. Shu jumladan litsenziya qayta rasmiylashtirilayotganda, litsenziya berish to‘g‘risidagi arizani ko‘rib chiqqanlik uchun to‘lanadigan summaning ellik foizi miqdorida.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-56",
+      "type": "valyuta",
+      "category_uz": "Bojxona va Valyuta",
+      "question": "Bojxona deklaratsiyasini qachon to‘ldirish shart?",
+      "reference_answer": "Kiritilayotgan yoki olib chiqilayotgan tovarlar belgilangan me’yorlardan oshsa deklaratsiya majburiy.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-57",
+      "type": "valyuta",
+      "category_uz": "Bojxona va Valyuta",
+      "question": "Valyutani chetga olib chiqishning ruxsat etilgan hajmi qanday?",
+      "reference_answer": "Amaldagi qoidalarga muvofiq belgilangan limitlar mavjud; oshsa deklaratsiya talab etiladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-58",
+      "type": "lombard",
+      "category_uz": "Lombard va Turizm",
+      "question": "Lombard faoliyatini amalga oshirish uchun qanday shartlarda litsenziya beriladi?",
+      "reference_answer": "Lombard faoliyatini faqat ixtisoslashtirilgan yuridik shaxslar amalga oshirishi mumkin va buning uchun Markaziy bank tomonidan berilgan litsenziyaga ega bo‘lishi shart. Litsenziya muddatsiz beriladi, uni boshqa yuridik shaxsga berish taqiqlanadi. Litsenziya olish uchun yuridik shaxs lombard sifatida qonunchilikda belgilangan tartibda ro‘yxatdan o‘tgan bo‘lishi, kamida 500 mln. so‘m ustav fondiga ega bo‘lishi kerak. Ushbu fond faqat muassislarning pul mablag‘lari hisobidan shakllantiriladi, kredit yoki garov mablag‘lari hisobidan shakllantirish taqiqlanadi. Shuningdek, bino va kassalar texnik mustahkamligi, yong‘in xavfsizligi, signalizatsiya, aloqa liniyalari va buxgalteriya dasturiy ta’minoti bo‘yicha Markaziy bank hududiy boshqarmasidan ijobiy xulosa bo‘lishi shart.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-59",
+      "type": "lombard",
+      "category_uz": "Lombard va Turizm",
+      "question": "Turizm sohasida tabdirkorlikni yo‘lga qo‘ymoqchiman, davlat tomonidan qanday moliyaviy ko‘makka umid qilsam bo‘ladi?",
+      "reference_answer": "O‘zbekiston Respublikasi Prezidentining \"Turizm, madaniyat, madaniy meros va sport sohalarini yanada rivojlantirish uchun qo‘shimcha sharoitlar yaratish to‘g‘risida\"gi farmoniga asosan 2022-yil 1-maydan boshlab yoshlarning tadbirkorlik tashabbuslarini qo‘llab-quvvatlash maqsadida Davlat byudjetidan Turizm va sportni qo‘llab-quvvatlash jamg‘armasiga ajratiladigan mablag‘lar hisobidan har bir tashabbuskorga 50 mln so‘m miqdorida, jami 10 mlrd so‘mgacha grantlar ajratiladi.\nBunda:\n- grant mablag‘lari onlayn to‘lovlarni qabul qiluvchi zamonaviy veb-sayt yaratishga, xorijiy mamlakatlardagi turizm ko‘rgazma va yarmarkalarida ishtirok etishga yo‘naltiriladi;\n- grant mablag‘lari belgilangan tartibda xorijiy mamlakatlardan O‘zbekiston Respublikasiga uch yil davomida kamida 200 nafar xorijiy turistlar uchun tur tashkil qilish sharti bilan ajratiladi.",
+      "source": "wakilai-legal-benchmark-uz"
+    },
+    {
+      "id": "LQ-60",
+      "type": "lombard",
+      "category_uz": "Lombard va Turizm",
+      "question": "Lombard litsenziyasi olish uchun qaysi hujjatlar taqdim etilishi kerak?",
+      "reference_answer": "Litsenziya olish uchun da’vogar yuridik shaxs quyidagi hujjatlarni Markaziy bankka topshirishi lozim: litsenziya berish haqida ariza; bir yillik faoliyat uchun biznes-reja; muassislar ro‘yxati va ularning shaxsiy yoki yuridik ma’lumotlari, ulushlari va oxirgi 5 yil ichida qo‘llangan huquqiy jazo choralari; boshqaruv organlari tarkibi va tuzilishi haqida ma’lumotlar; naqd pul va garov mulklarining xavfsiz saqlanishi uchun jihozlangan xonalar mavjudligini tasdiqlovchi hujjatlar; litsenziya uchun yig‘im to‘langanligini tasdiqlovchi to‘lov topshiriqnomasi. Ushbu ro‘yxat to‘liq hisoblanadi va ortiqcha hujjat talab qilish taqiqlanadi.",
+      "source": "wakilai-legal-benchmark-uz"
+    }
+  ]
+}

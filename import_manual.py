@@ -34,6 +34,7 @@ RESULTS_JS   = BASE_DIR / "website" / "js" / "results.js"
 RB_QUESTIONS = BASE_DIR / "questions" / "rb_questions.json"
 FK_QUESTIONS = BASE_DIR / "questions" / "fk_questions.json"
 RC_QUESTIONS = BASE_DIR / "questions" / "rc_questions.json"
+LQ_QUESTIONS = BASE_DIR / "questions" / "lq_questions.json"
 
 # ── Реестр моделей ─────────────────────────────────────────────
 MODEL_REGISTRY = {
@@ -398,6 +399,93 @@ def import_rc(model_key: str, cfg: dict):
     print(f"\n  Авто-оценка применена. GPT-4o не требуется.\n")
 
 
+def import_lq(model_key: str, cfg: dict):
+    """Import manually filled LQ (legal Q&A) responses and score via GPT-4o."""
+    import asyncio
+    import os
+    from openai import AsyncOpenAI
+
+    model_id  = cfg["id"]
+    resp_file = BASE_DIR / "responses" / f"lq_{model_key}_manual.json"
+
+    if not resp_file.exists():
+        print(f"  ОШИБКА: файл {resp_file.name} не найден.")
+        print(f"  Сначала создайте шаблон:")
+        print(f"    python create_template.py --model {model_key} --module lq\n")
+        return
+
+    if not LQ_QUESTIONS.exists():
+        print(f"  ОШИБКА: questions/lq_questions.json не найден.\n")
+        return
+
+    from run_benchmark_lq import judge_answer, compute_lq_leaderboard
+
+    manual   = json.loads(resp_file.read_text(encoding="utf-8"))
+    lq_data  = json.loads(LQ_QUESTIONS.read_text(encoding="utf-8"))
+    results  = json.loads(RESULTS_JSON.read_text(encoding="utf-8"))
+
+    lq_q_map    = {q["id"]: q for q in lq_data["questions"]}
+    existing_lq = {q["id"]: q for q in results.get("lq_questions", [])}
+
+    merged  = 0
+    skipped = 0
+    empty   = 0
+
+    async def score_all():
+        nonlocal merged, skipped, empty
+        for qid, entry in manual.items():
+            if qid not in lq_q_map:
+                skipped += 1
+                continue
+
+            response_text = entry.get("response", "") if isinstance(entry, dict) else entry
+            if not isinstance(response_text, str) or not response_text.strip():
+                empty += 1
+                continue
+
+            q = lq_q_map[qid]
+            print(f"  Оценка {qid}...", end=" ", flush=True)
+            judgment = await judge_answer(q["question"], q["reference_answer"], response_text.strip())
+            print(f"{judgment['parsed'] or '?'} ({judgment['score']})")
+
+            if qid not in existing_lq:
+                existing_lq[qid] = {**q, "responses": {}}
+
+            existing_lq[qid].setdefault("responses", {})[model_id] = {
+                "response":     response_text.strip(),
+                "latency_ms":   None,
+                "tokens":       None,
+                "parsed":       judgment["parsed"],
+                "correct":      judgment["correct"],
+                "score":        judgment["score"],
+                "verdict_raw":  judgment.get("verdict_raw"),
+                "auto_checked": True,
+                "manual":       True,
+            }
+            merged += 1
+
+    asyncio.run(score_all())
+
+    results["lq_questions"] = list(existing_lq.values())
+
+    all_model_ids = list({r for q in results["lq_questions"] for r in q.get("responses", {})})
+    results["lq_leaderboard"] = compute_lq_leaderboard(results["lq_questions"], all_model_ids)
+
+    RESULTS_JSON.write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    ts  = datetime.now().strftime("%Y-%m-%d %H:%M")
+    js  = f"// Auto-generated {ts}\n"
+    js += "window.BENCHMARK_RESULTS = " + json.dumps(results, ensure_ascii=False, indent=2) + ";\n"
+    RESULTS_JS.write_text(js, encoding="utf-8")
+
+    print(f"  ✓ LQ импортировано и оценено: {merged}")
+    if empty:
+        print(f"  ⚠  Пустых ответов: {empty}")
+    if skipped:
+        print(f"  ⚠  Пропущено:      {skipped}")
+    print(f"\n  Оценка GPT-4o применена. results.js обновлён.\n")
+
+
 def main():
     parser = argparse.ArgumentParser(description="ULAB Manual Import")
     parser.add_argument(
@@ -408,9 +496,9 @@ def main():
     )
     parser.add_argument(
         "--module",
-        choices=["core", "cl", "rb", "fk", "rc"],
+        choices=["core", "cl", "rb", "fk", "rc", "lq"],
         default="core",
-        help="Модуль: core (основной QA), cl (классификация), rb (устойчивость к шуму), fk (факт-чек) или rc (понимание текста)",
+        help="Модуль: core, cl, rb, fk, rc или lq (юридическое Q&A)",
     )
     args = parser.parse_args()
 
@@ -438,6 +526,9 @@ def main():
         return
     if args.module == "rc":
         import_rc(args.model, cfg)
+        return
+    if args.module == "lq":
+        import_lq(args.model, cfg)
         return
 
     resp_file = BASE_DIR / "responses" / f"{args.model}_responses.json"

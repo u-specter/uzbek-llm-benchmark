@@ -40,6 +40,7 @@ const state = {
   rbSub:        'all',
   fkSub:        'all',
   rcSub:        'all',
+  lqSub:        'all',
   selectedQId:  null,           // selected question id (any module)
   search:       '',
   lbSort:       { col: 'overall', dir: 'desc' },
@@ -98,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderRBView();
   renderFKView();
   renderRCView();
+  renderLQView();
   renderDeptsView();
 });
 
@@ -117,6 +119,7 @@ const VIEW_MAP = {
   rb:     'rbView',
   fk:     'fkView',
   rc:     'rcView',
+  lq:     'lqView',
   depts:  'deptsView',
   about:  'aboutView',
 };
@@ -201,6 +204,7 @@ function computeItogovy(modelId, data) {
     (d.rb_leaderboard   || {})[modelId]?.overall,
     (d.fk_leaderboard   || {})[modelId]?.overall,
     (d.rc_leaderboard   || {})[modelId]?.overall,
+    (d.lq_leaderboard   || {})[modelId]?.overall,
   ].filter(v => v != null);
   if (!scores.length) return null;
   return scores.reduce((s, v) => s + v, 0) / scores.length;
@@ -244,6 +248,7 @@ function renderRatingView() {
     ...Object.keys(data.rb_leaderboard || {}),
     ...Object.keys(data.fk_leaderboard || {}),
     ...Object.keys(data.rc_leaderboard || {}),
+    ...Object.keys(data.lq_leaderboard || {}),
   ]);
 
   // Remove models that are superseded by a newer version of the same model
@@ -264,6 +269,7 @@ function renderRatingView() {
       rb:  (data.rb_leaderboard || {})[id]?.overall ?? null,
       fk:  (data.fk_leaderboard || {})[id]?.overall ?? null,
       rc:  (data.rc_leaderboard || {})[id]?.overall ?? null,
+      lq:  (data.lq_leaderboard || {})[id]?.overall ?? null,
       meta: getModelMeta(id, data),
     });
   });
@@ -311,6 +317,7 @@ const LB_COLS = [
   { key: 'rb',      label: '🔤 Устойчивость',  sortable: true  },
   { key: 'fk',      label: '✅ Факты',         sortable: true  },
   { key: 'rc',      label: '📖 Понимание',     sortable: true  },
+  { key: 'lq',      label: '⚖️ Юрид. Q&A',    sortable: true  },
 ];
 
 function renderLeaderboardTable(ranked) {
@@ -1235,6 +1242,152 @@ function toggleRCPassage(qId, btn) {
 }
 
 // ═══════════════════════════════════════════════════════════════
+// LQ — Legal Q&A (wakilai-legal-benchmark-uz, 60 questions)
+// ═══════════════════════════════════════════════════════════════
+
+const LQ_TYPE_LABELS = {
+  moliya:      'Солиқ ва молия',
+  biznes:      'Тадбиркорлик',
+  raqamli:     'Давлат хизматлари',
+  istemolchi:  'Истеъмолчилар',
+  sugurta:     'Суғурта',
+  audit:       'Аудит',
+  valyuta:     'Божхона / Валюта',
+  lombard:     'Ломбард',
+};
+
+function renderLQView() {
+  const data = state.appData;
+  const qs   = (data.lq_questions || []);
+
+  document.getElementById('lqTotalCount').textContent = qs.length;
+
+  const types = [...new Set(qs.map(q => q.type))].filter(Boolean);
+  const lqSubOptions = types.map(t => ({ key: t, label: LQ_TYPE_LABELS[t] || t }));
+
+  buildSubFilterChips('lqSubFilter', lqSubOptions, state.lqSub, (key) => {
+    state.lqSub = key;
+    renderLQList();
+    resetContent('lqContent');
+  });
+
+  document.getElementById('lqSearchInput').addEventListener('input', () => {
+    renderLQList();
+    resetContent('lqContent');
+  });
+
+  renderLQList();
+}
+
+function getFilteredLQQuestions() {
+  const data   = state.appData;
+  const search = (document.getElementById('lqSearchInput')?.value || '').toLowerCase();
+  let qs = (data.lq_questions || []);
+  if (state.lqSub) qs = qs.filter(q => q.type === state.lqSub);
+  if (search) qs = qs.filter(q =>
+    (q.question || '').toLowerCase().includes(search) ||
+    (q.reference_answer || '').toLowerCase().includes(search)
+  );
+  return qs;
+}
+
+function renderLQList() {
+  const qs      = getFilteredLQQuestions();
+  const listEl  = document.getElementById('lqList');
+  if (!listEl) return;
+
+  if (!qs.length) {
+    listEl.innerHTML = '<div class="q-list-empty">Вопросы не найдены</div>';
+    return;
+  }
+
+  listEl.innerHTML = qs.map(q => {
+    const responses = q.responses || {};
+    const total   = Object.keys(responses).length;
+    const avgScore = total
+      ? Math.round(Object.values(responses).reduce((s, r) => s + (r.score || 0), 0) / total)
+      : null;
+    const typeLabel = LQ_TYPE_LABELS[q.type] || q.type || '';
+    return `
+      <div class="q-item" onclick="selectLQQuestion('${q.id}')">
+        <div class="q-item-header">
+          <span class="q-id">${q.id}</span>
+          <span class="q-reg badge-formal">${escHtml(typeLabel)}</span>
+          ${avgScore != null ? `<span class="q-score ${scoreClass(avgScore)}">${avgScore}%</span>` : ''}
+        </div>
+        <div class="q-preview">${escHtml((q.question || '').slice(0, 90))}</div>
+      </div>`;
+  }).join('');
+}
+
+function selectLQQuestion(qId) {
+  const data = state.appData;
+  const q    = (data.lq_questions || []).find(x => x.id === qId);
+  if (!q) return;
+
+  document.querySelectorAll('#lqList .q-item').forEach(el => el.classList.remove('active'));
+  const activeEl = [...document.querySelectorAll('#lqList .q-item')]
+    .find(el => el.querySelector('.q-id')?.textContent === qId);
+  if (activeEl) activeEl.classList.add('active');
+
+  renderLQDetail(q);
+}
+
+function renderLQDetail(q) {
+  const data    = state.appData;
+  const content = document.getElementById('lqContent');
+  if (!content) return;
+
+  const responses = q.responses || {};
+  const entries   = Object.entries(responses).sort(([, a], [, b]) => (b.score || 0) - (a.score || 0));
+
+  const scoreIcon = s => s === 100 ? '✓' : (s === 50 ? '~' : '✗');
+  const scoreLabel = s => s === 100 ? "to'g'ri" : (s === 50 ? 'qisman' : "noto'g'ri");
+
+  const cards = entries.map(([modelId, resp]) => {
+    const meta  = getModelMeta(modelId, data);
+    const score = resp.score ?? 0;
+    const cls   = score === 100 ? 'correct' : (score === 50 ? 'partial' : 'wrong');
+    return `
+      <div class="binary-card ${cls}">
+        <div class="binary-card-header">
+          <span class="binary-model-name" onclick="openModelDrawer('${modelId}')" style="cursor:pointer">
+            ${escHtml(meta.name)}
+          </span>
+          <span class="binary-result ${score === 100 ? 'score-green' : score === 50 ? 'score-yellow' : 'score-red'}">
+            ${scoreIcon(score)} ${scoreLabel(score)} · ${score}
+          </span>
+        </div>
+        <div class="lq-model-answer">${escHtml(resp.response || '')}</div>
+      </div>`;
+  }).join('');
+
+  content.innerHTML = `
+    <div class="q-detail">
+      <div class="q-detail-header">
+        <div class="q-detail-meta">
+          <span class="q-detail-id">${q.id}</span>
+          <span class="q-detail-reg badge-formal">⚖️ ${escHtml(LQ_TYPE_LABELS[q.type] || q.type || '')}</span>
+        </div>
+
+        <div class="q-detail-question" style="margin-bottom:12px">
+          <strong>Savol:</strong> ${escHtml(q.question || '')}
+        </div>
+
+        <div class="lq-reference-wrap">
+          <div class="lq-reference-label">📌 Эталонный ответ:</div>
+          <div class="lq-reference-text">${escHtml(q.reference_answer || '')}</div>
+          <div class="lq-source">Источник: wakilai-legal-benchmark-uz</div>
+        </div>
+
+        <div class="q-detail-note">Протестировано моделей: <strong>${entries.length}</strong></div>
+      </div>
+
+      <div class="binary-cards-grid">${cards || '<p style="color:var(--muted);padding:20px">Ответы ещё не собраны. Запустите run_benchmark_lq.py</p>'}</div>
+    </div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════
 // HELPERS
 // ═══════════════════════════════════════════════════════════════
 
@@ -1351,6 +1504,7 @@ function getDeptSourceScore(modelId, source, data) {
   const rb   = (data.rb_leaderboard   || {})[modelId] || {};
   const fk   = (data.fk_leaderboard   || {})[modelId] || {};
   const rc   = (data.rc_leaderboard   || {})[modelId] || {};
+  const lq   = (data.lq_leaderboard   || {})[modelId] || {};
 
   switch (source) {
     case 'qa_informal':  return lb.informal        ?? null;
@@ -1362,6 +1516,7 @@ function getDeptSourceScore(modelId, source, data) {
     case 'rb_overall':   return rb.overall         ?? null;
     case 'fk_overall':   return fk.overall         ?? null;
     case 'rc_overall':   return rc.overall         ?? null;
+    case 'lq_overall':   return lq.overall         ?? null;
     default:             return null;
   }
 }

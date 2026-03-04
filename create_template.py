@@ -25,6 +25,7 @@ CL_QUESTIONS = BASE_DIR / "questions" / "cl_questions.json"
 RB_QUESTIONS = BASE_DIR / "questions" / "rb_questions.json"
 FK_QUESTIONS = BASE_DIR / "questions" / "fk_questions.json"
 RC_QUESTIONS = BASE_DIR / "questions" / "rc_questions.json"
+LQ_QUESTIONS = BASE_DIR / "questions" / "lq_questions.json"
 
 URLS = {
     "gemini":    "https://gemini.google.com",
@@ -308,10 +309,66 @@ def create_rc_template(model: str):
 """)
 
 
+def create_lq_template(model: str):
+    """LQ module template — legal Q&A (free-text answers, scored by GPT-4o)."""
+    if not LQ_QUESTIONS.exists():
+        print(f"  ОШИБКА: {LQ_QUESTIONS} не найден.")
+        return
+
+    out_file = BASE_DIR / "responses" / f"lq_{model}_manual.json"
+
+    if out_file.exists():
+        print(f"\n  ПРЕДУПРЕЖДЕНИЕ: {out_file.name} уже существует.")
+        ans = input("  Перезаписать? (y/n): ").strip().lower()
+        if ans != "y":
+            print("  Отменено.\n")
+            return
+
+    lq_data   = json.loads(LQ_QUESTIONS.read_text(encoding="utf-8"))
+    questions = lq_data["questions"]
+
+    template = {}
+    for q in questions:
+        template[q["id"]] = {
+            "type":             q["type"],
+            "question":         q["question"],
+            "reference_answer": q["reference_answer"],
+            "hint":             "O'zbek tilida erkin javob bering",
+            "response":         ""
+        }
+
+    out_file.write_text(json.dumps(template, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    name = NAMES[model]
+    url  = URLS[model]
+    print(f"""
+{'═'*60}
+  ULAB LQ — Шаблон создан: {out_file.name}
+{'═'*60}
+
+  Модель  : {name}
+  Сайт    : {url}
+  Вопросов: {len(questions)} (банковское/юридическое Q&A)
+  Задача  : свободный ответ на узбекском языке
+  Оценка  : GPT-4o сравнивает с эталонным ответом (0/50/100)
+
+  Инструкция:
+  1. Откройте {url}
+  2. Задавайте каждый вопрос из поля "question"
+  3. Скопируйте ответ модели в поле "response"
+  4. После заполнения запустите:
+       python import_manual.py --model {model} --module lq
+
+  ⚠  Оценка происходит автоматически через GPT-4o при импорте.
+  ⚠  Незаполненные ответы ("") будут пропущены.
+{'═'*60}
+""")
+
+
 def main():
     parser = argparse.ArgumentParser(description="ULAB Template Generator")
     parser.add_argument("--model",  required=True, choices=list(URLS.keys()), help="Модель")
-    parser.add_argument("--module", choices=["core", "cl", "rb", "fk", "rc"], default="core", help="Модуль (core / cl / rb / fk / rc)")
+    parser.add_argument("--module", choices=["core", "cl", "rb", "fk", "rc", "lq"], default="core", help="Модуль")
     args = parser.parse_args()
 
     if args.module == "cl":
@@ -322,6 +379,8 @@ def main():
         create_fk_template(args.model)
     elif args.module == "rc":
         create_rc_template(args.model)
+    elif args.module == "lq":
+        create_lq_template(args.model)
     else:
         create_core_template(args.model)
 

@@ -25,6 +25,7 @@
       <button class="nav-tab" data-view="rb">🔤 Устойчивость</button>
       <button class="nav-tab" data-view="fk">✅ Факты</button>
       <button class="nav-tab" data-view="rc">📖 Понимание текста</button>
+      <button class="nav-tab" data-view="lq">⚖️ Юридический Q&A</button>
       <button class="nav-tab" data-view="depts">🏦 По департаментам</button>
       <button class="nav-tab" data-view="about">ℹ О тесте</button>
     </nav>
@@ -176,6 +177,29 @@
         <div class="q-list" id="rcList"></div>
       </aside>
       <main class="content" id="rcContent">
+        <div class="empty-state"><div class="empty-icon">←</div><p>Выберите вопрос из списка слева</p></div>
+      </main>
+    </div>
+
+    <!-- ── LQ — Юридический Q&A ── -->
+    <div id="lqView" class="view-page two-panel-view" style="display:none">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-title">Юридический Q&A · <span id="lqTotalCount">60</span> вопросов</div>
+          <div class="sidebar-desc">60 реальных банковских и юридических вопросов из датасета wakilai-legal-benchmark-uz. GPT-4o сравнивает ответ с эталоном.</div>
+          <div class="sidebar-glossary">
+            <div class="gloss-item"><span class="gloss-tag">100 — to'g'ri</span> ключевые факты совпадают с эталоном</div>
+            <div class="gloss-item"><span class="gloss-tag">50 — qisman</span> частично правильно, есть пробелы</div>
+            <div class="gloss-item"><span class="gloss-tag">0 — noto'g'ri</span> неправильно или нет ответа</div>
+          </div>
+          <div class="sub-filter-chips" id="lqSubFilter"></div>
+          <div class="sidebar-search">
+            <input id="lqSearchInput" type="text" placeholder="Поиск по тексту..." />
+          </div>
+        </div>
+        <div class="q-list" id="lqList"></div>
+      </aside>
+      <main class="content" id="lqContent">
         <div class="empty-state"><div class="empty-icon">←</div><p>Выберите вопрос из списка слева</p></div>
       </main>
     </div>

@@ -1940,6 +1940,45 @@ body {
   margin-top: 12px;
 }
 
+/* ── LQ styles ── */
+.lq-reference-wrap {
+  margin: 12px 0;
+  padding: 12px 16px;
+  background: rgba(46,124,246,0.06);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+}
+.lq-reference-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+.lq-reference-text {
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.55;
+}
+.lq-source {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.lq-model-answer {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.5;
+  padding: 8px 0 4px;
+  white-space: pre-wrap;
+}
+.binary-card.partial {
+  border-left: 3px solid #f59e0b;
+  background: rgba(245,158,11,0.05);
+}
+.score-yellow { color: #d97706; font-weight: 700; }
+
 .rc-passage-label {
   font-size: 15px;
   font-weight: 700;
