@@ -33,7 +33,7 @@ const MODEL_SUPERSEDED_BY = { 'grok-2': 'grok-3' };
 
 // ── Состояние ──────────────────────────────────────────────────
 const state = {
-  activeView:   'rating',
+  activeView:   'lq',
 
   qaSub:        'all',
   clSub:        'all',

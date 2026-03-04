@@ -1,240 +1,137 @@
 # 🇺🇿 ULAB — Uzbek Language AI Benchmark
 
-> **The first open benchmark for evaluating AI language models on Uzbek**, focused on banking and financial communication. 14 models tested across 5 modules.
+> **The first open benchmark for evaluating AI language models on Uzbek**, focused on banking and financial communication.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-0969da?style=flat-square&logo=github)](https://u-specter.github.io/uzbek-llm-benchmark/)
-[![Models](https://img.shields.io/badge/Models%20tested-14-22c55e?style=flat-square)](#models-tested)
-[![Questions](https://img.shields.io/badge/Questions-114%20total-f59e0b?style=flat-square)](#modules)
+[![Models](https://img.shields.io/badge/Models%20tested-10-22c55e?style=flat-square)](#models-tested)
+[![Questions](https://img.shields.io/badge/Questions-60%20real%20legal%2FFinancial-f59e0b?style=flat-square)](#lq-module)
 [![License: MIT](https://img.shields.io/badge/License-MIT-94a3b8?style=flat-square)](LICENSE)
 
 ---
 
-## What is ULAB?
+## Branch overview
 
-ULAB measures how well modern AI models understand and generate **Uzbek text** across five test modules.
-Each module targets a real skill needed in Uzbek banking customer service.
+| Branch | Description |
+|--------|-------------|
+| `main` | Original synthetic benchmark — 5 hand-crafted modules (QA, CL, RB, FK, RC), 114 questions |
+| **`feature/lq-serious-benchmark`** ← *you are here* | **Real-dataset benchmark** — 60 questions from `wakilai-legal-benchmark-uz`, GPT-4o judge |
 
-The benchmark covers:
-- **Language quality** — grammar, spelling, naturalness of Uzbek
-- **Register matching** — formal / everyday / colloquial speech styles
-- **Task accuracy** — text classification, fact verification, reading comprehension
-- **Noise robustness** — handling typos, missing apostrophes, Cyrillic–Latin mix
-
-👉 **[Open live leaderboard](https://u-specter.github.io/uzbek-llm-benchmark/)**
-Or simply open `website/index.html` locally — no server needed.
+> The old modules (QA / CL / RB / FK / RC) are intentionally hidden in this branch's UI.
+> Their code and data are still present in the repository — nothing was deleted.
+> To see them, switch to `main` or un-hide the nav tabs in `website/index.html`.
 
 ---
 
-## Modules
+## LQ Module — Legal & Financial Q&A
 
-| # | Module | Questions | Task | Scoring |
-|---|--------|-----------|------|---------|
-| — | **Core Q&A** | 60 | Answer in 3 Uzbek speech styles | GPT-4o judge (4 criteria, 1–5 scale) |
-| CL | **Classification** | 20 | Detect sentiment / intent / register of client messages | Automatic (exact match) |
-| RB | **Robustness** | 15 | Understand intent despite noise (typos, Cyrillic, no apostrophes) | Automatic (exact match) |
-| FK | **Fact-checking** | 10 | Verify true/false statements about Uzbekistan & banking | Automatic (`to'g'ri` / `noto'g'ri`) |
-| RC | **Reading Comprehension** | 9 | MCQ (A/B/C/D) on real banking news passages from kun.uz | Automatic (letter match) |
+60 real Uzbek-language questions from the [wakilai-legal-benchmark-uz](https://huggingface.co/datasets/HumbleBeeAI/wakilai-legal-benchmark-uz) dataset (529 questions total, banking-relevant subset selected).
 
-**Total: 114 questions · 14 models · 5 modules**
+### Scoring
+
+GPT-4o compares each model answer against a reference answer and returns one of three verdicts:
+
+| Verdict | Score | Meaning |
+|---------|-------|---------|
+| `to'g'ri` | 100 | Key facts match the reference answer |
+| `qisman` | 50 | Partially correct, missing details |
+| `noto'g'ri` | 0 | Wrong or no answer |
+
+### Question categories
+
+| Category | Label | Count |
+|----------|-------|-------|
+| `moliya` | Soliq va moliya | 14 |
+| `biznes` | Tadbirkorlik | 12 |
+| `raqamli` | Raqamli xizmatlar | 9 |
+| `istemolchi` | Iste'molchi huquqlari | 8 |
+| `sugurta` | Sugʻurta | 7 |
+| `audit` | Audit va hisobot | 4 |
+| `valyuta` | Valyuta operatsiyalari | 3 |
+| `lombard` | Lombard va garov | 3 |
 
 ---
 
-## Core Q&A — 3 Speech Registers
+## Results (March 2026)
 
-| Register | Description | Count |
-|----------|-------------|-------|
-| `formal_business` | Official banking documents, letters, contracts | 20 |
-| `informal` | Everyday conversation, requests, explanations | 20 |
-| `slang` | Colloquial, youth speech, informal expressions | 20 |
-
-### Scoring criteria (GPT-4o judge)
-
-| Criterion | Weight | Description |
-|-----------|--------|-------------|
-| D1 — Accuracy | 35% | Complete and correct answer to the question |
-| D2 — Language quality | 30% | Grammar, spelling, Uzbek correctness |
-| D3 — Style match | 20% | Response matches the required speech register |
-| D4 — Naturalness | 15% | Sounds like a real person, not machine translation |
-
-Final score per response is normalized to **0–100**.
+| # | Model | Overall |
+|---|-------|---------|
+| 1 | Claude Sonnet 4.6 | **65.0%** |
+| 2 | GPT OSS 120B | 53.3% |
+| 3 | Llama 4 Maverick | 48.3% |
+| 4 | GPT-4o | 46.7% |
+| 5 | Llama 4 Scout | 42.5% |
+| 6 | Kimi K2 | 36.7% |
+| 7 | Llama 3.3 70B | 35.0% |
+| 8 | Qwen3 32B | 34.2% |
+| 9 | Gemini 2.0 Flash | 0% *(parsing issue)* |
+| 10 | Allam 2 7B | 0% *(no Uzbek legal knowledge)* |
 
 ---
 
 ## Models Tested
 
-### Commercial (via API)
-| Model | Provider |
-|-------|----------|
-| GPT-4o | OpenAI |
-| Claude Sonnet 4.6 | Anthropic |
-| Gemini 2.0 Flash | Google |
-| Gemini 1.5 Pro *(manual)* | Google |
-| Mistral Large *(manual)* | Mistral AI |
-| DeepSeek V3 *(manual)* | DeepSeek |
-| Grok 3 *(manual)* | xAI |
-| YandexGPT *(manual)* | Yandex |
-
-### Open-Source (via Groq)
-| Model | Provider |
-|-------|----------|
-| Llama 3.3 70B | Meta |
-| Qwen3 32B | Alibaba |
-| GPT OSS 120B | OpenAI |
-| Llama 4 Maverick | Meta |
-| Llama 4 Scout | Meta |
-| Kimi K2 | Moonshot AI |
-
----
-
-## Project Structure
-
-```
-uzbek-llm-benchmark/
-│
-├── questions/                    # Benchmark question banks
-│   ├── questions.json            #   Core Q&A — 60 questions
-│   ├── cl_questions.json         #   Classification — 20 questions
-│   ├── rb_questions.json         #   Robustness — 15 questions
-│   ├── fk_questions.json         #   Fact-checking — 10 questions
-│   └── rc_questions.json         #   Reading Comprehension — 9 questions
-│
-├── responses/                    # Raw manual model responses (JSON)
-│
-├── website/                      # Static dashboard (no server needed)
-│   ├── index.html
-│   ├── css/style.css
-│   └── js/
-│       ├── app.js                #   Dashboard logic & charts
-│       └── results.js            #   Compiled results (auto-generated)
-│
-├── data/
-│   ├── models.json               # Model registry (names, colors, providers)
-│   └── scoring_rubric.json       # GPT-4o scoring rubric
-│
-├── docs/
-│   └── BRD_Uzbek_Language_AI_Benchmark_Platform.md
-│
-├── MANUAL_QUESTIONS.txt          # All 60 core questions for copy-paste testing
-├── MANUAL_CL_QUESTIONS.txt       # CL module prompts
-├── MANUAL_RB_QUESTIONS.txt       # RB module prompts
-├── MANUAL_FK_QUESTIONS.txt       # FK module prompts
-├── MANUAL_RC_QUESTIONS.txt       # RC module prompts (with full passages)
-│
-├── run_benchmark.py              # Run Core Q&A (all API models, async)
-├── run_benchmark_cl.py           # Run Classification module
-├── run_benchmark_rb.py           # Run Robustness module
-├── run_benchmark_fk.py           # Run Fact-checking module
-├── run_benchmark_rc.py           # Run Reading Comprehension module
-│
-├── score_responses.py            # GPT-4o scoring for Core Q&A responses
-├── create_template.py            # Generate fill-in JSON for manual models
-├── import_manual.py              # Import manually collected responses
-│
-├── requirements.txt
-└── .env                          # API keys — never commit this!
-```
+| Model | Provider | Access |
+|-------|----------|--------|
+| Claude Sonnet 4.6 | Anthropic | API |
+| GPT-4o | OpenAI | API |
+| GPT OSS 120B | OpenAI | Groq |
+| Llama 4 Maverick | Meta | Groq |
+| Llama 4 Scout | Meta | Groq |
+| Kimi K2 | Moonshot AI | Groq |
+| Llama 3.3 70B | Meta | Groq |
+| Qwen3 32B | Alibaba | Groq |
+| Gemini 2.0 Flash | Google | API |
+| Allam 2 7B | SDAIA | Groq |
 
 ---
 
 ## Quickstart
 
-### 1. Clone & install
-
 ```bash
 git clone https://github.com/u-specter/uzbek-llm-benchmark.git
 cd uzbek-llm-benchmark
+git checkout feature/lq-serious-benchmark
 pip install -r requirements.txt
 ```
 
-### 2. Configure API keys
-
-Create `.env` in the project root:
-
+Create `.env`:
 ```env
 OPENAI_API_KEY=sk-...
 ANTHROPIC_API_KEY=sk-ant-...
-GEMINI_API_KEY=AIza...
 GROQ_API_KEY=gsk_...
 ```
 
-### 3. Run the benchmark
-
+Run:
 ```bash
-# Core Q&A — all API models (async, ~5 min)
-python run_benchmark.py
-
-# Score with GPT-4o (~10–15 min)
-python score_responses.py
-
-# Extra modules — fully automatic, no GPT-4o needed
-python run_benchmark_cl.py
-python run_benchmark_rb.py
-python run_benchmark_fk.py
-python run_benchmark_rc.py
-```
-
-### 4. View results
-
-```bash
-open website/index.html    # macOS
-# or just double-click the file
+python run_benchmark_lq.py
+open website/index.html
 ```
 
 ---
 
-## Adding a Manual Model (no API)
+## Project Structure (this branch)
 
-For models accessible only via web chat (Gemini, Mistral, Grok, YandexGPT, etc.):
-
-```bash
-# Step 1 — Generate a fill-in template
-python create_template.py --model gemini --module core
-
-# Step 2 — Open MANUAL_QUESTIONS.txt, copy each question to the model's chat
-#           Fill responses into: responses/gemini_responses.json
-
-# Step 3 — Import into the database
-python import_manual.py --model gemini --module core
-
-# Step 4 — Score with GPT-4o
-python score_responses.py
-
-# For extra modules (CL / RB / FK / RC) — same flow, change --module
-python create_template.py --model gemini --module cl
-python import_manual.py   --model gemini --module cl
 ```
-
----
-
-## Key Findings (March 2026)
-
-- **GPT-4o** leads overall with the highest formal business style score
-- **Slang/colloquial Uzbek** is the hardest register for all models — average ~15 points below formal
-- **Open-source models** (Qwen3, Llama 4) are competitive on classification and fact-checking
-- **Fact-checking reveals hallucinations**: several models state that Uzbekistan's currency is the Tenge, or that the Central Bank is located in Samarkand
-
----
-
-## Running Specific Models or Questions
-
-Each benchmark script supports filtering:
-
-```bash
-# Run only one model
-python run_benchmark_cl.py --model qwen3-32b
-
-# Run only specific question IDs
-python run_benchmark_rc.py --ids RC-P1-Q1,RC-P2-Q3
-
-# Force re-run even if result exists
-python run_benchmark_fk.py --force
+uzbek-ai-benchmark/
+├── questions/
+│   └── lq_questions.json          # 60 legal/financial Q&A questions
+├── website/
+│   ├── index.html                 # Dashboard (LQ tab shown by default)
+│   ├── css/style.css
+│   └── js/
+│       ├── app.js
+│       └── results.js             # Auto-generated results
+├── run_benchmark_lq.py            # Run LQ benchmark (async, GPT-4o judge)
+├── create_template.py             # Generate fill-in JSON for manual models
+├── import_manual.py               # Import manually collected responses
+└── results_raw.json               # Full results DB (local only, not committed)
 ```
 
 ---
 
 ## License
 
-MIT © 2026 — free to use, extend, and cite.
+MIT © 2026
 
 ---
 
