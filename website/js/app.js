@@ -41,6 +41,7 @@ const state = {
   fkSub:        'all',
   rcSub:        'all',
   lqSub:        'all',
+  yqaSub:       'all',
   selectedQId:  null,           // selected question id (any module)
   search:       '',
   lbSort:       { col: 'overall', dir: 'desc' },
@@ -101,6 +102,8 @@ document.addEventListener('DOMContentLoaded', () => {
   renderRCView();
   renderLQRatingView();
   renderLQView();
+  renderYQARatingView();
+  renderYQAView();
   renderDeptsView();
 });
 
@@ -114,20 +117,22 @@ function setTextIfExists(id, text) {
 // ═══════════════════════════════════════════════════════════════
 
 const VIEW_MAP = {
-  rating:   'ratingView',
-  lqRating: 'lqRatingView',
-  qa:       'qaView',
+  rating:    'ratingView',
+  lqRating:  'lqRatingView',
+  lq:        'lqView',
+  yqaRating: 'yqaRatingView',
+  yqa:       'yqaView',
+  qa:        'qaView',
   cl:       'clView',
   rb:       'rbView',
   fk:       'fkView',
   rc:       'rcView',
-  lq:       'lqView',
   depts:    'deptsView',
   about:    'aboutView',
 };
 
 // Views that use simple block layout (not two-panel flex)
-const BLOCK_VIEWS = new Set(['rating', 'lqRating', 'about']);
+const BLOCK_VIEWS = new Set(['rating', 'lqRating', 'yqaRating', 'about']);
 
 function setupNavigation() {
   document.querySelectorAll('.nav-tab').forEach(btn => {
@@ -1241,6 +1246,194 @@ function toggleRCPassage(qId, btn) {
   if (!el) return;
   const collapsed = el.classList.toggle('collapsed');
   btn.textContent = collapsed ? 'Показать полностью' : 'Свернуть';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// YQA RATING + DETAIL VIEW  (yuridik.uz — 60 questions)
+// ═══════════════════════════════════════════════════════════════
+
+const YQA_TYPE_LABELS = {
+  finance:  'Moliya',
+  business: 'Tadbirkorlik',
+  tax:      'Soliq',
+  consumer: "Iste'molchi",
+};
+
+function renderYQARatingView() {
+  const data = state.appData;
+  if (!data) return;
+
+  const lb = data.yqa_leaderboard || {};
+  const categories = ['finance','business','tax','consumer'];
+  const medals = ['🥇','🥈','🥉'];
+
+  const models = Object.entries(lb)
+    .map(([id, s]) => ({ id, meta: getModelMeta(id, data), ...s }))
+    .filter(m => m.overall != null)
+    .sort((a, b) => (b.overall || 0) - (a.overall || 0));
+
+  const tiles = document.getElementById('yqaStatTiles');
+  if (tiles && models.length) {
+    const best = models[0];
+    tiles.innerHTML = `
+      <div class="stat-tile">
+        <div class="stat-tile-label">Лучшая модель</div>
+        <div class="stat-tile-value">${escHtml(best.meta.name)}</div>
+        <div class="stat-tile-sub score-green">${best.overall}%</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-tile-label">Протестировано</div>
+        <div class="stat-tile-value">${models.length} моделей</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-tile-label">Датасет</div>
+        <div class="stat-tile-value">60 вопросов</div>
+        <div class="stat-tile-sub score-yellow">yuridik.uz</div>
+      </div>`;
+  }
+
+  const table = document.getElementById('yqaLbTable');
+  if (!table) return;
+
+  const catCols = categories.map(c =>
+    `<th class="lb-cell lb-cell-score">${YQA_TYPE_LABELS[c]}</th>`
+  ).join('');
+
+  const rows = models.map((m, i) => {
+    const rank  = i < 3 ? medals[i] : `${i+1}`;
+    const dot   = `<span class="model-dot" style="background:${m.meta.color || '#94a3b8'}"></span>`;
+    const badge = m.meta.type === 'commercial'
+      ? `<span class="badge badge-comm">commercial</span>`
+      : `<span class="badge badge-oss">open-source</span>`;
+    const ov    = m.overall != null ? `<span class="${scoreClass(m.overall)}">${m.overall}%</span>` : '—';
+    const catCells = categories.map(c => {
+      const v = m[c];
+      return `<td class="lb-cell lb-cell-score">${v != null ? `<span class="${scoreClass(v)}">${v}%</span>` : '—'}</td>`;
+    }).join('');
+    return `<tr>
+      <td class="lb-cell lb-cell-rank">${rank}</td>
+      <td class="lb-cell lb-cell-model">${dot}${escHtml(m.meta.name)} ${badge}</td>
+      <td class="lb-cell lb-cell-score lb-overall">${ov}</td>
+      ${catCells}
+    </tr>`;
+  }).join('');
+
+  table.innerHTML = `<thead><tr>
+    <th class="lb-cell lb-cell-rank">#</th>
+    <th class="lb-cell lb-cell-model">Модель</th>
+    <th class="lb-cell lb-cell-score">Итого</th>
+    ${catCols}
+  </tr></thead><tbody>${rows}</tbody>`;
+}
+
+function renderYQAView() {
+  const data = state.appData;
+  if (!data) return;
+  const qs = data.yqa_questions || [];
+  document.getElementById('yqaTotalCount').textContent = qs.length;
+
+  const types = [...new Set(qs.map(q => q.type))].sort();
+  const opts  = types.map(t => ({ key: t, label: YQA_TYPE_LABELS[t] || t }));
+  buildSubFilterChips('yqaSubFilter', opts, state.yqaSub, (key) => {
+    state.yqaSub = key;
+    renderYQAList();
+    resetContent('yqaContent');
+  });
+  document.getElementById('yqaSearchInput').addEventListener('input', () => {
+    renderYQAList(); resetContent('yqaContent');
+  });
+  renderYQAList();
+}
+
+function getFilteredYQAQuestions() {
+  const data   = state.appData;
+  const search = (document.getElementById('yqaSearchInput')?.value || '').toLowerCase();
+  let qs = (data.yqa_questions || []);
+  if (state.yqaSub && state.yqaSub !== 'all') qs = qs.filter(q => q.type === state.yqaSub);
+  if (search) qs = qs.filter(q => (q.question || '').toLowerCase().includes(search));
+  return qs;
+}
+
+function renderYQAList() {
+  const qs     = getFilteredYQAQuestions();
+  const data   = state.appData;
+  const listEl = document.getElementById('yqaList');
+  if (!listEl) return;
+  const lb = data.yqa_leaderboard || {};
+
+  listEl.innerHTML = qs.map(q => {
+    const responses = q.responses || {};
+    const scores    = Object.values(responses).map(r => r.score ?? 0);
+    const avg       = scores.length ? Math.round(scores.reduce((a,b)=>a+b,0)/scores.length) : null;
+    const typeLabel = YQA_TYPE_LABELS[q.type] || q.type || '';
+    return `
+      <div class="q-item" onclick="selectYQAQuestion('${q.id}')">
+        <div class="q-item-header">
+          <span class="q-item-id">${q.id}</span>
+          ${avg != null ? `<span class="q-item-score ${scoreClass(avg)}">${avg}%</span>` : ''}
+        </div>
+        <div class="q-item-text">${escHtml((q.question||'').slice(0,90))}…</div>
+        <div class="q-item-tags"><span class="badge-formal">${escHtml(typeLabel)}</span></div>
+      </div>`;
+  }).join('');
+}
+
+function selectYQAQuestion(qId) {
+  const data = state.appData;
+  const q    = (data.yqa_questions || []).find(x => x.id === qId);
+  if (!q) return;
+  document.querySelectorAll('#yqaList .q-item').forEach(el => el.classList.remove('active'));
+  const activeEl = [...document.querySelectorAll('#yqaList .q-item')]
+    .find(el => el.querySelector('.q-item-id')?.textContent === qId);
+  if (activeEl) activeEl.classList.add('active');
+  renderYQADetail(q);
+}
+
+function renderYQADetail(q) {
+  const data    = state.appData;
+  const content = document.getElementById('yqaContent');
+  if (!content) return;
+
+  const responses = q.responses || {};
+  const entries   = Object.entries(responses).sort(([,a],[,b]) => (b.score||0)-(a.score||0));
+  const scoreIcon  = s => s===100?'✓':(s===50?'~':'✗');
+  const scoreLabel = s => s===100?"to'g'ri":(s===50?'qisman':"noto'g'ri");
+
+  const cards = entries.map(([modelId, resp]) => {
+    const meta  = getModelMeta(modelId, data);
+    const score = resp.score ?? 0;
+    const cls   = score===100?'correct':(score===50?'partial':'wrong');
+    return `
+      <div class="binary-card ${cls}">
+        <div class="binary-card-header">
+          <span class="binary-model-name" onclick="openModelDrawer('${modelId}')" style="cursor:pointer">${escHtml(meta.name)}</span>
+          <span class="binary-result ${score===100?'score-green':score===50?'score-yellow':'score-red'}">
+            ${scoreIcon(score)} ${scoreLabel(score)} · ${score}
+          </span>
+        </div>
+        <div class="lq-model-answer">${escHtml(resp.response||'')}</div>
+      </div>`;
+  }).join('');
+
+  content.innerHTML = `
+    <div class="q-detail">
+      <div class="q-detail-header">
+        <div class="q-detail-meta">
+          <span class="q-detail-id">${q.id}</span>
+          <span class="q-detail-reg badge-formal">📋 ${escHtml(YQA_TYPE_LABELS[q.type]||q.type||'')}</span>
+        </div>
+        <div class="q-detail-question" style="margin-bottom:12px">
+          <strong>Savol:</strong> ${escHtml(q.question||'')}
+        </div>
+        <div class="lq-reference-wrap">
+          <div class="lq-reference-label">📌 Эталонный ответ:</div>
+          <div class="lq-reference-text">${escHtml(q.reference_answer||'')}</div>
+          <div class="lq-source">Источник: yuridik.uz</div>
+        </div>
+        <div class="q-detail-note">Протестировано моделей: <strong>${entries.length}</strong></div>
+      </div>
+      <div class="binary-cards-grid">${cards||'<p style="color:var(--muted);padding:20px">Нет данных</p>'}</div>
+    </div>`;
 }
 
 // ═══════════════════════════════════════════════════════════════

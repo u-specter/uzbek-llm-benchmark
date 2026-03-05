@@ -19,8 +19,10 @@
     </div>
 
     <nav class="hdr-nav">
-      <button class="nav-tab" data-view="lqRating">📊 Результаты</button>
-      <button class="nav-tab" data-view="lq">⚖️ Вопросы</button>
+      <button class="nav-tab" data-view="lqRating">📊 LQ Рейтинг</button>
+      <button class="nav-tab" data-view="lq">⚖️ LQ Вопросы</button>
+      <button class="nav-tab" data-view="yqaRating">📊 YQA Рейтинг</button>
+      <button class="nav-tab" data-view="yqa">📋 YQA Вопросы</button>
       <button class="nav-tab" data-view="about">ℹ О тесте</button>
       <!-- hidden: old synthetic modules (branch feature/lq-serious-benchmark) -->
       <button class="nav-tab" data-view="rating" style="display:none">🏆 Рейтинг</button>
@@ -213,6 +215,40 @@
         <div class="q-list" id="lqList"></div>
       </aside>
       <main class="content" id="lqContent">
+        <div class="empty-state"><div class="empty-icon">←</div><p>Выберите вопрос из списка слева</p></div>
+      </main>
+    </div>
+
+    <!-- ── YQA RATING ── -->
+    <div id="yqaRatingView" class="view-page" style="display:none">
+      <div class="rating-wrap">
+        <div class="stat-tiles" id="yqaStatTiles"></div>
+        <div class="lb-toolbar">
+          <span class="lb-title">Рейтинг моделей · YQA (yuridik.uz)</span>
+        </div>
+        <div class="lb-table-wrap"><table class="lb-table" id="yqaLbTable"></table></div>
+      </div>
+    </div>
+
+    <!-- ── YQA — Yuridik Q&A ── -->
+    <div id="yqaView" class="view-page two-panel-view" style="display:none">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-title">Yuridik Q&A · <span id="yqaTotalCount">60</span> вопросов</div>
+          <div class="sidebar-desc">60 реальных банковских и юридических вопросов с yuridik.uz. GPT-4o сравнивает ответ с эталоном.</div>
+          <div class="sidebar-glossary">
+            <div class="gloss-item"><span class="gloss-tag">100 — to'g'ri</span> ключевые факты совпадают с эталоном</div>
+            <div class="gloss-item"><span class="gloss-tag">50 — qisman</span> частично правильно, есть пробелы</div>
+            <div class="gloss-item"><span class="gloss-tag">0 — noto'g'ri</span> неправильно или нет ответа</div>
+          </div>
+          <div class="sub-filter-chips" id="yqaSubFilter"></div>
+          <div class="sidebar-search">
+            <input id="yqaSearchInput" type="text" placeholder="Поиск по тексту..." />
+          </div>
+        </div>
+        <div class="q-list" id="yqaList"></div>
+      </aside>
+      <main class="content" id="yqaContent">
         <div class="empty-state"><div class="empty-icon">←</div><p>Выберите вопрос из списка слева</p></div>
       </main>
     </div>
